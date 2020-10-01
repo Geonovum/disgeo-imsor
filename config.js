@@ -71,7 +71,7 @@ var respecConfig =
   //pubDomain: "wp", 	              // White Paper
   //pubDomain: "disgeo", 	          // Doorontwikkeling basisregistraties in samenhang
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/disgeo-imsor/respec-principles",
+  github: "https://github.com/Geonovum/disgeo-imsor",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Geonovum/disgeo-imsor/issues/",
   //-- edDraftURI: de URI van de werkversie van het document
