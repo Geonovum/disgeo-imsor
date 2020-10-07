@@ -75,7 +75,7 @@ var respecConfig =
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/Geonovum/disgeo-imsor/issues/",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://geonovum.github.io/disgeo-imsor",
+  edDraftURI: "https://geonovum.github.io/imsor-modelleerprincipes",
   //-- license: voor de geldende gebruiksvoorwaarden
   licence: "cc-by-nd",              //-- bronvermelding, geen afgeleide werken (default)
   // licence: "cc0",                //-- Public Domain Dedication
