@@ -11,10 +11,10 @@ De volgende afkortingen worden gebruikt:
 
 **Pano**: om het enigzins overzichtelijk te houden heb ik nu een opdeling gemaakt in
 
-* Terminologie van concepten en objecten
-* Terminologie van kenmerken
-* Terminologie van klasses, typen en verzamelingen
-* Terminologie van gegevens en modellen
+* [Terminologie van concepten en objecten](#terminologie-van-concepten-en-objecten)
+* [Terminologie van kenmerken](#terminologie-van-kenmerken)
+* [Terminologie van klasses, typen en verzamelingen](#terminologie-van-klasses-typen-en-verzamelingen)
+* [Terminologie van gegevens en modellen](#terminologie-van-gegevens-en-modellen)
 
 Dit kan later nog aangepast worden.
 
