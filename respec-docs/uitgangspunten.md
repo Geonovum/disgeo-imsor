@@ -14,4 +14,4 @@ Gekeken moet worden of bepaalde modelleerconstructen niet een belemmering vormen
 
 Te denken valt aan MIM (metamodellering), NEN 3610, NEN 2660 en NTA 8035.
 
-## **U4**. Houd rekening met de uitbreidbaarheid van het model (?)
+<!-- ## **U4**. Houd rekening met de uitbreidbaarheid van het model (?) -->
