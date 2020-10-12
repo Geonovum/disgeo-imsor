@@ -64,6 +64,9 @@ In hoofdstuk 5 en 6 | Inconsistente structuur van definities. Vaak worden direct
 6.3.1 Verkeerskundig functionele zone | Definitiescherpte en mogelijke overlap van definities: wat is de relatie tussen de begrippen parkeervlak, perkeerplaats en de term 'parkeergelegenheid'? |Verduidelijken
 6.4.1 Kering (onder lijsten ''waarde type'') | Mogelijk incomplete termen. Voorbeeld: "grond" als het over "grondkering" gaat | Termen (waarde namen) aanpassen
 6.4.3 Valbescherming | *issue vergt meer aandacht, later weer bekijken* | -
-
-
->>>>>>> cd16d0a7a89a34dd68cd9ec6221e3c9bb65fc583
+7.1.2 Provincie | Waarom geen relatie ligtIn met Rijk? | Toevoegen of argumenteren waarom niet.
+7.1.4 t/m 7.1.7 | De eigenschap 'landcode' hoort niet bij deze objecttypen, deze eigenschap is te vinden bij het Rijk. | vervangen door relatie 'ligtIn' Rijk, bij gemeenten kan dit indirect via de provincie.
+7.3 t/m 7.4 | Kan een wijk of buurt geen alternatieve naam hebben? | Zo ja deze toevoegen.
+7.6 Nummeraanduiding | Dit objecttype heeft geen geometrie eigenschap. Hoe kan het dan een registratief gebied zijn. Wordt een nummeraanduiding gezien als een afgebakend stukje Nederland, ook al wordt deze afbakening (geometrie) niet expliciet opgenomen in de registratie? Op basis van de definitie klinkt het meer als een eigenschap of een setje gegevens bij een verblijfsobject of benoemde plaats. Als het een geometrische representatie zou zijn, is dit misschien eerder een puntgeometrie dan een vlak, zoals je bij een registratief gebied zou verwachten.| Heroverwegen of dit wel een registratief gebied is.
+7.6 Nummeraanduiding | de ligt aan relatie: kan de openbare ruimte een weg of waterelement zijn, of kan dit alleen een weg zijn? | Zo mogelijk specifiek maken.
+8 Geografische gebieden | De toegestane waarden van Status bij geografische gebieden zijn inconsistent en onjuist geformuleerd. Bij bebouwde kom zijn maar twee waarden voor status opgenomen: aangewezen en ingetrokken. Bij Streek zijn het er veel meer. Het lijkt me niet dat geografische gebieden worden 'aangewezen', 'ingetrokken', 'verwijderd', 'gepland' en 'niet gerealiseerd'. Alleen 'bestaand' en wellicht 'historisch' lijken me zinnig. | Statussen van geografische gebieden herzien. 
