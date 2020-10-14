@@ -71,6 +71,7 @@ In hoofdstuk 5 en 6 | Inconsistente structuur van definities. Vaak worden direct
 6.3.1 Verkeerskundig functionele zone | Definitiescherpte en mogelijke overlap van definities: wat is de relatie tussen de begrippen parkeervlak, perkeerplaats en de term 'parkeergelegenheid'? |Verduidelijken
 6.4.1 Kering (onder lijsten ''waarde type'') | Mogelijk incomplete termen. Voorbeeld: "grond" als het over "grondkering" gaat | Termen (waarde namen) aanpassen
 6.4.3 Valbescherming | *issue vergt meer aandacht, later weer bekijken* | -
+7 Registratieve objecttypen | Het gaat bij bijna alle objecttypen die in dit hoofdstuk beschreven worden, met name om de begrenzing van de gebieden. Echter in de naamgeving van de objecttypen komt dit niet terug. Bijvoorbeeld 'Gemeente': gaat het om het bestuursorgaan, politieke bestuursapparaat, of het gebied dat bestuurd wordt? De definitie wijst op het laatste: 'afgebakend gedeelte van het grondgebied van Nederland'. | In de namen laten terugkomen dat het gaat om gebieden, bv 'Gemeentegrondgebied'. Dit laat ruimte voor andere registraties die met name het bestuursorgaan registreren. 
 7.1.2 Provincie | Waarom geen relatie ligtIn met Rijk? | Toevoegen of argumenteren waarom niet.
 7.1.4 t/m 7.1.7 | De eigenschap 'landcode' hoort niet bij deze objecttypen, deze eigenschap is te vinden bij het Rijk. | vervangen door relatie 'ligtIn' Rijk, bij gemeenten kan dit indirect via de provincie.
 7.3 t/m 7.4 | Kan een wijk of buurt geen alternatieve naam hebben? | Zo ja deze toevoegen.
