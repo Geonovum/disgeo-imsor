@@ -80,19 +80,17 @@ Dit kan later nog aangepast worden.
 
 | Term | MIM | NEN3610:2020 | NTA8035 | Opmerking |
 |:-----|:----|:-------------|:--------|-----------|
-| gegeven |  |  |  |  |
-
+| gegeven | De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend. | De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend [MIM] | Gegevens zijn de digitale assets	| Gabriella: in de NTA8035 wordt onderscheid gemaakt in verschillende soorten gegevens: over aanwijsbare dingen in de werkelijkheid, gegevens gedefinieerd door gegevensstructuren (conceptuele modellen), of gegevens die zijn vastgelegd op een hoger niveau (meta model) |
+| gegevensverzameling | Z | Z | Naast de gegevensstructuren zijn er gegevensverzamelingen (Engels: data sets), die individuele data bevatten volgens de gegevensstructuur. | Gabriella: hoewel de term niet is gedefinieerd in de NEN3610, wordt wel gezegd dat een 'registratie' een op nationaal niveau geidentificeerde en erkende gegevensverzameling is |
+| gegevensmodel/gegevensstructuur | Z | Modellering van de werkelijkheid voor representatie in een digitale omgeving […], wordt opgesteld voor ICT-interoperabiliteit, voor gebruik door met name de ontwerpers, bouwers en beheerders van ICT-voorzieningen. | gedeelde abstracte weergave van (een deel van een) domein dat voor een specifiek doel wordt gebruikt | Gabriella: in de MIM wordt 'gegevensmodel' gebruikt als het gaat over logische of fysieke datamodellen. In de NEN3610 is 'gegevensmodel' een synoniem van 'logisch informatiemodel' en 'datamodel' - terwijl in de NTA8035 'datamodel' synoniem is voor 'gegevensstructuur', wat zij koppelen aan conceptuele modellen. |
+| beperking	| Een constraint is een conditie of een beperking, die over een of meerdere modelelementen uit het informatiemodel geldt. | Z | Concepten kunnen Beperkingen hebben die het aantal waarden of de waarden zélf beperken. Ook attributen en relaties kunnen beperkingen hebben met betrekking tot hun bron-, doelconcepten (in het geval van relaties) of waardetype (in het geval van attributen). Beperkingen kunnen worden onderverdeeld in definiërende beperkingen en specificerende beperkingen. De eerste zijn per definitie altijd waar/relevant. De tweede zijn waar/relevant met een specifiek doel voor ogen.	| Gabriella: in de NEN3610 wordt gesproken over constraints, waarmee de beperkingen en condities die gelden voor een objecttype kunnen worden omschreven (in natuurlijke taal of OCL) |
+| afleiding	| Z	| N	| Er zijn Afleidingen die vertellen hoe nieuwe waarden voor attributen of referenties voor relaties kunnen worden afgeleid uit bestaande waarden/referenties. Door deze regels te formaliseren (om te zetten in computerverwerkbare code) wordt dit onderdeel van een kennissysteem en kan ook de computer deze afleiding maken. | Gabriella: in de MIM wordt gesproken over afleiding bij het metagegeven 'indicatie afleidbaar':  Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten. |
+| Universe of Discourse	| het beschouwde domein	| beeld van de echte of hypothetische wereld dat binnen de context van een domein alles van belang omvat | N | |
+| ontologie	| Met een ontologie bedoelen we een model waarin we betekenis geven aan de termen die in een specifiek domein worden gebruikt. In geval van het MIM metamodel betreft dit het MIM-domein zelf. We geven betekenis aan de termen door enerzijds een voor mensen leesbare definitie te koppelen aan een term (de "zachte semantiek") en anderzijds door relaties te leggen naar eerder gedefinieerde termen of relaties tussen termen in onze ontologie (de "harde semantiek"). | (definitie van NEN3610-LD profiel) een kennismodel van een specifiek kennisdomein in de werkelijkheid. Bevat een set regels, die gebruikt kunnen worden om extra kennis af te leiden uit gelinkte data. Met behulp van zo'n model kunnen computers begrijpen wat de data betekent en redeneren over data. | gedeelde, abstracte weergave van (een deel van) de werkelijkheid dat voor een bepaald doel moet worden weergegeven	| |
+| subklasse	| Z	| Z | Z een subklasse is meestal een superklasse plus een of meer definiërende beperkingen die betrekking hebben op attributen en/of relaties die nog niet beperkt zijn voor de superklasse. | |
+| subeigenschap	| N	| Z (in NEN3610-LD) | N | |	
+| levenscyclus / levenscycli | Z | N | Z Gegevens betreffen de gehele levenscyclus van assets: programma van eisen, ontwerp, uitvoering, beheer en onderhoud en sloop, vervanging en renovatie, hergebruik (circulair). Ook kan het gaan om stadia in de levenscyclus van een netwerk of portfolio van assets als wegen en gebouwen, met hun systemen, bouwdelen, componenten en materialen. | |
 
 ##### TODO
 
-- gegeven
-- gegevensverzameling
-- gegevensmodel
-- beperking
-- afleiding
-- Universe of Discourse
-- ontologie
-- subklasse
-- subeigenschap
-- levenscyclus / levenscycli
 
