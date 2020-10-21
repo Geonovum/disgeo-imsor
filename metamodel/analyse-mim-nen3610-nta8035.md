@@ -70,13 +70,11 @@ Dit kan later nog aangepast worden.
 
 | Term | MIM | NEN3610:2020 | NTA8035 | Opmerking |
 |:-----|:----|:-------------|:--------|-----------|
-| objecttype |  |  |  |  |
+| objecttype | De typering van een groep objecten die binnen een domein relevant zijn en als gelijksoortig worden beschouwd. | Z | Z | |	
+| waardetype | Z | Type dat als waarde moet worden ingevuld (bij een attribuut) | Het begrip Waardetype moet in combinatie worden gezien met het begrip Waarde. Een Waarde verhoudt zich tot Waardetype zoals een Individu zich verhoudt tot Concept. Een Waarde is een instantie van een bepaald Waardetype en wordt erdoor geclassificeerd. | |	
+| datatype	| Een beschrijving van de structuur waaraan een waarde, oftewel de data zelf, aan moet voldoen.	| specificatie van een waardedomein met operaties die zijn toegestaan op waarden binnen dit domein | Z |	Gabriella: in de MIM wordt 'datatype' ook gedefinieerd aan de hand van de modeleerelementen die onder dit begrip vallen: primitieve datatype, gestructureerde datatype, referentielijst, referentielijst element, etc. |
 
 ##### TODO
-
-- objecttype
-- waardetype
-- datatype
 
 #### Terminologie van gegevens en modellen
 
