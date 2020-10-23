@@ -2,7 +2,7 @@
 
 [MIM 1.1](https://docs.geostandaarden.nl/mim/mim/) en NEN3610 (de nieuwe versie die nu, in 2020 in ontwikkeling is) zijn voor het informatiemodel van de Samenhangende Objectregistratie (SOR) uitgangspunten waar we ons aan moeten houden. NTA8035 moeten we zo veel als mogelijk volgen. Daarom is het nodig om deze drie standaarden met elkaar te vergelijken.
 
-Waar er verschillen zijn, die voor ons bij het modelleren binnen DisGeo problemen of onduidelijkheden opleveren, maken we (zoveel mogelijk in overleg met vertegenwoordigers van MIM/NEN3610/NTA8035) beargumenteerde keuzes over hoe hier mee om te gaan in het IMSOR. Deze keuzes worden uiteindelijk opgenomen in onze [modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes). De verschillenanalyse wordt als bijlage opgenomen in dit document.
+Waar er verschillen zijn, die voor ons bij het modelleren binnen DisGeo problemen of onduidelijkheden opleveren, maken we (zoveel mogelijk in overleg met vertegenwoordigers van MIM/NEN3610/NTA8035) beargumenteerde keuzes over hoe hier mee om te gaan in het IMSOR. Deze keuzes worden uiteindelijk opgenomen in onze [modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes). 
 
 Een aantal verschillen die we na een quick-scan geconstateerd hebben:
 
