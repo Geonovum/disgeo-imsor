@@ -19,3 +19,9 @@ invulling van:
 **Voorbeelden**
 
 TODO
+
+## **R2**. Scheidt registratiemetadata
+
+## **RX**. Beperk het gebruik van abstracte constructen die interoperabiliteit in de weg kunnen staan
+
+Gekeken moet worden of bepaalde modelleerconstructen niet een belemmering vormen voor de technische implementaties van het model, aangezien dit gevolgen kan hebben voor het uitwisselen van informatie.
