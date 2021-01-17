@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<!-- HTML-Header ------------------------------------------------------------------------------>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Modelleercasus - historie en metadata op gegevensniveau</title>
+  <link rel="stylesheet" type="text/css" href="../../media/style.css">
+  <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
+  <script class="remove" src="./config.js"></script>
+  <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
+  <script>
+    window.addEventListener("load", function() {
+        // store tabs variable
+        var theTabs = document.querySelectorAll("ul.nav-tabs > li");
+  
+        function theTabClicks(tabClickEvent) {
+            var clickedTab = tabClickEvent.currentTarget;
+            var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+            var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
+            for (var i = 0; i < theTabs.length; i++) {
+                theTabs[i].classList.remove("active");
+            }
+            
+            clickedTab.classList.add("active");
+            tabClickEvent.preventDefault();
+            var contentPanes = tabParent.querySelectorAll(".tab-pane");
+            for (i = 0; i < contentPanes.length; i++) {
+                contentPanes[i].classList.remove("active");
+            }
+            var anchorReference = tabClickEvent.target;
+            var activePaneId = anchorReference.getAttribute("href");
+            var activePane = tabParent.querySelector(activePaneId);
+            activePane.classList.add("active");
+        }
+        for (i = 0; i < theTabs.length; i++) {
+            theTabs[i].addEventListener("click", theTabClicks)
+        }
+});
+  </script>
+  <style>
+    .container--tabs {
+      margin: 2rem;
+    }
+
+    .container--tabs .nav-tabs {
+      float: left;
+      width: 114.8%;
+      margin: 0;
+      list-style-type: none;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .container--tabs .nav-tabs>li {
+      float: left;
+      margin-bottom: -1px;
+    }
+
+    .container--tabs .nav-tabs>li>a {
+      float: left;
+      margin-right: 2px;
+      line-height: 1.42857143;
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .container--tabs .nav-tabs>li>a:hover {
+      border-color: #eee #eee #ddd;
+    }
+
+    .container--tabs .nav-tabs>li.active>a,
+    .container--tabs .nav-tabs>li.active>a:hover,
+    .container--tabs .nav-tabs>li.active>a:focus {
+      color: #555;
+      cursor: default;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+    }
+
+    .container--tabs .tab-content {
+      float: left;
+      width: 120%;
+    }
+
+    .container--tabs .tab-content>.tab-pane {
+      display: none;
+    }
+
+    .container--tabs .tab-content>.tab-pane.active {
+      display: block;
+      padding: 2.5% 3.5%;
+      background-color: #efefef;
+    }
+
+    .container--tabs .tab-content>.active {
+      display: block;
+    }
+  </style>
+</head>
+<!-- HTML-Body -------------------------------------------------------------------------------->
+
+<body>
+  <section id='abstract'>
+    <p>Dit document is de uitwerking van verschillende modelleerwijzes die verkend zijn op basis van een voorbeeldcasus.</p>
+  </section>
+  <section id='sotd'>
+    <p></p>
+  </section>
+  <!-- <section data-format="markdown" data-include="intro.md"></section> -->
+  <section>
+    <h1>Inhoud</h1>
+    <section data-format="markdown" data-include="respec-docs/casus.md"></section>
+    <section data-format="markdown" data-include="respec-docs/opdracht.md"></section>
+    <section data-format="markdown" data-include="respec-docs/uitwerking.md"></section>
+  </section>
+</body>
+
+</html>
