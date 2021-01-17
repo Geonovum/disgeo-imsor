@@ -41,7 +41,7 @@ De metaclass **«Gegevenstype»** is daarmee integraal verbonden met de metaclas
 Vaak is het daadwerkelijk instantieren van een **«Gegevenstype»** niet noodzakelijk. Echter, wanner het wel nodig is, bijvoorbeeld voor het uitdrukken van metadata, geeft deze uitbreiding van het MIM de mogelijkheid om dit te doen.
 
 <figure id="a-metamodel">
-  <img src="/casus/imboom/media/a-metamodel.png" alt="a-metamodel">
+  <img src="/media/a-metamodel.png" alt="a-metamodel">
   <figcaption>Metamodel uitwerking A</figcaption>
 </figure>
 
@@ -77,19 +77,19 @@ Deze metadata kan per specifieke serializatie op een specifieke manier gereprese
       <div id="tab-informatiemodel-a" class="tab-pane active"> 
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
-          <div class="figure"><img src="/casus/imboom/media/a-informatiemodel.png" alt="a-informatiemodel"/></div>
+          <div class="figure"><img src="/media/a-informatiemodel.png" alt="a-informatiemodel"/></div>
         </span>
       </div> 
       <div id="tab-informatiemodel-b" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
-          <div class="figure"><img src="/casus/imboom/media/b-informatiemodel.png" alt="b-informatiemodel"/></div>
+          <div class="figure"><img src="/media/b-informatiemodel.png" alt="b-informatiemodel"/></div>
         </span>
       </div>
       <div id="tab-informatiemodel-c" class="tab-pane">
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
-          <div class="figure"><img src="/casus/imboom/media/c-informatiemodel.png" alt="c-informatiemodel"/></div>
+          <div class="figure"><img src="/media/c-informatiemodel.png" alt="c-informatiemodel"/></div>
         </span>
       </div>
     </div>
