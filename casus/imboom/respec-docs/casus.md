@@ -3,7 +3,7 @@ In deze fictieve casus wordt er door provincies en gemeenten informatie vastgele
 wordt vastgelegd gaat uit van onderstaand *conceptueel* informatiemodel.
 
 <figure id="imsor-model-boom">
-    <img src="/media/imsor-model-boom.png" alt="Informatiemodel bomen">
+    <img src="media/imsor-model-boom.png" alt="Informatiemodel bomen">
     <figcaption>Informatiemodel bomen</figcaption>
 </figure>
 
