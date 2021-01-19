@@ -100,8 +100,8 @@ Deze metadata kan per specifieke serializatie op een specifieke manier gereprese
 Informatiemodel A bouwt op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-a></a>. Vanwege de daar gedefiniëerde relatie tussen **«Gegevenstype»** en **«Objecttype»** is het mogelijk om informatie zowel vanuit een objectbeschouwing, als vanuit een gegevensbeschouwing, als gecombineerd te representeren.
 
 #### Informatiemodel - uitwerking B
-Informatiemodel maakt van elk attribuut een **«Objecttype»**. Daarmee verandert het oorspronkelijke informatiemodel in de casus. Alle attributen worden gereïficeerd tot een relatie-object-attribuut constructie.
-Dit maakt het mogelijk om metadata als attribuut toe te voegen aan een gereïficeerd attribuut.
+Informatiemodel maakt van elk attribuut een **«Objecttype»**. Daarmee verandert het oorspronkelijke informatiemodel in de casus. Alle attributen worden ge tot een relatie-object-attribuut constructie.
+Dit maakt het mogelijk om metadata als attribuut toe te voegen aan een geobjectificeerd attribuut.
 
 #### Informatiemodel - uitwerking C
 Informatiemodel C bouwt op de geintroduceerd metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor de metadata van het **«Objecttype»** `Boom`, wordt een **«Metadata»** `Metadata Boom` geintroduceerd. Deze bevat per attribuut waarvoor metadata wordt uitgedrukt, een verwijzing naar een **«Metadata»** voor dat attribuut. Op dat niveau worden de metaeigenschappen vastgelegd.
@@ -694,7 +694,7 @@ doc:witte-kastanje-v10 {
 
 #### Gegevens - uitwerking B
 
-Omdat in uitwerking B attributen zijn gereïficeerd tot objecten, is er geen onderscheid te maken tussen een beschouwing van obecten vs gegegevens.
+Het onderscheid tussen objecten vs gegevens wordt in deze uitwerking gemaakt via het gebruik van verschillende namespaces voor objecten, waardenlijsten, gegevens en instantiedata. In de Turtle/TriG serialisatie is dit terug te zien. In de json en xml serialisatie worden de namespaces niet meegenomen waardoor dit onderscheid verloren gaat.
 
 **XML**
 
@@ -830,6 +830,10 @@ Omdat in uitwerking B attributen zijn gereïficeerd tot objecten, is er geen ond
 
 **RDF (Turtle/TriG)**
 
+<aside class="note">
+  In de RDF uitwerking is er onderscheid gemaakt tussen de URI-patronen van objecten, en van attribuutobjecten per bronhoudertype.
+</aside>
+
 <div class="container--tabs">
   <section class="row">
     <ul class="nav nav-tabs">
@@ -840,19 +844,20 @@ Omdat in uitwerking B attributen zijn gereïficeerd tot objecten, is er geen ond
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
-@prefix : &lt;http://ld.disgeo.nl/id/prov/data/&gt; .
 @prefix disgeo: &lt;http://ld.disgeo.nl/def/sor/objecttypen/&gt; .
 @prefix data: &lt;http://ld.disgeo.nl/id/sor/data/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix data-gem: &lt;http://ld.disgeo.nl/id/gem/data/&gt; .<br>
+@prefix data-gem: &lt;http://ld.disgeo.nl/id/gem/data/&gt; .
+@prefix data-prov: &lt;http://ld.disgeo.nl/id/prov/data/&gt; .<br>
 data:Boom_1 disgeo:beginGeldigheid &quot;1835-01-01&quot;^^xsd:date;
 disgeo:boom_aantalBladeren data-gem:aant_bladeren_2, data-gem:aant_bladeren_1;
 disgeo:boom_hoogte data-gem:hoogte_1, data-gem:hoogte_2, data-gem:hoogte_3, data-gem:hoogte_4;
 disgeo:boom_omtrek data-gem:omtrek_1, data-gem:omtrek_2;
 disgeo:boom_plantjaar data-gem:plantjaar_1;
 disgeo:boom_soort data-gem:soort_1, data-gem:soort_2;
-disgeo:boom_status data-gem:Boomstatus_1 .<br>
+disgeo:boom_status data-gem:Boomstatus_1 ;
+disgeo:boom_monumentaleStatus data-prov:MonumentaleStatus_registratie_1, data-prov:MonumentaleStatus_registratie_2.<br>
 data-gem:aant_bladeren_1 a rdfs:Resource;
   disgeo:bron [
     a disgeo:Observatie ;
@@ -871,7 +876,7 @@ data-gem:aant_bladeren_1 a rdfs:Resource;
 .<br>
 data-gem:aant_bladeren_2 a rdfs:Resource;
   disgeo-gem:onzekerheid 0.05;
-  disgeo:bron [
+  disgeo-gem:bron [
     a disgeo:Observatie ;
     disgeo:onzekerheid 0.05 ;
     disgeo:uitgevoerdDoor [
@@ -1140,6 +1145,61 @@ Uitwerking C laat het representere van de metadata aan de serializatie over. Dit
 
 **RDF (Turtle/TriG)**
 
-RDF, en andere graafgebaseerde frameworks, hebben een specifieke node als onderwerp nodig om gegevens te kunnen uitdrukken.
+Voor uitwerking C is het alleen mogelijk om een objectrepresentatie te maken. RDF, en andere graafgebaseerde frameworks, hebben een specifieke node als onderwerp nodig om gegevens te kunnen uitdrukken.
 Omdat in uitwerking C een gegeven niet expliciet gemodelleerd wordt als ding, is het niet goed mogelijk om hier een RDF serialisatie van te maken. De subject van de triple kan niet beschreven worden.
+
+<div class="container--tabs">
+  <section class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab-gegevens-c-rdf-object">Gegevens C - Object</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-gegevens-c-rdf-object" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .<br>
+doc:witte-kastanje-v8 {<br>
+  doc:witte-kastanje-v8 a disgeo:Metadata ;
+    disgeo:versie "8";
+    disgeo:beginGeldigheid "2019-09-10"^^xsd:date ;
+    disgeo:eindGeldigheid "2020-05-31"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2019-09-19T00:00:00Z"^^xsd:dateTime ;
+    disgeo:eindRegistratie "2020-05-31T00:00:00Z"^^xsd:dateTime ;
+  .<br>
+  :witte-kastanje a disgeo:Boom ;
+    disgeo:metadata doc:witte-kastanje-v8 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.2 ;
+    disgeo:omtrek 49.4 ;
+    disgeo:aantalBladeren 350000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}<br>
+doc:witte-kastanje-v10 {<br>
+  doc:witte-kastanje-v10 a disgeo:Metadata ;
+    disgeo:versie "10";
+    disgeo:beginGeldigheid "2020-09-16"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+  .<br>
+  :witte-kastanje a disgeo:Boom ;
+    disgeo:metadata doc:witte-kastanje-v10 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.9 ;
+    disgeo:omtrek 50.9 ;
+    disgeo:aantalBladeren 372000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}
+          </pre>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
 
