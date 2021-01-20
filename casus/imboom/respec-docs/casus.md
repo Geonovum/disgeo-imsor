@@ -19,7 +19,7 @@ De gemeentes houden volgende kenmerken van bomen bij:
 De provincies houden de volgende kenmerken van bomen bij:
 - monumentaleStatus
 
-Zowel de gemeentes als de provincies houden ook metagegevens behorende bij gegevens (zie bijlage onderste blok).
+Zowel de gemeentes als de provincies houden ook metagegevens behorende bij gegevens bij (zie bijlage onderste blok).
 De gemeente houdt gegevens bij voor kenmerk:
 <ul>
   <li><b>hoogte</b>:</li>
@@ -41,7 +41,7 @@ De gemeente houdt gegevens bij voor kenmerk:
   </ul>
 <li><b>plantjaar</b>:
   <ul>
-    <li>sprake van schatting: een boolean waarde die aangeeft of het jaar van planten een schatting is ofniet.</li>
+    <li>sprake van schatting: een boolean waarde die aangeeft of het jaar van planten een schatting is of niet.</li>
   </ul>
 </ul>
 

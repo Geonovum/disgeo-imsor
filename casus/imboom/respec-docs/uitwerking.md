@@ -30,13 +30,13 @@ Een gegevenstype bestaat uit drie kenmerken:
 
 **onderwerp** verwijst naar een **«Objecttype»**.
 
-**kenmerk** verwijst naar de metaclass **«Kenmerksoort»**. **vKenmerksoort»** is de generalisatie van de MIM metaclassen **«Attribuutsoort»** en **«Relatiesoort»**.
+**kenmerk** verwijst naar de metaclass **«Kenmerksoort»**. **«Kenmerksoort»** is de generalisatie van de MIM metaclassen **«Attribuutsoort»** en **«Relatiesoort»**.
 
 **waarde** verwijst naar de metaclass **«Waardesoort»**. **«Waardesoort»** is de union van de MIM metaclassen **«Objecttype»** en de metaclass van letterlijke waardes.
 
 <aside class="note">De metaclass van letterlijke waardes lijkt niet expliciet te bestaan in MIM 1.1.</aside>
 
-De metaclass **«Gegevenstype»** is daarmee integraal verbonden met de metaclass **«Objecttype»**. Een set **«Gegevenstype»**s met hetzelfde onderwerp vormt een **«Objecttype»** en andersom kun je een **«Objecttype»** ook in uitdrukken in termen van de **«Gegevenstype»**s waaruit het is opgebouwd.
+De metaclass **«Gegevenstype»** is daarmee integraal verbonden met de metaclass **«Objecttype»**. Een set **«Gegevenstype»**s met hetzelfde onderwerp vormt een **«Objecttype»** en andersom kun je een **«Objecttype»** ook uitdrukken in termen van de **«Gegevenstype»**s waaruit het is opgebouwd.
 
 Vaak is het daadwerkelijk instantieren van een **«Gegevenstype»** niet noodzakelijk. Echter, wanner het wel nodig is, bijvoorbeeld voor het uitdrukken van metadata, geeft deze uitbreiding van het MIM de mogelijkheid om dit te doen.
 
@@ -100,15 +100,17 @@ Deze metadata kan per specifieke serializatie op een specifieke manier gereprese
 Informatiemodel A bouwt op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-a></a>. Vanwege de daar gedefiniëerde relatie tussen **«Gegevenstype»** en **«Objecttype»** is het mogelijk om informatie zowel vanuit een objectbeschouwing, als vanuit een gegevensbeschouwing, als gecombineerd te representeren.
 
 #### Informatiemodel - uitwerking B
-Informatiemodel maakt van elk attribuut een **«Objecttype»**. Daarmee verandert het oorspronkelijke informatiemodel in de casus. Alle attributen worden ge tot een relatie-object-attribuut constructie.
+Informatiemodel maakt van elk attribuut een **«Objecttype»**. Daarmee verandert het oorspronkelijke informatiemodel in de casus. Alle attributen worden gemodelleerd als een relatie-object-attribuut constructie.
 Dit maakt het mogelijk om metadata als attribuut toe te voegen aan een geobjectificeerd attribuut.
 
 #### Informatiemodel - uitwerking C
-Informatiemodel C bouwt op de geintroduceerd metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor de metadata van het **«Objecttype»** `Boom`, wordt een **«Metadata»** `Metadata Boom` geintroduceerd. Deze bevat per attribuut waarvoor metadata wordt uitgedrukt, een verwijzing naar een **«Metadata»** voor dat attribuut. Op dat niveau worden de metaeigenschappen vastgelegd.
+Informatiemodel C bouwt voort op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor de metadata van het **«Objecttype»** `Boom`, wordt een **«Metadata»** `Metadata Boom` geïntroduceerd. Deze bevat per attribuut waarvoor metadata wordt uitgedrukt, een verwijzing naar een **«Metadata»** voor dat attribuut. Op dat niveau worden de meta-eigenschappen vastgelegd.
 
 ### Gegevens
 
 In de uitwerking van de casus naar gegevens zoomen we, om het overzichtelijk te houden, in op één van de attributen van de casus: `aantalBladeren`. Vervolgens laten we zien hoe de uitwerkingen de boom als object representeren, hoe als losse gegevens met metadata, en hoe dit er gecombineerd uit zou zien. 
+
+In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 
 #### Gegevens - uitwerking A
 
@@ -901,7 +903,7 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
 
 In uitwerking C is het mogelijk om een objecten beschouwing en een object inclusief gegevensmetadata beschouwing te representeren. Het is niet goed mogelijk om gegevens en hun metadata los te representeren, omdat er geen structurele verwijzing is naar het kenmerk waar het om gaat.
 
-Uitwerking C laat het representere van de metadata aan de serializatie over. Dit betekent dat metadata op verschillende manieren geserializeerd kan worden. In deze uitwerking is per serializatie een variant gekozen.
+Uitwerking C laat het representeren van de metadata aan de serialisatie over. Dit betekent dat metadata op verschillende manieren geserialiseerd kan worden. In deze uitwerking is per serialisatie een variant gekozen.
 
 **XML**
 
