@@ -47,7 +47,7 @@ Vaak is het daadwerkelijk instantieren van een **«Gegevenstype»** niet noodzak
 
 Om zowel historie op gegevensniveau als historie op objectniveau te ondersteunen, introduceert uitwerking A ook een metaclass **«Context»**.
 
-**«Context»** is een doorsnede van gegevens met hetzelfde onderwerp aan de hand van een set eigenschappen waarbinnen een **«Objecttype»** beschouwd kan worden.<br>
+**«Context»** is een groepering van meta-eigenschappen, waarmee een doorsnede van gegevens met hetzelfde onderwerp gemaakt kan worden, waarbinnen een **«Objecttype»** beschouwd kan worden.<br>
 Zo is het bijvoorbeeld mogelijk om een doorsnede door de geldigheidslijn van de gegevens over een onderwerp te maken, om dat onderwerp als een object te kunnen representeren binnen een bepaalde geldigheidsperiode.
 
 #### Metamodel - uitwerking B
@@ -56,6 +56,11 @@ Uitwerking B is gemaakt zonder uit te gaan van MIM 1.1. Deze uitwerking is gemaa
 Omdat het MIM 1.1 ook een [linked data metamodel](https://docs.geostandaarden.nl/mim/mim/#metamodel-in-linked-data-ld) kent op basis van RDFS / OWL (en SHACL), is het mogelijk om deze uitwerking ook te visualizeren conform MIM 1.1.
 
 #### Metamodel - uitwerking C
+
+<aside class="issue">
+  De tekst in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
+</aside>
+
 Ook uitwerking C neemt MIM 1.1 als uitgangspunt. Om gegevensmetadata te kunnen uitdrukken is in deze uitwerking het metamodel van MIM uitgebreid met een nieuwe MIM metaclass **«Metadata»**.
 
 Met metaclass **«Metadata»** wordt het mogelijk om metadata over data als "add-on" op de data van een object te representeren, met als bijkomend voordeel dat metadata als "add-on" op de implementatie van bestaande basisregistraties en landelijke voorzieningen kan worden beschreven en geïmplementeerd (zonder impact op de objecten).
@@ -104,6 +109,11 @@ Informatiemodel maakt van elk attribuut een **«Objecttype»**. Daarmee verander
 Dit maakt het mogelijk om metadata als attribuut toe te voegen aan een geobjectificeerd attribuut.
 
 #### Informatiemodel - uitwerking C
+
+<aside class="issue">
+  De tekst in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
+</aside>
+
 Informatiemodel C bouwt voort op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor de metadata van het **«Objecttype»** `Boom`, wordt een **«Metadata»** `Metadata Boom` geïntroduceerd. Deze bevat per attribuut waarvoor metadata wordt uitgedrukt, een verwijzing naar een **«Metadata»** voor dat attribuut. Op dat niveau worden de meta-eigenschappen vastgelegd.
 
 ### Gegevens
@@ -901,9 +911,13 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
 
 #### Gegevens - uitwerking C
 
-In uitwerking C is het mogelijk om een objecten beschouwing en een object inclusief gegevensmetadata beschouwing te representeren. Het is niet goed mogelijk om gegevens en hun metadata los te representeren, omdat er geen structurele verwijzing is naar het kenmerk waar het om gaat.
+<aside class="issue">
+  De tekst en voorbeelden in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
+</aside>
 
-Uitwerking C laat het representeren van de metadata aan de serialisatie over. Dit betekent dat metadata op verschillende manieren geserialiseerd kan worden. In deze uitwerking is per serialisatie een variant gekozen.
+In uitwerking C is het mogelijk om, net als in uitwerking A, zowel een objectbeschouwing, als een aparte gegevensbeschouwing, als een combinatie van beide te representeren.
+
+Uitwerking C laat het concreet representeren van de metadata aan de specifieke serialisatie over. Dit betekent dat metadata op verschillende manieren geserialiseerd kan worden. In deze uitwerking is per serialisatie een variant gekozen.
 
 **XML**
 
@@ -919,12 +933,14 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom
-      versie=&quot;8&quot;
-      beginGeldigheid=&quot;2019-09-10&quot;
-      eindGeldigheid=&quot;2020-05-31&quot;
-      tijdstipRegistratie=&quot;2019-09-10T00:00:00Z&quot;
-      eindRegistratie=&quot;2020-05-31T00:00:00Z&quot;&gt;
+   &lt;boom&gt;
+      &lt;voorkomen&gt;
+        &lt;versie&gt;8&lt;/versie&gt;
+        &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+        &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+      &lt;/voorkomen&gt;
       &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.2&lt;/hoogte&gt;
       &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
@@ -936,10 +952,12 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
    &lt;/boom&gt;
-   &lt;boom
-      versie=&quot;10&quot;
-      beginGeldigheid=&quot;2020-09-16&quot;
-      tijdstipRegistratie=&quot;2020-09-16T00:00:00Z&quot;&gt;
+   &lt;boom&gt;
+      &lt;voorkomen&gt;
+        &lt;versie&gt;10&lt;/versie&gt;
+        &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+      &lt;/voorkomen&gt;
       &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.9&lt;/hoogte&gt;
       &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
@@ -1027,7 +1045,7 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
           <pre>
 [
   {
-    "metadata": {
+    "voorkomen": {
       "versie": "8",
       "beginGeldigheid": "2019-09-10",
       "eindGeldigheid": "2020-05-31",
@@ -1046,7 +1064,7 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
     "monumentaleStatus": "monumentaal"
   },
   {
-    "metadata": {
+    "voorkomen": {
       "versie": "10",
       "beginGeldigheid": "2020-09-16",
       "tijdstipRegistratie": "2020-09-16T00:00:00Z"
@@ -1073,11 +1091,6 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
 [
   {
     "metadata": {
-      "versie": "8",
-      "beginGeldigheid": "2019-09-10",
-      "eindGeldigheid": "2020-05-31",
-      "tijdstipRegistratie": "2019-09-10T00:00:00Z",
-      "eindRegistratie": "2020-05-31T00:00:00Z",
       "aantalBladeren": {
         "beginGeldigheid": "2019-09-10",
         "eindGeldigheid": "2020-09-16",
@@ -1094,6 +1107,13 @@ Uitwerking C laat het representeren van de metadata aan de serialisatie over. Di
           "uitgevoerdOp": "2019-06-27"
         }
       }
+    },
+    "voorkomen": {
+      "versie": "8",
+      "beginGeldigheid": "2019-09-10",
+      "eindGeldigheid": "2020-05-31",
+      "tijdstipRegistratie": "2019-09-10T00:00:00Z",
+      "eindRegistratie": "2020-05-31T00:00:00Z",
     },
     "identificatie": "witte-kastanje",
     "status": "aanwezig",
@@ -1165,7 +1185,7 @@ Omdat in uitwerking C een gegeven niet expliciet gemodelleerd wordt als ding, is
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .<br>
 doc:witte-kastanje-v8 {<br>
-  doc:witte-kastanje-v8 a disgeo:Metadata ;
+  doc:witte-kastanje-v8 a disgeo:Historie ;
     disgeo:versie "8";
     disgeo:beginGeldigheid "2019-09-10"^^xsd:date ;
     disgeo:eindGeldigheid "2020-05-31"^^xsd:date ;
@@ -1173,7 +1193,7 @@ doc:witte-kastanje-v8 {<br>
     disgeo:eindRegistratie "2020-05-31T00:00:00Z"^^xsd:dateTime ;
   .<br>
   :witte-kastanje a disgeo:Boom ;
-    disgeo:metadata doc:witte-kastanje-v8 ;
+    disgeo:voorkomen doc:witte-kastanje-v8 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.2 ;
@@ -1183,13 +1203,13 @@ doc:witte-kastanje-v8 {<br>
   .
 }<br>
 doc:witte-kastanje-v10 {<br>
-  doc:witte-kastanje-v10 a disgeo:Metadata ;
+  doc:witte-kastanje-v10 a disgeo:Historie ;
     disgeo:versie "10";
     disgeo:beginGeldigheid "2020-09-16"^^xsd:date ;
     disgeo:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
   .<br>
   :witte-kastanje a disgeo:Boom ;
-    disgeo:metadata doc:witte-kastanje-v10 ;
+    disgeo:voorkomen doc:witte-kastanje-v10 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.9 ;
