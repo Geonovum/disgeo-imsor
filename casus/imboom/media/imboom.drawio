@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-27T11:34:48.705Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="fwy1EhBtJBxdNEqxb2vV" version="14.2.7" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2021-01-27T11:36:11.764Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="AyguTIzpEhg-b3iQ4_UR" version="14.2.7" type="github" pages="7">
   <diagram id="eWLT6fke8j7gkNMnaCV9" name="imboom">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1445,7 +1445,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LDJ0UNAaITdTDm1PJMXV-18" value="«ObjectType»&#xa;Boom" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6d8764;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="lemN8e3A1odDtmmMOojQ-1">
-          <mxGeometry x="230" y="478" width="310" height="286" as="geometry" />
+          <mxGeometry x="230" y="478" width="310" height="312" as="geometry" />
         </mxCell>
         <mxCell id="LDJ0UNAaITdTDm1PJMXV-19" value=" «Attribuutsoort»" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
@@ -1453,29 +1453,32 @@
         <mxCell id="LDJ0UNAaITdTDm1PJMXV-20" value="+ identificatie: CharacterString" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="52" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-21" value="+ status: BoomstatusGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-27" value="+ geometrie: PuntOfVlak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="78" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-22" value="+ soort: BoomsoortGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="OhsWfUB2E1PF8QUcC4Vy-0" value=" «Gegevensgroep»" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="104" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-23" value="+ hoogte: HoogteGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-21" value="+ status: BoomstatusGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="130" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-24" value="+ omtrek: OmtrekGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-22" value="+ soort: BoomsoortGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="156" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-25" value="+ aantalBladeren: AantalBladerenGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-23" value="+ hoogte: HoogteGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="182" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-26" value="+ plantjaar: PlantjaarGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-24" value="+ omtrek: OmtrekGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="208" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-27" value="+ geometrie: GeometrieGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-25" value="+ aantalBladeren: AantalBladerenGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="234" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="LDJ0UNAaITdTDm1PJMXV-28" value="+ monumentaleStatus: MonumentaleStatusGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-26" value="+ plantjaar: PlantjaarGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
           <mxGeometry y="260" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LDJ0UNAaITdTDm1PJMXV-28" value="+ monumentaleStatus: MonumentaleStatusGegevens" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LDJ0UNAaITdTDm1PJMXV-18">
+          <mxGeometry y="286" width="310" height="26" as="geometry" />
         </mxCell>
         <mxCell id="LDJ0UNAaITdTDm1PJMXV-29" value="«Metadata»&#xa;Registratiegegevens" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="lemN8e3A1odDtmmMOojQ-1">
           <mxGeometry x="260" y="170" width="250" height="180" as="geometry" />
