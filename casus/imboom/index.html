@@ -10,7 +10,7 @@
   <script class="remove" src="./config.js"></script>
   <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
   <script>
-    window.addEventListener("load", function() {
+    window.addEventListener("load", (event) => {
         // store tabs variable
         var theTabs = document.querySelectorAll("ul.nav-tabs > li");
   
@@ -36,8 +36,6 @@
         for (i = 0; i < theTabs.length; i++) {
             theTabs[i].addEventListener("click", theTabClicks)
         }
-
-        window.load();
 });
   </script>
   <style>

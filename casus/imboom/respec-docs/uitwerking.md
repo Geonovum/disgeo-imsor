@@ -5,6 +5,7 @@ Er zijn verschillende uitwerkingen gemaakt die hieronder uiteengezet worden.
 * **Uitwerking A**: Deze uitwerking breidt het metamodel MIM uit om individuele gegevens te kunnen modelleren. Het probeert hiermee een oplossing te bieden voor modelleren van metadata en historie op gegevensniveau die zowel goed werkt voor object georienteerde als graafgebaseerde paradigma's (zoals linked data).
 * **Uitwerking B**: Deze uitwerking heeft geen gebruik gemaakt van het metamodel MIM, maar is vanuit een specifiek linked data profiel opgesteld.
 * **Uitwerking C**: Deze uitwerking breidt het metamodel MIM uit met een manier om metadata te kunnen koppelen aan bestaande attributen als een "add-on".
+* **Uitwerking D**: Deze uitwerking maakt gebruik van twee informatiemodellen. Een voor het objectmodel zonder metadata. En een voor het informatiemodel met metadata op gegevensniveau. Hierbij breidt deze uitwerking het metamodel van MIM uit met een manier om metadata te koppelen aan een attribuut in combinatie met het gebruik van een gegevensgroeptype.
 
 ### Vergelijkingswijze van de uitwerkingen
 
@@ -57,17 +58,19 @@ Omdat het MIM 1.1 ook een [linked data metamodel](https://docs.geostandaarden.nl
 
 #### Metamodel - uitwerking C
 
-<aside class="issue">
-  De tekst in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
-</aside>
+Ook uitwerking C neemt MIM 1.1 als uitgangspunt. Om gegevensmetadata te kunnen uitdrukken is in deze uitwerking het metamodel van MIM uitgebreid met een nieuwe MIM metaclass **«Metadata over data»**.
 
-Ook uitwerking C neemt MIM 1.1 als uitgangspunt. Om gegevensmetadata te kunnen uitdrukken is in deze uitwerking het metamodel van MIM uitgebreid met een nieuwe MIM metaclass **«Metadata»**.
+Met metaclass **«Metadata over data»** wordt het mogelijk om metadata over data als "add-on" op de data van een object te representeren, met als bijkomend voordeel dat metadata als "add-on" op de implementatie van bestaande basisregistraties en landelijke voorzieningen kan worden beschreven en geïmplementeerd (zonder impact op de objecten).
 
-Met metaclass **«Metadata»** wordt het mogelijk om metadata over data als "add-on" op de data van een object te representeren, met als bijkomend voordeel dat metadata als "add-on" op de implementatie van bestaande basisregistraties en landelijke voorzieningen kan worden beschreven en geïmplementeerd (zonder impact op de objecten).
-
-**«Metadata»** op het niveau van een **«Objecttype»** bestaat uit een set [**«Attribuutsoort»**](https://docs.geostandaarden.nl/mim/mim/#attribuutsoort-en-een-groepering-ervan)en en/of een set [**«Gegevensgroep»**](https://docs.geostandaarden.nl/mim/mim/#gegevensgroep)en die elk verwijzen naar een **«Metadata»** op het niveau van een **«Attribuutsoort»**. Hiermee wordt het mogelijk om zowel metadata op het niveau van het object vast te leggen, als op het niveau van attributen.
+**«Metadata over data»** heeft een identificerend attribuut `betreftKenmerk` welke verwijst naar een enumeratie van boomkenmerken. Dit zijn allen kenmerken van het objecttype boom. Verder heeft het een **«Relatiesoort»** `betreftObject` en een **«Attribuutsoort»** `betreftVersie` die respectievelijk het object en de versie van het voorkomen van dat object, waarvoor de metadata geldt, duiden. De metakenmerken kunnen dan als reguliere kenmerken opgenomen worden op de **«Metadata over data»**, bijv. als **«Attribuutsoort»** of als **«Relatiesoort»**.
 
 Deze metadata kan per specifieke serializatie op een specifieke manier gerepresenteerd worden.
+
+#### Metamodel - uitwerking D
+
+Uitwerking D neem wederom MIM 1.1 als uitgangspunt. Om gegevensmetadata te kunnen uitdrukken is in deze uitwerking het metamodel van MIM uitgebreid met een nieuwe MIM metaclass **«Metadata»**.
+
+Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens beschrijft over het gegeven op het niveau waarop het informatie-element is gekoppeld.
 
 ### Informatiemodel
 
@@ -77,6 +80,8 @@ Deze metadata kan per specifieke serializatie op een specifieke manier gereprese
       <li class="active"><a href="#tab-informatiemodel-a">Informatiemodel A</a></li>
       <li class=""><a href="#tab-informatiemodel-b">Informatiemodel B</a></li>
       <li class=""><a href="#tab-informatiemodel-c">Informatiemodel C</a></li>
+      <li class=""><a href="#tab-informatiemodel-d-object">Informatiemodel D (object)</a></li>
+      <li class=""><a href="#tab-informatiemodel-d-gegevensmeta">Informatiemodel D (gegevensmetadata)</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-informatiemodel-a" class="tab-pane active"> 
@@ -97,6 +102,18 @@ Deze metadata kan per specifieke serializatie op een specifieke manier gereprese
           <div class="figure"><img src="media/c-informatiemodel.png" alt="c-informatiemodel"/></div>
         </span>
       </div>
+      <div id="tab-informatiemodel-d-object" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <div class="figure"><img src="media/d-informatiemodel-object.png" alt="d-informatiemodel-object"/></div>
+        </span>
+      </div>
+      <div id="tab-informatiemodel-d-gegevensmeta" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <div class="figure"><img src="media/d-informatiemodel-gegevensmeta.png" alt="d-informatiemodel-gegevensmeta"/></div>
+        </span>
+      </div>
     </div>
   </section>
 </div>
@@ -110,11 +127,20 @@ Dit maakt het mogelijk om metadata als attribuut toe te voegen aan een geobjecti
 
 #### Informatiemodel - uitwerking C
 
-<aside class="issue">
-  De tekst in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
-</aside>
+Informatiemodel C bouwt voort op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor elk kenmerken van het **«Objecttype»** `Boom` waarvoor metadata moet worden bijgehouden, wordt een **«Metadata over data»** geïntroduceerd, met een betreftKenmerk, betroftObject en een betreftVersie zoals beschreven in <a href=#metamodel-uitwerking-c></a>. Daarnaast wordt de metadata als reguliere  kenmerken van de **«Metadata over data»** gemodelleerd.
 
-Informatiemodel C bouwt voort op de geïntroduceerde metamodel-uitbreidingen in <a href=#metamodel-uitwerking-c></a>. Voor de metadata van het **«Objecttype»** `Boom`, wordt een **«Metadata»** `Metadata Boom` geïntroduceerd. Deze bevat per attribuut waarvoor metadata wordt uitgedrukt, een verwijzing naar een **«Metadata»** voor dat attribuut. Op dat niveau worden de meta-eigenschappen vastgelegd.
+#### Informatiemodel - uitwerking D
+
+In uitwerking D zijn twee informatiemodellen gemaakt. Eén voor de objectinformatie zonder metadata op gegevensniveau en één waarin metadata op gegevensniveau is opgenomen. Vanwege de modelleerwijze die dusdanig verschilt is het nodig om twee verschillende logische modellen te hanteren. Hierbij is het wel mogelijk om het model zonder metadata op gegevensniveau af te leiden van het model met metadata op gegevensniveau.
+
+Het model zonder metadata op gegevensniveau neemt het conceptuele informatiemodel en voegt daaraan toe een identificatie en een relatie naar een instantie van metaclass **«Metadata»** met **«Metadata»** attributen voor de versie en de tijdslijn geldigheid en tijdslijn registratie. Dit is in lijn met NEN 3610:2020.
+
+Het model met metadata op gegevensniveau maakt gebruik van [MIM gegevensgroepen](https://docs.geostandaarden.nl/mim/mim/#gegevensgroep). Ieder attribuut waarvoor metadata geregistreerd wordt krijgt een eigen [gegevensgroeptype](https://docs.geostandaarden.nl/mim/mim/#gegevensgroeptype). Deze gegevensgroep heeft een **«Attribuutsoort»** gelijknamig aan het betreffende attribuut die de waarde van het gegeven krijgt. Daarnaast heeft heet 1 of meerdere **«Metadata»** eigenschappen(?) die waarmee metadata aan gekoppeld worden. Het objectmodel van Boom heeft per attribuut waar metadata voor wordt bijgehouden een gelijknamige referentie naar de bijbehorende gegevensgroep. Hiermee is het conceptuele model niet meer 1 op 1 terug te vinden.
+
+Overige Motivatie voor deze uitwerking:
+- Deze standaardconstructies maken gebruik van standaard encoding regels mogelijk (bijvoorbeeld UML-GML encoding)
+-	Standaardconstructies betekent ook standaard leesregels van het UML
+-	Het leidt tot een standaard XML serialisatie (standaard implementatie conform GML)
 
 ### Gegevens
 
@@ -124,7 +150,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 
 #### Gegevens - uitwerking A
 
-**XML**
+##### XML
 
 <div class="container--tabs">
   <section class="row">
@@ -139,42 +165,46 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-         &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
-         &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
-         &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;versie&gt;8&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
-      &lt;hoogte&gt;22.2&lt;/hoogte&gt;
-      &lt;omtrek&gt;49.4&lt;/omtrek&gt;
-      &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
-      &lt;/soort&gt;
-      &lt;status&gt;aanwezig&lt;/status&gt;
-      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-         &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;versie&gt;10&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
-      &lt;hoogte&gt;22.9&lt;/hoogte&gt;
-      &lt;omtrek&gt;50.9&lt;/omtrek&gt;
-      &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
-      &lt;/soort&gt;
-      &lt;status&gt;aanwezig&lt;/status&gt;
-      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
+  &lt;Boom&gt;
+    &lt;geregistreerdMet&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+        &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+        &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;versie&gt;8&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/geregistreerdMet&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.2&lt;/hoogte&gt;
+    &lt;omtrek&gt;49.4&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
+  &lt;Boom&gt;
+    &lt;geregistreerdMet&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;versie&gt;10&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/geregistreerdMet&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.9&lt;/hoogte&gt;
+    &lt;omtrek&gt;50.9&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
 &lt;/bomen&gt;
           </pre>
         </span>
@@ -185,7 +215,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
           <pre>
 &lt;gegevens&gt;
    &lt;gegeven&gt;
-      &lt;onderwerp&gt;witte-kastanje&lt;/onderwerp&gt;
+      &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
       &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
       &lt;waarde&gt;350000&lt;/waarde&gt;
       &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
@@ -205,7 +235,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
    &lt;/gegeven&gt;
    &lt;gegeven&gt;
       &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
-      &lt;onderwerp&gt;witte-kastanje&lt;/onderwerp&gt;
+      &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
       &lt;waarde&gt;3720000&lt;/waarde&gt;
       &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
       &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
@@ -229,82 +259,86 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;bestaatUit&gt;
-            &lt;gegeven&gt;
-               &lt;onderwerp&gt;witte-kastanje&lt;/onderwerp&gt;
-               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
-               &lt;waarde&gt;350000&lt;/waarde&gt;
-               &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-               &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
-               &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
-               &lt;eindRegistratie&gt;2020-09-16T00:00:00Z&lt;/eindRegistratie&gt;
-               &lt;bron&gt;
-                  &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
-                  &lt;uitgevoerdDoor&gt;
-                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
-                  &lt;/uitgevoerdDoor&gt;
-                  &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
-               &lt;/bron&gt;
-               &lt;bronhouder&gt;
-                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
-               &lt;/bronhouder&gt;
-            &lt;/gegeven&gt;
-         &lt;/bestaatUit&gt;
-         &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-         &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
-         &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
-         &lt;versie&gt;8&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
-      &lt;hoogte&gt;22.2&lt;/hoogte&gt;
-      &lt;omtrek&gt;49.4&lt;/omtrek&gt;
-      &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
-      &lt;/soort&gt;
-      &lt;status&gt;aanwezig&lt;/status&gt;
-      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;bestaatUit&gt;
-            &lt;gegeven&gt;
-               &lt;onderwerp&gt;witte-kastanje&lt;/onderwerp&gt;
-               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
-               &lt;waarde&gt;3720000&lt;/waarde&gt;
-               &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-               &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
-               &lt;bron&gt;
-                  &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
-                  &lt;uitgevoerdDoor&gt;
-                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
-                  &lt;/uitgevoerdDoor&gt;
-                  &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
-               &lt;/bron&gt;
-               &lt;bronhouder&gt;
-                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
-               &lt;/bronhouder&gt;
-            &lt;/gegeven&gt;
-         &lt;/bestaatUit&gt;
-         &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-         &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;versie&gt;10&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
-      &lt;hoogte&gt;22.9&lt;/hoogte&gt;
-      &lt;omtrek&gt;50.9&lt;/omtrek&gt;
-      &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
-      &lt;/soort&gt;
-      &lt;status&gt;aanwezig&lt;/status&gt;
-      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
+  &lt;Boom&gt;
+    &lt;geregistreerdMet&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;bestaatUit&gt;
+          &lt;gegeven&gt;
+            &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
+            &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
+            &lt;waarde&gt;350000&lt;/waarde&gt;
+            &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+            &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
+            &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
+            &lt;eindRegistratie&gt;2020-09-16T00:00:00Z&lt;/eindRegistratie&gt;
+            &lt;bron&gt;
+              &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
+              &lt;uitgevoerdDoor&gt;
+                &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+              &lt;/uitgevoerdDoor&gt;
+              &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
+            &lt;/bron&gt;
+            &lt;bronhouder&gt;
+              &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+            &lt;/bronhouder&gt;
+          &lt;/gegeven&gt;
+        &lt;/bestaatUit&gt;
+        &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+        &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;versie&gt;8&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/geregistreerdMet&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.2&lt;/hoogte&gt;
+    &lt;omtrek&gt;49.4&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
+  &lt;Boom&gt;
+    &lt;geregistreerdMet&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;bestaatUit&gt;
+          &lt;gegeven&gt;
+            &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
+            &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
+            &lt;waarde&gt;3720000&lt;/waarde&gt;
+            &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+            &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+            &lt;bron&gt;
+              &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
+              &lt;uitgevoerdDoor&gt;
+                &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+              &lt;/uitgevoerdDoor&gt;
+              &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
+            &lt;/bron&gt;
+            &lt;bronhouder&gt;
+              &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+            &lt;/bronhouder&gt;
+          &lt;/gegeven&gt;
+        &lt;/bestaatUit&gt;
+        &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;versie&gt;10&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/geregistreerdMet&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.9&lt;/hoogte&gt;
+    &lt;omtrek&gt;50.9&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
 &lt;/bomen&gt;
           </pre>
         </span>
@@ -314,7 +348,8 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 </div>
 
 
-**JSON**
+
+##### JSON
 <div class="container--tabs">
   <section class="row">
     <ul class="nav nav-tabs">
@@ -336,7 +371,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       "tijdstipRegistratie": "2019-09-10T00:00:00Z",
       "eindRegistratie": "2020-05-31T00:00:00Z"
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -353,7 +388,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       "beginGeldigheid": "2020-09-16",
       "tijdstipRegistratie": "2020-09-16T00:00:00Z"
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -374,7 +409,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
           <pre>
 [
   {
-    "onderwerp": "witte-kastanje",
+    "onderwerp": "de-witte-kastanje",
     "kenmerk": "aantalBladeren",
     "waarde": 350000,
     "beginGeldigheid": "2019-09-10",
@@ -393,7 +428,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     }
   },
   {
-    "onderwerp": "witte-kastanje",
+    "onderwerp": "de-witte-kastanje",
     "kenmerk": "aantalBladeren",
     "waarde": 3720000,
     "beginGeldigheid": "2020-09-16",
@@ -427,7 +462,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       "eindRegistratie": "2020-05-31T00:00:00Z",
       "bestaatUit": [
         {
-          "onderwerp": "witte-kastanje",
+          "onderwerp": "de-witte-kastanje",
           "kenmerk": "aantalBladeren",
           "waarde": 350000,
           "beginGeldigheid": "2019-09-10",
@@ -447,7 +482,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         }
       ]
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -465,7 +500,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       "tijdstipRegistratie": "2020-09-16T00:00:00Z",
       "bestaatUit": [
         {
-          "onderwerp": "witte-kastanje",
+          "onderwerp": "de-witte-kastanje",
           "kenmerk": "aantalBladeren",
           "waarde": 3720000,
           "beginGeldigheid": "2020-09-16",
@@ -483,7 +518,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         }
       ]
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -504,7 +539,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 
 
 
-**RDF (Turtle/TriG)**
+##### RDF (Turtle/TriG)
 
 <div class="container--tabs">
   <section class="row">
@@ -523,16 +558,16 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .<br>
-doc:witte-kastanje-v8 {<br>
-  doc:witte-kastanje-v8 a nen3610:Registratiegegevens ;
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a nen3610:Registratiegegevens ;
     nen3610:versie &quot;8&quot;;
     nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
     nen3610:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
     nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
     nen3610:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
   .<br>
-  :witte-kastanje a disgeo:Boom ;
-    nen3610:geregistreerdMet doc:witte-kastanje-v8 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v8 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.2 ;
@@ -541,14 +576,14 @@ doc:witte-kastanje-v8 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }<br>
-doc:witte-kastanje-v10 {<br>
-  doc:witte-kastanje-v10 a nen3610:Registratiegegevens ;
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a nen3610:Registratiegegevens ;
     nen3610:versie &quot;10&quot;;
     nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
     nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
   .<br>
-  :witte-kastanje a disgeo:Boom ;
-    nen3610:geregistreerdMet doc:witte-kastanje-v10 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v10 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.9 ;
@@ -572,7 +607,7 @@ doc:witte-kastanje-v10 {<br>
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .
 
-[ s: :witte-kastanje; p: disgeo:aantalBladeren; o: 350000 ]
+[ s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 350000 ]
   a disgeo:Gegeven ;
   nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
   nen3610:eindGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
@@ -591,7 +626,7 @@ doc:witte-kastanje-v10 {<br>
   ] ;
 .
 
-[ s: :witte-kastanje; p: disgeo:aantalBladeren; o: 372000 ]
+[ s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 372000 ]
   a disgeo:Gegeven ;
   nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
   nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
@@ -623,15 +658,15 @@ doc:witte-kastanje-v10 {<br>
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .
 
-doc:witte-kastanje-v8 {
-  doc:witte-kastanje-v8 a nen3610:Registratiegegevens ;
+doc:de-witte-kastanje-v8 {
+  doc:de-witte-kastanje-v8 a nen3610:Registratiegegevens ;
     nen3610:versie &quot;8&quot;;
     nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
     nen3610:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
     nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
     nen3610:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
     disgeo:bestaatUit [
-      s: :witte-kastanje; p: disgeo:aantalBladeren; o: 350000 ;
+      s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 350000 ;
       a disgeo:Gegeven ;
       nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
       nen3610:eindGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
@@ -651,8 +686,8 @@ doc:witte-kastanje-v8 {
     ] ;
   .
 
-  :witte-kastanje a disgeo:Boom ;
-    nen3610:geregistreerdMet doc:witte-kastanje-v8 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v8 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.2 ;
@@ -662,14 +697,14 @@ doc:witte-kastanje-v8 {
   .
 }
 
-doc:witte-kastanje-v10 {
+doc:de-witte-kastanje-v10 {
 
-  doc:witte-kastanje-v10 a nen3610:Registratiegegevens ;
+  doc:de-witte-kastanje-v10 a nen3610:Registratiegegevens ;
     nen3610:versie &quot;10&quot;;
     nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
     nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
     disgeo:bestaatUit [
-      s: :witte-kastanje; p: disgeo:aantalBladeren; o: 372000 ;
+      s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 372000 ;
       a disgeo:Gegeven ;
       nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
       nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
@@ -687,8 +722,210 @@ doc:witte-kastanje-v10 {
     ] ;
   .
 
-  :witte-kastanje a disgeo:Boom ;
-    nen3610:geregistreerdMet doc:witte-kastanje-v10 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v10 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.9 ;
+    disgeo:omtrek 50.9 ;
+    disgeo:aantalBladeren 372000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}
+          </pre>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
+
+##### RDF* (Turtle/TriG)
+
+Serialisatie conform (de nog in ontwikkeling zijnde) [RDF*](https://w3c.github.io/rdf-star/rdf-star-cg-spec.html).
+
+Merk op dat deze serializatie enkel verschilt op het stuk waarin [RDF Reification](https://www.w3.org/TR/rdf11-mt/#reification) wordt toegepast. Het is een vervanging van
+<pre>s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 350000</pre> 
+met 
+<pre>&lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 350000 &gt;&gt;</pre>.
+
+Omdat uitwerking A uitgaat van het kunnen modelleren van een gegeven als onderwerp van kenmerken is het 100% compatibel met [RDF Reification](https://www.w3.org/TR/rdf11-mt/#reification) en [RDF*](https://w3c.github.io/rdf-star/rdf-star-cg-spec.html) en hoeft er aan het informatiemodel niks te wijzigen.
+
+<div class="container--tabs">
+  <section class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab-gegevens-a-rdf-star-object">Gegevens A - Object</a></li>
+      <li class=""><a href="#tab-gegevens-a-rdf-star-gegevens">Gegevens A - Gegevens</a></li>
+      <li class=""><a href="#tab-gegevens-a-rdf-star-object-en-gegevens">Gegevens A - Object en Gegevens</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-gegevens-a-rdf-star-object" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .<br>
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;8&quot;;
+    nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+    nen3610:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+    nen3610:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v8 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.2 ;
+    disgeo:omtrek 49.4 ;
+    disgeo:aantalBladeren 350000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}<br>
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;10&quot;;
+    nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v10 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.9 ;
+    disgeo:omtrek 50.9 ;
+    disgeo:aantalBladeren 372000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}
+          </pre>
+        </span>
+      </div> 
+      <div id="tab-gegevens-a-rdf-star-gegevens" class="tab-pane">
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lthttp://example.disgeo.nl/id/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .
+
+&lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 350000 &gt;&gt;
+  a disgeo:Gegeven ;
+  nen3610:beginGeldigheid "2019-09-10"^^xsd:date ;
+  nen3610:eindGeldigheid "2020-09-16"^^xsd:date ;
+  nen3610:tijdstipRegistratie "2019-09-19T00:00:00Z"^^xsd:dateTime ;
+  nen3610:eindRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+  disgeo:bronhouder [
+    disgeo:naam "Gemeente Kemeltoet" ;
+  ] ;
+  disgeo:bron [
+    a disgeo:Observatie ;
+    disgeo:onzekerheid 0.09 ;
+    disgeo:uitgevoerdDoor [
+      disgeo:naam "Opbladeren B.V." ;
+    ] ;
+    disgeo:uitgevoerdOp "2019-06-27"^^xsd:date ;
+  ] ;
+.
+&lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 372000 &gt;&gt;
+  a disgeo:Gegeven ;
+  nen3610:beginGeldigheid "2020-09-16"^^xsd:date ;
+  nen3610:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+  disgeo:bronhouder [
+    disgeo:naam "Gemeente Kemeltoet" ;
+  ] ;
+  disgeo:bron [
+    a disgeo:Observatie ;
+    disgeo:onzekerheid 0.05 ;
+    disgeo:uitgevoerdDoor [
+      disgeo:naam "Opbladeren B.V." ;
+    ] ;
+    disgeo:uitgevoerdOp "2020-09-16"^^xsd:date ;
+  ] ;
+.
+          </pre>
+        </span>
+      </div>
+      <div id="tab-gegevens-a-rdf-star-object-en-gegevens" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .
+
+doc:de-witte-kastanje-v8 {
+  doc:de-witte-kastanje-v8 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;8&quot;;
+    nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+    nen3610:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+    nen3610:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
+    disgeo:bestaatUit [
+      &lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 350000 &gt;&gt;
+        a disgeo:Gegeven ;
+        nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+        nen3610:eindGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+        nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+        nen3610:eindRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+        disgeo:bronhouder [
+          disgeo:naam &quot;Gemeente Kemeltoet&quot; ;
+        ] ;
+        disgeo:bron [
+          a disgeo:Observatie ;
+          disgeo:onzekerheid 0.09 ;
+          disgeo:uitgevoerdDoor [
+            disgeo:naam &quot;Opbladeren B.V.&quot; ;
+          ] ;
+          disgeo:uitgevoerdOp &quot;2019-06-27&quot;^^xsd:date ;
+        ] ;
+    ] ;
+  .
+
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v8 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.2 ;
+    disgeo:omtrek 49.4 ;
+    disgeo:aantalBladeren 350000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}
+
+doc:de-witte-kastanje-v10 {
+
+  doc:de-witte-kastanje-v10 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;10&quot;;
+    nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+    disgeo:bestaatUit [
+      &lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 372000 &gt;&gt;
+        a disgeo:Gegeven ;
+        nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+        nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+        disgeo:bronhouder [
+          disgeo:naam &quot;Gemeente Kemeltoet&quot; ;
+        ] ;
+        disgeo:bron [
+          a disgeo:Observatie ;
+          disgeo:onzekerheid 0.05 ;
+          disgeo:uitgevoerdDoor [
+            disgeo:naam &quot;Opbladeren B.V.&quot; ;
+          ] ;
+          disgeo:uitgevoerdOp &quot;2020-09-16&quot;^^xsd:date ;
+        ] ;
+    ] ;
+  .
+
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v10 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.9 ;
@@ -708,7 +945,10 @@ doc:witte-kastanje-v10 {
 
 Het onderscheid tussen objecten vs gegevens wordt in deze uitwerking gemaakt via het gebruik van verschillende namespaces voor objecten, waardenlijsten, gegevens en instantiedata. In de Turtle/TriG serialisatie is dit terug te zien. In de json en xml serialisatie worden de namespaces niet meegenomen waardoor dit onderscheid verloren gaat.
 
-**XML**
+Het is in deze uitwerking niet mogelijk om gegevens met metadata te scheiden van de objectweergave, omdat de gegevensmetadata integraal onderdeel is geworden van het modelleren van attributen. Vandaar dat alleen object-en-gegevens serialisaties gemaakt kunnen worden.<br>
+Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitwisselingsmodel nodig zijn.
+
+##### XML
 
 <div class="container--tabs">
   <section class="row">
@@ -781,7 +1021,7 @@ Het onderscheid tussen objecten vs gegevens wordt in deze uitwerking gemaakt via
   </section>
 </div>
 
-**JSON**
+##### JSON
 
 <div class="container--tabs">
   <section class="row">
@@ -840,7 +1080,7 @@ Het onderscheid tussen objecten vs gegevens wordt in deze uitwerking gemaakt via
 </div>
 
 
-**RDF (Turtle/TriG)**
+##### RDF (Turtle/TriG)
 
 <aside class="note">
   In de RDF uitwerking is er onderscheid gemaakt tussen de URI-patronen van objecten, en van attribuutobjecten per bronhoudertype.
@@ -911,15 +1151,13 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
 
 #### Gegevens - uitwerking C
 
-<aside class="issue">
-  De tekst en voorbeelden in deze uitwerking wordt nog aangepast obv ontvangen review commentaar.
-</aside>
+In uitwerking C is het mogelijk om zowel een objectbeschouwing, als een combinatie van beide te representeren.
 
-In uitwerking C is het mogelijk om, net als in uitwerking A, zowel een objectbeschouwing, als een aparte gegevensbeschouwing, als een combinatie van beide te representeren.
+Het is niet eenvoudig mogelijk om een aparte gegevens-serialisatie te maken. Deze is wel af te leiden, maar hiervoor zou een apart uitwisselingsmodel, of specifieke serialisatieregels, opgesteld moeten worden.
 
-Uitwerking C laat het concreet representeren van de metadata aan de specifieke serialisatie over. Dit betekent dat metadata op verschillende manieren geserialiseerd kan worden. In deze uitwerking is per serialisatie een variant gekozen.
+Uitwerking C laat het concreet representeren van de metadata aan de specifieke serialisatie over. Dit betekent dat metadata op verschillende manieren geserialiseerd kan worden. In deze uitwerking is een envoudig te bepalen variant per serialisatie gekozen.
 
-**XML**
+##### XML
 
 <div class="container--tabs">
   <section class="row">
@@ -933,41 +1171,49 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom&gt;
+  &lt;BoomVoorkomen&gt;
+    &lt;Boom&gt;
       &lt;voorkomen&gt;
-        &lt;versie&gt;8&lt;/versie&gt;
-        &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-        &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
-        &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
-        &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;Historie&gt;
+          &lt;versie&gt;8&lt;/versie&gt;
+          &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+          &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;/Historie&gt;
       &lt;/voorkomen&gt;
       &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.2&lt;/hoogte&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
       &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
       &lt;omtrek&gt;49.4&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
-   &lt;/boom&gt;
-   &lt;boom&gt;
+    &lt;/Boom&gt;
+  &lt;/BoomVoorkomen&gt;
+  &lt;BoomVoorkomen&gt;
+    &lt;Boom&gt;
       &lt;voorkomen&gt;
-        &lt;versie&gt;10&lt;/versie&gt;
-        &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-        &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;Historie&gt;
+          &lt;versie&gt;10&lt;/versie&gt;
+          &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;/Historie&gt;
       &lt;/voorkomen&gt;
       &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.9&lt;/hoogte&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
       &lt;omtrek&gt;50.9&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
-   &lt;/boom&gt;
+    &lt;/Boom&gt;
+  &lt;/BoomVoorkomen&gt;
 &lt;/bomen&gt;
           </pre>
         </span>
@@ -977,51 +1223,79 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom
-      versie=&quot;8&quot;
-      beginGeldigheid=&quot;2019-09-10&quot;
-      eindGeldigheid=&quot;2020-05-31&quot;
-      tijdstipRegistratie=&quot;2019-09-10T00:00:00Z&quot;
-      eindRegistratie=&quot;2020-05-31T00:00:00Z&quot;&gt;
-      &lt;aantalBladeren
-        beginGeldigheid=&quot;2019-09-10&quot;
-        eindGeldigheid=&quot;2020-09-16&quot;
-        tijdstipRegistratie=&quot;2019-09-19T00:00:00Z&quot;
-        eindRegistratie=&quot;2020-09-16T00:00:00Z&quot;
-        onzekerheid=&quot;0.09&quot; 
-        uitgevoerdDoor=&quot;Opbladeren B.V.&quot; 
-        uitgevoerdOp=&quot;2019-06-27&quot; 
-        bronhouder=&quot;Gemeente Kemeltoet&quot;&gt;350000&lt;/aantalBladeren&gt;
+  &lt;BoomVoorkomen&gt;
+    &lt;Boom&gt;
+      &lt;voorkomen&gt;
+        &lt;Historie&gt;
+          &lt;versie&gt;8&lt;/versie&gt;
+          &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+          &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;/Historie&gt;
+      &lt;/voorkomen&gt;
+      &lt;aantalBladeren metadataOverData:href=&quot;#de-witte-kastanje-8-AantalBladerenMetadata&quot;&gt;350000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.2&lt;/hoogte&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
       &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
       &lt;omtrek&gt;49.4&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
-   &lt;/boom&gt;
-   &lt;boom
-      versie=&quot;10&quot;
-      beginGeldigheid=&quot;2020-09-16&quot;
-      tijdstipRegistratie=&quot;2020-09-16T00:00:00Z&quot;&gt;
-      &lt;aantalBladeren
-        beginGeldigheid=&quot;2020-09-16&quot;
-        tijdstipRegistratie=&quot;2020-09-16T00:00:00Z&quot;
-        onzekerheid=&quot;0.05&quot; 
-        uitgevoerdDoor=&quot;Opbladeren B.V.&quot; 
-        uitgevoerdOp=&quot;2020-09-16&quot; 
-        bronhouder=&quot;Gemeente Kemeltoet&quot;&gt;372000&lt;/aantalBladeren&gt;
+    &lt;/Boom&gt;
+    &lt;MetadataOverData metadataOverData:id=&quot;de-witte-kastanje-8-AantalBladerenMetadata&quot;&gt;
+      &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+      &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
+      &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
+      &lt;eindRegistratie&gt;2020-09-16T00:00:00Z&lt;/eindRegistratie&gt;
+      &lt;bron&gt;
+        &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
+        &lt;uitgevoerdDoor&gt;
+          &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+        &lt;/uitgevoerdDoor&gt;
+        &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
+      &lt;/bron&gt;
+      &lt;bronhouder&gt;
+        &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+      &lt;/bronhouder&gt;
+    &lt;/MetadataOverData&gt;
+  &lt;/BoomVoorkomen&gt;
+  &lt;BoomVoorkomen&gt;
+    &lt;Boom&gt;
+      &lt;voorkomen&gt;
+        &lt;Historie&gt;
+          &lt;versie&gt;10&lt;/versie&gt;
+          &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;/Historie&gt;
+      &lt;/voorkomen&gt;
+      &lt;aantalBladeren metadataOverData:href=&quot;#de-witte-kastanje-10-AantalBladerenMetadata&quot;&gt;372000&lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.9&lt;/hoogte&gt;
-      &lt;identificatie&gt;witte-kastanje&lt;/identificatie&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
       &lt;omtrek&gt;50.9&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
-   &lt;/boom&gt;
+    &lt;/Boom&gt;
+    &lt;MetadataOverData metadataOverData:id=&quot;de-witte-kastanje-10-AantalBladerenMetadata&quot;&gt;
+      &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+      &lt;tijdstipRegistratie&gt;22020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+      &lt;bron&gt;
+        &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
+        &lt;uitgevoerdDoor&gt;
+          &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+        &lt;/uitgevoerdDoor&gt;
+        &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
+      &lt;/bron&gt;
+      &lt;bronhouder&gt;
+        &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+      &lt;/bronhouder&gt;
+    &lt;/MetadataOverData&gt;
+  &lt;/BoomVoorkomen&gt;
 &lt;/bomen&gt;
           </pre>
         </span>
@@ -1030,7 +1304,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
   </section>
 </div>
 
-**JSON**
+##### JSON
 
 <div class="container--tabs">
   <section class="row">
@@ -1052,7 +1326,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       "tijdstipRegistratie": "2019-09-10T00:00:00Z",
       "eindRegistratie": "2020-05-31T00:00:00Z"
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -1069,7 +1343,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       "beginGeldigheid": "2020-09-16",
       "tijdstipRegistratie": "2020-09-16T00:00:00Z"
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -1090,32 +1364,33 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
           <pre>
 [
   {
-    "metadata": {
-      "aantalBladeren": {
-        "beginGeldigheid": "2019-09-10",
-        "eindGeldigheid": "2020-09-16",
-        "tijdstipRegistratie": "2019-09-19T00:00:00Z",
-        "eindRegistratie": "2020-09-16T00:00:00Z",
-        "bronhouder": {
-          "naam": "Gemeente Kemeltoet"
-        },
-        "bron": {
-          "onzekerheid": 0.09,
-          "uitgevoerdDoor": {
-            "naam": "Opbladeren B.V."
-          },
-          "uitgevoerdOp": "2019-06-27"
-        }
-      }
-    },
     "voorkomen": {
       "versie": "8",
       "beginGeldigheid": "2019-09-10",
       "eindGeldigheid": "2020-05-31",
       "tijdstipRegistratie": "2019-09-10T00:00:00Z",
-      "eindRegistratie": "2020-05-31T00:00:00Z",
+      "eindRegistratie": "2020-05-31T00:00:00Z"
     },
-    "identificatie": "witte-kastanje",
+    "_metadataOverData": {
+      "betreftKenmerk": "aantalBladeren",
+      "betreftObject": "de-witte-kastanje",
+      "betreftVersie": "8",
+      "beginGeldigheid": "2019-09-10",
+      "eindGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2019-09-19T00:00:00Z",
+      "eindRegistratie": "2020-09-16T00:00:00Z",
+      "bronhouder": {
+        "naam": "Gemeente Kemeltoet"
+      },
+      "bron": {
+        "onzekerheid": 0.09,
+        "uitgevoerdDoor": {
+          "naam": "Opbladeren B.V."
+        },
+        "uitgevoerdOp": "2019-06-27"
+      }
+    },
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -1127,26 +1402,29 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     "monumentaleStatus": "monumentaal"
   },
   {
-    "metadata": {
+    "voorkomen": {
       "versie": "10",
       "beginGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2020-09-16T00:00:00Z"
+    },
+    "_metadataOverData": {
+      "betreftKenmerk": "aantalBladeren",
+      "betreftObject": "de-witte-kastanje",
+      "betreftVersie": "10",
+      "beginGeldigheid": "2020-09-16",
       "tijdstipRegistratie": "2020-09-16T00:00:00Z",
-      "aantalBladeren": {
-        "beginGeldigheid": "2020-09-16",
-        "tijdstipRegistratie": "2020-09-16T00:00:00Z",
-        "bronhouder": {
-          "naam": "Gemeente Kemeltoet"
+      "bronhouder": {
+        "naam": "Gemeente Kemeltoet"
+      },
+      "bron": {
+        "onzekerheid": 0.05,
+        "uitgevoerdDoor": {
+          "naam": "Opbladeren B.V."
         },
-        "bron": {
-          "onzekerheid": 0.05,
-          "uitgevoerdDoor": {
-            "naam": "Opbladeren B.V."
-          },
-          "uitgevoerdOp": "2020-09-16"
-        }
+        "uitgevoerdOp": "2020-09-16"
       }
     },
-    "identificatie": "witte-kastanje",
+    "identificatie": "de-witte-kastanje",
     "status": "aanwezig",
     "soort": {
       "code": "342938483",
@@ -1165,15 +1443,15 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
   </section>
 </div>
 
-**RDF (Turtle/TriG)**
+##### RDF (Turtle/TriG)
 
-Voor uitwerking C is het alleen mogelijk om een objectrepresentatie te maken. RDF, en andere graafgebaseerde frameworks, hebben een specifieke node als onderwerp nodig om gegevens te kunnen uitdrukken.
-Omdat in uitwerking C een gegeven niet expliciet gemodelleerd wordt als ding, is het niet goed mogelijk om hier een RDF serialisatie van te maken. De subject van de triple kan niet beschreven worden.
+Het is niet eenvoudig mogelijk om standaard RDF reificatie, of RDF* toe te passen voor uitwerking C. Dit komt omdat uitwerking C geen manier heeft om een individueel gegeven aan te wijzen, in tegenstelling tot uitwerking A. Waarschijnlijk is het wel mogelijk om dit af te leiden. De details daarvan zouden uitgewerkt moeten worden.
 
 <div class="container--tabs">
   <section class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-c-rdf-object">Gegevens C - Object</a></li>
+      <li class="active"><a href="#tab-gegevens-c-rdf-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-c-rdf-object" class="tab-pane active"> 
@@ -1184,16 +1462,16 @@ Omdat in uitwerking C een gegeven niet expliciet gemodelleerd wordt als ding, is
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .<br>
-doc:witte-kastanje-v8 {<br>
-  doc:witte-kastanje-v8 a disgeo:Historie ;
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a disgeo:Historie ;
     disgeo:versie "8";
     disgeo:beginGeldigheid "2019-09-10"^^xsd:date ;
     disgeo:eindGeldigheid "2020-05-31"^^xsd:date ;
     disgeo:tijdstipRegistratie "2019-09-19T00:00:00Z"^^xsd:dateTime ;
     disgeo:eindRegistratie "2020-05-31T00:00:00Z"^^xsd:dateTime ;
   .<br>
-  :witte-kastanje a disgeo:Boom ;
-    disgeo:voorkomen doc:witte-kastanje-v8 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:voorkomen doc:de-witte-kastanje-v8 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.2 ;
@@ -1202,14 +1480,14 @@ doc:witte-kastanje-v8 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }<br>
-doc:witte-kastanje-v10 {<br>
-  doc:witte-kastanje-v10 a disgeo:Historie ;
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a disgeo:Historie ;
     disgeo:versie "10";
     disgeo:beginGeldigheid "2020-09-16"^^xsd:date ;
     disgeo:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
   .<br>
-  :witte-kastanje a disgeo:Boom ;
-    disgeo:voorkomen doc:witte-kastanje-v10 ;
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:voorkomen doc:de-witte-kastanje-v10 ;
     disgeo:status disgeo:Aanwezig ;
     disgeo:soort disgeo:342938483 ;
     disgeo:hoogte 22.9 ;
@@ -1222,6 +1500,335 @@ doc:witte-kastanje-v10 {<br>
         </span>
       </div>
     </div>
+    <div class="tab-content">
+      <div id="tab-gegevens-c-rdf-object-en-gegevens" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix meta: &lt;http://example.disgeo.nl/id/metadata-over-data/&gt;  .<br>
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a disgeo:Historie ;
+    disgeo:versie "8";
+    disgeo:beginGeldigheid "2019-09-10"^^xsd:date ;
+    disgeo:eindGeldigheid "2020-05-31"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2019-09-19T00:00:00Z"^^xsd:dateTime ;
+    disgeo:eindRegistratie "2020-05-31T00:00:00Z"^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:voorkomen doc:de-witte-kastanje-v8 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.2 ;
+    disgeo:omtrek 49.4 ;
+    disgeo:aantalBladeren 350000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .<br>
+  meta:de-witte-kastanje-v8-aantalBladeren a digeo:MetadataOverData ;
+    disgeo:betreftKenmerk disgeo:aantalBladeren ;
+    disgeo:betreftObject :de-witte-kastanje ;
+    disgeo:betreftVersie "8" ;
+    disgeo:beginGeldigheid "2019-09-10"^^xsd:date ;
+    disgeo:eindGeldigheid "2020-09-16"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2019-09-19T00:00:00Z"^^xsd:dateTime ;
+    disgeo:eindRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+    disgeo:bronhouder [
+      disgeo:naam "Gemeente Kemeltoet" ;
+    ] ;
+    disgeo:bron [
+      a disgeo:Observatie ;
+      disgeo:onzekerheid 0.09 ;
+      disgeo:uitgevoerdDoor [
+        disgeo:naam "Opbladeren B.V." ;
+      ] ;
+      disgeo:uitgevoerdOp "2019-06-27"^^xsd:date ;
+    ] ;
+  .
+}<br>
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a disgeo:Historie ;
+    disgeo:versie "10";
+    disgeo:beginGeldigheid "2020-09-16"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:voorkomen doc:de-witte-kastanje-v10 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.9 ;
+    disgeo:omtrek 50.9 ;
+    disgeo:aantalBladeren 372000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .<br>
+  meta:de-witte-kastanje-v10-aantalBladeren a digeo:MetadataOverData ;
+    disgeo:betreftKenmerk disgeo:aantalBladeren ;
+    disgeo:betreftObject :de-witte-kastanje ;
+    disgeo:betreftVersie "10" ;
+    disgeo:beginGeldigheid "2020-09-16"^^xsd:date ;
+    disgeo:tijdstipRegistratie "2020-09-16T00:00:00Z"^^xsd:dateTime ;
+    disgeo:bronhouder [
+      disgeo:naam "Gemeente Kemeltoet" ;
+    ] ;
+    disgeo:bron [
+      a disgeo:Observatie ;
+      disgeo:onzekerheid 0.05 ;
+      disgeo:uitgevoerdDoor [
+        disgeo:naam "Opbladeren B.V." ;
+      ] ;
+      disgeo:uitgevoerdOp "2020-09-16"^^xsd:date ;
+    ] ;
+  .
+}
+          </pre>
+        </span>
+      </div>
+    </div>
   </section>
 </div>
 
+#### Gegevens - uitwerking D
+
+##### XML
+
+<div class="container--tabs">
+  <section class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab-gegevens-d-xml-object">Gegevens D - Object</a></li>
+      <li class=""><a href="#tab-gegevens-d-xml-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-gegevens-d-xml-object" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+&lt;bomen&gt;
+  &lt;Boom&gt;
+    &lt;registratiegegevens&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+        &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+        &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+        &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;versie&gt;8&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/registratiegegevens&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.2&lt;/hoogte&gt;
+    &lt;omtrek&gt;49.4&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
+  &lt;Boom&gt;
+    &lt;registratiegegevens&gt;
+      &lt;Registratiegegevens&gt;
+        &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+        &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+        &lt;versie&gt;10&lt;/versie&gt;
+      &lt;/Registratiegegevens&gt;
+    &lt;/registratiegegevens&gt;
+    &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+    &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+    &lt;hoogte&gt;22.9&lt;/hoogte&gt;
+    &lt;omtrek&gt;50.9&lt;/omtrek&gt;
+    &lt;soort&gt;
+      &lt;code&gt;342938483&lt;/code&gt;
+      &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+    &lt;/soort&gt;
+    &lt;status&gt;aanwezig&lt;/status&gt;
+    &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+  &lt;/Boom&gt;
+&lt;/bomen&gt;
+          </pre>
+        </span>
+      </div> 
+      <div id="tab-gegevens-d-xml-object-en-gegevens" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+&lt;bomen&gt;
+   &lt;boom&gt;
+      &lt;geregistreerdMet&gt;
+         &lt;bestaatUit&gt;
+            &lt;gegeven&gt;
+               &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
+               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
+               &lt;waarde&gt;350000&lt;/waarde&gt;
+               &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+               &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
+               &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
+               &lt;eindRegistratie&gt;2020-09-16T00:00:00Z&lt;/eindRegistratie&gt;
+               &lt;bron&gt;
+                  &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
+                  &lt;uitgevoerdDoor&gt;
+                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+                  &lt;/uitgevoerdDoor&gt;
+                  &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
+               &lt;/bron&gt;
+               &lt;bronhouder&gt;
+                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+               &lt;/bronhouder&gt;
+            &lt;/gegeven&gt;
+         &lt;/bestaatUit&gt;
+         &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+         &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+         &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+         &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+         &lt;versie&gt;8&lt;/versie&gt;
+      &lt;/geregistreerdMet&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+      &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+      &lt;hoogte&gt;22.2&lt;/hoogte&gt;
+      &lt;omtrek&gt;49.4&lt;/omtrek&gt;
+      &lt;soort&gt;
+         &lt;code&gt;342938483&lt;/code&gt;
+         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+      &lt;/soort&gt;
+      &lt;status&gt;aanwezig&lt;/status&gt;
+      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+   &lt;/boom&gt;
+   &lt;boom&gt;
+      &lt;geregistreerdMet&gt;
+         &lt;bestaatUit&gt;
+            &lt;gegeven&gt;
+               &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
+               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
+               &lt;waarde&gt;3720000&lt;/waarde&gt;
+               &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+               &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+               &lt;bron&gt;
+                  &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
+                  &lt;uitgevoerdDoor&gt;
+                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
+                  &lt;/uitgevoerdDoor&gt;
+                  &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
+               &lt;/bron&gt;
+               &lt;bronhouder&gt;
+                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+               &lt;/bronhouder&gt;
+            &lt;/gegeven&gt;
+         &lt;/bestaatUit&gt;
+         &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+         &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+         &lt;versie&gt;10&lt;/versie&gt;
+      &lt;/geregistreerdMet&gt;
+      &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
+      &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+      &lt;hoogte&gt;22.9&lt;/hoogte&gt;
+      &lt;omtrek&gt;50.9&lt;/omtrek&gt;
+      &lt;soort&gt;
+         &lt;code&gt;342938483&lt;/code&gt;
+         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+      &lt;/soort&gt;
+      &lt;status&gt;aanwezig&lt;/status&gt;
+      &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
+   &lt;/boom&gt;
+&lt;/bomen&gt;
+          </pre>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+##### JSON
+<div class="container--tabs">
+  <section class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab-gegevens-d-json-object">Gegevens D - Object</a></li>
+      <li class=""><a href="#tab-gegevens-d-json-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-gegevens-d-json-object" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+          </pre>
+        </span>
+      </div>
+      <div id="tab-gegevens-d-json-object-en-gegevens" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+          </pre>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+##### RDF (Turtle/TriG)
+
+<div class="container--tabs">
+  <section class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab-gegevens-d-rdf-object">Gegevens D - Object</a></li>
+      <li class=""><a href="#tab-gegevens-d-rdf-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="tab-gegevens-d-rdf-object" class="tab-pane active"> 
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix nen3610: &lt;http://definities.geostandaarden.nl/def/nen3610#&gt; .<br>
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;8&quot;;
+    nen3610:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+    nen3610:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+    nen3610:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v8 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.2 ;
+    disgeo:omtrek 49.4 ;
+    disgeo:aantalBladeren 350000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}<br>
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a nen3610:Registratiegegevens ;
+    nen3610:versie &quot;10&quot;;
+    nen3610:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+    nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    nen3610:geregistreerdMet doc:de-witte-kastanje-v10 ;
+    disgeo:status disgeo:Aanwezig ;
+    disgeo:soort disgeo:342938483 ;
+    disgeo:hoogte 22.9 ;
+    disgeo:omtrek 50.9 ;
+    disgeo:aantalBladeren 372000 ;
+    disgeo:monumentaleStatus disgeo:Monumentaal ;
+  .
+}
+          </pre>
+        </span>
+      </div> 
+      <div id="tab-gegevens-d-rdf-object-en-gegevens" class="tab-pane">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+        <span class="col-md-10">
+          <pre>
+          </pre>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
