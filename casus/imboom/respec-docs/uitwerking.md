@@ -1654,82 +1654,84 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="col-md-10">
           <pre>
 &lt;bomen&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;bestaatUit&gt;
-            &lt;gegeven&gt;
-               &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
-               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
-               &lt;waarde&gt;350000&lt;/waarde&gt;
-               &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-               &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
-               &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
-               &lt;eindRegistratie&gt;2020-09-16T00:00:00Z&lt;/eindRegistratie&gt;
-               &lt;bron&gt;
-                  &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
-                  &lt;uitgevoerdDoor&gt;
-                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
-                  &lt;/uitgevoerdDoor&gt;
-                  &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
-               &lt;/bron&gt;
-               &lt;bronhouder&gt;
-                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
-               &lt;/bronhouder&gt;
-            &lt;/gegeven&gt;
-         &lt;/bestaatUit&gt;
-         &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
-         &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
-         &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
-         &lt;versie&gt;8&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
+  &lt;Boomregistratie&gt;
+    &lt;Boom&gt;
+      &lt;registratiegegevens&gt;
+        &lt;Registratiegegevens&gt;
+          &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+          &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+          &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+          &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;versie&gt;8&lt;/versie&gt;
+        &lt;/Registratiegegevens&gt;
+      &lt;/registratiegegevens&gt;
       &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+      &lt;aantalBladeren&gt;
+        &lt;AantalbladerenGegevens&gt;
+          &lt;aantalBladeren&gt;350000&lt;/aantalBladeren&gt;
+          &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
+          &lt;eindGeldigheid&gt;2020-05-31&lt;/eindGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2019-09-10T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;eindRegistratie&gt;2020-05-31T00:00:00Z&lt;/eindRegistratie&gt;
+          &lt;bron xlink:href=&quot;#observatie-123&quot; xlink:type=&quot;simple&quot;/&gt;
+          &lt;bronhouder xlink:href=&quot;#bronhouder-123&quot; xlink:type=&quot;simple&quot;/&gt;
+        &lt;/AantalbladerenGegevens&gt;
+      &lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.2&lt;/hoogte&gt;
       &lt;omtrek&gt;49.4&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
       &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
-   &lt;boom&gt;
-      &lt;geregistreerdMet&gt;
-         &lt;bestaatUit&gt;
-            &lt;gegeven&gt;
-               &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
-               &lt;kenmerk&gt;aantalBladeren&lt;/kenmerk&gt;
-               &lt;waarde&gt;3720000&lt;/waarde&gt;
-               &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-               &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
-               &lt;bron&gt;
-                  &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
-                  &lt;uitgevoerdDoor&gt;
-                     &lt;naam&gt;Opbladeren B.V.&lt;/naam&gt;
-                  &lt;/uitgevoerdDoor&gt;
-                  &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
-               &lt;/bron&gt;
-               &lt;bronhouder&gt;
-                  &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
-               &lt;/bronhouder&gt;
-            &lt;/gegeven&gt;
-         &lt;/bestaatUit&gt;
-         &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
-         &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
-         &lt;versie&gt;10&lt;/versie&gt;
-      &lt;/geregistreerdMet&gt;
+    &lt;/Boom&gt;
+    &lt;Observatie gml:id=&quot;observatie-123&quot;&gt;
+      &lt;onzekerheid&gt;0.09&lt;/onzekerheid&gt;
+      &lt;uitgevoerdDoor&gt;Opbladeren B.V.&lt;/uitgevoerdDoor&gt;
+      &lt;uitgevoerdOp&gt;2019-06-27&lt;/uitgevoerdOp&gt;
+    &lt;/Observatie&gt;
+    &lt;Bronhouder gml:id=&quot;bronhouder=123&quot;&gt;
+      &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+    &lt;/Bronhouder&gt;
+  &lt;/Boomregistratie&gt;
+  &lt;Boomregistratie&gt;
+    &lt;Boom&gt;
+      &lt;registratiegegevens&gt;
+        &lt;Registratiegegevens&gt;
+          &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;versie&gt;10&lt;/versie&gt;
+        &lt;/Registratiegegevens&gt;
+      &lt;/registratiegegevens&gt;
       &lt;identificatie&gt;de-witte-kastanje&lt;/identificatie&gt;
-      &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+      &lt;aantalBladeren&gt;
+        &lt;AantalbladerenGegevens&gt;
+          &lt;aantalBladeren&gt;372000&lt;/aantalBladeren&gt;
+          &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
+          &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
+          &lt;bron xlink:href=&quot;#observatie-456&quot; xlink:type=&quot;simple&quot;/&gt;
+          &lt;bronhouder xlink:href=&quot;#bronhouder-456&quot; xlink:type=&quot;simple&quot;/&gt;
+        &lt;/AantalbladerenGegevens&gt;
+      &lt;/aantalBladeren&gt;
       &lt;hoogte&gt;22.9&lt;/hoogte&gt;
       &lt;omtrek&gt;50.9&lt;/omtrek&gt;
       &lt;soort&gt;
-         &lt;code&gt;342938483&lt;/code&gt;
-         &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
+        &lt;code&gt;342938483&lt;/code&gt;
+        &lt;waarde&gt;Aesculus hippocastanum&lt;/waarde&gt;
       &lt;/soort&gt;
       &lt;status&gt;aanwezig&lt;/status&gt;
       &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
-   &lt;/boom&gt;
+    &lt;/Boom&gt;
+    &lt;Observatie gml:id=&quot;observatie-456&quot;&gt;
+      &lt;onzekerheid&gt;0.05&lt;/onzekerheid&gt;
+      &lt;uitgevoerdDoor&gt;Opbladeren B.V.&lt;/uitgevoerdDoor&gt;
+      &lt;uitgevoerdOp&gt;2020-09-16&lt;/uitgevoerdOp&gt;
+    &lt;/Observatie&gt;
+    &lt;Bronhouder gml:id=&quot;bronhouder=456&quot;&gt;
+      &lt;naam&gt;Gemeente Kemeltoet&lt;/naam&gt;
+    &lt;/Bronhouder&gt;
+  &lt;/Boomregistratie&gt;
 &lt;/bomen&gt;
           </pre>
         </span>
@@ -1751,6 +1753,7 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
+          TODO
           </pre>
         </span>
       </div>
@@ -1758,6 +1761,7 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
+          TODO
           </pre>
         </span>
       </div>
@@ -1826,6 +1830,7 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
+          TODO
           </pre>
         </span>
       </div>
