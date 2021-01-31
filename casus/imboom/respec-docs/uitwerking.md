@@ -135,7 +135,7 @@ In uitwerking D zijn twee informatiemodellen gemaakt. Eén voor de objectinforma
 
 Het model zonder metadata op gegevensniveau neemt het conceptuele informatiemodel en voegt daaraan toe een identificatie en een relatie naar een instantie van metaclass **«Metadata»** met **«Metadata»** attributen voor de versie en de tijdslijn geldigheid en tijdslijn registratie. Dit is in lijn met NEN 3610:2020.
 
-Het model met metadata op gegevensniveau maakt gebruik van [MIM gegevensgroepen](https://docs.geostandaarden.nl/mim/mim/#gegevensgroep). Ieder attribuut waarvoor metadata geregistreerd wordt krijgt een eigen [gegevensgroeptype](https://docs.geostandaarden.nl/mim/mim/#gegevensgroeptype). Deze gegevensgroep heeft een **«Attribuutsoort»** gelijknamig aan het betreffende attribuut die de waarde van het gegeven krijgt. Daarnaast heeft heet 1 of meerdere **«Metadata»** eigenschappen(?) die waarmee metadata aan gekoppeld worden. Het objectmodel van Boom heeft per attribuut waar metadata voor wordt bijgehouden een gelijknamige referentie naar de bijbehorende gegevensgroep. Hiermee is het conceptuele model niet meer 1 op 1 terug te vinden.
+Het model met metadata op gegevensniveau maakt gebruik van [MIM gegevensgroepen](https://docs.geostandaarden.nl/mim/mim/#gegevensgroep). Ieder attribuut waarvoor metadata geregistreerd wordt krijgt een eigen [gegevensgroeptype](https://docs.geostandaarden.nl/mim/mim/#gegevensgroeptype). Deze gegevensgroep heeft een **«Attribuutsoort»** gelijknamig aan het betreffende attribuut die de waarde van het gegeven krijgt. Daarnaast heeft heet 1 of meerdere **«Metadata»** meta-eigenschappen waarmee metadata gekoppeld worden. Het objectmodel van Boom heeft per attribuut waar metadata voor wordt bijgehouden een gelijknamige referentie naar de bijbehorende gegevensgroep. De gegevensgroep constructie voor metadata maakt dat er een verschil is met het IMboom model zonder metadata op gegevensniveau, maar het is een logisch en gestandaardiseerd verschil.
 
 Overige Motivatie voor deze uitwerking:
 - Deze standaardconstructies maken gebruik van standaard encoding regels mogelijk (bijvoorbeeld UML-GML encoding)
@@ -1753,7 +1753,44 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
-          TODO
+[
+  {
+    "registratiegegevens": {
+      "versie": "8",
+      "beginGeldigheid": "2019-09-10",
+      "eindGeldigheid": "2020-05-31",
+      "tijdstipRegistratie": "2019-09-10T00:00:00Z",
+      "eindRegistratie": "2020-05-31T00:00:00Z"
+    },
+    "identificatie": "de-witte-kastanje",
+    "status": "aanwezig",
+    "soort": {
+      "code": "342938483",
+      "waarde": "Aesculus hippocastanum"
+    },
+    "hoogte": 22.2,
+    "omtrek": 49.4,
+    "aantalBladeren": 350000,
+    "monumentaleStatus": "monumentaal"
+  },
+  {
+    "registratiegegevens": {
+      "versie": "10",
+      "beginGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2020-09-16T00:00:00Z"
+    },
+    "identificatie": "de-witte-kastanje",
+    "status": "aanwezig",
+    "soort": {
+      "code": "342938483",
+      "waarde": "Aesculus hippocastanum"
+    },
+    "hoogte": 22.9,
+    "omtrek": 50.9,
+    "aantalBladeren": 372000,
+    "monumentaleStatus": "monumentaal"
+  }
+]
           </pre>
         </span>
       </div>
@@ -1761,7 +1798,73 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
-          TODO
+[
+  {
+    "registratiegegevens": {
+      "versie": "8",
+      "beginGeldigheid": "2019-09-10",
+      "eindGeldigheid": "2020-05-31",
+      "tijdstipRegistratie": "2019-09-10T00:00:00Z",
+      "eindRegistratie": "2020-05-31T00:00:00Z"
+    },
+    "identificatie": "de-witte-kastanje",
+    "status": {},
+    "soort": {},
+    "hoogte": {},
+    "omtrek": {},
+    "aantalBladeren": {
+      "aantalBladeren": 350000,
+      "beginGeldigheid": "2019-09-10",
+      "eindGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2019-09-19T00:00:00Z",
+      "eindRegistratie": "2020-09-16T00:00:00Z",
+      "bronhouder": {
+        "naam": "Gemeente Kemeltoet"
+      },
+      "bron": {
+        "onzekerheid": 0.09,
+        "uitgevoerdDoor": {
+          "naam": "Opbladeren B.V."
+        },
+        "uitgevoerdOp": "2019-06-27"
+      }
+    }
+    "monumentaleStatus": {}
+  },
+  {
+    "registratiegegevens": {
+      "versie": "10",
+      "beginGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2020-09-16T00:00:00Z"
+    },
+    "_metadataOverData": {
+      "betreftKenmerk": "aantalBladeren",
+      "betreftObject": "de-witte-kastanje",
+      "betreftVersie": "10",
+    },
+    "identificatie": "de-witte-kastanje",
+    "status": {},
+    "soort": {},
+    "hoogte": {},
+    "omtrek": {},
+    "aantalBladeren": {
+      "aantalBladeren": 372000,
+      "beginGeldigheid": "2020-09-16",
+      "tijdstipRegistratie": "2020-09-16T00:00:00Z",
+      "bronhouder": {
+        "naam": "Gemeente Kemeltoet"
+      },
+      "bron": {
+        "onzekerheid": 0.05,
+        "uitgevoerdDoor": {
+          "naam": "Opbladeren B.V."
+        },
+        "uitgevoerdOp": "2020-09-16"
+      }
+    },
+    "monumentaleStatus": {}
+  }
+]
           </pre>
         </span>
       </div>
@@ -1830,7 +1933,77 @@ doc:de-witte-kastanje-v10 {<br>
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
-          TODO
+@prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
+@prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
+@prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix meta: &lt;http://example.disgeo.nl/id/metadata-over-data/&gt; .<br>
+doc:de-witte-kastanje-v8 {<br>
+  doc:de-witte-kastanje-v8 a disgeo:Historie ;
+    disgeo:versie &quot;8&quot;;
+    disgeo:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+    disgeo:eindGeldigheid &quot;2020-05-31&quot;^^xsd:date ;
+    disgeo:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+    disgeo:eindRegistratie &quot;2020-05-31T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:registratiegegevens doc:de-witte-kastanje-v8 ;
+    disgeo:status [] ;
+    disgeo:soort [] ;
+    disgeo:hoogte [] ;
+    disgeo:omtrek [] ;
+    disgeo:aantalBladeren [
+      disgeo:aantalBladeren 350000 ;
+      disgeo:beginGeldigheid &quot;2019-09-10&quot;^^xsd:date ;
+      disgeo:eindGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+      disgeo:tijdstipRegistratie &quot;2019-09-19T00:00:00Z&quot;^^xsd:dateTime ;
+      disgeo:eindRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+      disgeo:bronhouder [
+        disgeo:naam &quot;Gemeente Kemeltoet&quot; ;
+      ] ;
+      disgeo:bron [
+        a disgeo:Observatie ;
+        disgeo:onzekerheid 0.09 ;
+        disgeo:uitgevoerdDoor [
+          disgeo:naam &quot;Opbladeren B.V.&quot; ;
+        ] ;
+        disgeo:uitgevoerdOp &quot;2019-06-27&quot;^^xsd:date ;
+      ] ; 
+    ] ;
+    disgeo:monumentaleStatus [] ;
+  .
+}<br>
+doc:de-witte-kastanje-v10 {<br>
+  doc:de-witte-kastanje-v10 a disgeo:Historie ;
+    disgeo:versie &quot;10&quot;;
+    disgeo:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+    disgeo:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+  .<br>
+  :de-witte-kastanje a disgeo:Boom ;
+    disgeo:voorkomen doc:de-witte-kastanje-v10 ;
+    disgeo:status [] ;
+    disgeo:soort [] ;
+    disgeo:hoogte [] ;
+    disgeo:omtrek [] ;
+    disgeo:aantalBladeren [
+      disgeo:aantalBladeren 372000 ;
+      disgeo:beginGeldigheid &quot;2020-09-16&quot;^^xsd:date ;
+      disgeo:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
+      disgeo:bronhouder [
+        disgeo:naam &quot;Gemeente Kemeltoet&quot; ;
+      ] ;
+      disgeo:bron [
+        a disgeo:Observatie ;
+        disgeo:onzekerheid 0.05 ;
+        disgeo:uitgevoerdDoor [
+          disgeo:naam &quot;Opbladeren B.V.&quot; ;
+        ] ;
+        disgeo:uitgevoerdOp &quot;2020-09-16&quot;^^xsd:date ;
+      ] ;
+    ] ;
+    disgeo:monumentaleStatus [] ;
+  .
+}
           </pre>
         </span>
       </div>
