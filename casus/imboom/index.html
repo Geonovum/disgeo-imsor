@@ -10,6 +10,57 @@
   <script class="remove" src="./config.js"></script>
   <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
   <link rel="stylesheet" type="text/css" href="media/tab-style.css?">
+  <script>
+    function tabs() {
+      // store tabs variable
+      var theTabs = document.querySelectorAll("ul.nav-tabs > li");
+
+      function theTabClicks(tabClickEvent) {
+          var clickedTab = tabClickEvent.currentTarget;
+          var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+          var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
+          for (var i = 0; i < theTabs.length; i++) {
+              theTabs[i].classList.remove("active");
+          }
+
+          clickedTab.classList.add("active");
+          tabClickEvent.preventDefault();
+          var contentPanes = tabParent.querySelectorAll(".tab-pane");
+          for (i = 0; i < contentPanes.length; i++) {
+              contentPanes[i].classList.remove("active");
+          }
+          var anchorReference = tabClickEvent.target;
+          var activePaneId = anchorReference.getAttribute("href");
+          var activePane = tabParent.querySelector(activePaneId);
+          activePane.classList.add("active");
+      }
+      for (i = 0; i < theTabs.length; i++) {
+          theTabs[i].addEventListener("click", theTabClicks)
+      }
+    }
+    if (window.addEventListener) {
+      window.addEventListener("load", tabs, false);
+    } else {
+      window.attachEvent('onload', tabs);
+    }
+  </script>
+  <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 </head>
 <!-- HTML-Body -------------------------------------------------------------------------------->
 
@@ -27,35 +78,5 @@
     <section data-format="markdown" data-include="respec-docs/opdracht.md"></section>
     <section data-format="markdown" data-include="respec-docs/uitwerking.md"></section>
   </section>
-
-  <script>
-    window.addEventListener("load", (event) => {
-        // store tabs variable
-        var theTabs = document.querySelectorAll("ul.nav-tabs > li");
-  
-        function theTabClicks(tabClickEvent) {
-            var clickedTab = tabClickEvent.currentTarget;
-            var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
-            var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
-            for (var i = 0; i < theTabs.length; i++) {
-                theTabs[i].classList.remove("active");
-            }
-            
-            clickedTab.classList.add("active");
-            tabClickEvent.preventDefault();
-            var contentPanes = tabParent.querySelectorAll(".tab-pane");
-            for (i = 0; i < contentPanes.length; i++) {
-                contentPanes[i].classList.remove("active");
-            }
-            var anchorReference = tabClickEvent.target;
-            var activePaneId = anchorReference.getAttribute("href");
-            var activePane = tabParent.querySelector(activePaneId);
-            activePane.classList.add("active");
-        }
-        for (i = 0; i < theTabs.length; i++) {
-            theTabs[i].addEventListener("click", theTabClicks)
-        }
-  });
-  </script>
 </body>
 </html>

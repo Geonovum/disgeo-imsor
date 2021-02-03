@@ -85,12 +85,12 @@ Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens be
       <li class=""><a href="#tab-informatiemodel-d-gegevensmeta">Informatiemodel D (gegevensmetadata)</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-informatiemodel-a" class="tab-pane active"> 
+      <div id="tab-informatiemodel-a" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <div class="figure"><img src="media/a-informatiemodel.png" alt="a-informatiemodel"/></div>
         </span>
-      </div> 
+      </div>
       <div id="tab-informatiemodel-b" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -145,7 +145,7 @@ Overige Motivatie voor deze uitwerking:
 
 ### Gegevens
 
-In de uitwerking van de casus naar gegevens zoomen we, om het overzichtelijk te houden, in op één van de attributen van de casus: `aantalBladeren`. Vervolgens laten we zien hoe de uitwerkingen de boom als object representeren, hoe als losse gegevens met metadata, en hoe dit er gecombineerd uit zou zien. 
+In de uitwerking van de casus naar gegevens zoomen we, om het overzichtelijk te houden, in op één van de attributen van de casus: `aantalBladeren`. Vervolgens laten we zien hoe de uitwerkingen de boom als object representeren, hoe als losse gegevens met metadata, en hoe dit er gecombineerd uit zou zien.
 
 In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 
@@ -161,7 +161,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       <li class=""><a href="#tab-gegevens-a-xml-object-en-gegevens">Gegevens A - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-a-xml-object" class="tab-pane active"> 
+      <div id="tab-gegevens-a-xml-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -209,7 +209,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 &lt;/bomen&gt;
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-a-xml-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -359,7 +359,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       <li class=""><a href="#tab-gegevens-a-json-object-en-gegevens">Gegevens A - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-a-json-object" class="tab-pane active"> 
+      <div id="tab-gegevens-a-json-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -403,7 +403,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 ]
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-a-json-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -550,7 +550,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       <li class=""><a href="#tab-gegevens-a-rdf-object-en-gegevens">Gegevens A - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-a-rdf-object" class="tab-pane active"> 
+      <div id="tab-gegevens-a-rdf-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -595,7 +595,7 @@ doc:de-witte-kastanje-v10 {<br>
 }
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-a-rdf-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -745,8 +745,8 @@ doc:de-witte-kastanje-v10 {
 Serialisatie conform (de nog in ontwikkeling zijnde) [RDF*](https://w3c.github.io/rdf-star/rdf-star-cg-spec.html).
 
 Merk op dat deze serializatie enkel verschilt op het stuk waarin [RDF Reification](https://www.w3.org/TR/rdf11-mt/#reification) wordt toegepast. Het is een vervanging van
-<pre>s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 350000</pre> 
-met 
+<pre>s: :de-witte-kastanje; p: disgeo:aantalBladeren; o: 350000</pre>
+met
 <pre>&lt;&lt; :de-witte-kastanje disgeo:aantalBladeren 350000 &gt;&gt;</pre>.
 
 Omdat uitwerking A uitgaat van het kunnen modelleren van een gegeven als onderwerp van kenmerken is het 100% compatibel met [RDF Reification](https://www.w3.org/TR/rdf11-mt/#reification) en [RDF*](https://w3c.github.io/rdf-star/rdf-star-cg-spec.html) en hoeft er aan het informatiemodel niks te wijzigen.
@@ -759,7 +759,7 @@ Omdat uitwerking A uitgaat van het kunnen modelleren van een gegeven als onderwe
       <li class=""><a href="#tab-gegevens-a-rdf-star-object-en-gegevens">Gegevens A - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-a-rdf-star-object" class="tab-pane active"> 
+      <div id="tab-gegevens-a-rdf-star-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -804,7 +804,7 @@ doc:de-witte-kastanje-v10 {<br>
 }
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-a-rdf-star-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -954,7 +954,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
 <div class="container--tabs">
   <div class="row">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab-gegevens-a-xml-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
+      <li class="active"><a href="#tab-gegevens-b-xml-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-xml-object-en-gegevens" class="tab-pane active">
@@ -1027,14 +1027,14 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
 <div class="container--tabs">
   <div class="row">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab-gegevens-a-json-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
+      <li class="active"><a href="#tab-gegevens-b-json-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-json-object-en-gegevens" class="tab-pane active">
         <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
-{ 
+{
   "beginGeldigheid": "1835-01-01",
   "boom_aantalBladeren" : [
     {
@@ -1090,7 +1090,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
 <div class="container--tabs">
   <div class="row">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab-gegevens-a-rdf-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
+      <li class="active"><a href="#tab-gegevens-b-rdf-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-rdf-object-en-gegevens" class="tab-pane active">
@@ -1167,7 +1167,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       <li class=""><a href="#tab-gegevens-c-xml-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-c-xml-object" class="tab-pane active"> 
+      <div id="tab-gegevens-c-xml-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1314,7 +1314,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       <li class=""><a href="#tab-gegevens-c-json-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-c-json-object" class="tab-pane active"> 
+      <div id="tab-gegevens-c-json-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1452,10 +1452,10 @@ Het is niet eenvoudig mogelijk om standaard RDF reificatie, of RDF* toe te passe
   <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-c-rdf-object">Gegevens C - Object</a></li>
-      <li class="active"><a href="#tab-gegevens-c-rdf-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
+      <li class=""><a href="#tab-gegevens-c-rdf-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-c-rdf-object" class="tab-pane active"> 
+      <div id="tab-gegevens-c-rdf-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1502,7 +1502,7 @@ doc:de-witte-kastanje-v10 {<br>
       </div>
     </div>
     <div class="tab-content">
-      <div id="tab-gegevens-c-rdf-object-en-gegevens" class="tab-pane active"> 
+      <div id="tab-gegevens-c-rdf-object-en-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1601,7 +1601,7 @@ doc:de-witte-kastanje-v10 {<br>
       <li class=""><a href="#tab-gegevens-d-xml-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-d-xml-object" class="tab-pane active"> 
+      <div id="tab-gegevens-d-xml-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1649,7 +1649,7 @@ doc:de-witte-kastanje-v10 {<br>
 &lt;/bomen&gt;
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-d-xml-object-en-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -1750,7 +1750,7 @@ doc:de-witte-kastanje-v10 {<br>
       <li class=""><a href="#tab-gegevens-d-json-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-d-json-object" class="tab-pane active"> 
+      <div id="tab-gegevens-d-json-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1884,7 +1884,7 @@ doc:de-witte-kastanje-v10 {<br>
       <li class=""><a href="#tab-gegevens-d-rdf-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
     </ul>
     <div class="tab-content">
-      <div id="tab-gegevens-d-rdf-object" class="tab-pane active"> 
+      <div id="tab-gegevens-d-rdf-object" class="tab-pane active">
         <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
           <pre>
@@ -1929,7 +1929,7 @@ doc:de-witte-kastanje-v10 {<br>
 }
           </pre>
         </span>
-      </div> 
+      </div>
       <div id="tab-gegevens-d-rdf-object-en-gegevens" class="tab-pane">
         <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
         <span class="col-md-10">
@@ -1969,7 +1969,7 @@ doc:de-witte-kastanje-v8 {<br>
           disgeo:naam &quot;Opbladeren B.V.&quot; ;
         ] ;
         disgeo:uitgevoerdOp &quot;2019-06-27&quot;^^xsd:date ;
-      ] ; 
+      ] ;
     ] ;
     disgeo:monumentaleStatus [] ;
   .
