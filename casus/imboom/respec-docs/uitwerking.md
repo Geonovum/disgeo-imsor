@@ -76,7 +76,7 @@ Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens be
 ### Informatiemodel
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-informatiemodel-a">Informatiemodel A</a></li>
       <li class=""><a href="#tab-informatiemodel-b">Informatiemodel B</a></li>
@@ -116,7 +116,7 @@ Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens be
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 #### Informatiemodel - uitwerking A
@@ -154,7 +154,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 ##### XML
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-xml-object">Gegevens A - Object</a></li>
       <li class=""><a href="#tab-gegevens-a-xml-gegevens">Gegevens A - Gegevens</a></li>
@@ -345,14 +345,14 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 
 
 ##### JSON
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-json-object">Gegevens A - Object</a></li>
       <li class=""><a href="#tab-gegevens-a-json-gegevens">Gegevens A - Gegevens</a></li>
@@ -535,7 +535,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 
@@ -543,7 +543,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
 ##### RDF (Turtle/TriG)
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-rdf-object">Gegevens A - Object</a></li>
       <li class=""><a href="#tab-gegevens-a-rdf-gegevens">Gegevens A - Gegevens</a></li>
@@ -737,7 +737,7 @@ doc:de-witte-kastanje-v10 {
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 ##### RDF* (Turtle/TriG)
@@ -752,7 +752,7 @@ met
 Omdat uitwerking A uitgaat van het kunnen modelleren van een gegeven als onderwerp van kenmerken is het 100% compatibel met [RDF Reification](https://www.w3.org/TR/rdf11-mt/#reification) en [RDF*](https://w3c.github.io/rdf-star/rdf-star-cg-spec.html) en hoeft er aan het informatiemodel niks te wijzigen.
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-rdf-star-object">Gegevens A - Object</a></li>
       <li class=""><a href="#tab-gegevens-a-rdf-star-gegevens">Gegevens A - Gegevens</a></li>
@@ -939,7 +939,7 @@ doc:de-witte-kastanje-v10 {
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 #### Gegevens - uitwerking B
@@ -952,7 +952,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
 ##### XML
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-xml-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
@@ -1019,13 +1019,13 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 ##### JSON
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-json-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
@@ -1077,7 +1077,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 
@@ -1088,7 +1088,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
 </aside>
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-a-rdf-object-en-gegevens">Gegevens B - Object en Gegevens</a></li>
     </ul>
@@ -1147,7 +1147,7 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 #### Gegevens - uitwerking C
@@ -1161,7 +1161,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
 ##### XML
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-c-xml-object">Gegevens C - Object</a></li>
       <li class=""><a href="#tab-gegevens-c-xml-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
@@ -1302,13 +1302,13 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 ##### JSON
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-c-json-object">Gegevens C - Object</a></li>
       <li class=""><a href="#tab-gegevens-c-json-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
@@ -1441,7 +1441,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 ##### RDF (Turtle/TriG)
@@ -1449,7 +1449,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
 Het is niet eenvoudig mogelijk om standaard RDF reificatie, of RDF* toe te passen voor uitwerking C. Dit komt omdat uitwerking C geen manier heeft om een individueel gegeven aan te wijzen, in tegenstelling tot uitwerking A. Waarschijnlijk is het wel mogelijk om dit af te leiden. De details daarvan zouden uitgewerkt moeten worden.
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-c-rdf-object">Gegevens C - Object</a></li>
       <li class="active"><a href="#tab-gegevens-c-rdf-object-en-gegevens">Gegevens C - Object en Gegevens</a></li>
@@ -1587,7 +1587,7 @@ doc:de-witte-kastanje-v10 {<br>
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 #### Gegevens - uitwerking D
@@ -1595,7 +1595,7 @@ doc:de-witte-kastanje-v10 {<br>
 ##### XML
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-d-xml-object">Gegevens D - Object</a></li>
       <li class=""><a href="#tab-gegevens-d-xml-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
@@ -1738,13 +1738,13 @@ doc:de-witte-kastanje-v10 {<br>
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 
 ##### JSON
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-d-json-object">Gegevens D - Object</a></li>
       <li class=""><a href="#tab-gegevens-d-json-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
@@ -1870,7 +1870,7 @@ doc:de-witte-kastanje-v10 {<br>
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
 
@@ -1878,7 +1878,7 @@ doc:de-witte-kastanje-v10 {<br>
 ##### RDF (Turtle/TriG)
 
 <div class="container--tabs">
-  <section class="row">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#tab-gegevens-d-rdf-object">Gegevens D - Object</a></li>
       <li class=""><a href="#tab-gegevens-d-rdf-object-en-gegevens">Gegevens D - Object en Gegevens</a></li>
@@ -2009,5 +2009,5 @@ doc:de-witte-kastanje-v10 {<br>
         </span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
