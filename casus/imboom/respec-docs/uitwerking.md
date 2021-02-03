@@ -37,9 +37,10 @@ Een gegevenstype bestaat uit drie kenmerken:
 
 <aside class="note">De metaclass van letterlijke waardes lijkt niet expliciet te bestaan in MIM 1.1.</aside>
 
-De metaclass **«Gegevenstype»** is daarmee integraal verbonden met de metaclass **«Objecttype»**. Een set **«Gegevenstype»**s met hetzelfde onderwerp vormt een **«Objecttype»** en andersom kun je een **«Objecttype»** ook uitdrukken in termen van de **«Gegevenstype»**s waaruit het is opgebouwd.
+De metaclass **«Gegevenstype»** is daarmee integraal verbonden met de metaclass **«Objecttype»**. Een set **«Gegevenstype»**s met hetzelfde onderwerp vormt een **«Objecttype»** en andersom kun je een **«Objecttype»** ook uitdrukken in termen van de **«Gegevenstype»**s waaruit het is opgebouwd.<br>
+Een **«Gegevenstype»** is zelf een subtype van **«Objecttype»**, waardoor een instantie van **«Gegevenstype»** ook onderwerp kan zijn van gegevens.
 
-Vaak is het daadwerkelijk instantieren van een **«Gegevenstype»** niet noodzakelijk. Echter, wanner het wel nodig is, bijvoorbeeld voor het uitdrukken van metadata, geeft deze uitbreiding van het MIM de mogelijkheid om dit te doen.
+Vaak is het daadwerkelijk instantieren van een **«Gegevenstype»** niet noodzakelijk. Echter, wanner het wel nodig is, bijvoorbeeld voor het uitdrukken van metadata, geeft deze uitbreiding van het MIM de mogelijkheid om dit op generieke wijze te doen.
 
 <figure id="a-metamodel">
   <img src="media/a-metamodel.png" alt="a-metamodel">
