@@ -1,4 +1,4 @@
-.container--tabs {
+a .container--tabs {
   margin: 2rem;
 }
 
@@ -18,11 +18,9 @@
 .container--tabs .nav-tabs>li>a {
   float: left;
   margin-right: 2px;
-  line-height: 1.42857143;
-  padding: 10px;
-  border: 1px solid transparent;
+  line-height: 1.42857143;;
+  border: 1px solid #0000000d;
   border-radius: 4px 4px 0 0;
-  padding: 5px;
 }
 
 .container--tabs .nav-tabs>li>a:hover {
