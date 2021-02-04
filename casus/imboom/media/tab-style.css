@@ -18,7 +18,8 @@ a .container--tabs {
 .container--tabs .nav-tabs>li>a {
   float: left;
   margin-right: 2px;
-  line-height: 1.42857143;;
+  line-height: 1.42857143;
+  padding: 10px;
   border: 1px solid #0000000d;
   border-radius: 4px 4px 0 0;
 }
@@ -54,4 +55,8 @@ a .container--tabs {
 
 .container--tabs .tab-content>.active {
   display: block;
+}
+
+.clear {
+  clear: both;
 }

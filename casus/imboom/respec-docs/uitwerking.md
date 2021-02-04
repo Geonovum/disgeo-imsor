@@ -346,11 +346,13 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 
 
 ##### JSON
+
 <div class="container--tabs">
   <div class="row">
     <ul class="nav nav-tabs">
@@ -536,6 +538,7 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 
@@ -738,6 +741,7 @@ doc:de-witte-kastanje-v10 {
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 ##### RDF* (Turtle/TriG)
@@ -940,6 +944,7 @@ doc:de-witte-kastanje-v10 {
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 #### Gegevens - uitwerking B
@@ -1020,6 +1025,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 ##### JSON
@@ -1078,6 +1084,7 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 
@@ -1148,6 +1155,7 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 #### Gegevens - uitwerking C
@@ -1247,6 +1255,9 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       &lt;status&gt;aanwezig&lt;/status&gt;
     &lt;/Boom&gt;
     &lt;MetadataOverData metadataOverData:id=&quot;de-witte-kastanje-8-AantalBladerenMetadata&quot;&gt;
+      &lt;betreftKenmerk&gt;aantalBladeren&lt;/betreftKenmerk&gt;
+      &lt;betreftObject&gt;de-witte-kastanje&lt;/betreftObject&gt;
+      &lt;betreftVersie&gt;8&lt;/betreftVersie&gt;
       &lt;beginGeldigheid&gt;2019-09-10&lt;/beginGeldigheid&gt;
       &lt;eindGeldigheid&gt;2020-09-16&lt;/eindGeldigheid&gt;
       &lt;tijdstipRegistratie&gt;2019-09-19T00:00:00Z&lt;/tijdstipRegistratie&gt;
@@ -1283,6 +1294,9 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       &lt;status&gt;aanwezig&lt;/status&gt;
     &lt;/Boom&gt;
     &lt;MetadataOverData metadataOverData:id=&quot;de-witte-kastanje-10-AantalBladerenMetadata&quot;&gt;
+      &lt;betreftKenmerk&gt;aantalBladeren&lt;/betreftKenmerk&gt;
+      &lt;betreftObject&gt;de-witte-kastanje&lt;/betreftObject&gt;
+      &lt;betreftVersie&gt;10&lt;/betreftVersie&gt;
       &lt;beginGeldigheid&gt;2020-09-16&lt;/beginGeldigheid&gt;
       &lt;tijdstipRegistratie&gt;22020-09-16T00:00:00Z&lt;/tijdstipRegistratie&gt;
       &lt;bron&gt;
@@ -1303,6 +1317,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 ##### JSON
@@ -1442,6 +1457,7 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 ##### RDF (Turtle/TriG)
@@ -1588,6 +1604,7 @@ doc:de-witte-kastanje-v10 {<br>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 #### Gegevens - uitwerking D
@@ -1739,6 +1756,7 @@ doc:de-witte-kastanje-v10 {<br>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 
@@ -1871,6 +1889,7 @@ doc:de-witte-kastanje-v10 {<br>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 
 
@@ -2010,4 +2029,5 @@ doc:de-witte-kastanje-v10 {<br>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
