@@ -78,11 +78,11 @@ Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens be
 <div class="container--tabs">
   <div class="row">
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab-informatiemodel-a">Informatiemodel A</a></li>
-      <li class=""><a href="#tab-informatiemodel-b">Informatiemodel B</a></li>
-      <li class=""><a href="#tab-informatiemodel-c">Informatiemodel C</a></li>
-      <li class=""><a href="#tab-informatiemodel-d-object">Informatiemodel D (object)</a></li>
-      <li class=""><a href="#tab-informatiemodel-d-gegevensmeta">Informatiemodel D (gegevensmetadata)</a></li>
+      <li class="active"><a href="#tab-informatiemodel-a">Model A</a></li>
+      <li class=""><a href="#tab-informatiemodel-b">Model B</a></li>
+      <li class=""><a href="#tab-informatiemodel-c">Model C</a></li>
+      <li class=""><a href="#tab-informatiemodel-d-object">Model D (object)</a></li>
+      <li class=""><a href="#tab-informatiemodel-d-gegevensmeta">Model D (gegevensmetadata)</a></li>
     </ul>
     <div class="tab-content">
       <div id="tab-informatiemodel-a" class="tab-pane active">
