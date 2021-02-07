@@ -60,3 +60,7 @@ a .container--tabs {
 .clear {
   clear: both;
 }
+
+h5 {
+  clear: both;
+}
