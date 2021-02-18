@@ -2,9 +2,16 @@
 11 februari 2021
 
 ## Agenda: 
-- de beoordeling van de [casus-uitwerkingen]https://geonovum.github.io/disgeo-imsor/casus/imboom/) adhv criteria bespreken. 
+- de beoordeling van de [casus-uitwerkingen](https://geonovum.github.io/disgeo-imsor/casus/imboom/) adhv criteria bespreken. 
 
 Aanwezig: Dick, Linda, Paul, Lennart, Annemiek, Gabriella, Rik, Karin, Michel, Niels, Pano, Ruud
+
+# Korte samenvatting
+Michel vatte het tijdens de meeting mooi samen: er ontbreekt op dit moment in MIM een meta construct om metadata aan gegevens te relateren. Daar zijn we het wel over eens. Die kun je dan op verschillende manieren uitwerken in een UML model. 
+
+Na gezamenlijk bespreken van de beoordeling van de uitwerkingen en weging van de criteria, kwam uitwerking C als beste uitwerking naar voren. Het grootste minpunt van C vond men wel de ontbrekende binding tussen gegevens en metagegevens. 
+
+Per email leggen we nu de expertgroep de volgende vraag voor: "kun je leven met uitwerking C"? Als daar 1 of meer 'nee' op terug komt, gaan we verder discussiëren. Als er geen 'nee' op terug komt, kiezen we uitwerking C voor de modellering. 
 
 # Gedetailleerde aantekeningen van het gesprek
 - Linda: introduceert de meeting. Vandaag gaan we het hebben over de beoordeling van de uitwerkingen in het kader van [issue 14][1], het modelleren van metagegevens en historie op attribuutniveau. We hebben geprobeerd de beoordelingen (in totaal 7) samen te voegen. Echter bleek dit soms lastig te zijn, aangezien een aantal antwoorden afweken van het voorgestelde format (ja/nee). Wanneer het lastig was om een antwoord als eenduidige ja/nee te interpreteren, hebben we gezegd dat het “neutraal” was. Per criteria zullen we nu de scores en opmerkingen met betrekking tot de uitwerkingen langsgaan.  
@@ -19,7 +26,7 @@ Er ontstaat verwarring over de term “by convention”, men interpreteert dit o
 - Paul: Als je een MIM extensie maakt om nieuwe constructen op te nemen, dan is het antwoord op dit criterium dus een “ja”.
 -Michel:[mbt scores van uitwerking B] Nog over MIM-RDF mappings, je kunt het direct doen (zoals via MIM mogelijk is), of je kunt een complexere mapping maken waarin je gaat nadenken over hoe je die klassen/entiteiten eigenlijk vertaalt (bijvoorbeeld, misschien moet je wel reificatie toepassen). 
 - Lennart: [mbt scores van uitwerking C] De object kenmerken zijn duidelijk, de metadata kenmerken zijn duidelijk, maar de binding tussen object-metadata vind ik onduidelijker (deze laatste is dan wel “by convention”, het is ook niet iets wat je zomaar kunt overslaan aangezien je dan de link tussen object en metadata mist). 
-- Paul: Maar Pano, waarom vindt je dit niet by convention [uitwerking C]?
+- Paul: Maar Pano, waarom vind je dit niet by convention [uitwerking C]?
 - Pano: Want in het metamodel [van uitwerking A] leg je die relaties wel uit.
 - Paul: [mbt opmerking bij uitwerking D, over de toepassing van het MIM stereotype Gegevensgroeptype] Gegevensgroeptype is simpelweg een setje gegevens dat bij elkaar hoort.
 - Linda: Maar als je MIM leest dan staat er bij dat die gegevensgroep de attributen van een object bevatten - zonder te onderscheiden dat het om metadata gaat. 
@@ -40,9 +47,9 @@ Dit is ook een lastig criterium, de meningen verschillen. Daarnaast ontstaat er 
 
 - Michel: Ik heb hier “nee” als antwoord gegeven [voor alle uitwerkingen], omdat MIM nu niet een meta-statement construct heeft. Daardoor kan ik niet direct zeggen wanneer ik iets met RDF* vertaal, in het kort: er zijn hier nog encodings voor nodig. 
 - Linda: Dit was inderdaad een lastige vraag, omdat MIM geen encoding rules specificeert.
-- Lennart: Marco heeft dit wel gedaan, in de bijlage [van MIM, en in Imvertor zijn er wel allerlei regels voor. Uiteraard zou je dit nog verder kunnen formaliseren. Je kunt de uitwerkingen in principe allemaal serialiseren zonder problemen, maar als je het gaat inladen naar databases met standaard tools, dan krijg je te maken met interpretatie verschillen (en mogelijk data-verlies). 
+- Lennart: Marco heeft dit wel gedaan, in de bijlage [van MIM], en in Imvertor zijn er wel allerlei regels voor. Uiteraard zou je dit nog verder kunnen formaliseren. Je kunt de uitwerkingen in principe allemaal serialiseren zonder problemen, maar als je het gaat inladen naar databases met standaard tools, dan krijg je te maken met interpretatie verschillen (en mogelijk data-verlies). 
 - Pano: Wel is dit een implementatie issue, en als je zorgt dat er MIM uitbreidingen zijn hoort dit niet tot problemen te leiden (MIM+uitbreidingen in applicatie schema vertalen dan). 
-- Paul: Maar bij UML-to-GML vertalingen begrijpen veel implementaties/standaard tooling het ook gewoon niet. Het is niet dat het niet kan, maar het kost werk/overtuiging om het goed voor elkaar te krijgen. Uit deze discussie kun je ook een belangrijk principe afleiden: hoe minder je veranderd, hoe beter.
+- Paul: Maar bij UML-to-GML vertalingen begrijpen veel implementaties/standaard tooling het ook gewoon niet. Het is niet dat het niet kan, maar het kost werk/overtuiging om het goed voor elkaar te krijgen. Uit deze discussie kun je ook een belangrijk principe afleiden: hoe minder je verandert, hoe beter.
 
 - Lennart: Nog een belangrijk aandachtspunt is dat metadata niet lekker zit in meeste standaarden. Want als UML goede metadata support had, was het makkelijker. Als ik hier [van de model varianten] een schema van uitwerk, kan ik het verschil tussen data/metadata attributen nog zien? 
 - Pano/Michel: Door MIM te gebruiken zou je dit verschil altijd kunnen zien, zonder MIM niet - maar dan is de enige applicatieschema encoding die metadata onderscheiding ondersteund RDF Schema. JSON/XML schema ondersteunen niet van nature data/metadata tags (het wordt “by convention” gedaan). 
@@ -73,6 +80,8 @@ De definitie van de vraag is niet helemaal duidelijk, uit de opmerkingen [voor u
 **Criterium 7: Zijn de gegevens ook te gebruiken zónder metadata voor de grote groep gebruikers die dat voldoende vinden?**
 - Linda: Net zoals criterium 1, is dit criterium niet echt onderscheidend. 
 
+Toevoeging Linda aan aantekeningen: volgens mij zei ik dat ik dit criterium heel belangrijk vind, omdat veel gebruikers geen metadata op gegevensniveau nodig hebben. Het is slechts voor enkele use cases van belang, en moet de overige gebruikers niet in de weg zitten.
+
 **Criterium 8: Is de uitwerking vooral geschikt voor registratie, of geschikt voor uitleveren?**
 
 - Michel: Ik leg nu de link met wat we eerder zeiden - raak je data kwijt bij opslag? 
@@ -84,12 +93,13 @@ De definitie van de vraag is niet helemaal duidelijk, uit de opmerkingen [voor u
 **De voorkeur gaat uit naar: uitwerking C** 
 
 ## Acties
+Linda stuurt per email de slides, excelsheet met gewogen scoring, samenvatting + de vraag rond: "kun je leven met uitwerking C". 
 
 ## Criteria
 
 De volgende criteria/aandachtspunten (voor toekomstige beoordelingen) zijn tijdens de sessie benoemd:
 
-1. Hoe minder veranderd, hoe beter
+1. Hoe minder verandert, hoe beter
 2. Is de data die je met elkaar uitwisselt, eenduidig te interpreteren?
 3. Kan data-verlies eenvoudig vermeden worden? (te testen middels roundtripping, bijvoorbeeld) 
 
