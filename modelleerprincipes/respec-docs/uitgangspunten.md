@@ -73,3 +73,25 @@ TODO
 
 TODO
 
+
+## **U5**. Informatiemodel is afgestemd op gebruik door de doelgroepen
+
+| | | |
+|-|-|-|
+| **id** | U5 |
+| **Stelling** | Het informatiemodel (IMSOR) moet zijn afgestemd op het gebruik door de verschillende doelgroepen. |
+| **Rationale** |  |
+| **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de prioriteiten van de doelgroepen worden afgewogen. |
+
+We kunnen hiervoor gebruik maken van *'priority of constituencies'*. 
+
+<aside class="issue" data-number="13"></aside>
+
+
+**Relaties**
+- [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 5.
+
+**Voorbeelden**
+
+TODO
+
