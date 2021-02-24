@@ -1,6 +1,6 @@
-# Doelstellingen, Uitgangspunten en Principes uit andere Dis Geo documenten
+# Doelstellingen, Uitgangspunten en Principes uit andere DisGeo documenten
 
-**Vanuit Architectuurvisie Dis Geo**
+## Vanuit Architectuurvisie DisGeo
 
 **Doelstellingen**
 
@@ -13,12 +13,16 @@
 * Gegevens passen bij elkaar: relaties tussen gegevens zijn voor gebruikers duidelijk, en gegevens zijn in samenhang bruikbaar
 * De gegevensstructuur kan snel genoeg meegroeien met de gebruiksbehoefte
 
-**Vanuit Beleidsvisie Samenhangende Objcectenregistratie**
+## Vanuit Beleidsvisie Samenhangende Objectenregistratie
 
-* Vanuit andere (basis)registraties, zoals de subjectenregistraties BRP of HR, moeten eenvoudig relaties gelegd kunnen worden naar de samenhangende objectenregistratie.
+* [1] Vanuit andere (basis)registraties, zoals de subjectenregistraties BRP of HR, moeten eenvoudig relaties gelegd kunnen worden naar de samenhangende objectenregistratie.
 
-* De registratie gedraagt zich voor gebruikers zoveel mogelijk als één registratie, of het daadwerkelijk één registratie wordt, is nog niet bepaald (nader uit te werken). Daarnaast kunnen er uit de registratie (informatie)producten afgeleid worden en beschikbaar gesteld worden.
+* [2] De registratie gedraagt zich voor gebruikers zoveel mogelijk als één registratie, of het daadwerkelijk één registratie wordt, is nog niet bepaald (nader uit te werken). Daarnaast kunnen er uit de registratie (informatie)producten afgeleid worden en beschikbaar gesteld worden.
 
-**Vanuit Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie**
+* [3] De transitie zal geleidelijk / organisch (via tussenstappen, gericht op een ‘eindbeeld / streefbeeld’) vormgegeven worden, zo kan de impact bij bronhouders en gebruikers beperkt worden.
 
-Inrichtingsprincipe 5: Samenhangend gebruik van gegevens is makkelijk mogelijk, zodat gegevens uit verschillende gegevensverzamelingen te combineren zijn. Het is mogelijk dat er samengestelde producten over het geheel van het gegevenslandschap kunnen worden gerealiseerd [[DiSGeo-Arch]].
+* [4] Objecttypen en eigenschappen van objecttypen worden zodanig in de SOR opgenomen dat uitbreiding en inkrimping van het aantal objecttypen en eigenschappen en het aanpassen van de kwalificatie van objecttypen en eigenschappen als verplicht of vrijwillig binnen het informatiemodel eenvoudig mogelijk is.
+
+## Vanuit Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie
+
+* Inrichtingsprincipe 5: Samenhangend gebruik van gegevens is makkelijk mogelijk, zodat gegevens uit verschillende gegevensverzamelingen te combineren zijn. Het is mogelijk dat er samengestelde producten over het geheel van het gegevenslandschap kunnen worden gerealiseerd [[DiSGeo-Arch]].

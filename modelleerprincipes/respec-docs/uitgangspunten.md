@@ -19,7 +19,7 @@ TODO
 
 TODO
 
-## **U2**. Maak gebruik van relevante nationale standaarden
+## **U2**. Informatiemodel maakt gebruik van relevante nationale standaarden
 
 
 | | | |
@@ -43,7 +43,7 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 
 | | | |
 |-|-|-|
-| **id** | U1 |
+| **id** | U3 |
 | **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georienteerde, relationele, en graaf-gebaseerde paradigma's |
 | **Rationale** | Het moet mogelijk zijn om de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. In het bijzonder moet het informatiemodel ook het gebruik van linked data ondersteunen. |
 | **Implicaties** |  |
@@ -57,4 +57,19 @@ TODO
 TODO
 
 
-<!-- ## **U4**. Houd rekening met de uitbreidbaarheid van het model (?) -->
+## **U4**. Informatiemodel is voldoende flexibel en uitbreidbaar
+
+| | | |
+|-|-|-|
+| **id** | U4 |
+| **Stelling** | Het informatiemodel (IMSOR) moet voldoende flexibel, uitbreidbaar en inkrimpbaar zijn wat betreft objecttypen, eigenschappen en het al dan niet verplicht zijn hiervan.|
+| **Rationale** | De SOR moet geleidelijk en organisch kunnen worden ingevoerd om de transitie soepel te laten verlopen. |
+| **Implicaties** |  |
+
+**Relaties**
+- [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 3 en 4.
+
+**Voorbeelden**
+
+TODO
+
