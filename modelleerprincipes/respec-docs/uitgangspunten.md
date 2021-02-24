@@ -21,6 +21,14 @@ TODO
 
 ## **U2**. Maak gebruik van relevante nationale standaarden
 
+
+| | | |
+|-|-|-|
+| **id** | U2 |
+| **Stelling** | De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie en conform relevante standaarden voor informatiemodellering. |
+| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen objecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in Nederland in gebruik zijnde standaarden zijn. |
+| **Implicaties** | Het model maakt gebruik van de in deze standaarden aanwezige middelen om informatie te modelleren. Als deze niet afdoende zijn, kan de SOR een eigen extensie op deze standaarden definiëren. |
+
 De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie. Deze afspraken zijn vastgelegd in het Metamodel Informatie Modellering [[MIM]]. 
 
 Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie (“NEN 3610”). 
