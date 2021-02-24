@@ -94,12 +94,27 @@ var respecConfig =
         company:    "eventueel naam van bedrijf",
     },
     MIM: {
-      id: "mim10",
       title: "MIM - Metamodel Informatie Modellering",
-      href: "https://docs.geostandaarden.nl/mim/mim10/",
+      href: "https://docs.geostandaarden.nl/mim/mim/",
       status: "Definitief",
       publisher: "Geonovum",
-      date: "2017-06-14"
+      date: "2020-10-23"
+    },
+    "NEN3610-2011":
+    {
+      title:      "NEN-3610 Basismodel geo-informatie",
+      href:       "https://www.nen.nl/NEN-Shop/Norm/NEN-36102011-nl.htm",
+      status:     "Definitief",
+      date:       "Maart 2011",
+      publisher:  "NEN",
+    },
+    "NEN2660-1996":
+    {
+      title:      "Ordeningsregels voor gegevens in de bouw - Termen, definities en algemene regels",
+      href:       "https://www.nen.nl/nen-2660-1996-nl-17920",
+      status:     "Definitief",
+      date:       "1996",
+      publisher:  "NEN",
     },
   },
 
