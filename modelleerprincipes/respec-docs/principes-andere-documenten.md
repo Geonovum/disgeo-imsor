@@ -21,6 +21,4 @@
 
 **Vanuit Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie**
 
-Inrichtingsprincipe 5: Samenhangend gebruik van data is makkelijk mogelijk, zodat data uit verschillende gegevensverzamelingen te combineren is. Het is mogelijk dat er samengestelde producten over het geheel van het gegevenslandschap kunnen worden gerealiseerd.
-
-TODO: bron https://geonovum.github.io/disgeo-arch/#beleid-samenhangende-objectenregistratie
+Inrichtingsprincipe 5: Samenhangend gebruik van gegevens is makkelijk mogelijk, zodat gegevens uit verschillende gegevensverzamelingen te combineren zijn. Het is mogelijk dat er samengestelde producten over het geheel van het gegevenslandschap kunnen worden gerealiseerd [[DiSGeo-Arch]].

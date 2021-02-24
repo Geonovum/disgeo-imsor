@@ -116,6 +116,14 @@ var respecConfig =
       date:       "1996",
       publisher:  "NEN",
     },
+    "DiSGeo-Arch":
+    {
+      title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
+      href:       "https://docs.geostandaarden.nl/disgeo/arch/",
+      status:     "Versie ter vaststelling",
+      date:       "2021-02-16",
+      publisher:  "Geonovum",
+    },
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
