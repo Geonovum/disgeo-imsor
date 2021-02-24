@@ -37,7 +37,7 @@ De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afge
 
 <aside class="note">De geldende versies van zowel het Basismodel geo-informatie [[NEN3610-2011]] als de Ordeningsregels voor gegevens in de bouw [[NEN2660-1996]] worden momenteel herzien. De nieuwe versies worden verwacht in de loop van 2021. Vanuit de SOR zijn aandachtspunten voor deze nieuwe versies aangedragen en ze zijn zoveel mogelijk op elkaar afgestemd. Als er punten zijn waar deze afstemming niet voldoende blijkt te zijn geslaagd, zal vanuit de SOR hierop gewezen worden en een oplossingsrichting gekozen worden.</aside>
 
-De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afgestemd met andere relevante nationale, Europese en wereldwijde standaarden.
+De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afgestemd met andere relevante nationale, Europese en wereldwijde standaarden, zoals bijvoorbeeld CityGML en de INSPIRE standaarden.
 
 ## **U3**. Informatiemodel bruikbaar in object-georienteerde, relationele, en graaf-gebaseerde paradigma's
 
@@ -63,8 +63,8 @@ TODO
 |-|-|-|
 | **id** | U4 |
 | **Stelling** | Het informatiemodel (IMSOR) moet voldoende flexibel, uitbreidbaar en inkrimpbaar zijn wat betreft objecttypen, eigenschappen en het al dan niet verplicht zijn hiervan.|
-| **Rationale** | De SOR moet geleidelijk en organisch kunnen worden ingevoerd om de transitie soepel te laten verlopen. |
-| **Implicaties** |  |
+| **Rationale** | De SOR moet geleidelijk en organisch kunnen worden ingevoerd om de transitie soepel te laten verlopen. Objecttypen en eigenschappen moeten kunnen worden toegevoegd, verwijderd, het verplichte karakter ervan moet kunnen wijzigen al naar gelang de behoeften van de gebruikers. |
+| **Implicaties** | Het informatiemodel van de SOR moet tot op zekere hoogte een 'permanent BETA' of 'levende standaard' karakter krijgen. Bepaald moet worden welke mate van flexibiliteit nog hanteerbaar is voor de bronhouders en afnemers. |
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 3 en 4.
@@ -83,7 +83,7 @@ TODO
 | **Rationale** |  |
 | **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de prioriteiten van de doelgroepen worden afgewogen. |
 
-We kunnen hiervoor gebruik maken van *'priority of constituencies'*. 
+We kunnen hiervoor gebruik maken van de *'priority of constituencies'*, waarbij de belangen van gebruikers gaan boven belangen van softwareleveranciers, die weer gaan boven belangen van informatiemodelleurs, die weer gaan boen het belang van zuiver modelleren. 
 
 <aside class="issue" data-number="13"></aside>
 
