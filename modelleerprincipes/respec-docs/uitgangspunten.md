@@ -31,6 +31,8 @@ TODO
 
 De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie. Deze afspraken zijn vastgelegd in het Metamodel Informatie Modellering [[MIM]]. 
 
+<aside class="note">Mochten er modelleerconstructies nodig zijn die niet in MIM zijn gestandaardiseerd, dan zal het modelleerteam een MIM uitbreiding hiervoor beschrijven en afstemmen met het MIM beheerteam.</aside>
+
 Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie (“NEN 3610”). 
 
 De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw ("NEN 2660").
@@ -83,10 +85,21 @@ TODO
 | **Rationale** |  |
 | **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de prioriteiten van de doelgroepen worden afgewogen. |
 
-We kunnen hiervoor gebruik maken van de *'priority of constituencies'*, waarbij de belangen van gebruikers gaan boven belangen van softwareleveranciers, die weer gaan boven belangen van informatiemodelleurs, die weer gaan boen het belang van zuiver modelleren. 
+De functionele behoeften zijn beschreven in het document Eisen aan model samenhangende objectenregistratie [[EMSO]]. 
+
+Daarnaast maken we gebruik van het principe van de *'priority of constituencies'*, waarbij de belangen van gebruikers gaan boven belangen van softwareleveranciers, die weer gaan boven belangen van informatiemodelleurs, die weer gaan boven het belang van zuiver modelleren. 
+
+De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoemde doelgroepen in de beleidsvisie. De prioriteiten van belangen wegen we dan als volgt af: 
+
+1. Belang van gebruikers:
+    1. Overheidsgebruikers, die verplicht gebruik dienen te maken van de geo-basisregistraties voor hun processen;
+    1. Open data gebruikers, zoals bedrijven die waarde toevoegen aan gegevens in de basisregistraties en nieuwe producten ontwikkelen;
+    1. Eindgebruikers van de informatie, zoals burgers en bedrijven.
+1. Belang van softwareleveranciers, die het informatiemodel moeten implementeren (niet als opslagmodel, maar wel voor uitwisseling).
+1. Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
+1. Belang van zuiver modelleren.
 
 <aside class="issue" data-number="13"></aside>
-
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 5.

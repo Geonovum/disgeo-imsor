@@ -120,6 +120,14 @@ var respecConfig =
     {
       title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
       href:       "https://docs.geostandaarden.nl/disgeo/arch/",
+      status:     "Consultatieversie",
+      date:       "2020-10-05",
+      publisher:  "Geonovum",
+    },
+    "EMSO":
+    {
+      title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+      href:       "https://docs.geostandaarden.nl/disgeo/emso/",
       status:     "Versie ter vaststelling",
       date:       "2021-02-16",
       publisher:  "Geonovum",
