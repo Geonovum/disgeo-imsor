@@ -1,10 +1,10 @@
 <mxfile>
     <diagram id="wreS5lS5IL1-VBLfIihv" name="Page-1">
-        <mxGraphModel dx="1900" dy="-988" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1357" dy="-1181" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="plan-objectenregistratie" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;verticalAlign=top;fontSize=22;" parent="1" vertex="1">
+                <mxCell id="2" value="geplande-objectenregistratie" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;verticalAlign=top;fontSize=22;" parent="1" vertex="1">
                     <mxGeometry x="1175" y="3120" width="610" height="830" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="gerealiseerde-objectenregistratie" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;verticalAlign=top;fontSize=22;" parent="1" vertex="1">
@@ -43,7 +43,7 @@
                 <mxCell id="14" value="registratiegegevens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="15" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="«Objecttype»&#10;Wegdeel" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6d8764;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#3A5431;fontColor=#ffffff;" parent="1" vertex="1">
+                <mxCell id="15" value="«Objecttype»&#10;Verharding" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6d8764;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#3A5431;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="850" y="3307" width="250" height="104" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="+ identificatie: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="15" vertex="1">
@@ -70,7 +70,7 @@
                 <mxCell id="22" value="registratiegegevens" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="23" target="27" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="«Objecttype»&#10;Wegdeel" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6d8764;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#3A5431;fontColor=#ffffff;" parent="1" vertex="1">
+                <mxCell id="23" value="«Objecttype»&#10;Verharding" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6d8764;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#3A5431;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="1500" y="3300" width="250" height="104" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="+ identificatie: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="23" vertex="1">
