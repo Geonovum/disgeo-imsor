@@ -1,0 +1,245 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geos: <http://www.opengis.net/ont/geosparql#>.
+@prefix sor: <http://sor.overheid.nl/def/sor#>.
+@prefix sor-begrip: <https://begrippen.geostandaarden.nl/sor/nl/page/>.
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>.
+@prefix nen3610-begrip: <https://begrippen.geostandaarden.nl/nen3610/nl/page/>.
+
+<http://sor.overheid.nl/def/sor> {
+
+  <http://sor.overheid.nl/def/sor> rdf:type owl:Ontology;
+      rdfs:label "Samenhangende Objectenregistratie"@nl .
+
+      sor:Object a owl:Class;
+    rdfs:label "SOR Object"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>;
+    dcterms:subject sor-begrip:Object.
+
+  sor:ObjectGepland a owl:Class;
+    rdfs:label "SOR Object - Gepland"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>;
+    dcterms:subject sor-begrip:Object.
+
+  sor:Verharding a owl:Class;
+    rdfs:subClassOf sor:Object;
+    rdfs:label "Verharding"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>;
+    dcterms:subject sor-begrip:Verharding.
+
+  sor:VerhardingGepland a owl:Class;
+    rdfs:subClassOf sor:ObjectGepland;
+    rdfs:label "Verharding - Gepland"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>;
+    dcterms:subject sor-begrip:Verharding.
+
+  sor:Registratiegegevens a owl:Class ;
+    rdfs:label "Registratiegegevens"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:Brondocument a owl:Class ;
+    rdfs:label "Brondocument"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:identificatie a owl:DatatypeProperty;
+    rdfs:label "identificatie"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:realisatiedatum a owl:DatatypeProperty;
+    rdfs:label "realisatiedatum"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:versie a owl:DatatypeProperty;
+    rdfs:label "versie"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:documentdatum a owl:DatatypeProperty;
+    rdfs:label "documentdatum"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:status a owl:ObjectProperty;
+    rdfs:label "status"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:geregistreerdMet a owl:ObjectProperty;
+    rdfs:label "geregistreerd met"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:isPlanVan a owl:ObjectProperty;
+    rdfs:label "is plan van"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:heeftGeleidTot a owl:ObjectProperty;
+    rdfs:label "heeft geleid tot"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+
+  sor:heeftBrondocument a owl:ObjectProperty;
+    rdfs:label "heeft brondocument"@nl;
+    rdfs:isDefinedBy <http://sor.overheid.nl/def/sor>.
+}
+
+<http://definities.geostandaarden.nl/def/nen3610> {
+
+# Vanuit NEN3610
+
+nen3610:beginGeldigheid a owl:DatatypeProperty;
+  rdfs:label "beginGeldigheid"@nl;
+  rdfs:label "validFrom"@en;
+  dcterms:subject nen3610-begrip:BeginGeldigheid.
+
+nen3610:eindGeldigheid a owl:DatatypeProperty;
+  rdfs:label "eindGeldigheid"@nl;
+  rdfs:label "validTo"@en;
+  dcterms:subject nen3610-begrip:EindGeldigheid.
+  }
+
+# Instanties
+
+<http://sor.overheid.nl/sor/doc/verharding-gepland/abc.1> {
+
+  <http://sor.overheid.nl/sor/doc/verharding-gepland/abc.1> a owl:Registratiegegevens;
+    sor:versie "1"^^xsd:integer;
+    nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
+    nen3610:eindGeldigheid "2009-11-02"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding-gepland/abc> a sor:VerhardingGepland;
+    sor:identificatie "abc"^^xsd:string;
+    sor:status sor-begrip:ontwerp;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/x>;
+    sor:realisatiedatum "2010-05-05"^^xsd:date;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding-gepland/abc.1>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/x> a geos:Geometry;
+    geos:asWKT "POLYGON((4.845280465574291 52.56029451669829,4.845233038022045 52.560298066939374,4.8451986862387475 52.56030039424149,4.845184515925225 52.56030130896868,4.8451842726193695 52.560301687361004,4.845178740731542 52.5602883735189,4.845228243194151 52.56028514478218,4.845278080932887 52.560281304575625,4.845308205380623 52.56027860457614,4.845313324 52.560291888,4.845312668372959 52.560291632873636,4.845280465574291 52.56029451669829))"^^geos:wktLiteral.
+}
+
+<http://sor.overheid.nl/sor/doc/verharding-gepland/abc.2> {
+
+  <http://sor.overheid.nl/sor/doc/verharding-gepland/abc.2> a owl:Registratiegegevens;
+    sor:versie "2"^^xsd:integer;
+    nen3610:beginGeldigheid "2009-11-03"^^xsd:date;
+    nen3610:eindGeldigheid "2010-05-04"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding-gepland/abc> a sor:VerhardingGepland;
+    sor:identificatie "abc"^^xsd:string;
+    sor:status sor-begrip:bouw_gepland;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/x>;
+    sor:realisatiedatum "2010-05-05"^^xsd:date;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding-gepland/abc.2>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/x> a geos:Geometry;
+    geos:asWKT "POLYGON((4.845280465574291 52.56029451669829,4.845233038022045 52.560298066939374,4.8451986862387475 52.56030039424149,4.845184515925225 52.56030130896868,4.8451842726193695 52.560301687361004,4.845178740731542 52.5602883735189,4.845228243194151 52.56028514478218,4.845278080932887 52.560281304575625,4.845308205380623 52.56027860457614,4.845313324 52.560291888,4.845312668372959 52.560291632873636,4.845280465574291 52.56029451669829))"^^geos:wktLiteral.
+}
+
+<http://sor.overheid.nl/sor/doc/verharding/123.1> {
+
+  <http://sor.overheid.nl/sor/doc/verharding/123.1> a owl:Registratiegegevens;
+    sor:versie "1"^^xsd:integer;
+    nen3610:beginGeldigheid "2010-05-05"^^xsd:date;
+    nen3610:eindGeldigheid "2020-06-22"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding/123> a sor:Verharding;
+    sor:identificatie "123"^^xsd:string;
+    sor:status sor-begrip:bestaand_reeel_object;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/x>;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding/123.1>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/x> a geos:Geometry;
+    geos:asWKT "POLYGON((4.845280465574291 52.56029451669829,4.845233038022045 52.560298066939374,4.8451986862387475 52.56030039424149,4.845184515925225 52.56030130896868,4.8451842726193695 52.560301687361004,4.845178740731542 52.5602883735189,4.845228243194151 52.56028514478218,4.845278080932887 52.560281304575625,4.845308205380623 52.56027860457614,4.845313324 52.560291888,4.845312668372959 52.560291632873636,4.845280465574291 52.56029451669829))"^^geos:wktLiteral.
+
+}
+
+<http://sor.overheid.nl/sor/doc/verharding-gepland/def.1> {
+
+  <http://sor.overheid.nl/sor/doc/verharding-gepland/def.1> a owl:Registratiegegevens;
+    sor:versie "1"^^xsd:integer;
+    nen3610:beginGeldigheid "2020-01-11"^^xsd:date;
+    nen3610:eindGeldigheid "2020-06-21"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding-gepland/def> a sor:VerhardingGepland;
+    sor:identificatie "def"^^xsd:string;
+    sor:status sor-begrip:verbouw_gepland;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/y>;
+    sor:realisatiedatum "2020-06-22"^^xsd:date;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding-gepland/def.1>;
+    sor:isPlanVan <http://sor.overheid.nl/sor/id/verharding/123>;
+    sor:heeftGeleidTot <http://sor.overheid.nl/sor/id/verharding/123>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/y> a geos:Geometry;
+    geos:asWKT "POLYGON ((4.845295553 52.560318364,4.845202039 52.560328318,4.845191892 52.560313946,4.845185949 52.560305560,4.845169353 52.560282055,4.845275734 52.560272744,4.845306529 52.560270044,4.845313324 52.560291888,4.845320715 52.560315684,4.845295553 52.560318364))"^^geos:wktLiteral.
+}
+
+<http://sor.overheid.nl/sor/doc/verharding-gepland/ghj.1> {
+
+  <http://sor.overheid.nl/sor/doc/verharding-gepland/ghj.1> a owl:Registratiegegevens;
+    sor:versie "1"^^xsd:integer;
+    nen3610:beginGeldigheid "2020-01-11"^^xsd:date;
+    nen3610:eindGeldigheid "2020-03-15"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding-gepland/ghj> a sor:VerhardingGepland;
+    sor:identificatie "ghj"^^xsd:string;
+    sor:status sor-begrip:sloop_gepland;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/x>;
+    sor:realisatiedatum "2020-06-22"^^xsd:date;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding-gepland/ghj.1>;
+    sor:isPlanVan <http://sor.overheid.nl/sor/id/verharding/123>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/x> a geos:Geometry;
+    geos:asWKT "POLYGON((4.845280465574291 52.56029451669829,4.845233038022045 52.560298066939374,4.8451986862387475 52.56030039424149,4.845184515925225 52.56030130896868,4.8451842726193695 52.560301687361004,4.845178740731542 52.5602883735189,4.845228243194151 52.56028514478218,4.845278080932887 52.560281304575625,4.845308205380623 52.56027860457614,4.845313324 52.560291888,4.845312668372959 52.560291632873636,4.845280465574291 52.56029451669829))"^^geos:wktLiteral.
+}
+
+<http://sor.overheid.nl/sor/doc/verharding/123.2> {
+
+  <http://sor.overheid.nl/sor/doc/verharding/123.2> a owl:Registratiegegevens;
+    sor:versie "2"^^xsd:integer;
+    nen3610:beginGeldigheid "2020-06-22"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding/123> a sor:Verharding;
+    sor:identificatie "123"^^xsd:string;
+    sor:status sor-begrip:bestaand_reeel_object;
+    geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/y>;
+    sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding/123.2>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/y> a geos:Geometry;
+    geos:asWKT "POLYGON ((4.845295553 52.560318364,4.845202039 52.560328318,4.845191892 52.560313946,4.845185949 52.560305560,4.845169353 52.560282055,4.845275734 52.560272744,4.845306529 52.560270044,4.845313324 52.560291888,4.845320715 52.560315684,4.845295553 52.560318364))"^^geos:wktLiteral.
+}
+
+<http://sor.overheid.nl/sor/doc/verharding-gepland/klm.1> {
+
+  <http://sor.overheid.nl/sor/doc/verharding-gepland/klm.1> a owl:Registratiegegevens;
+  sor:versie "1"^^xsd:integer;
+  nen3610:beginGeldigheid "2021-01-01"^^xsd:date.
+
+  <http://sor.overheid.nl/sor/id/verharding-gepland/klm.1> a sor:VerhardingGepland;
+  sor:identificatie "klm"^^xsd:string;
+  sor:status sor-begrip:verbouw_gepland;
+  geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/z>;
+  sor:realisatiedatum "2021-01-15"^^xsd:date;
+  sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding-gepland/klm.1>;
+  sor:isPlanVan <http://sor.overheid.nl/sor/id/verharding/123>.
+
+  <http://sor.overheid.nl/sor/id/geometrie/z> a geos:Geometry;
+  geos:asWKT "POLYGON((4.845295553 52.560318364,4.845202039 52.560328318,4.845191892 52.560313946,4.845185949 52.56030556,4.845161976925199 52.56027104854554,4.845210473559427 52.56026435481175,4.845260311298163 52.560257457253726,4.8453018351342125 52.56025231137271,4.845313324 52.560291888,4.845320715 52.560315684,4.845295553 52.560318364))"^^geos:wktLiteral.
+}
+
+## even uitgezet ivm aantonen toekomsttijdreizen.
+# <http://sor.overheid.nl/sor/doc/verharding/123.3> {
+#
+#   <http://sor.overheid.nl/sor/doc/verharding/123.3> a owl:Registratiegegevens;
+#   sor:versie "2"^^xsd:integer;
+#   nen3610:beginGeldigheid "2021-01-15"^^xsd:date.
+#
+#   <http://sor.overheid.nl/sor/id/verharding/123> a sor:Verharding;
+#   sor:identificatie "123"^^xsd:string;
+#   sor:status sor-begrip:bestaand_reeel_object;
+#   geos:hasGeometry <http://sor.overheid.nl/sor/id/geometrie/z>;
+#   sor:geregistreerdMet <http://sor.overheid.nl/sor/doc/verharding/123.3>.
+#
+#   <http://sor.overheid.nl/sor/id/geometrie/z> a geos:Geometry;
+#   geos:asWKT "POLYGON((4.845295553 52.560318364,4.845202039 52.560328318,4.845191892 52.560313946,4.845185949 52.56030556,4.845161976925199 52.56027104854554,4.845210473559427 52.56026435481175,4.845260311298163 52.560257457253726,4.8453018351342125 52.56025231137271,4.845313324 52.560291888,4.845320715 52.560315684,4.845295553 52.560318364))"^^geos:wktLiteral.
+#
+# }
