@@ -5,8 +5,9 @@
 1. Levensloop: Op basis van de commentaren uit onze vorige meeting hebben we uitwerking 2 [[verder uitgewerkt](https://github.com/Geonovum/disgeo-imsor/discussions/38)]. Deze uitwerking bespreken we graag met jullie. 
 2. Vervolgsessies
 
-Aanwezig: Annemiek Pano Niels Ruud Dick Gabriella Jan Linda Lennart Rik
-Afgemeld: Paul, Michel
+Aanwezig: Annemiek, Dick, Gabriella, Jan, Lennart, Linda,  Niels, Pano, Rik, Ruud.
+
+Afgemeld:  Michel, Paul.
 
 ## Gedetailleerde aantekeningen van het gesprek
 
