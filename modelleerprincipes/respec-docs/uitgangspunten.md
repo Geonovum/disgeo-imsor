@@ -33,13 +33,13 @@ De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties
 
 <aside class="note">Mochten er modelleerconstructies nodig zijn die niet in MIM zijn gestandaardiseerd, dan zal het modelleerteam een MIM uitbreiding hiervoor beschrijven en afstemmen met het MIM beheerteam.</aside>
 
-Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie (“NEN 3610”). 
+Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie [[NEN3610-2021-ontw]]. 
 
-De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw ("NEN 2660").
+De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw, deel 1 [[NEN2660-1-2021-ontw]]  en 2 [[NEN2660-2-2021-ontw]].
 
-<aside class="note">De geldende versies van zowel het Basismodel geo-informatie [[NEN3610-2011]] als de Ordeningsregels voor gegevens in de bouw [[NEN2660-1996]] worden momenteel herzien. De nieuwe versies worden verwacht in de loop van 2021. Vanuit de SOR zijn aandachtspunten voor deze nieuwe versies aangedragen en ze zijn zoveel mogelijk op elkaar afgestemd. Als er punten zijn waar deze afstemming niet voldoende blijkt te zijn geslaagd, zal vanuit de SOR hierop gewezen worden en een oplossingsrichting gekozen worden.</aside>
+<aside class="note">De geldende versies van zowel het Basismodel geo-informatie [[NEN3610-2011]] als de Ordeningsregels voor gegevens in de bouw [[NEN2660-1996]] zijn verouderd en worden momenteel herzien. De nieuwe versies worden verwacht in de loop van 2021. De SOR zal aansluiten op deze nieuwe versies. Vanuit de SOR zijn aandachtspunten voor deze nieuwe versies aangedragen en ze zijn zoveel mogelijk op elkaar afgestemd. Als er punten zijn waar deze afstemming niet voldoende blijkt te zijn geslaagd, zal vanuit de SOR hierop gewezen worden en een oplossingsrichting gekozen worden.</aside>
 
-De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afgestemd met andere relevante nationale, Europese en wereldwijde standaarden, zoals bijvoorbeeld CityGML en de INSPIRE standaarden.
+De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afgestemd met andere relevante nationale, Europese en wereldwijde standaarden, zoals bijvoorbeeld [CityGML](https://www.ogc.org/standards/citygml) en de [INSPIRE standaarden](https://inspire.ec.europa.eu/data-specifications/2892).
 
 ## **U3**. Informatiemodel bruikbaar in object-georienteerde, relationele, en graaf-gebaseerde paradigma's
 

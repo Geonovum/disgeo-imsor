@@ -108,12 +108,35 @@ var respecConfig =
       date:       "Maart 2011",
       publisher:  "NEN",
     },
+    "NEN3610-2021-ontw":
+    {
+      title:      "NEN-3610 Basismodel geo-informatie",
+      status:     "Ontwerp",
+      date:       "2021",
+      publisher:  "NEN",
+    },
     "NEN2660-1996":
     {
       title:      "Ordeningsregels voor gegevens in de bouw - Termen, definities en algemene regels",
       href:       "https://www.nen.nl/nen-2660-1996-nl-17920",
       status:     "Definitief",
       date:       "1996",
+      publisher:  "NEN",
+    },
+    "NEN2660-1-2021-ontw":
+    {
+      title:      "Regels voor informatiemodellering van de gebouwde omgeving - Deel 1: Conceptuele modellen",
+      href:       "https://normontwerpen.nen.nl/Home/Details/754",
+      status:     "Normontwerp",
+      date:       "6 april 2021",
+      publisher:  "NEN",
+    },
+    "NEN2660-2-2021-ontw":
+    {
+      title:      "Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van deel 1",
+      href:       "https://normontwerpen.nen.nl/Home/Details/755",
+      status:     "Normontwerp",
+      date:       "6 april 2021",
       publisher:  "NEN",
     },
     "DiSGeo-Arch":
