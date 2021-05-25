@@ -179,6 +179,14 @@ var respecConfig =
       date:       "20 november 2020",
       publisher:  "Het Kadaster",
     },
+    "Richtlijn-Metagegevens": 
+    {
+      title:      "Richtlijn Metagegevens Overheidsinformatie",
+      href:       "https://www.nationaalarchief.nl/archiveren/kennisbank/metadata",
+      status:     "Definitief",
+      date:       "15 juli 2009",
+      publisher:  "Nationaal Archief",
+    }
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 

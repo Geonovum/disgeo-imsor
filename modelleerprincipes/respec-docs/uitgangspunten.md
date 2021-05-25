@@ -47,11 +47,12 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 | **id** | U3 |
 | **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georiënteerde, relationele, en graaf-gebaseerde paradigma's |
 | **Rationale** | Het moet mogelijk zijn om de informatie in de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. In het bijzonder moet het informatiemodel ook het gebruik van linked data ondersteunen. |
-| **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een informatieobject over een object alleen directe eigenschappen van het object beschrijft. Ofwel, alle gegevens in het informatieobject gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één object in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
+| **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een <a>informatieobject</a> over een <a>object</a> alleen directe eigenschappen van het <a>object</a> beschrijft. Ofwel, alle gegevens in het <a>informatieobject</a> gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één <a>object</a> in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
 
 **Relaties**
 
-TODO
+gerelateerd aan:
+* [](#u1-informatiemodel-bevordert-samenhang)
 
 **Voorbeelden**
 Een voorbeeld van een probleemgeval zijn de eigenschappen `documentnummer` en `documentdatum` die in de BAG op elk objecttype voorkomen [[Catalogus-BAG]]. Neem bijvoorbeeld het objecttype Pand.
@@ -106,13 +107,13 @@ Daarnaast maken we gebruik van het principe van de *'priority of constituencies'
 
 De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoemde doelgroepen in de beleidsvisie. De prioriteiten van belangen wegen we dan als volgt af: 
 
-1. Belang van gebruikers:
+  1. Belang van gebruikers:
     1. Overheidsgebruikers, die verplicht gebruik dienen te maken van de geo-basisregistraties voor hun processen;
     1. Open data gebruikers, zoals bedrijven die waarde toevoegen aan gegevens in de basisregistraties en nieuwe producten ontwikkelen;
     1. Eindgebruikers van de informatie, zoals burgers en bedrijven.
-1. Belang van softwareleveranciers, die het informatiemodel moeten implementeren (niet als opslagmodel, maar wel voor uitwisseling).
-1. Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
-1. Belang van zuiver modelleren.
+  1. Belang van softwareleveranciers, die het informatiemodel moeten implementeren (niet als opslagmodel, maar wel voor uitwisseling).
+  1. Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
+  1. Belang van zuiver modelleren.
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 5.
