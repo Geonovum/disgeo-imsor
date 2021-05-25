@@ -35,12 +35,12 @@ TODO  -->
 invulling van:
 * [](#p3-alleen-directe-eigenschappen)
 
-## **R2**. Consistent gebruik van objecttypering voor soorten geo-objecten
+## **R2**. Consistent gebruik van objecttypering voor soorten objecten
 
 | | | |
 |-|-|-|
 | **id** | R2 |
-| **Stelling** | Consistent gebruik van objecttypering voor soorten objecten |
+| **Stelling** | Consistent gebruik van objecttypering voor soorten <a>objecten</a> |
 | **Rationale** | Veel software paradigma's kunnen niet goed omgaan met meervoudige typering of meervoudige overerving. Om het gebruik van de informatie in de SOR so breed mogelijk te ondersteunen, maken we gebruik van enkelvoudig getypeerde objecten. Aanvullende typering kan plaatsvinden middels typerende of categoriserende waardelijsten. |
 | **Implicaties** | Het conceptuele model gebruikt een taxonomische structuur (met klasse-subklasse relaties) voor het modelleren van <a>geo-informatieobjecten</a>, waarbij elk sub-<a>objecttype</a> op zijn minst één verplicht attribuut kent die het onderscheidt van zijn 'parent'. Blijkt dit niet het geval te zijn, dan wordt het gemodelleerd als een attribuutwaarde van het attribuut 'type'. |
 
