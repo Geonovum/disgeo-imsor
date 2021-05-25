@@ -155,6 +155,30 @@ var respecConfig =
       date:       "2021-02-16",
       publisher:  "Geonovum",
     },
+    "Catalogus-BAG":
+    {
+      title:      "Catalogus Basisregistratie Adressen en Gebouwen",
+      href:       "https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018",
+      status:     "Definitief",
+      date:       "2018",
+      publisher:  "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties, Directoraat-generaal Bestuur, Ruimte en Wonen, Directie Ruimtelijke Ordening",
+    },
+    "Catalogus-BGT":
+    {
+      title:      "Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2",
+      href:       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt",
+      status:     "Definitief",
+      date:       "01 juli 2020",
+      publisher:  "Geonovum",
+    },
+    "Catalogus-BRT":
+    {
+      title:      "BRT Catalogus productspecificaties TOP10NL",
+      href:       "https://www.kadaster.nl/-/brt-catalogus-productspecificaties",
+      status:     "Definitief",
+      date:       "20 november 2020",
+      publisher:  "Het Kadaster",
+    },
   },
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 

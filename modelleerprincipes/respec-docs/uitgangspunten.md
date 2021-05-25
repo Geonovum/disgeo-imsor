@@ -7,26 +7,25 @@ De gebruikte definities en de modelleerprincipes zijn geformuleerd met een aanta
 | | | |
 |-|-|-|
 | **id** | U1 |
-| **Stelling** | Het informatiemodel (IMSOR) bevordert samenhang tussen objecten in registraties |
-| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen objecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet ook het informatiemodel deze samenhang bevorderen. |
-| **Implicaties** | Het model bevat basisobjecten die terug te koppelen zijn aan alle huidige registraties, maar biedt ook ruimte voor het opnemen van vrijwillige objecten vanuit verschillende registraties - dit vereist ook samenhang in de structuur. |
+| **Stelling** | Het informatiemodel (IMSOR) bevordert samenhang tussen informatieobjecten in registraties |
+| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet ook het informatiemodel deze samenhang bevorderen. |
+| **Implicaties** | Het model bevat basisobjecttypes die terug te koppelen zijn aan alle huidige registraties, maar biedt ook ruimte voor het opnemen van vrijwillige objecttypes vanuit verschillende registraties - dit vereist ook samenhang in de structuur. |
 
-**Relaties**
+<!-- **Relaties**
 
 TODO
 
 **Voorbeelden**
 
-TODO
+TODO -->
 
 ## **U2**. Informatiemodel maakt gebruik van relevante nationale standaarden
-
 
 | | | |
 |-|-|-|
 | **id** | U2 |
 | **Stelling** | De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie en conform relevante standaarden voor informatiemodellering. |
-| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen objecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in Nederland in gebruik zijnde standaarden zijn. |
+| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in Nederland in gebruik zijnde standaarden zijn. |
 | **Implicaties** | Het model maakt gebruik van de in deze standaarden aanwezige middelen om informatie te modelleren. Als deze niet afdoende zijn, kan de SOR een eigen extensie op deze standaarden definiëren. |
 
 De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie. Deze afspraken zijn vastgelegd in het Metamodel Informatie Modellering [[MIM]]. 
@@ -35,7 +34,7 @@ De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties
 
 Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie [[NEN3610-2021-ontw]]. 
 
-De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw, deel 1 [[NEN2660-1-2021-ontw]]  en 2 [[NEN2660-2-2021-ontw]].
+De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw, deel 1 [[NEN2660-1-2021-ontw]] en 2 [[NEN2660-2-2021-ontw]].
 
 <aside class="note">De geldende versies van zowel het Basismodel geo-informatie [[NEN3610-2011]] als de Ordeningsregels voor gegevens in de bouw [[NEN2660-1996]] zijn verouderd en worden momenteel herzien. De nieuwe versies worden verwacht in de loop van 2021. De SOR zal aansluiten op deze nieuwe versies. Vanuit de SOR zijn aandachtspunten voor deze nieuwe versies aangedragen en ze zijn zoveel mogelijk op elkaar afgestemd. Als er punten zijn waar deze afstemming niet voldoende blijkt te zijn geslaagd, zal vanuit de SOR hierop gewezen worden en een oplossingsrichting gekozen worden.</aside>
 
@@ -46,18 +45,34 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 | | | |
 |-|-|-|
 | **id** | U3 |
-| **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georienteerde, relationele, en graaf-gebaseerde paradigma's |
-| **Rationale** | Het moet mogelijk zijn om de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. In het bijzonder moet het informatiemodel ook het gebruik van linked data ondersteunen. |
-| **Implicaties** |  |
+| **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georiënteerde, relationele, en graaf-gebaseerde paradigma's |
+| **Rationale** | Het moet mogelijk zijn om de informatie in de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. In het bijzonder moet het informatiemodel ook het gebruik van linked data ondersteunen. |
+| **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een informatieobject over een object alleen directe eigenschappen van het object beschrijft. Ofwel, alle gegevens in het informatieobject gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één object in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
 
 **Relaties**
 
 TODO
 
 **Voorbeelden**
+Een voorbeeld van een probleemgeval zijn de eigenschappen `documentnummer` en `documentdatum` die in de BAG op elk objecttype voorkomen [[Catalogus-BAG]]. Neem bijvoorbeeld het objecttype Pand.
 
-TODO
+<figure id="imbag-pand">
+  <img src="../media/imbag-pand.png" alt="IMBAG Pand objecttype" />
+  <figcaption>Het objecttype Pand uit IMBAG</figcaption>
+</figure>
 
+Het objecttype beschrijft eigenschappen van Pand zoals `oorspronkelijk bouwjaar` en `geometrie`, maar ook `documentdatum` en `documentnummer`. Echter, wanneer je gaat kijken naar de definitie van deze laatste twee eigenschappen, wordt het duidelijk dat dit geen directe eigenschappen zijn van Pand objecten.
+
+De definitie van `documentdatum` luidt:
+> De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden.
+
+De definitie van `documentnummer` luidt:
+> De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente.
+
+Terwijl de definitie van `oorspronkelijk bouwjaar` is:
+> De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.
+
+Uit bovenstaande definities [[Catalogus-BAG]] wordt duidelijk dat het hier om twee verschillende dingen gaat. Aan de ene kant het pand-object met bouwjaar en aan de andere kant het brondocument op basis waarvan de gegevens over het pand-object tot stand zijn gekomen. Het combineren van deze twee objecten tot één, levert echter problemen op bij het representeren in een graafgebaseerd paradigma. Dit probleem wordt nog groter wanneer de wens bestaat om informatie uit andere registraties te verbinden aan objecten van dit type. Stel dat we een registratie hebben met nog meer informatie over brondocumenten (auteurs, laatste wijziging, etc.), of registraties met andere informatie over dezelfde panden. Waar en hoe moeten er nu relaties mee gelegd worden?
 
 ## **U4**. Informatiemodel is voldoende flexibel en uitbreidbaar
 
@@ -71,9 +86,9 @@ TODO
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 3 en 4.
 
-**Voorbeelden**
+<!-- **Voorbeelden**
 
-TODO
+TODO -->
 
 
 ## **U5**. Informatiemodel is afgestemd op gebruik door de doelgroepen
@@ -99,12 +114,9 @@ De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoem
 1. Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
 1. Belang van zuiver modelleren.
 
-<aside class="issue" data-number="13"></aside>
-
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 5.
 
-**Voorbeelden**
+<!-- **Voorbeelden**
 
-TODO
-
+TODO -->

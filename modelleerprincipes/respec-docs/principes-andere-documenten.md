@@ -4,14 +4,14 @@
 
 **Doelstellingen**
 
-* Een betrouwbare, consistente en actuele samenhangende gegevensset voor heel Nederland;
-* Een betere inpassing in moderne architecturen
+* Een betrouwbare, consistente en actuele samenhangende gegevensset voor heel Nederland.
+* Een betere inpassing in moderne architecturen.
 * Meer en eenvoudiger gebruik van deze informatie in maatschappelijke toepassingen. De registratie gedraagt zich voor de gebruiker als één registratie.
 
 **Uitgangspunten**
 
-* Gegevens passen bij elkaar: relaties tussen gegevens zijn voor gebruikers duidelijk, en gegevens zijn in samenhang bruikbaar
-* De gegevensstructuur kan snel genoeg meegroeien met de gebruiksbehoefte
+* Gegevens passen bij elkaar: relaties tussen gegevens zijn voor gebruikers duidelijk, en gegevens zijn in samenhang bruikbaar.
+* De gegevensstructuur kan snel genoeg meegroeien met de gebruiksbehoefte.
 
 ## Vanuit Beleidsvisie Samenhangende Objectenregistratie
 
