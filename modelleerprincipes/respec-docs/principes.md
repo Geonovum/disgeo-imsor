@@ -61,17 +61,17 @@ De BAG, de BRT en de BGT beschrijven alle drie informatie over gebouwen. Allen v
 In [](#logisch-imbag-pand), [](#logisch-imbgt-pand) en [](#logisch-imbrt-gebouw) is een representatie van de huidige logische informatiemodellen van de desbetreffende objecttypes uit deze datasets opgenomen.
 
 <figure id="logisch-imbag-pand">
-  <img src="../media/imbag-pand.drawio.png" alt="IMBAG Pand objecttype" />
+  <img src="modelleerprincipes/media/imbag-pand.drawio.png" alt="IMBAG Pand objecttype" />
   <figcaption>Logisch informatiemodel Pand uit IMBAG</figcaption>
 </figure>
 
 <figure id="logisch-imbgt-pand">
-  <img src="../media/imbgt-pand.drawio.png" alt="BGT Pand objecttype" />
+  <img src="modelleerprincipes/media/imbgt-pand.drawio.png" alt="BGT Pand objecttype" />
   <figcaption>Logisch informatiemodel Pand uit BGT</figcaption>
 </figure>
 
 <figure id="logisch-imbrt-gebouw">
-  <img src="../media/imbrt-gebouw.drawio.png" alt="BRT Gebouw objecttype" />
+  <img src="modelleerprincipes/media/imbrt-gebouw.drawio.png" alt="BRT Gebouw objecttype" />
   <figcaption>Logisch informatiemodel Gebouw uit BRT</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Bij het in samenhang gebruiken van informatie over een specifiek object willen w
 Wanneer we dit doen, zonder verdere aanpassing leidt dat tot een logisch informatiemodel zoals in [](#gebouw-geen-samenhang).
 
 <figure id="gebouw-geen-samenhang">
-  <img src="../media/gebouw-geen-samenhang.drawio.png" alt="Geen samenhang gebouw" />
+  <img src="modelleerprincipes/media/gebouw-geen-samenhang.drawio.png" alt="Geen samenhang gebouw" />
   <figcaption>Gebouw in samenhang?</figcaption>
 </figure>
 
@@ -107,14 +107,14 @@ Deze informatiemodellen voldoen dus nog niet aan het principe "Gebruik alleen di
 In [](#logisch-imbag-pand-samenhang), [](#logisch-imbgt-pand-samenhang) en [](#logisch-imbrt-gebouw-samenhang) passen we dit principe wel toe. Daarnaast maken we gebruik van het construct Registratiegegevens uit NEN3610 om de registratiecontext van gegevens op een standaard manier te duiden.
 
 <figure id="logisch-imbag-pand-samenhang">
-  <img src="../media/imbag-pand-samenhang.drawio.png" alt="IMBAG Pand objecttype voor samenhang" />
+  <img src="modelleerprincipes/media/imbag-pand-samenhang.drawio.png" alt="IMBAG Pand objecttype voor samenhang" />
   <figcaption>Logisch informatiemodel Pand uit IMBAG voor gebruik in samenhang</figcaption>
 </figure>
 
 Voor het logisch informatiemodel van de BAG hebben we de geldigheidsinformatie van de BAG uitgedrukt in termen van Registratiegegevens van NEN3610. Daarnaast hebben we eigenschappen die niet direct over het object gaan verplaatst. Wanneer het gegeven over het informatieobject / voorkomen gaat, hebben we deze verplaatst naar het voorkomen. Wanneer dit over een brondocument gaat, hebben we het verplaatst naar een objecttype Brondocument. Verder hebben we een relatie toegevoegd tussen het voorkomen en een brondocument, met de rationale dat een brondocument een bron is voor een informatieobject / voorkomen in een registratie, en niet een bron is voor het daadwerkelijk object in de buitenwereld. Dit is weergegeven in [](#logisch-imbag-pand-samenhang).
 
 <figure id="logisch-imbgt-pand-samenhang">
-  <img src="../media/imbgt-pand-samenhang.drawio.png" alt="BGT Pand objecttype voor samenhang" />
+  <img src="modelleerprincipes/media/imbgt-pand-samenhang.drawio.png" alt="BGT Pand objecttype voor samenhang" />
   <figcaption>Logisch informatiemodel Pand uit BGT voor gebruik in samenhang</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ De eigenschap `inOnderzoek` geeft aan dat er een onderzoek loopt naar de gegeven
 Alle wijzigingen zijn afgebeeld in [](#logisch-imbgt-pand-samenhang).
 
 <figure id="logisch-imbrt-gebouw-samenhang">
-  <img src="../media/imbrt-gebouw-samenhang.drawio.png" alt="BRT Gebouw objecttype voor samenhang" />
+  <img src="modelleerprincipes/media/imbrt-gebouw-samenhang.drawio.png" alt="BRT Gebouw objecttype voor samenhang" />
   <figcaption>Logisch informatiemodel Gebouw uit BRT voor gebruik in samenhang</figcaption>
 </figure>
 
@@ -149,7 +149,7 @@ Het is duidelijk dat dit gegevens oplevert die niet direct over het object gaan,
 Daarnaast zijn de eigenschappen die gaan over de bron van informatieobjecten in een objecttype Bron geplaatst, vergelijkbaar als voor de BAG en de BGT.
 
 <figure id="gebouw-samenhang">
-  <img src="../media/gebouw-samenhang.drawio.png" alt="Samenhang gebouw" />
+  <img src="modelleerprincipes/media/gebouw-samenhang.drawio.png" alt="Samenhang gebouw" />
   <figcaption>Gebouw in samenhang</figcaption>
 </figure>
 
