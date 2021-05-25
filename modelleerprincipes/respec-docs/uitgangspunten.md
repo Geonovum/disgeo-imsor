@@ -57,7 +57,7 @@ TODO
 Een voorbeeld van een probleemgeval zijn de eigenschappen `documentnummer` en `documentdatum` die in de BAG op elk objecttype voorkomen [[Catalogus-BAG]]. Neem bijvoorbeeld het objecttype Pand.
 
 <figure id="imbag-pand">
-  <img src="modelleerprincipes/media/imbag-pand.png" alt="IMBAG Pand objecttype" />
+  <img src="media/imbag-pand.png" alt="IMBAG Pand objecttype" />
   <figcaption>Het objecttype Pand uit IMBAG</figcaption>
 </figure>
 
