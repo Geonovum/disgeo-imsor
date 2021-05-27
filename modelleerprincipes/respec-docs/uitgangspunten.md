@@ -103,7 +103,7 @@ TODO -->
 
 De functionele behoeften zijn beschreven in het document Eisen aan model samenhangende objectenregistratie [[EMSO]]. 
 
-Daarnaast maken we gebruik van het principe van de *'priority of constituencies'*, waarbij de belangen van gebruikers gaan boven belangen van softwareleveranciers, die weer gaan boven belangen van informatiemodelleurs, die weer gaan boven het belang van zuiver modelleren. 
+Daarnaast maken we gebruik van het principe van de *'priority of constituencies'*, waarbij de belangen van gebruikers boven de belangen van softwareleveranciers gaan, die weer boven belangen van informatiemodelleurs gaan, die weer boven het belang van zuiver modelleren gaat.
 
 De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoemde doelgroepen in de beleidsvisie. De prioriteiten van belangen wegen we dan als volgt af: 
 
