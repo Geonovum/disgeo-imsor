@@ -28,7 +28,7 @@ TODO  -->
 | **id** | R1 |
 | **Stelling** | Scheidt <a>registratiemetadata</a> van <a>directe eigenschappen</a> |
 | **Rationale** | <a>Registratiemetadata</a> wordt vaak vermengd (als eigenschappen op hetzelfde <a>objecttype</a> gebruikt) met de <a>directe eigenschappen</a> van het <a>object</a>. Dit is meestal geen probleem in een specifieke registratie, maar hindert <a>samenhang</a> en hergebruik van <a>informatieobjecten</a> en <a>objecttypes</a> over registraties heen, vanwege verschil in <a>metadata</a>, onduidelijke, of verschillende definities, etc.|
-| **Implicaties** | Gebruik een apart <a>objecttype</a> om de registratie(meta)data op te modelleren. Dit kan doormiddel van een standaard modelleerpatroon, waarbij je via een voorgedefinieerde relatie vanuit een <a>object</a> kunt vinden wat de registratiecontext van dat <a>object</a> is, en wat de registratie(meta)data is die daarbij hoort. [[NEN3610-2021-ontw]] zet hier al een goede stap in door het introduceren van het concept Registratiegegevens. Zie ook het voorbeeld in [](#p3-alleen-directe-eigenschappen) |
+| **Implicaties** | Gebruik een apart <a>objecttype</a> om de registratie(meta)data op te modelleren. Dit kan doormiddel van een standaard modelleerpatroon, waarbij je via een voorgedefinieerde relatie van een <a>informatieobject</a> kunt vinden wat de registratiecontext van dat <a>informatieobject</a> is, en wat de registratie(meta)data is die daarbij hoort. [[NEN3610-2021-ontw]] zet hier al een goede stap in door het introduceren van het concept Registratiegegevens. Zie ook het voorbeeld in [](#p3-alleen-directe-eigenschappen) |
 
 **Relaties**
 
@@ -53,7 +53,7 @@ invulling van:
 
 TODO -->
 
-## **R3**. Geen gegevensgroeptype gebruiken.
+## **R3**. Geen gegevensgroeptype gebruiken
 
 | | | |
 |-|-|-|

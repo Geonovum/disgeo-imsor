@@ -47,7 +47,7 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 | **id** | U3 |
 | **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georiënteerde, relationele, en graaf-gebaseerde paradigma's |
 | **Rationale** | Het moet mogelijk zijn om de informatie in de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. In het bijzonder moet het informatiemodel ook het gebruik van linked data ondersteunen. |
-| **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een <a>informatieobject</a> over een <a>object</a> alleen directe eigenschappen van het <a>object</a> beschrijft. Ofwel, alle gegevens in het <a>informatieobject</a> gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één <a>object</a> in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
+| **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een <a>informatieobject</a> over een <a>object</a> alleen <a>directe eigenschappen</a> van het <a>object</a> beschrijft. Ofwel, alle gegevens in het <a>informatieobject</a> gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één <a>object</a> in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
 
 **Relaties**
 
@@ -62,13 +62,13 @@ Een voorbeeld van een probleemgeval zijn de eigenschappen `documentnummer` en `d
   <figcaption>Het objecttype Pand uit IMBAG</figcaption>
 </figure>
 
-Het objecttype beschrijft eigenschappen van Pand zoals `oorspronkelijk bouwjaar` en `geometrie`, maar ook `documentdatum` en `documentnummer`. Echter, wanneer je gaat kijken naar de definitie van deze laatste twee eigenschappen, wordt het duidelijk dat dit geen directe eigenschappen zijn van Pand objecten.
+Het objecttype beschrijft eigenschappen van Pand zoals `oorspronkelijk bouwjaar` en `geometrie`, maar ook `documentdatum` en `documentnummer`. Echter, wanneer je gaat kijken naar de definitie van deze laatste twee eigenschappen, wordt het duidelijk dat dit geen <a>directe eigenschappen</a> zijn van Pand objecten.
 
 De definitie van `documentdatum` luidt:
-> De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden.
+> De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden.
 
 De definitie van `documentnummer` luidt:
-> De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente.
+> De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente.
 
 Terwijl de definitie van `oorspronkelijk bouwjaar` is:
 > De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.
