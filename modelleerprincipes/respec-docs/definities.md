@@ -17,7 +17,7 @@ Een object, ook wel fenomeen genoemd, is een ding, een onderwerp van gesprek, in
 <aside class="note">
   <b>Relatie MIM</b>
   <p>
-    Volgens MIM is een object "Een ding, een tastbaar iets, in de werkelijkheid, zoals daarnaar gekeken wordt vanuit een bepaald domein.". MIM stelt ook "Met in de werkelijkheid wordt bedoeld dat het om de daadwerkelijke onderwerpen van gesprek gaat, de verzameling van de concrete tastbare dingen waarover we het hebben.", en "'Tastbaar' moet hierbij ruim geïnterpreteerd worden. Het gaat niet alleen om fysiek herkenbare objecten zoals auto's, gebouwen en mensen, ook om zogenaamde virtuele objecten waarover binnen het domein door betrokkenen gecommuniceerd wordt zoals kadastrale percelen, (maatschappelijke) activiteiten en processen."<br>
+    Volgens MIM is een object "Een ding, een tastbaar iets, in de werkelijkheid, zoals daarnaar gekeken wordt vanuit een bepaald domein.". MIM stelt ook "Met in de werkelijkheid wordt bedoeld dat het om de daadwerkelijke onderwerpen van gesprek gaat, de verzameling van de concrete tastbare dingen waarover we het hebben.", en "'Tastbaar' moet hierbij ruim geïnterpreteerd worden. Het gaat niet alleen om fysiek herkenbare objecten zoals auto's, gebouwen en mensen, ook om zogenaamde virtuele objecten waarover binnen het domein door betrokkenen gecommuniceerd wordt zoals kadastrale percelen, (maatschappelijke) activiteiten en processen."<br><br>
     Met deze uitleg past de definitie van object nog steeds binnen de definitie van object in MIM.<br>
     Het MIM maakt echter geen scherp onderscheid tussen objecten en informatieobjecten. De reden waarom hier dit onderscheid wel wordt gemaakt is omdat dit onderscheid noodzakelijk is voor het realiseren van samenhangende informatie over verschillende registraties heen.
   </p>
@@ -44,8 +44,7 @@ Een gegeven is een kennisuitdrukking over een onderwerp. Een gegeven bestaat uit
 <aside class="note">
   <b>Relatie MIM:</b>
   <p>
-    Hoewel het MIM geen expliciet construct voor gegeven kent, geeft het wel een definitie: "De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend". Daarnaast wordt gesteld: "Gegevens zijn de objectief waarneembare neerslag of registratie van feiten op een bepaald medium, zodanig dat deze gegevens uitgewisseld en voor langere tijd bewaard kunnen worden. Dat kan op papier, in digitale vorm, et cetera. Met deze gegevens wordt een model (een selectief deel dus) van de werkelijkheid vastgelegd in de tijd."
-
+    Hoewel het MIM geen expliciet construct voor gegeven kent, geeft het wel een definitie: "De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend". Daarnaast wordt gesteld: "Gegevens zijn de objectief waarneembare neerslag of registratie van feiten op een bepaald medium, zodanig dat deze gegevens uitgewisseld en voor langere tijd bewaard kunnen worden. Dat kan op papier, in digitale vorm, et cetera. Met deze gegevens wordt een model (een selectief deel dus) van de werkelijkheid vastgelegd in de tijd."<br><br>
     Hoewel de formulering scherpte mist, wordt de definitie in essentie gelijk geacht aan de definitie die hier wordt gehanteerd.
   </p>
 </aside>
