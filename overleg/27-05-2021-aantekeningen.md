@@ -31,6 +31,7 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 - Paul: Dit is een belangrijke vraag, want aanpassen van een informatiemodel is niet heel lastig - maar het kan wel veel impact hebben op de standaard en de implementatie daarvan. 
 
 **Uitgangspunten:**
+
 **U1:**
 - Lennart: fundamentele vraag: de registraties hebben al informatiemodellen, dus het is raar om een informatiemodel te maken; eigenlijk wil je samenhang tussen die modellen; het lijkt hier [U1] te gaan om een semantisch model, niet een informatiemodel.
 - Jan: gegevens = data; informatie = bewerkte data. Er is een verschil tussen samenhang op het niveau van data en het niveau van informatie.
@@ -39,6 +40,7 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 - Paul: IMSOR lijkt te duiden op een topmodel.
 - Lennart: Als voorbeeld [om de positie van SOR beter te begrijpen]: als er een relatie is tussen een brug (BGT) en een perceel (BRK) moet je dat in de registraties kunnen registreren, of alleen op een conceptueel niveau?. Als dit tweede het geval is, dan is het afleidbaar (ie bewerkte data), en dit hoort niet thuis in een logisch model.
 - Niels: Heel simpel gezegd [over U1] willen we meer samenhang dan in de huidige registraties. Mensen hadden bij het opstellen van deze punten waarschijnlijk niet voor ogen hoe dit precies moest. Dit kunnen we nog op verschillende manieren realiseren. Zo moet je dit uitgangspunt interpreteren.
+- 
 **U2:**
 - Michel: Het gaat hierbij ook om internationale standaarden. [voorstel voor aanpassing van de titel]: 'nationale' weglaten, of 'nationale en internationale standaarden' gebruiken.
 - Lennart: Bij 'nationale standaarden' gaat het meestal over een interpretatie/adoptie (ie localised version) van internationale standaarden. Dit is belangrijk aangezien je in de natioanle context concretere afspraken maakt over alle opties die beschreven staan in de internationale versies van de standaarden.
@@ -47,9 +49,11 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 -Paul: Bij de modelleermethodes moet ook iets worden gezegd over het belang van validatie mechanismes, en of er mogelijkheden zijn om te valideren voor elke methode/paradigma (want het lijkt belangrijk om te kunnen valideren in het geval van de SOR). 
 - Misschien dekt 'graaf' toch niet de lading (GraphQL is bv redelijk OO). 
 - Bij het voorbeeld ontstaan er twijfels over het eigenschap 'documentnummer'. Pano ziet het niet als een eigenschap van het pand, Michel merkt op dat het om een gecombineerde externe key lijkt te gaan. Lennart legt uit dat het om een audit trail van een pand gaat, en dat ze destijds de keuze hebben gemaakt om het op deze impliciete wijze te modelleren. Dit had eigenlijk niet in een conceptueel model hoeven staan - maar in een logisch model zou het wel kunnen, aangezien je dan wel met historie/trails kunt werken. De eigenschap/relatie is echter lastig te begrijpen en kan tot silo-denken leiden, dit moeten we zien te vermijden. 
+
 **U4**
 - Michel: Wanneer je data hebt wordt dit lastiger, want dan moet het bv backwards-compatible zijn, etc.
 - Het is ook handig om iets te zeggen over versie-management, werken met vastgestelde versies. 
+
 **U5**
 - Michel: beter van balans spreken, niet prioriteit. 
 - Lennart: deels mee eens, wel een blocking issue met de prioriteit: als je een SOR in nederland wil realiseren heb je meer aandacht nodig voor de semantiek/goed bedenken van de betekenis van dingen - dit zou dan boven de gebruikers moeten staan. 
@@ -57,6 +61,7 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 - Jan: [over 'overheidsgebruikers']: is dat inclusief "bedrijven met een publieke taak (zoals bv. Netbeheerders)? Handig deze ook mee te nemen, aangezien ze ook in de categorie 'verplicht gebruik' zitten. 
 
 **Principes**
+
 **P1**
 - Lennart: zou dit niet ambitieuzer kunnen? We kunnen zeggen dat als we het over dezelfde concepten hebben, dat we het ook expliciet aangeven. 
 - Michel: zoals een uniform unique identifier. Dit zou echt iets toevoegen aan de samenhang, als we kunnen zeggen dat we het over hetzelfde ding hebben. [voorstel voor aanpassing van dit principe]: 'we gaan niet voor een unique id, maar we maken het wel mogelijk om relaties te leggen wanneer we het hebben over hetzelfde object (bv, door 'sameAs' relaties toe te staan)'. 
@@ -64,6 +69,7 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 Lennart: Dit is een bottom-up formulering, ik denk dat top-down hier beter bij past (als ik over hetzelfde object in de werkelijkheid meer informatie vastleg willen we deze semantische samenhang op zo'n manier realiseren dat we weten dat het over hetzelfde object gaat).
 - [Voorstel voor aanpassing van principe]: de term 'herbruikbaar' veranderen - denk liever aan iets zoals 'linkbaar' of 'combineerbaar'. Ook iets over metadata opnemen in deze stelling, en de formulering herzien. Ook kijken naar een invulling van dit principe, waarbij we bv iets kunnen zeggen over het opnemen van 'sameAs'-achtige relaties.
 - Paul: Een onderwerp als inwinningsregels zou ook een relatie hiermee kunnen hebben.
+
 **P2**
 - [Voorstel voor aanpassing van principe]: om het concreter te maken kunnen we zeggen 'objecttypes moeten dezelfde naam hebben, of naar dezelfde concepten verwijzen.'
 - Paul: lastig, bij mij hangen kenmerken samen met de objecttypes, het lijkt alsof dat hier ook weer los wordt getrokken. 
