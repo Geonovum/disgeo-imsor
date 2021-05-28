@@ -40,13 +40,13 @@ Maar aangezien blijkt dat het toch niet altijd goed wordt toegepast in huidige m
 - Paul: IMSOR lijkt te duiden op een topmodel.
 - Lennart: Als voorbeeld [om de positie van SOR beter te begrijpen]: als er een relatie is tussen een brug (BGT) en een perceel (BRK) moet je dat in de registraties kunnen registreren, of alleen op een conceptueel niveau?. Als dit tweede het geval is, dan is het afleidbaar (ie bewerkte data), en dit hoort niet thuis in een logisch model.
 - Niels: Heel simpel gezegd [over U1] willen we meer samenhang dan in de huidige registraties. Mensen hadden bij het opstellen van deze punten waarschijnlijk niet voor ogen hoe dit precies moest. Dit kunnen we nog op verschillende manieren realiseren. Zo moet je dit uitgangspunt interpreteren.
-- 
+
 **U2:**
 - Michel: Het gaat hierbij ook om internationale standaarden. [voorstel voor aanpassing van de titel]: 'nationale' weglaten, of 'nationale en internationale standaarden' gebruiken.
 - Lennart: Bij 'nationale standaarden' gaat het meestal over een interpretatie/adoptie (ie localised version) van internationale standaarden. Dit is belangrijk aangezien je in de natioanle context concretere afspraken maakt over alle opties die beschreven staan in de internationale versies van de standaarden.
 
 **U3:**
--Paul: Bij de modelleermethodes moet ook iets worden gezegd over het belang van validatie mechanismes, en of er mogelijkheden zijn om te valideren voor elke methode/paradigma (want het lijkt belangrijk om te kunnen valideren in het geval van de SOR). 
+- Paul: Bij de modelleermethodes moet ook iets worden gezegd over het belang van validatie mechanismes, en of er mogelijkheden zijn om te valideren voor elke methode/paradigma (want het lijkt belangrijk om te kunnen valideren in het geval van de SOR). 
 - Misschien dekt 'graaf' toch niet de lading (GraphQL is bv redelijk OO). 
 - Bij het voorbeeld ontstaan er twijfels over het eigenschap 'documentnummer'. Pano ziet het niet als een eigenschap van het pand, Michel merkt op dat het om een gecombineerde externe key lijkt te gaan. Lennart legt uit dat het om een audit trail van een pand gaat, en dat ze destijds de keuze hebben gemaakt om het op deze impliciete wijze te modelleren. Dit had eigenlijk niet in een conceptueel model hoeven staan - maar in een logisch model zou het wel kunnen, aangezien je dan wel met historie/trails kunt werken. De eigenschap/relatie is echter lastig te begrijpen en kan tot silo-denken leiden, dit moeten we zien te vermijden. 
 
@@ -78,4 +78,4 @@ Lennart: Dit is een bottom-up formulering, ik denk dat top-down hier beter bij p
 - Lennart: Lijkt me handig als we de verschillende soorten samenhang kunnen presenteren met voorbeelden (semantische samenhang, logische samenhang, etc). 
 - Twee 'paden' voor samenhang worden onderscheiden: een pad waarbij semantische verbanden en algoritmes/specificaties een grote rol spelen, en een pad waarbij URIs/IDs die instanties linken de voorkeur heeft. 
 
-- Conclusie: Het was niet mogelijk om alle modeleerprincipes langs de gaan, bij de volgende meeting zullen we dit moeten afronden (het gaat om P3, P4 en de richtlijnen). Via Github kunnen de behandelde punten verder worden besproken. De voorstellen voor aanpassingen zullen we ook behandelen/verwerken. Het is belangrijk om een concreter beeld te krijgen van (het soort) samenhang dat we willen bereiken met de realisatie van de SOR, dit is van belang voor onze opdracht. 
+**Conclusie:** Het was niet mogelijk om alle modeleerprincipes langs de gaan, bij de volgende meeting zullen we dit moeten afronden (het gaat om P3, P4 en de richtlijnen). Via Github kunnen de behandelde punten verder worden besproken. De voorstellen voor aanpassingen zullen we ook behandelen/verwerken. Het is belangrijk om een concreter beeld te krijgen van (het soort) samenhang dat we willen bereiken met de realisatie van de SOR, dit is van belang voor onze opdracht. 
