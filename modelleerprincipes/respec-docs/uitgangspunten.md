@@ -19,6 +19,10 @@ TODO
 
 TODO -->
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/52">Discussie</a> over dit uitgangspunt loopt.
+</aside>
+
 ## **U2**. Informatiemodel maakt gebruik van relevante nationale standaarden
 
 | | | |
