@@ -20,6 +20,10 @@ invulling van:
 
 TODO -->
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/57">Discussie</a> over dit uitgangspunt loopt.
+</aside>
+
 ## **P2**. Objecttypes zijn herbruikbaar
 
 | | | |
@@ -39,7 +43,7 @@ afgeleid van:
 TODO -->
 
 <aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/57">Discussie</a> over dit uitgangspunt loopt.
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/59">Discussie</a> over dit uitgangspunt loopt.
 </aside>
 
 ## **P3**. Alleen directe eigenschappen
