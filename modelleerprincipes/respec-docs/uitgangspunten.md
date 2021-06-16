@@ -91,6 +91,9 @@ Uit bovenstaande definities [[Catalogus-BAG]] wordt duidelijk dat het hier om tw
 
 TODO -->
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/56">Discussie</a> over dit uitgangspunt loopt.
+</aside>
 
 ## **U5**. Informatiemodel is afgestemd op gebruik door de doelgroepen
 
