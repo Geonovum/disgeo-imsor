@@ -24,11 +24,11 @@ TODO -->
 | | | |
 |-|-|-|
 | **id** | U2 |
-| **Stelling** | De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie en conform relevante standaarden voor informatiemodellering. |
-| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in Nederland in gebruik zijnde standaarden zijn. |
+| **Stelling** | De gegevensmodellering zal plaatsvinden conform relevante standaarden voor informatiemodellering. |
+| **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in gebruik zijnde standaarden zijn. |
 | **Implicaties** | Het model maakt gebruik van de in deze standaarden aanwezige middelen om informatie te modelleren. Als deze niet afdoende zijn, kan de SOR een eigen extensie op deze standaarden definiëren. |
 
-De gegevensmodellering zal plaatsvinden conform afspraken tussen de organisaties Kadaster – Geonovum – VNG-Realisatie. Deze afspraken zijn vastgelegd in het Metamodel Informatie Modellering [[MIM]]. 
+De gegevensmodellering zal plaatsvinden conform het Metamodel Informatie Modellering [[MIM]].
 
 <aside class="note">Mochten er modelleerconstructies nodig zijn die niet in MIM zijn gestandaardiseerd, dan zal het modelleerteam een MIM uitbreiding hiervoor beschrijven en afstemmen met het MIM beheerteam.</aside>
 
