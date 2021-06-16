@@ -38,6 +38,10 @@ afgeleid van:
 
 TODO -->
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/57">Discussie</a> over dit uitgangspunt loopt.
+</aside>
+
 ## **P3**. Alleen directe eigenschappen
 | | | |
 |-|-|-|
