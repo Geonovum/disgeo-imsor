@@ -128,3 +128,7 @@ De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoem
 <!-- **Voorbeelden**
 
 TODO -->
+
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/43">Discussie</a> over dit uitgangspunt loopt.
+</aside>
