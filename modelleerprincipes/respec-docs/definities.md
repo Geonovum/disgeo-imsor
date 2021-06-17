@@ -49,6 +49,10 @@ Een gegeven is een kennisuitdrukking over een onderwerp. Een gegeven bestaat uit
   </p>
 </aside>
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/49">Discussie</a> over deze definitie loopt.
+</aside>
+
 <dfn data-lt="directe eigenschappen">Directe eigenschap</dfn>
 
 Directe eigenschappen zijn relevant in de kader van <a>informatieobjecten</a>. Wanneer de individuele <a>gegevens</a> in een <a>informatieobject</a> direct over hetzelfde onderwerp (het <a>object</a>) gaan, dan spreken we van directe eigenschappen. Het is niet altijd zo dat er alleen gebruik gemaakt wordt van directe eigenschappen in een <a>informatieobject</a>. Denk aan metadata, of samenvoeging van gegevens over verwante <a>objecten</a> zonder eigen identificatie in een <a>informatieobject</a>.
