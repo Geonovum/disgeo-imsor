@@ -63,6 +63,10 @@ Metadata definiëren we in navolging van [[Richtlijn-Metagegevens]] gegevens ove
 
 In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: "Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren".
 
+<aside class="issue">
+  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/50">Discussie</a> over deze definitie loopt.
+</aside>
+
 <dfn>Samenhang</dfn>
 
 Samenhang valt uiteen in twee vormen. Relaties tussen verschillende <a>objecten</a> en het combineren van verschillende <a>informatieobjecten</a> over hetzelfde <a>object</a> vanuit verschillende registraties.
