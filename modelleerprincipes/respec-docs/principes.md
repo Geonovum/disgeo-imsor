@@ -157,7 +157,7 @@ Het is duidelijk dat dit <a>gegevens</a> oplevert die niet direct over het <a>ob
 Daarnaast zijn de eigenschappen die gaan over de bron van <a>informatieobjecten</a> in een <a>objecttype</a> `Bron` geplaatst, vergelijkbaar als voor de BAG en de BGT.
 
 <figure id="gebouw-samenhang">
-  <img src="media/gebouw-samenhang.drawio.png" alt="Samenhang gebouw" />
+  <img src="media/gebouw-samenhang-meta.drawio.png" alt="Samenhang gebouw" />
   <figcaption>Gebouw in samenhang</figcaption>
 </figure>
 
