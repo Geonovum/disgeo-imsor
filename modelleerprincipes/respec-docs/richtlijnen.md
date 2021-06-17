@@ -53,19 +53,23 @@ invulling van:
 
 TODO -->
 
-## **R3**. Geen gegevensgroeptype gebruiken
+## **R3**. Voorlopig geen gegevensgroeptype gebruiken
 
 | | | |
 |-|-|-|
 | **id** | R3 |
-| **Stelling** | Maak geen gebruik van MIM gegevensgroeptype |
-| **Rationale** | Het MIM gegevensgroeptype is onduidelijk beschreven. Aan de ene kant geeft de definitie aan dat de <a>gegevens</a> in een gegevensgroep nog altijd over het <a>object</a> zelf gaan, aan de andere kant worden er voorbeelden <a>gegeven</a> waaruit het lijkt alsof een gegevensgroeptype gebruikt wordt om een <a>object</a> zonder identificatie toe te voegen. De noodzaak voor dit construct lijkt er in ieder geval niet te zijn. Daarnaast levert het gebruik onduidelijkheid op vanwege de onduidelijke definitie. |
-| **Implicaties** | We maken geen gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat. |
+| **Stelling** | Voorlopig maken we geen gebruik van MIM gegevensgroeptype |
+| **Rationale** | Het MIM gegevensgroeptype kan momenteel op verschillende manieren toegepast worden. Aan de ene kant geeft de definitie aan dat de <a>gegevens</a> in een gegevensgroep nog altijd over het <a>object</a> zelf gaan, aan de andere kant worden er voorbeelden <a>gegeven</a> waaruit het lijkt alsof een gegevensgroeptype gebruikt wordt om een <a>object</a> zonder identificatie toe te voegen. Totdat dit in MIM aangscherpt is maken we hier geen gebruik van. |
+| **Implicaties** | We maken geen gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken attribuutsoorten of relatiesoorten wanneer we het over kenmerken van een object hebben en maken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat. |
 
 <!-- **Relaties**
 
 **Voorbeelden**
 TODO  -->
+
+<aside class="issue">
+  TODO: Een issue aanmaken voor de MIM wergroep voor het aanscherpen van gegevensgroep(type)
+</aside>
 
 <!-- ## **RX**. Beperk het gebruik van abstracte constructen die interoperabiliteit in de weg kunnen staan
 
