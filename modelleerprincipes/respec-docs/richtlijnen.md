@@ -68,7 +68,7 @@ TODO -->
 TODO  -->
 
 <aside class="issue">
-  TODO: Een issue aanmaken voor de MIM wergroep voor het aanscherpen van gegevensgroep(type)
+  afhankelijk van <a href="https://github.com/Geonovum/MIM-Werkomgeving/issues/170">[MIM-170]</a>
 </aside>
 
 <!-- ## **RX**. Beperk het gebruik van abstracte constructen die interoperabiliteit in de weg kunnen staan
