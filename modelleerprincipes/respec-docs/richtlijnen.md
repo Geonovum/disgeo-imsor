@@ -67,6 +67,10 @@ TODO -->
 **Voorbeelden**
 TODO  -->
 
+<aside class="note">
+  Een complexe waarde wat geen object is modelleren we als complex datatype. In een complex datatype modelleren we geen kenmerken van een object.
+</aside>
+
 <aside class="issue">
   afhankelijk van <a href="https://github.com/Geonovum/MIM-Werkomgeving/issues/170">[MIM-170]</a>
 </aside>
