@@ -7,7 +7,7 @@
 
 Aanwezig: [todo]
 
-## ter voorbereiding
+## Ter voorbereiding
 De vorige twee meetings hebben we alle onderdelen van de [modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/) behandeld. 
 
 Zie ook de verslagen:
