@@ -59,10 +59,6 @@ Metadata definiëren we in navolging van [[Richtlijn-Metagegevens]] gegevens ove
 
 In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: "Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren".
 
-<dfn>Informatieobjectmetadata</dfn>
-
-<dfn>Informatiemodelmetadata
-
 <aside class="issue">
   <a href="https://github.com/Geonovum/disgeo-imsor/discussions/50">Discussie</a> over deze definitie loopt.
 </aside>
