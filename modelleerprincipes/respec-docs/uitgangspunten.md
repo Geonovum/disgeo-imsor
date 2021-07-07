@@ -8,6 +8,7 @@ De gebruikte definities en de modelleerprincipes zijn geformuleerd met een aanta
 |-|-|-|
 | **id** | U1 |
 | **Stelling** | Het informatiemodel (IMSOR) bevordert samenhang tussen informatieobjecten in registraties |
+| **Status** | Ter vaststelling |
 | **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet ook het informatiemodel deze samenhang bevorderen. |
 | **Implicaties** | Het model bevat basisobjecttypes die terug te koppelen zijn aan alle huidige registraties, maar biedt ook ruimte voor het opnemen van vrijwillige objecttypes vanuit verschillende registraties - dit vereist ook samenhang in de structuur. |
 
@@ -51,6 +52,7 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 |-|-|-|
 | **id** | U3 |
 | **Stelling** | Het informatiemodel (IMSOR) moet bruikbaar zijn voor het uitdrukken van informatie in in object-georiënteerde, relationele, hiërarchische, en graaf-gebaseerde paradigma's |
+| **Status** | Ter vaststelling |
 | **Rationale** | Het moet mogelijk zijn om de informatie in de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. Object-georienteerde, relationele en hierarchische (JSON, XML) representatie van informatie wordt al breed toegepast, en graafgebaseerde paradigma's, zoals linked data, zijn sterk in opkomst. Het informatiemodel moet gebruikt kunnen worden in deze paradigma's. |
 | **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een <a>informatieobject</a> over een <a>object</a> alleen <a>directe eigenschappen</a> van het <a>object</a> beschrijft. Ofwel, alle gegevens in het <a>informatieobject</a> gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één <a>object</a> in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
 
@@ -108,6 +110,7 @@ TODO -->
 |-|-|-|
 | **id** | U5 |
 | **Stelling** | Het informatiemodel (IMSOR) moet zijn afgestemd op het gebruik door de verschillende doelgroepen. |
+| **Status** | Ter vaststelling |
 | **Rationale** |  |
 | **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de prioriteiten van de doelgroepen worden afgewogen. |
 
