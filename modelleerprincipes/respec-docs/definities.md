@@ -55,9 +55,13 @@ Directe eigenschappen zijn relevant in de kader van <a>informatieobjecten</a>. W
 
 <dfn data-lt="registratiemetadata">Metadata</dfn>
 
-Metadata definiëren we in navolging van [[Richtlijn-Metagegevens]] gegevens over informatieobjecten
-
-In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: "Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren".
+Metadata zijn gegevens over andere gegevens. We onderscheiden verschillende soorten metadata; gegevens over:
+* registraties
+* informatiemodellen
+* informatiemodelelementen
+* datasets
+* <a>informatieobjecten</a>
+* (<a>object</a>)<a>gegevens</a>
 
 <aside class="issue">
   <a href="https://github.com/Geonovum/disgeo-imsor/discussions/50">Discussie</a> over deze definitie loopt.
