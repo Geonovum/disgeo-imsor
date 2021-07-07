@@ -35,7 +35,7 @@ TODO -->
 
 De gegevensmodellering zal plaatsvinden conform het Metamodel Informatie Modellering [[MIM]].
 
-<aside class="note">Mochten er modelleerconstructies nodig zijn die niet in MIM zijn gestandaardiseerd, dan zal het modelleerteam een MIM uitbreiding hiervoor beschrijven en afstemmen met het MIM beheerteam.</aside>
+<aside class="note">Mochten er modelleerconstructies nodig zijn die not niet zijn opgenomen in een standaard, of die tegenstrijdig zijn met een van de standaarden, dan zal het modelleerteam dit bespreken met de relevante partijen die de standaarden beheren om te onderzoeken of de betreffende standaard hierop aangepast kan worden.</aside>
 
 Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie [[NEN3610-2021-ontw]]. 
 
