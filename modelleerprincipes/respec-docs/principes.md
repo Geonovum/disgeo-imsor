@@ -38,7 +38,7 @@ TODO -->
 **Relaties**
 
 afgeleid van:
-* [](#p1-informatieobjecten-zijn-herbruikbaar)
+* [](#p1-informatieobjecten-zijn-in-samenhang-bruikbaar)
 
 <!-- **Voorbeelden**
 
@@ -60,7 +60,7 @@ TODO -->
 **Relaties**
 
 afgeleid van:
-* [](#p2-objecttypes-zijn-herbruikbaar)
+* [](#p2-objecttypes-zijn-relateerbaar-en-herbruikbaar)
 
 gerelateerd aan:
 * [](#u3-informatiemodel-bruikbaar-in-object-georienteerde-relationele-en-graaf-gebaseerde-paradigma-s)
@@ -174,7 +174,7 @@ In [](#gebouw-samenhang) is afgebeeld hoe een samenhangende set informatie over 
 | | | |
 |-|-|-|
 | **id** | P4 |
-| **Stelling** | Ieder objecttype, kenmerksoort, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
+| **Stelling** | Ieder <a>objecttype</a>, kenmerksoort, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
 | **Status** | Ter vaststelling |
 | **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen, kenmerksoorten en waardes uit waardelijsten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
 | **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, kenmerksoort en waarde uit een waardelijst, tenzij gevonden wordt dat het relateren aan een begrip niet relevant is. Wanneer dat laatste het geval is moet daarvoor een reden worden opgenomen in een beschrijving van dat modelelement. |
