@@ -52,7 +52,9 @@ TODO -->
 | **id** | P3 |
 | **Stelling** | Alleen <a>directe eigenschappen</a> komen voor op een <a>objecttype</a>. |
 | **Rationale** | Om samenhang te bevorderen moet een <a>objecttype</a> leiden tot objectbeschrijvingen die herkenbaar zijn onafhankelijk van de context van de registratie waarin ze bestaan. Het modelleren van directe eigenschappen (eigenschappen waarbij het onderwerp direct het <a>object</a> is) bevordert dit, omdat deze eigenschappen vaak zonder uitleg te begrijpen zijn. Daarmee zijn deze eigenschappen ook gemakkelijker te verplaatsen naar een andere context waarin hetzelfde onderwerp wordt beschreven. Wanneer eigenschappen aan een <a>object</a> worden toegekend die niet direct het <a>object</a> als onderwerp hebben, maar bijv. een verwant <a>object</a>, waarvan de beschrijving ook is opgenomen in het <a>informatieobject</a> over het eerste <a>object</a>, dan wordt het lastiger of zelfs onmogelijk om deze eigenschappen her te gebruiken buiten de context van de specifieke registratie waarin dat het geval is. Vaak is het onduidelijk wat deze eigenschappen betekenen buiten de context, als je ze al kunt herkennen. Hiervoor moet eerst documentatie gelezen worden, en daarna moeten er bedrijfsregels toegepast worden om gebruik toe te passen. Dit werkt <a>samenhang</a> tegen.|
-| **Implicaties** | Het toepassen van dit principe leidt tot een genormaliseerd informatiemodel. Dit kan betekenen dat er meer objecttypes onderscheiden moeten worden dan momenteel (in een gedenormaliseerd model) vaak het geval is. Daarentegen bieden ook die expliciet gemodelleerde objecttypes kansen voor het aanbrengen van samenhang, omdat ze losgeweekt zijn van onherkenbare/onherkbruikbare samengevoegde objecttypes.|
+| **Implicaties** | Het toepassen van dit principe leidt tot een genormaliseerd informatiemodel. Dit kan betekenen dat er meer objecttypes onderscheiden moeten worden dan momenteel (in een gedenormaliseerd model) vaak het geval is. Daarentegen bieden ook die expliciet gemodelleerde objecttypes kansen voor het aanbrengen van samenhang, omdat ze losgeweekt zijn van onherkenbare/onherkbruikbare samengevoegde objecttypes.
+
+Een mogelijk alternatief voor het onderscheiden van meerder objecttypes is het onderscheiden van directe eigenschappen door middel van een nieuw MIM stereotype. |
 
 **Relaties**
 
@@ -167,13 +169,13 @@ Daarnaast, door het toepassen van het principe voor directe eigenschappen kunnen
 
 In [](#gebouw-samenhang) is afgebeeld hoe een samenhangende set informatie over een gebouw er vervolgens uit zou kunnen zien, gegeven een combinatie van <a>gegevens</a> met een overlappende context. Omdat elk van de eigenschappen daadwerkelijk hetzelfde <a>object</a> als onderwerp heeft, zijn de <a>gegevens</a> gemakkelijker in <a>samenhang</a> te gebruiken. Een afnemer kan dan kiezen welke <a>gegevens</a> hij, uit deze set, interessant vindt voor zijn/haar toepassing.
 
-## **P4**. Ieder informatiemodelelement heeft bijbehorend begrip
+## **P4**. Ieder objecttype, kenmerksoort en waarde uit een waardelijst heeft een bijbehorend begrip
 | | | |
 |-|-|-|
 | **id** | P4 |
-| **Stelling** | Ieder informatiemodelelement moet verbonden zijn met een bijbehorend begrip in een begrippenkader over dat domein. |
-| **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen en kenmerksoorten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
-| **Implicaties** | Er moet een begrip uitgewerkt worden voor ieder <a>objecttype</a> en voor iedere kenmerksoort. Ieder <a>objecttype</a> en iedere kenmerksoort krijgt een expliciete verwijzing naar een begrip |
+| **Stelling** | Ieder objecttype, kenmerksoort, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
+| **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen, kenmerksoorten en waardes uit waardelijsten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
+| **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, kenmerksoort en waarde uit een waardelijst. Wanneer gevonden wordt dat het relateren aan een begrip niet relevant is, moet daarvoor een reden worden opgnomen in een beschrijving van dat modelelement. |
 
 <!-- ## **P4**. Onderscheid in verschillende soorten metadata 
 

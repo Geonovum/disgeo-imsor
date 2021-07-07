@@ -39,7 +39,7 @@ De typering van een groep <a>objecten</a> die binnen een domein relevant zijn en
 
 <dfn data-lt="gegevens">Gegeven</dfn>
 
-Een gegeven is een kennisuitdrukking over een onderwerp. Een gegeven bestaat uit een verwzijzing naar een <a>object</a> (het onderwerp), een kenmerk / eigenschap / predicaat en een waarde. 
+Een <a>gegeven</a> is de waarde die is opgenomen voor een eigenschap van een <a>object</a>.
 
 <aside class="note">
   <b>Relatie MIM:</b>
@@ -47,10 +47,6 @@ Een gegeven is een kennisuitdrukking over een onderwerp. Een gegeven bestaat uit
     Hoewel het MIM geen expliciet construct voor gegeven kent, geeft het wel een definitie: "De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend". Daarnaast wordt gesteld: "Gegevens zijn de objectief waarneembare neerslag of registratie van feiten op een bepaald medium, zodanig dat deze gegevens uitgewisseld en voor langere tijd bewaard kunnen worden. Dat kan op papier, in digitale vorm, et cetera. Met deze gegevens wordt een model (een selectief deel dus) van de werkelijkheid vastgelegd in de tijd."<br><br>
     Hoewel de formulering scherpte mist, wordt de definitie in essentie gelijk geacht aan de definitie die hier wordt gehanteerd.
   </p>
-</aside>
-
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/49">Discussie</a> over deze definitie loopt.
 </aside>
 
 <dfn data-lt="directe eigenschappen">Directe eigenschap</dfn>
@@ -62,6 +58,10 @@ Directe eigenschappen zijn relevant in de kader van <a>informatieobjecten</a>. W
 Metadata definiëren we in navolging van [[Richtlijn-Metagegevens]] gegevens over informatieobjecten
 
 In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: "Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren".
+
+<dfn>Informatieobjectmetadata</dfn>
+
+<dfn>Informatiemodelmetadata
 
 <aside class="issue">
   <a href="https://github.com/Geonovum/disgeo-imsor/discussions/50">Discussie</a> over deze definitie loopt.
