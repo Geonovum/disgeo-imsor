@@ -86,11 +86,13 @@ Uit bovenstaande definities [[Catalogus-BAG]] wordt duidelijk dat het hier om tw
 |-|-|-|
 | **id** | U4 |
 | **Stelling** | Het informatiemodel (IMSOR) moet voldoende flexibel, uitbreidbaar en inkrimpbaar zijn wat betreft objecttypen, eigenschappen en het al dan niet verplicht zijn hiervan.|
+| **Status** | Ter vaststelling |
 | **Rationale** | De SOR moet geleidelijk en organisch kunnen worden ingevoerd om de transitie soepel te laten verlopen. Objecttypen en eigenschappen moeten kunnen worden toegevoegd, verwijderd, het verplichte karakter ervan moet kunnen wijzigen al naar gelang de behoeften van de gebruikers. |
-| **Implicaties** | Het informatiemodel van de SOR moet tot op zekere hoogte een 'permanent BETA' of 'levende standaard' karakter krijgen. Bepaald moet worden welke mate van flexibiliteit nog hanteerbaar is voor de bronhouders en afnemers. |
+| **Implicaties** | Het informatiemodel van de SOR moet tot op zekere hoogte een 'levende standaard' karakter krijgen. Bepaald moet worden welke mate van flexibiliteit nog hanteerbaar is voor de bronhouders en afnemers.<br>Dit uitgangspunt impliceert ook dat er een passende versioneringsstrategie moet komen voor het informatiemodel en de informatieproducten die daarbij horen. Wanneer de SOR tot stand komt op basis van mappings op bestaande registraties zullen ook deze aan een passende versioneringsstrategie onderhevig moeten zijn. |
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 3 en 4.
+- [Generiek beheerplan standaarden comform BOMOS - Geonovum](https://www.geonovum.nl/documents/geonovum-generiek-beheerplan-standaarden-v11pdf)
 
 <!-- **Voorbeelden**
 
