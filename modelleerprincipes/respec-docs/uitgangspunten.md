@@ -23,12 +23,13 @@ TODO -->
   <a href="https://github.com/Geonovum/disgeo-imsor/discussions/52">Discussie</a> over dit uitgangspunt loopt.
 </aside>
 
-## **U2**. Informatiemodel maakt gebruik van relevante nationale standaarden
+## **U2**. Informatiemodel maakt gebruik van relevante standaarden
 
 | | | |
 |-|-|-|
 | **id** | U2 |
 | **Stelling** | De gegevensmodellering zal plaatsvinden conform relevante standaarden voor informatiemodellering. |
+| **Status** | Vastgesteld |
 | **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet de toegepaste modelleermethodiek conform de hiervoor in gebruik zijnde standaarden zijn. |
 | **Implicaties** | Het model maakt gebruik van de in deze standaarden aanwezige middelen om informatie te modelleren. Als deze niet afdoende zijn, kan de SOR een eigen extensie op deze standaarden definiëren. |
 
