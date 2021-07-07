@@ -106,22 +106,21 @@ TODO -->
 |-|-|-|
 | **id** | U5 |
 | **Stelling** | Het informatiemodel (IMSOR) moet zijn afgestemd op het gebruik door de verschillende doelgroepen. |
-| **Rationale** |  |
-| **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de prioriteiten van de doelgroepen worden afgewogen. |
+| **Rationale** | Het informatiemodel moet bruikbaar zijn voor de doelen van de SOR en de belangen van verschillende stakeholders. Als deze belangen onduidelijk of tegenstrijdig zijn biedt dit uitgangspunt handvaten om ze te kunnen afwegen en een richting te kiezen. |
+| **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de belangen van de doelgroepen worden afgewogen. |
 
-De functionele behoeften zijn beschreven in het document Eisen aan model samenhangende objectenregistratie [[EMSO]]. 
+De functionele behoeften zijn beschreven in het document Eisen aan model samenhangende objectenregistratie [[EMSO]]. De informatiemodelleurs bepalen niet WAT er in het informatiemodel komt; maar wel HOE het gemodelleerd wordt. Vaak zijn er verschillende oplossingsrichtingen waar voor- en nadelen aan zitten.
 
-Daarnaast maken we gebruik van het principe van de *'priority of constituencies'*, waarbij de belangen van gebruikers boven de belangen van softwareleveranciers gaan, die weer boven belangen van informatiemodelleurs gaan, die weer boven het belang van zuiver modelleren gaat.
+Bij zo'n keuze tussen oplossingsrichtingen maken we een afweging tussen de belangen van gebruikers, de belangen van softwareleveranciers, en  de belangen van informatiemodelleurs.
 
-De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoemde doelgroepen in de beleidsvisie. De prioriteiten van belangen wegen we dan als volgt af: 
+De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoemde doelgroepen in de beleidsvisie. We nemen de belangen van de volgende doelgroepen mee:
 
-  1. Belang van gebruikers:
-    1. Overheidsgebruikers, die verplicht gebruik dienen te maken van de geo-basisregistraties voor hun processen;
-    1. Open data gebruikers, zoals bedrijven die waarde toevoegen aan gegevens in de basisregistraties en nieuwe producten ontwikkelen;
-    1. Eindgebruikers van de informatie, zoals burgers en bedrijven.
-  1. Belang van softwareleveranciers, die het informatiemodel moeten implementeren (niet als opslagmodel, maar wel voor uitwisseling).
-  1. Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
-  1. Belang van zuiver modelleren.
+  - Belang van gebruikers:
+    - Overheidsgebruikers, die verplicht gebruik dienen te maken van de geo-basisregistraties voor hun processen;
+    - Open data gebruikers, zoals bedrijven die waarde toevoegen aan gegevens in de basisregistraties en nieuwe producten ontwikkelen;
+    - Eindgebruikers van de informatie, zoals burgers en bedrijven.
+  - Belang van softwareleveranciers, die het informatiemodel moeten implementeren (niet als opslagmodel, maar wel voor uitwisseling).
+  - Belang van informatiemodelleurs, die het informatiemodel lezen en delen ervan toepassen in aanpalende domeinen (er op aansluiten).
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 5.
