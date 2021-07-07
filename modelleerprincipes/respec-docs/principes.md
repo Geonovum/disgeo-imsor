@@ -173,8 +173,13 @@ In [](#gebouw-samenhang) is afgebeeld hoe een samenhangende set informatie over 
 | **id** | P4 |
 | **Stelling** | Ieder objecttype, kenmerksoort, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
 | **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen, kenmerksoorten en waardes uit waardelijsten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
-| **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, kenmerksoort en waarde uit een waardelijst. Wanneer gevonden wordt dat het relateren aan een begrip niet relevant is, moet daarvoor een reden worden opgnomen in een beschrijving van dat modelelement. |
+| **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, kenmerksoort en waarde uit een waardelijst. Wanneer gevonden wordt dat het relateren aan een begrip niet relevant is, moet daarvoor een reden worden opgenomen in een beschrijving van dat modelelement. |
 
-<!-- ## **P4**. Onderscheid in verschillende soorten metadata 
+**Relaties**
+
+aanscherping van:
+* [MIM - Verwijzing van een modelelement naar een begrip uit het begrippenkader](https://docs.geostandaarden.nl/mim/mim/#verwijzing-van-een-modelelement-naar-een-begrip-uit-het-begrippenkader)
+
+<!-- ## **P5**. Onderscheid in verschillende soorten metadata
 
 Er zijn vier verschillende 'soorten' metadata in de SOR: -->
