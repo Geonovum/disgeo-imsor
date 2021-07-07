@@ -1,13 +1,13 @@
 # Principes
 In dit hoofdstuk worden de modelleerprincipes, in lijn met de uitgangspunten, geïntroduceerd.
 
-## **P1**. Informatieobjecten zijn herbruikbaar
+## **P1**. Informatieobjecten zijn in samenhang bruikbaar
 
 | | | |
 |-|-|-|
 |  **id** | P1 |
-| **Stelling** | <a>Informatieobjecten</a> zijn (her)bruikbaar in verschillende registraties |
-| **Rationale** | Wanneer we <a>samenhang</a> willen moet een objectbeschrijving (<a>informatieobject</a>) vanuit de ene registratie hergebruikt kunnen worden in een andere registratie. Zij het als verwijzing, of omdat de andere registratie ook <a>gegevens</a> beschrijft over hetzelfde <a>object</a>. |
+| **Stelling** | <a>Informatieobjecten</a> zijn in samenhang bruikbaar |
+| **Rationale** | Wanneer we <a>samenhang</a> willen realiseren moet een objectbeschrijving (<a>informatieobject</a>) vanuit de ene registratie hergebruikt kunnen worden in een andere registratie. Zij het als verwijzing, of omdat de andere registratie ook <a>gegevens</a> beschrijft over hetzelfde <a>object</a>. |
 | **Implicaties** | Dit betekent dat objecttypes scherp gedefinieerd moeten zijn. Bij het over elkaar leggen van <a>informatieobjecten</a> betekent het dat de <a>objecten</a> daadwerkelijk gelijk moeten zijn, ofwel de objectbeschrijvingen moeten exact hetzelfde onderwerp hebben. Alleen dan kunnen objectbeschrijvingen vanuit verschillende contexten consistent over elkaar heen gelegd worden. Daarnaast moeten ook alle <a>gegevens</a> in de objectbeschrijvingen hetzelfde onderwerp hebben. |
 
 **Relaties**
@@ -24,13 +24,13 @@ TODO -->
   <a href="https://github.com/Geonovum/disgeo-imsor/discussions/57">Discussie</a> over dit uitgangspunt loopt.
 </aside>
 
-## **P2**. Objecttypes zijn herbruikbaar
+## **P2**. Objecttypes zijn relateerbaar en herbruikbaar
 
 | | | |
 |-|-|-|
 | **id** | P2 |
-| **Stelling** | <a>Objecttypes</a> zijn (her)bruikbaar in verschillende registraties. |
-| **Rationale** | Om [**P1**](#p1-informatieobjecten-zijn-herkbruikbaar) te realiseren moeten ook <a>objecttypes</a> hebruikbaar zijn in verschillende registraties. |
+| **Stelling** | <a>Objecttypes</a> zijn relateerbaar en (her)bruikbaar in verschillende registraties. |
+| **Rationale** | Om [**P1**](#p1-informatieobjecten-zijn-in-samenhang-bruikbaar) te realiseren moeten ook <a>objecttypes</a> hebruikbaar zijn in verschillende registraties. |
 | **Implicaties** | Dit houdt in dat de <a>gegevens</a> die vastgelegd worden over <a>objecten</a>, op basis van het <a>objecttype</a>, herbruikbaar moeten zijn.|
 
 **Relaties**
