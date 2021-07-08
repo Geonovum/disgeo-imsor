@@ -34,7 +34,7 @@ Pano loopt door het document heen.
 - Definitie van 'metadata' was te beperkend, nu breder opgesteld.
 	- Michel: het woord 'andere' is misschien overbodig. En hoe wordt 'registratie' hier bedoeld? 
 	- Pano: zitten aspecten van beheer in, bv de SOR wordt een registratie, is net iets meer dan een dataset.
-	- Paul: is de lijst uitputtend bedoeld? Pano: nee, een open lijst. Paul: dan moet je dat aangeven in de tekst. **[todo] ** 'zoals' toevoegen.
+	- Paul: is de lijst uitputtend bedoeld? Pano: nee, een open lijst. Paul: dan moet je dat aangeven in de tekst. **[todo]** 'zoals' toevoegen.
 	- Met die aanpassing (zie todo) is de definitie akkoord.
 	- Ook 'dataset series' noemen zoals NL profiel op ISO 19115 beschrijft? > Dit gaan we in de metadata inventarisatie meenemen maar nu niet in de definitie opnemen. Zie ook https://isotc211.geolexica.org/concepts/1356/#entry-lang-eng
 
@@ -44,48 +44,49 @@ Pano loopt door het document heen.
 	- Vastgesteld. 
 - U2 is al vastgesteld, we hebben nog een opmerking in de Noot verwerkt; deze is veralgemeniseerd (was: opmerkingen worden terug gebracht naar MIM, nu naar alle relevante standaarden)
 - U3 ter vaststelling
-	- **[todo] ** 'hiërarchische' nog toevoegen in de titel
+	- **[todo]** 'hiërarchische' nog toevoegen in de titel
 	- Pano: er was nog een opmerking van Paul over validatie.
 	- Paul: je maakt wellicht een heel algemeen model; dat is dan wel moeilijk om toe te passen om te valideren.
 	- Michel: dit is ook zo in bv de CB-NL, dat is ook een heel generiek model. 
 	- Paul: als validatie een onderwerp is, moet je er wel wat mee. Flexibiliteit gaat ten koste van valideerbaarheid. Je moet er over nadenken.
-	- Lennart: een model waarin alles optioneel is, dat is een soort anti-pattern
+	- Lennart: een model waarin alles optioneel is, dat is een soort anti-pattern - deze afweging gaat dus om meer dan alleen validatie.
 	- Niels: maar dit mist wel de kern van dit uitgangspunt. Valideerbaarheid zit meer bij U5, want doelgroepen zullen wellicht waarde hechten aan het kunnen valideren van gegevens.
 	- Linda: ik heb in het architectuurdoc gekeken, zag validatie alleen genoemd bij registratie maar kreeg geen goed gevoel over het belang dat er aan gehecht wordt.
-	- Jan: werd wel belangrijk gevonden, met name validatie aan de bron. 
+	- Jan: werd wel belangrijk gevonden, met name validatie aan de bron. Dus in die zin moet je er alles aan doen (bij het registreren van je gegevens) om te zorgen dat er geen fouten meer in de data zitten. Maar het [valideren] wordt voorlopig als iets vrijblijvends beschreven [in het architectuur document]. 
 	- Pano: eens met Niels dat het niet bij U3 hoort; moet validatie in een apart uitgangspunt? Het is wel nogal een open deur. 
 	- Jan: aan de afnemerskant / bij informatieproducten is het minder van belang.
 	- Paul: ik heb de opmerking gemaakt omdat ik vind dat er rekening mee gehouden moet worden dat de genoemde modelleerparadigma's verschillende mogelijkheden bieden wat betreft validatie. 
 	- Linda: concreet, moeten we iets toevoegen over validatie? 
-	- **[todo] ** Niels: noot toevoegen aan U3 dat dit een aandachtspunt is. > Doen
+	- **[todo]** Niels: noot toevoegen aan U3 dat dit een aandachtspunt is. > Doen
 	- Michel: 'verificatie' of 'validatie'? wat is de juiste term. Geeft definities: Verificatie is de bevestiging dat het juist is gemaakt, oftewel dat het voldoet aan de eisen. Validatie is de bevestiging dat het juiste is gemaakt, oftewel dat het voldoet aan de behoeftes van de klant en andere stakeholders.
+	- Michel: het blijft tricky qua interpretatie. Want behoeften druk je ook uit in eisen...
 	- Lennart: is het woord paradigma's niet raar om hier te gebruiken? Het zijn toch gewoon formaten? 
 	- Pano: het zijn wel daadwerkelijk verschillende paradigma's > niet wijzigen
 	- Lennart vraagt nog of we ook van plan zijn het model in deze paradigma's uit te drukken, of alleen zorgen dat het kan? 
-	- Pano: het streven is om vanuit MIM ook LD te implementeren. > geen wijziging.
+	- Pano: het streven is om vanuit MIM ook LD te implementeren. > geen wijziging. Wel moeten we de vertalingen tussen MIM en MIM-LD nog onderzoeken, aangezien dit nog niet breed toegepast is. 
 	- Voorstel: Met wijziging titel en toevoegen Noot (zie todo's) vaststellen
-	- Lennart: ik ben ongelukkig met het voorbeeld. Zo lijkt het kritiek op de BAG dat ze proberen een document in een pand te modelleren. Het is geen document maar een documentverwijzing. 
+	- Lennart: Ik ben het eens dat op deze manier dit pand niet toe te passen is in andere paradigma's. Maar ik ben ongelukkig met het voorbeeld. Zo lijkt het kritiek op de BAG dat ze proberen een document in een pand te modelleren. Het is geen document maar een documentverwijzing. 
 	- Pano: juist wel een goed voorbeeld
 	- Paul: eens met Pano, een pand heeft geen documentdatum. 
 	- Lennart: stelt voor kleine toevoeging te doen aan de tekst. 'op deze manier is het niet in graaf paradigma te gebruiken'. 
 	- Paul: ook in objectgerichte paradigma is dit niet goed. 
-	- Pano: idd, binnen een registratie kun je dit nog wel doen, er is dan een afspraak 'we bedoelen er dit mee'. Maar als je dit in samenhang met andere registraties wilt gebruiken wordt het problematisch. 
-	- **[todo] ** Linda. Voorstel toelichting: 'hoewel dit in de BAG bedoeld is als een documentverwijzing, is het op deze manier niet in samenhang met andere registraties te gebruiken'. 
+	- Pano: idd, binnen een registratie kun je dit nog wel doen, er is dan een afspraak 'we bedoelen er dit mee'. Maar als je dit in samenhang met andere registraties wilt gebruiken wordt het problematisch. Dan moet je je telkens afvragen - hoort dit wel bij het object?
+	- **[todo]** Linda. Voorstel toelichting: 'hoewel dit in de BAG bedoeld is als een documentverwijzing, is het op deze manier niet in samenhang met andere registraties te gebruiken'. 
 	- Lennart: of een ander voorbeeld kiezen. 
 	- Linda: vinden anderen dit ook? 
-	- Michel: het is geen ideaal voorbeeld.
-	- **[todo] ** Pano: we kunnen ook een ander voorbeeld zoeken. Er komen een paar voorbeelden langs. 
+	- Michel: het [BAG voorbeeld] is geen ideaal voorbeeld. Het zou beter zijn om bv een voorbeeld te nemen waar het niet om de modellering van een (gecombineerde externe) sleutel gaat, dus waar het echt om metadata gaat - dit is dan ook echt een goed voorbeeld, mogelijk minder discussies over. 
+	- **[todo]** Pano: we kunnen ook een ander voorbeeld zoeken. Er komen een paar voorbeelden langs. 
 	- Lennart: Afgezien van het voorbeeld is het uitgangspunt akkoord. 
 	- Goedgekeurd met inachtneming van de hierboven genoemde to do's.
 - U4 ter vaststelling
 	- Pano: We hebben als implicatie toegevoegd dat een passende versioneringsstrategie nodig is ivm gerelateerde bestaande registraties en mappings tussen bestaande registraties en SOR. 
 	- Lennart: moet er bij de implicaties nog iets bij over wat je dan moet doen als er iets wijzigt? 
 	- Pano: we proberen hier nog niet te zeggen hoe de versioneringsstrategie moet worden ingevuld
-	- **[todo] ** Michel: 'aanpasbaar' erbij zetten. uitbreidbaar, aanpasbaar en inkrimpbaar = flexibel. > doen
+	- **[todo]** Michel: 'aanpasbaar' erbij zetten. uitbreidbaar, aanpasbaar en inkrimpbaar = flexibel. > doen
 	- Lennart: belangrijke implicatie lijkt me dat als een bestaande registratie wijzigt, de SOR moet meebewegen. 
 	- Pano: dat proberen we in algemene zin te zeggen bij de implicaties. 
 	- Lennart: lijkt me zo voldoende.
-	- **[todo] ** Paul: moet er nog iets bij over beheer / versionering? Iets met x y z... > doen
+	- **[todo]** Paul: moet er nog iets bij over beheer / versionering? Iets met x y z... > doen
 	- Pano: zal ik toevoegen
 	- Met deze wijzigingen vastgesteld (zie todo's)
 - U5 ter vaststelling
@@ -99,14 +100,14 @@ Pano loopt door het document heen.
 - P2 ter vaststelling
 	- geherformuleerd: 'relateerbaar' toegevoegd
 	- Michel: gaat het ook over relaties, gegevens etc? 
-	- **[todo] ** Pano: ja, zal dit nog verduidelijken. 
+	- **[todo]** Pano: ja, zal dit nog verduidelijken. 
 	- Vastgesteld met deze aanpassing (zie todo).
 - P3 ter vaststelling
 	- Pano: vorige keer niet echt bezwaren, maar wel een opmerking dat er ook gekeken zou moeten worden naar alternatieven wbt de modellering hiervan, concreet via een stereotype of tagged value in MIM. Dit alternatief noemen we nu ook in de tekst. Vraag aan Lennart is of dit voldoende is.
 	- Lennart: Het is een low impact manier om te duiden dat iets geen intrinsieke eigenschap is. Je hoeft niet anders te gaan modelleren. Daarom vind ik dat we deze moeten overwegen. Maar het is wel minder zuiver. 
 	- Paul: discussie of dit stereotype in MIM moet komen hoort niet hier thuis. Het is iets dat je in de SOR wellicht nodig hebt; of het in MIM komt is een latere stap. 
-	- **[todo] ** Linda: voorstel tekst aanpassing: 'door middel van een meta aanduiding' of iets dergelijks.
-	- **[todo] ** Lennart: het uitgewerkte voorbeeld aanpassen (Lennart en Pano offline)
+	- **[todo]** Linda: voorstel tekst aanpassing: 'door middel van een meta aanduiding' of iets dergelijks.
+	- **[todo]** Lennart: het uitgewerkte voorbeeld aanpassen (Lennart en Pano offline)
 	- met tekst aanpassing en voorbeeld aanpassing (zie todo's) vastgesteld
 - P4 ter vaststelling
 	- Pano: vorige keer hadden we het erover dat een gekoppeld begrip niet nodig is voor ieder element; in dit principe is nu aangescherpt voor welke informatiemodel-elementen geldt dat ze met minstens 1 begrip gekoppeld zijn. Als er niet minstens 1 begrip relatie is voor een van deze elementen moeten we uitleggen waarom niet. Verder is er in het principe een relatie opgenomen naar de MIM paragraaf waar dit uitgelegd wordt.
@@ -114,7 +115,7 @@ Pano loopt door het document heen.
 	- Pano: beide. Ik zie dat we niet helemaal consequent zijn in terminologie, elders noemen we dit 'eigenschap'. Lennart, Paul, welke is beter? 
 	- Paul: eigenschap. 
 	- Lennart: in MIM zijn eigenschap en kenmerk synoniem. 
-	- **[todo] ** Niels: 'kenmerksoort' hier vevangen door 'eigenschap' (staat er meerdere keren in)
+	- **[todo]** Niels: 'kenmerksoort' hier vevangen door 'eigenschap' (staat er meerdere keren in)
 	- vastgesteld met deze wijziging.
 
 ## Richtlijnen
@@ -127,27 +128,40 @@ Pano loopt door het document heen.
 	- Pano: ja, omdat hier wel standaarden voor zijn en omdat in de SOR grote waarde wordt gehecht aan bron metadata.
 	- Lennart: valt audit trail hier onder? Misschien eerder onder registratie metadata. 
 	- Michel: het exacte verschil tussen registratiemetadata en herkomst- en bronmetadata is me niet duidelijk. 
-	- Pano: misschien nog niet helder genoeg inderdaad. R1 gaat over gegevens die over het informatieobject gaan. R2 gaat verder, je zou hele reeks van gebeurtenissen die tot de totstandkoming van informatie hebben geleid, kunnen modelleren. Maar misschien kunnen we R1 en R2 samenvoegen.
+	- Pano: misschien nog niet helder genoeg inderdaad. R1 gaat over gegevens die over het informatieobject gaan. R2 gaat verder, je zou hele reeks van gebeurtenissen die tot de totstandkoming van informatie hebben geleid, kunnen modelleren. Deze richtlijnen zijn bedoeld als invulling van de [wat algemenere] principes. Maar misschien kunnen we R1 en R2 samenvoegen.
 	- Linda: kan me voorstellen dat je er 2 van hebt gemaakt omdat het ook denkbaar is dat je meerdere metadata objecten krijgt bij één object. 
 	- Lennart: voorstel om er 1 richtlijn van te maken. Anderen vinden dit ook een goed idee.
-	- **[todo] ** Pano: we gaan ze samenvoegen. Kunnen we deze dan vaststellen na de samenvoeging? Of willen jullie het nog een keer zien. Michel en Lennart? Anderen? 
+	- **[todo]** Pano: we gaan ze samenvoegen. Kunnen we deze dan vaststellen na de samenvoeging? Of willen jullie het nog een keer zien. Michel en Lennart? Anderen? 
 	- Lennart: geef iedereen de kans te reviewen.
 	- Pano voegt samen, dan opnieuw ter vaststelling.
 - Oude richtlijn 2 over multiple inheritance is geschrapt. Akkoord.
 - R3 ter vaststelling
 	- Pano: vooral voor onszelf opgenomen. Deze is afhankelijk van discussie die nu loopt bij MIM werkgroep. Als dit tot verduidelijking leidt kunnen we R3 schrappen. 
 	- Lennart: bedoeling van MIM is niet om met gegevensgroeptype 'zwakke' objecttypen te modelleren (objecttyen die niet zo belangrijk zijn in je universe of discourse en geen identificatie hebben) maar wordt in de praktijk wel zo toegepast. Gegevensgroeptype is alleen om samengestelde eigenschappen van het objecttype zelf te modelleren.
+	- Michel: het wordt ook nog wel eens gebruikt voor complexe waardes. 
 	- Paul: 'zwak objecttype' is een term die ik niet ken, nog wel een uitdaging om dit goed te duiden in MIM.
 	- Pano: het gaat ook mis in MIM in de linked data transformatie die gespecificeerd is. Daar wordt van gegevensgroeptype een objecttype gemaakt. Er staan in MIM ook voorbeelden en uitwerkingen waarvan ik in verwarring raak.
-	- Lennart: R3 is nu wel hard gesteld. **[todo] ** Als je er van maakt 'we wachten op verduidelijking in MIM" kan ik ermee leven. Over de voorbeelden: of je een motor of een oog beschouwt als objecttype of niet hangt af van je beschouwingsniveau. 
+	- Lennart: R3 is nu wel hard gesteld. **[todo]** Als je er van maakt 'we wachten op verduidelijking in MIM" kan ik ermee leven. Over de voorbeelden: of je een motor of een oog beschouwt als objecttype of niet hangt af van je beschouwingsniveau. 
 	- Paul: nee, een ding is altijd een ding
 	- Michel: dit zijn beide compositie voorbeelden, die zijn wel lastig. Daarbij is het vaak niet duidelijk of ze bij het ding horen of zelf een ding zijn. 
 	- Lennart: in een logisch model mag dit gewoon (zwakke objecttypen modelleren als gegevensgroeptype)
 	- Pano: klopt, maar als je objecten 'verstopt' in andere objecten kun je daar geen samenhang mee realiseren voor die objecten. 
 	- Michel: adviseert om dit even op conceptueel niveau te houden. Anders vermeng je zaken. 
 	- Paul: maar op logisch niveau ook niet dingen ineens heel anders gaan doen. Dus niet conceptueel model heel zuiver houden en op logisch model wild gaan.
+	- Lennart: eens, bij Kadaster voegen we eigenlijk alleen historie toe op logisch niveau.
 	- Linda: deze discussie moet inhoudelijk in de MIM werkgroep gevoerd worden, wij zullen daar ook aan deelnemen.
 	- vastgesteld met deze aanpassing: dat als de verduidelijking in MIM is gekomen, we deze richtlijn zullen schrappen.
 
 ## Afspraak over vervolg
 De expertgroepbijeenkomst van 29 juli blijft staan, Dick stuurt datumprikker voor nog enkele meetings daarna.
+
+## Acties
+- Definities: metadata definitie open formuleren ('...zoals:')
+- U3: 'hiërarchische' nog toevoegen in de titel; noot toevoegen over relatie tussen validatie en verschillende modelleerparadigma's. 
+- U4: BAG voorbeeld herformuleren/herzien. We kunnen in een noot/toelichting zeggen dat dit prima is in de context van bag, maar dat het ingewikkeld wordt als we het in een breder context toepassen (bv: 'hoewel dit in de BAG bedoeld is als een documentverwijzing, is het op deze manier niet in samenhang met andere registraties te gebruiken'). Het is ook mogelijk om een ander voorbeeld te zoeken voor dit punt (Pano en Lennart bekijken dit samen).
+- U4: woorden 'aanpasbaar' (uitbreidbaar, aanpasbaar en inkrimpbaar = flexibel.) en 'beheer' verwerken in de tekst.
+- P2:  herformuleren zodat het duidelijk is dat het niet alleen om objecttypes gaat. 
+- P3: 'doormiddel van een metadata/aanduiding' ipv ''MIM stereotype''.
+- P4: "kenmerksoort" door "eigenschap" vervangen, zodat we de termen in het document consistent gebruiken. 
+- R1-R2: verschil tussen registratie metadata en herkomst metadata goed toelichten; of van R1/R2 één richtlijnen maken waarbinnen we dan nuances aanbrengen in de soorten registratie/herkomst metadata. 
+- R3: herformuleren, bv: 'dit moet in mim aangescherpt worden voordat we het in de SOR zouden kunnen toepassen' of 'we wachten op verduidelijking in MIM'. Als dit er is, dan kunnen we de richtlijn verwijderen.
