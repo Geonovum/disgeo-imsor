@@ -36,15 +36,15 @@ TODO  -->
 invulling van:
 * [](#p3-alleen-directe-eigenschappen)
 
-## **R2**. Voorlopig geen gegevensgroeptype gebruiken
+## **R2**. Gebruik gegevensgroeptype wacht op verduidelijking in MIM
 
 | | | |
 |-|-|-|
 | **id** | R2 |
-| **Stelling** | Voorlopig maken we geen gebruik van MIM gegevensgroeptype |
-| **Status** | Ter vaststelling |
-| **Rationale** | Het MIM gegevensgroeptype kan momenteel op verschillende manieren toegepast worden. Aan de ene kant geeft de definitie aan dat de <a>gegevens</a> in een gegevensgroep nog altijd over het <a>object</a> zelf gaan, aan de andere kant worden er voorbeelden <a>gegeven</a> waaruit het lijkt alsof een gegevensgroeptype gebruikt wordt om een <a>object</a> zonder identificatie toe te voegen. Totdat dit in MIM aangscherpt is maken we hier geen gebruik van. |
-| **Implicaties** | We maken geen gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken attribuutsoorten of relatiesoorten wanneer we het over eigenschappen van een object hebben en maken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat. |
+| **Stelling** | Gebruik van het MIM gegevensgroeptype wacht op verduidelijking in MIM |
+| **Status** | Vastgesteld |
+| **Rationale** | De toepassing van het MIM gegevensgroeptype kan momenteel op verschillende manieren gelezen worden. Aan de ene kant geeft de definitie aan dat de <a>gegevens</a> in een gegevensgroep nog altijd over het <a>object</a> zelf gaan, aan de andere kant worden er voorbeelden <a>gegeven</a> waaruit het lijkt alsof een gegevensgroeptype gebruikt wordt om een <a>object</a> zonder identificatie toe te voegen. Totdat dit in MIM aangscherpt is maken we hier geen gebruik van. |
+| **Implicaties** | We wachten op verduidelijking in MIM voor het gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken we voorlopig attribuutsoorten of relatiesoorten wanneer we het over eigenschappen van een object hebben en maken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat.<br>Zodra het gebruik van gegevensgroeptype in MIM is verduidelijkt wordt deze richtlijn verwijderd. |
 
 <!-- **Relaties**
 
