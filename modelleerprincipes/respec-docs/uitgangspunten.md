@@ -46,7 +46,7 @@ De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afge
 
 De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afgestemd met andere relevante nationale, Europese en wereldwijde standaarden, zoals bijvoorbeeld [CityGML](https://www.ogc.org/standards/citygml) en de [INSPIRE standaarden](https://inspire.ec.europa.eu/data-specifications/2892).
 
-## **U3**. Informatiemodel bruikbaar in object-georienteerde, relationele, en graaf-gebaseerde paradigma's
+## **U3**. Informatiemodel bruikbaar in object-georienteerde, relationele, hiërarchische en graaf-gebaseerde paradigma's
 
 | | | |
 |-|-|-|
@@ -62,25 +62,34 @@ gerelateerd aan:
 * [](#u1-informatiemodel-bevordert-samenhang)
 
 **Voorbeelden**
-Een voorbeeld van een probleemgeval zijn de eigenschappen `documentnummer` en `documentdatum` die in de BAG op elk objecttype voorkomen [[Catalogus-BAG]]. Neem bijvoorbeeld het objecttype Pand.
+De BRT kent eigenschappen `brontype`, `bronbeschrijving`, `bronactualiteit`, `bronnauwkeurigheid` die op elk objecttype voorkoment [[Catalogus-BRT]]. Neem bijvoorbeeld het objecttype Gebouw.
 
-<figure id="imbag-pand">
-  <img src="media/imbag-pand.png" alt="IMBAG Pand objecttype" />
-  <figcaption>Het objecttype Pand uit IMBAG</figcaption>
+<figure id="imbrt-gebouw">
+  <img src="media/imbrt-gebouw.png" alt="IMBRT Gebouw objecttype" />
+  <figcaption>Het objecttype Gebouw uit IMBRT</figcaption>
 </figure>
 
-Het objecttype beschrijft eigenschappen van Pand zoals `oorspronkelijk bouwjaar` en `geometrie`, maar ook `documentdatum` en `documentnummer`. Echter, wanneer je gaat kijken naar de definitie van deze laatste twee eigenschappen, wordt het duidelijk dat dit geen <a>directe eigenschappen</a> zijn van Pand objecten.
+Het objecttype omvat eigenschappen van een gebouw zoals `hoogte` en `geometrie`, maar ook bovengenoemde eigenschappen zoals `brontype` en `bronnauwkeurigheid`. Wanneer je de definitie van deze eigenschappen gaat opzoeken in de tekstuele documentatie van de BRT, vind je het volgende:
 
-De definitie van `documentdatum` luidt:
-> De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden.
+> Het brontype, de bronbeschrijving, bronactualiteit en bronnauwkeurigheid geven informatie over de bron van het geo-object.
 
-De definitie van `documentnummer` luidt:
-> De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente.
+Daarnaast kun je de volgende definities vinden van deze eigenschappen:
 
-Terwijl de definitie van `oorspronkelijk bouwjaar` is:
-> De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.
+> brontype - Het type van de gebruikte bron.
+>
+> bronbeschrijving - De beschrijving van de gebruikte bron.
+>
+> bronacatualiteit - De actualiteit van de gebruikte bron.
+>
+> bronnauwkeurigheid - De nauwkeurigheid van de gebruikte bron in meters.
 
-Uit bovenstaande definities [[Catalogus-BAG]] wordt duidelijk dat het hier om twee verschillende dingen gaat. Aan de ene kant het pand-object met bouwjaar en aan de andere kant het brondocument op basis waarvan de gegevens over het pand-object tot stand zijn gekomen. Het combineren van deze twee objecten tot één, levert echter problemen op bij het representeren in een graafgebaseerd paradigma. Dit probleem wordt nog groter wanneer de wens bestaat om informatie uit andere registraties te verbinden aan objecten van dit type. Stel dat we een registratie hebben met nog meer informatie over brondocumenten (auteurs, laatste wijziging, etc.), of registraties met andere informatie over dezelfde panden. Waar en hoe moeten er nu relaties mee gelegd worden?
+Vergelijk dat met de definitie van een gegeven zoals hoogte:
+
+> hoogte - De hoogte van het object (t.o.v. het maaiveld of t.o.v. NAP).
+>
+> geometrie - De geometrie van een gebouw object.
+
+Uit bovenstaande definities [[Catalogus-BRT]] wordt duidelijk dat het bij deze attributen om twee verschillende objecten gaat. Aan de ene kant het gebouw-object met hoogte, geometrie etc., en aan de andere kant een bron op basis waarvan de gegevens over het gebouw-object tot stand zijn gekomen. Het combineren van deze twee objecten tot één, levert echter problemen op bij het representeren in een graafgebaseerd paradigma. Dit probleem wordt nog groter wanneer de wens bestaat om informatie uit andere registraties te verbinden aan objecten van dit type. Stel dat we een registratie hebben met nog meer informatie over bronnen (actor, precisie, verantwoordelijke partij, etc.), of registraties met andere informatie over dezelfde gebouwen, maar met een andere brongegevens. Hoe zou je deze informatie in dat geval in samenhang kunnen brengen? Dit zou alleen kunnen door voor elk gegeven handmatig te bepalen wat het onderwerp precies is en vervolgens met maatwerk voor iedere combinatie een oplossing proberen te vinden.
 
 ## **U4**. Informatiemodel is voldoende flexibel en uitbreidbaar
 
