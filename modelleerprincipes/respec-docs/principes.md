@@ -31,8 +31,8 @@ TODO -->
 |-|-|-|
 | **id** | P2 |
 | **Stelling** | <a>Objecttypes</a> zijn relateerbaar en (her)bruikbaar in verschillende registraties. |
-| **Status** | Ter vaststelling |
-| **Rationale** | Om [**P1**](#p1-informatieobjecten-zijn-in-samenhang-bruikbaar) te realiseren moeten ook <a>objecttypes</a> hebruikbaar zijn in verschillende registraties. |
+| **Status** | Vastgesteld |
+| **Rationale** | Om [**P1**](#p1-informatieobjecten-zijn-in-samenhang-bruikbaar) te realiseren moeten ook <a>objecttypes</a> relateerbaar en hebruikbaar zijn in verschillende registraties. Daartoe rekenen we ook alle eigenschappen die bij dat <a>objecttype</a> horen |
 | **Implicaties** | Dit houdt in dat de <a>gegevens</a> die vastgelegd worden over <a>objecten</a>, op basis van het <a>objecttype</a>, herbruikbaar moeten zijn.|
 
 **Relaties**
