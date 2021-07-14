@@ -8,9 +8,9 @@ De gebruikte definities en de modelleerprincipes zijn geformuleerd met een aanta
 |-|-|-|
 | **id** | U1 |
 | **Stelling** | Het informatiemodel (IMSOR) bevordert samenhang tussen informatieobjecten in registraties |
-| **Status** | Ter vaststelling |
+| **Status** | Vastgesteld |
 | **Rationale** | Het uiteindelijke doel van de SOR is het verbeteren van de samenhang tussen informatieobjecten over de verschillende geo-basisregistraties en aanpalende sectorregistraties. Om dit doel te realiseren moet ook het informatiemodel deze samenhang bevorderen. |
-| **Implicaties** | Het model bevat basisobjecttypes die terug te koppelen zijn aan alle huidige registraties, maar biedt ook ruimte voor het opnemen van vrijwillige objecttypes vanuit verschillende registraties - dit vereist ook samenhang in de structuur. |
+| **Implicaties** | Het model bevat basisobjecttypes die samen te stellen zijn uit alle huidige registraties, maar biedt ook ruimte voor het opnemen van vrijwillige objecttypes vanuit verschillende registraties - dit vereist ook samenhang in de structuur. |
 
 <!-- **Relaties**
 
