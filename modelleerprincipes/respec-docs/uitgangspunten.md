@@ -91,15 +91,15 @@ Vergelijk dat met de definitie van een gegeven zoals hoogte:
 
 Uit bovenstaande definities [[Catalogus-BRT]] wordt duidelijk dat het bij deze attributen om twee verschillende objecten gaat. Aan de ene kant het gebouw-object met hoogte, geometrie etc., en aan de andere kant een bron op basis waarvan de gegevens over het gebouw-object tot stand zijn gekomen. Het combineren van deze twee objecten tot één, levert echter problemen op bij het representeren in een graafgebaseerd paradigma. Dit probleem wordt nog groter wanneer de wens bestaat om informatie uit andere registraties te verbinden aan objecten van dit type. Stel dat we een registratie hebben met nog meer informatie over bronnen (actor, precisie, verantwoordelijke partij, etc.), of registraties met andere informatie over dezelfde gebouwen, maar met een andere brongegevens. Hoe zou je deze informatie in dat geval in samenhang kunnen brengen? Dit zou alleen kunnen door voor elk gegeven handmatig te bepalen wat het onderwerp precies is en vervolgens met maatwerk voor iedere combinatie een oplossing proberen te vinden.
 
-## **U4**. Informatiemodel is voldoende flexibel en uitbreidbaar
+## **U4**. Informatiemodel is voldoende flexibel
 
 | | | |
 |-|-|-|
 | **id** | U4 |
-| **Stelling** | Het informatiemodel (IMSOR) moet voldoende flexibel, uitbreidbaar en inkrimpbaar zijn wat betreft objecttypen, eigenschappen en het al dan niet verplicht zijn hiervan.|
-| **Status** | Ter vaststelling |
+| **Stelling** | Het informatiemodel (IMSOR) moet voldoende flexibel, aanpasbaar, uitbreidbaar en inkrimpbaar zijn wat betreft objecttypen, eigenschappen en het al dan niet verplicht zijn hiervan.|
+| **Status** | Vastgesteld |
 | **Rationale** | De SOR moet geleidelijk en organisch kunnen worden ingevoerd om de transitie soepel te laten verlopen. Objecttypen en eigenschappen moeten kunnen worden toegevoegd, verwijderd, het verplichte karakter ervan moet kunnen wijzigen al naar gelang de behoeften van de gebruikers. |
-| **Implicaties** | Het informatiemodel van de SOR moet tot op zekere hoogte een 'levende standaard' karakter krijgen. Bepaald moet worden welke mate van flexibiliteit nog hanteerbaar is voor de bronhouders en afnemers.<br>Dit uitgangspunt impliceert ook dat er een passende versioneringsstrategie moet komen voor het informatiemodel en de informatieproducten die daarbij horen. Wanneer de SOR tot stand komt op basis van mappings op bestaande registraties zullen ook deze aan een passende versioneringsstrategie onderhevig moeten zijn. |
+| **Implicaties** | Het informatiemodel van de SOR moet tot op zekere hoogte een 'levende standaard' karakter krijgen. Bepaald moet worden welke mate van flexibiliteit nog hanteerbaar is voor de bronhouders en afnemers.<br>Dit uitgangspunt impliceert ook dat er een passende versioneringsstrategie moet komen voor het informatiemodel en de informatieproducten die daarbij horen. Wanneer de SOR tot stand komt op basis van mappings op bestaande registraties zullen ook deze aan een passende beheer- en versioneringsstrategie onderhevig moeten zijn. |
 
 **Relaties**
 - [Beleidsvisie](#vanuit-beleidsvisie-samenhangende-objectenregistratie) punt 3 en 4.
