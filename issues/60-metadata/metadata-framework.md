@@ -3,20 +3,27 @@
 ## Doel metadata in de SOR
 
 - Gebruikers extra informatie geven?
-- normkwaliteit automatisch controleren?
+- Normkwaliteit *automatisch* controleren?
 - ...
 
 ## Metadata op informatiemodel-niveau
 
-Dit is metadata over objecttypes en kenmerken (attribuutsoorten en relatiesoorten). 
+Dit is metadata over objecttypes en kenmerken (attribuutsoorten en relatiesoorten) in het informatiemodel. 
 
 Standaarden die van toepassing zijn: 
 - MIM
 - ISO 19131 Geographic information — Data product specifications
+- ISO 19110 (?)
 
-Het specificeren van metadata voor informatiemodel-elementen kunnen we op 2 manieren doen: 
-- per objecttype / attribuuttype aangeven welke metadata elementen van toepassing zijn en wat het domein ervan is (constraints aan de inhoud); 
-- per metadata-element aangeven wat het domein ervan is en voor welke objecttypen/attribuuttypen het van toepassing is (de scope van het metadata-element). 
+Het specificeren van metadata voor informatiemodel-elementen doe je per objecttype / attribuuttype. We passen hiervoor het MIM toe, dat aangeeft hoe dit moet in [3.2.1 Modellering metagegevens voor objecten en attributen in UML](https://docs.geostandaarden.nl/mim/mim/#modellering-metagegevens-voor-objecten-en-attributen-in-uml).
+
+Wij adviseren om het MIM aspect Kwaliteit verder uit te splitsen in: 
+ - Volledigheid
+ - Actualiteit
+ - Ruimtelijke nauwkeurigheid
+ - Eisen aan controle(frequentie)
+ - Eisen aan inwinningswijze
+ - ... etc.
 
 *Per informatiemodel-element:*
 
@@ -25,26 +32,31 @@ Aspect | Domein | Toelichting
 |Naam   | Tekst  | Naam van het informatiemodel-element |
 |Begrip | URI    | |
 ... (e.z. zoals in MIM gedefinieerd)   | ... | 
-Actualiteitseis | Getal | [x] maanden
-Controle-eis | Getal | 1 keer per [x] jaar
-Nauwkeurigheidsklasse | Domeinwaarde | Domein is bv Hoog / Midden / Laag*
+Volledigheid | Getal | Percentage
+Actualiteit | Getal | [x] maanden
+Nauwkeurigheidsklasse | Domeinwaarde | Hoog / Midden / Laag*
+Controlefrequentie | Getal | 1 keer per [x] jaar
+Inwinningswijze | Domeinwaarde | Luchtfoto / Terrestrisch / etc.
 
+*Nauwkeurigheidsklasse*
 - Hoog = centimeter tot decimeter
 - Midden = decimeter tot meter
 - Laag = meter tot hectometer
 
 ### Voorbeeld
 
-#### Objecttype Pand
+#### Objecttype Abri
 
-Aspect | Waarde 
------- | ------ 
+Aspect | Waarde | Eenheid
+------ | ------ | ------- 
 Naam   | Abri  
 |Begrip | https://begrippen.geostandaarden.nl/sor/nl/page/abri
 ... (e.z. zoals in MIM gedefinieerd)   | ... 
-Actualiteitseis | 12 
-Controle-eis | 2 
-Nauwkeurigheidsklasse | Midden
+Volledigheid | 99 | procent
+Actualiteit | 12 | maanden
+Nauwkeurigheidsklasse | Midden | 
+Controlefrequentie | 2 | jaar
+Inwinningswijze | Luchtfoto |
 
 
 ## Metadata op dataset-niveau
