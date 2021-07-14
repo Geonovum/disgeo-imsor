@@ -55,7 +55,7 @@ Directe eigenschappen zijn relevant in de kader van <a>informatieobjecten</a>. W
 
 <dfn data-lt="registratiemetadata">Metadata</dfn>
 
-Metadata zijn gegevens over andere gegevens. We onderscheiden verschillende soorten metadata; gegevens over:
+Metadata zijn gegevens over andere gegevens. We onderscheiden verschillende soorten metadata; zoals gegevens over:
 * registraties
 * informatiemodellen
 * informatiemodelelementen
