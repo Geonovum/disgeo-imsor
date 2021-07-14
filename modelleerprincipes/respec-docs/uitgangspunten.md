@@ -119,7 +119,7 @@ TODO -->
 |-|-|-|
 | **id** | U5 |
 | **Stelling** | Het informatiemodel (IMSOR) moet zijn afgestemd op het gebruik door de verschillende doelgroepen. |
-| **Status** | Ter vaststelling |
+| **Status** | Vastgesteld |
 | **Rationale** | Het informatiemodel moet bruikbaar zijn voor de doelen van de SOR en de belangen van verschillende stakeholders. Als deze belangen onduidelijk of tegenstrijdig zijn biedt dit uitgangspunt handvaten om ze te kunnen afwegen en een richting te kiezen. |
 | **Implicaties** | Het informatiemodel wordt opgesteld op basis van functionele behoeften die zijn afgeleid uit use cases en waarbij de belangen van de doelgroepen worden afgewogen. |
 
