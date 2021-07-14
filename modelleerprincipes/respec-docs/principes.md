@@ -7,7 +7,7 @@ In dit hoofdstuk worden de modelleerprincipes, in lijn met de uitgangspunten, ge
 |-|-|-|
 |  **id** | P1 |
 | **Stelling** | <a>Informatieobjecten</a> zijn in samenhang bruikbaar |
-| **Status** | Ter vaststelling |
+| **Status** | Vastgesteld |
 | **Rationale** | Wanneer we <a>samenhang</a> willen realiseren moet een objectbeschrijving (<a>informatieobject</a>) vanuit de ene registratie hergebruikt kunnen worden in een andere registratie. Zij het als verwijzing, of omdat de andere registratie ook <a>gegevens</a> beschrijft over hetzelfde <a>object</a>. |
 | **Implicaties** | Dit betekent dat objecttypes scherp gedefinieerd moeten zijn. Bij het over elkaar leggen van <a>informatieobjecten</a> betekent het dat de <a>objecten</a> daadwerkelijk gelijk moeten zijn, ofwel de objectbeschrijvingen moeten exact hetzelfde onderwerp hebben. Alleen dan kunnen objectbeschrijvingen vanuit verschillende contexten consistent over elkaar heen gelegd worden. Daarnaast moeten ook alle <a>gegevens</a> in de objectbeschrijvingen hetzelfde onderwerp hebben. |
 
