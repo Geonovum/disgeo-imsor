@@ -9,7 +9,7 @@ De modelleerrichtlijnen worden hieronder nader uiteengezet...
 |-|-|-|
 | **id** | R1 |
 | **Stelling** | Elk informatiemodelelement moet verbonden zijn met een begrip in het SOR begrippenkader |
-| **Rationale** | Om samenhang te kunnen realiseren is het van belang dat begrijpt waar een informatieobject over gaat. Het is belangrijk om het soort onderwerp, gerepresenteerd door een objecttype, duidelijk te definiëren in de vorm van een begrip. Dit maat dat anderen kunnen begrijpen over wat voor soort objecten een obejcttype gaat. Hetzelfde geldt voor de kenmerken van het objecttype. vindbaar maken. |
+| **Rationale** | Om samenhang te kunnen realiseren is het van belang dat begrijpt waar een informatieobject over gaat. Het is belangrijk om het soort onderwerp, gerepresenteerd door een objecttype, duidelijk te definiëren in de vorm van een begrip. Dit maat dat anderen kunnen begrijpen over wat voor soort objecten een obejcttype gaat. Hetzelfde geldt voor de eigenschappen van het objecttype. vindbaar maken. |
 | **Implicaties** | Ieder modelelement moet verwijzen naar een begrip in het begrippenkader. |
 
 **Relaties**
@@ -59,7 +59,7 @@ invulling van:
 | **Stelling** | Voorlopig maken we geen gebruik van MIM gegevensgroeptype |
 | **Status** | Ter vaststelling |
 | **Rationale** | Het MIM gegevensgroeptype kan momenteel op verschillende manieren toegepast worden. Aan de ene kant geeft de definitie aan dat de <a>gegevens</a> in een gegevensgroep nog altijd over het <a>object</a> zelf gaan, aan de andere kant worden er voorbeelden <a>gegeven</a> waaruit het lijkt alsof een gegevensgroeptype gebruikt wordt om een <a>object</a> zonder identificatie toe te voegen. Totdat dit in MIM aangscherpt is maken we hier geen gebruik van. |
-| **Implicaties** | We maken geen gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken attribuutsoorten of relatiesoorten wanneer we het over kenmerken van een object hebben en maken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat. |
+| **Implicaties** | We maken geen gebruik van MIM gegevengroepttype. In de plaats daarvan gebruiken attribuutsoorten of relatiesoorten wanneer we het over eigenschappen van een object hebben en maken we een nieuw <a>objecttype</a> wanneer het over een ander <a>object</a> gaat. |
 
 <!-- **Relaties**
 
@@ -67,7 +67,7 @@ invulling van:
 TODO  -->
 
 <aside class="note">
-  Een complexe waarde wat geen object is modelleren we als complex datatype. In een complex datatype modelleren we geen kenmerken van een object.
+  Een complexe waarde wat geen object is modelleren we als complex datatype. In een complex datatype modelleren we geen eigenschappen van een object.
 </aside>
 
 <aside class="issue">

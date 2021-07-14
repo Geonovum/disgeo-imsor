@@ -170,14 +170,14 @@ Daarnaast, door het toepassen van het principe voor directe eigenschappen kunnen
 
 In [](#gebouw-samenhang) is afgebeeld hoe een samenhangende set informatie over een gebouw er vervolgens uit zou kunnen zien, gegeven een combinatie van <a>gegevens</a> met een overlappende context. Omdat elk van de eigenschappen daadwerkelijk hetzelfde <a>object</a> als onderwerp heeft, zijn de <a>gegevens</a> gemakkelijker in <a>samenhang</a> te gebruiken. Een afnemer kan dan kiezen welke <a>gegevens</a> hij, uit deze set, interessant vindt voor zijn/haar toepassing.
 
-## **P4**. Ieder objecttype, kenmerksoort en waarde uit een waardelijst heeft een bijbehorend begrip
+## **P4**. Ieder objecttype, eigenschap en waarde uit een waardelijst heeft een bijbehorend begrip
 | | | |
 |-|-|-|
 | **id** | P4 |
-| **Stelling** | Ieder <a>objecttype</a>, kenmerksoort, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
+| **Stelling** | Ieder <a>objecttype</a>, eigenschap, en waarde uit een waardelijst moet verbonden zijn met tenminsten één bijbehorend begrip in een begrippenkader over dat domein, tenzij aangetoond wordt dat dit niet relevant is. |
 | **Status** | Ter vaststelling |
-| **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen, kenmerksoorten en waardes uit waardelijsten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
-| **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, kenmerksoort en waarde uit een waardelijst, tenzij gevonden wordt dat het relateren aan een begrip niet relevant is. Wanneer dat laatste het geval is moet daarvoor een reden worden opgenomen in een beschrijving van dat modelelement. |
+| **Rationale** | Om <a>gegevens</a> in <a>samenhang</a> te kunnen gebruiken moet het eenvoudig zijn om te begrijpen wat een <a>gegeven</a> betekent, en hoe het geïnterpreteerd moet worden binnen een bepaald domein. Door objectypen, eigenschappen en waardes uit waardelijsten te duiden met expliciet gekoppelde begrippen, realiseren we dit op systematische wijze. |
+| **Implicaties** | Er moet minstens één begrip gedefinieerd zijn voor ieder <a>objecttype</a>, eigenschap en waarde uit een waardelijst, tenzij gevonden wordt dat het relateren aan een begrip niet relevant is. Wanneer dat laatste het geval is moet daarvoor een reden worden opgenomen in een beschrijving van dat modelelement. |
 
 **Relaties**
 
