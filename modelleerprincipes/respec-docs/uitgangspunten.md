@@ -56,6 +56,10 @@ De ontwikkeling van het informatiemodel wordt tenslotte zoveel als mogelijk afge
 | **Rationale** | Het moet mogelijk zijn om de informatie in de SOR op verschillende manieren te toe te passen. Het informatiemodel moet niet tegenwerken dat objecten binnen de genoemde paradigma's gerepresenteerd kunnen worden. Object-georienteerde, relationele en hierarchische (JSON, XML) representatie van informatie wordt al breed toegepast, en graafgebaseerde paradigma's, zoals linked data, zijn sterk in opkomst. Het informatiemodel moet gebruikt kunnen worden in deze paradigma's. |
 | **Implicaties** | Informatiemodellen in een graaf-gebaseerd paradigma zijn per definitie genormaliseerd. Met genormaliseerd bedoelen wij dat het een <a>informatieobject</a> over een <a>object</a> alleen <a>directe eigenschappen</a> van het <a>object</a> beschrijft. Ofwel, alle gegevens in het <a>informatieobject</a> gaan direct over het object. In graaf-gebaseerd paradigma's representeert iedere node in een graaf één <a>object</a> in een UoD. Dit is niet altijd het geval in object-georienteerde of relationele modellen, waarin vaak denormalisatie plaatsvindt. |
 
+<aside class="note">
+  Gegevensvalidatie is met name een functionele eis bij het registreren van gegevens. Een aandachtspunt is daarom dat de genoemde modelleerparadigma's verschillende mogelijkheden bieden wat betreft validatie.
+</aside>
+
 **Relaties**
 
 gerelateerd aan:
