@@ -14,5 +14,5 @@ Bijeenkomsten van Expertgroep informatiemodel samenhangende objectenregistratie
 - 1e bijeenkomst: 28 oktober 2020 [[slides](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/28-10-2020-expertgroepvergadering.pdf)]
 
 Bijeenkomsten met de Inhoudsgroep
-
-- 01 april 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/01-04-2021-inhoudsoverleg-aantekeningen.md)
+- 15 juli 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/15-07-2021-inhoudsoverleg-aantekeningen.md)]
+- 01 april 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/01-04-2021-inhoudsoverleg-aantekeningen.md)]
