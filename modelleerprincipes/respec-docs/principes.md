@@ -55,7 +55,7 @@ TODO -->
 | **Stelling** | Alleen <a>directe eigenschappen</a> komen voor op een <a>objecttype</a>. |
 | **Status** | Ter vaststelling |
 | **Rationale** | Om samenhang te bevorderen moet een <a>objecttype</a> leiden tot objectbeschrijvingen die herkenbaar zijn onafhankelijk van de context van de registratie waarin ze bestaan. Het modelleren van directe eigenschappen (eigenschappen waarbij het onderwerp direct het <a>object</a> is) bevordert dit, omdat deze eigenschappen vaak zonder uitleg te begrijpen zijn. Daarmee zijn deze eigenschappen ook gemakkelijker te verplaatsen naar een andere context waarin hetzelfde onderwerp wordt beschreven. Wanneer eigenschappen aan een <a>object</a> worden toegekend die niet direct het <a>object</a> als onderwerp hebben, maar bijv. een verwant <a>object</a>, waarvan de beschrijving ook is opgenomen in het <a>informatieobject</a> over het eerste <a>object</a>, dan wordt het lastiger of zelfs onmogelijk om deze eigenschappen her te gebruiken buiten de context van de specifieke registratie waarin dat het geval is. Vaak is het onduidelijk wat deze eigenschappen betekenen buiten de context, als je ze al kunt herkennen. Hiervoor moet eerst documentatie gelezen worden, en daarna moeten er bedrijfsregels toegepast worden om gebruik toe te passen. Dit werkt <a>samenhang</a> tegen.|
-| **Implicaties** | Het toepassen van dit principe leidt tot een genormaliseerd informatiemodel. Dit kan betekenen dat er meer objecttypes onderscheiden moeten worden dan momenteel (in een gedenormaliseerd model) vaak het geval is. Daarentegen bieden ook die expliciet gemodelleerde objecttypes kansen voor het aanbrengen van samenhang, omdat ze losgeweekt zijn van onherkenbare/onherkbruikbare samengevoegde objecttypes.<br><br>Een mogelijk alternatief voor het onderscheiden van meerder objecttypes is het onderscheiden van directe eigenschappen door middel van een meta aanduiding. |
+| **Implicaties** | Het toepassen van dit principe leidt tot een genormaliseerd informatiemodel. Dit kan betekenen dat er meer objecttypes onderscheiden moeten worden dan momenteel (in een gedenormaliseerd model) vaak het geval is. Daarentegen bieden ook die expliciet gemodelleerde objecttypes kansen voor het aanbrengen van samenhang, omdat ze losgeweekt zijn van onherkenbare/onherkbruikbare samengevoegde objecttypes.<br><br>Een mogelijk alternatief voor het onderscheiden van meerder objecttypes is het onderscheiden van directe eigenschappen door middel van een aanduiding of metadata. |
 
 **Relaties**
 
@@ -63,7 +63,7 @@ afgeleid van:
 * [](#p2-objecttypes-zijn-relateerbaar-en-herbruikbaar)
 
 gerelateerd aan:
-* [](#u3-informatiemodel-bruikbaar-in-object-georienteerde-relationele-en-graaf-gebaseerde-paradigma-s)
+* [](#u3-informatiemodel-bruikbaar-in-object-georienteerde-relationele-hierarchische-en-graaf-gebaseerde-paradigma-s)
 
 **Voorbeelden**
 
