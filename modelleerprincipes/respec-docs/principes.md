@@ -15,15 +15,11 @@ In dit hoofdstuk worden de modelleerprincipes, in lijn met de uitgangspunten, ge
 
 invulling van:
 * [](#u1-informatiemodel-bevordert-samenhang)
-* [](#u3-informatiemodel-bruikbaar-in-object-georienteerde-relationele-en-graaf-gebaseerde-paradigma-s)
+* [](#u3-informatiemodel-bruikbaar-in-object-georienteerde-relationele-hierarchische-en-graaf-gebaseerde-paradigma-s)
 
 <!-- **Voorbeelden**
 
 TODO -->
-
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/57">Discussie</a> over dit uitgangspunt loopt.
-</aside>
 
 ## **P2**. Objecttypes zijn relateerbaar en herbruikbaar
 
@@ -43,10 +39,6 @@ afgeleid van:
 <!-- **Voorbeelden**
 
 TODO -->
-
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/59">Discussie</a> over dit uitgangspunt loopt.
-</aside>
 
 ## **P3**. Alleen directe eigenschappen
 | | | |
