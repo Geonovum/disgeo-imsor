@@ -109,6 +109,11 @@ Deze informatiemodellen voldoen dus nog niet aan het principe "Gebruik alleen <a
 
 In [](#logisch-imbag-pand-samenhang), [](#logisch-imbgt-pand-samenhang) en [](#logisch-imbrt-gebouw-samenhang) passen we dit principe wel toe. Daarnaast maken we gebruik van het construct Registratiegegevens uit NEN3610 om de registratiecontext van <a>gegevens</a> op een standaard manier te duiden.
 
+<aside class="note">
+  In de onderstaande informatiemodellen gaan we er vanuit dat een attribuutsoort en een relatiesoort <strong>altijd</strong> een directe eigenschap representeert.<br>
+  Dit leidt tot het onderscheiden van meerdere objecttypes.<br>Een alternatief voor deze aanpak zou kunnen zijn om "directheid" van eigenschappen aan te duiden met metadata of een aanduiding. In MIM zou dit bijvoorbeeld kunnen met een tagged value.
+</aside>
+
 <figure id="logisch-imbag-pand-samenhang">
   <img src="media/imbag-pand-samenhang.drawio.png" alt="IMBAG Pand objecttype voor samenhang" />
   <figcaption>Logisch informatiemodel Pand uit IMBAG voor gebruik in samenhang</figcaption>
