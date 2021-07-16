@@ -63,10 +63,6 @@ Metadata zijn gegevens over andere gegevens. We onderscheiden verschillende soor
 * <a>informatieobjecten</a>
 * (<a>object</a>)<a>gegevens</a>
 
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/50">Discussie</a> over deze definitie loopt.
-</aside>
-
 <dfn>Samenhang</dfn>
 
 Samenhang valt uiteen in twee vormen. Relaties tussen verschillende <a>objecten</a> en het combineren van verschillende <a>informatieobjecten</a> over hetzelfde <a>object</a> vanuit verschillende registraties.
