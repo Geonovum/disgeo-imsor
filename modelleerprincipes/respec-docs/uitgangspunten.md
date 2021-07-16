@@ -20,10 +20,6 @@ TODO
 
 TODO -->
 
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/52">Discussie</a> over dit uitgangspunt loopt.
-</aside>
-
 ## **U2**. Informatiemodel maakt gebruik van relevante standaarden
 
 | | | |
@@ -113,10 +109,6 @@ Uit bovenstaande definities [[Catalogus-BRT]] wordt duidelijk dat het bij deze a
 
 TODO -->
 
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/56">Discussie</a> over dit uitgangspunt loopt.
-</aside>
-
 ## **U5**. Informatiemodel is afgestemd op gebruik door de doelgroepen
 
 | | | |
@@ -146,7 +138,3 @@ De groep "gebruikers" kan nog verder worden onderverdeeld op basis van de genoem
 <!-- **Voorbeelden**
 
 TODO -->
-
-<aside class="issue">
-  <a href="https://github.com/Geonovum/disgeo-imsor/discussions/43">Discussie</a> over dit uitgangspunt loopt.
-</aside>
