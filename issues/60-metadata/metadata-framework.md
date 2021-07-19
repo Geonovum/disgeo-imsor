@@ -103,8 +103,6 @@ Op dit niveau gaat het specifiek om metadata over informatieobjecten en hun gege
 Standaarden die van toepassing zijn: 
 - ISO 19156 Observations & Measurements (en SSN)
 - PROV-O
-- DQV
-- SDW-BP 13 en 14
 
 Voor voorbeelden hiervan, zie [de uitgewerkte 'IMBoom' casus](https://geonovum.github.io/disgeo-imsor/casus/imboom)
 Note: De vastlegging van metadata op attribuutniveau in het informatiemodel wordt nog besproken, zie [issue 14](https://github.com/Geonovum/disgeo-imsor/issues/14) voor meer context.
