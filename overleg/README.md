@@ -1,4 +1,5 @@
 Bijeenkomsten van Expertgroep informatiemodel samenhangende objectenregistratie
+- 14e bijeenkomst: 29 juli 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/29-07-2021-aantekeningen.md)]
 - 13e bijeenkomst: 8 juli 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/08-07-2021-aantekeningen.md)]
 - 12e bijeenkomst: 17 juni 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/17-06-2021-aantekeningen.md)]
 - 11e bijeenkomst: 27 mei 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/27-05-2021-aantekeningen.md)]
