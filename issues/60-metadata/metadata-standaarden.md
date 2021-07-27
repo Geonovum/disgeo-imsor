@@ -2,7 +2,7 @@
 ISO 19115 is een zeer uitgebreide standaard voor dataset metadata specifiek voor geodata. Ook verplicht in INSPIRE context; er is een INSPIRE profiel en het [Nederlands profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) sluit daar weer op aan. We kunnen dus het NL profiel bekijken en hoeven dan niet de ISO standaard en INSPIRE guideline ook te lezen. 
 Er is een XML implementatie van deze standaard. Er is ook een Geo-DCAT-AP mapping.
 
-# ISO 19157 Geographic information —Data quality
+# ISO 19157 Geographic information — Data quality
 Standaard die de datakwaliteitseigenschappen van geo-data beschrijft, uitgaande van datasetniveau maar je zou de beschreven aspecten ook wel op informatieobjecten kunnen toepassen. De kwaliteitseigenschappen zijn compleetheid, logische consistentie, positionele nauwkeurigheid, thematische nauwkeurigheid, en temporele kwaliteit. Enkele van deze kwaliteitsaspecten zijn in het Nederlands profiel op ISO 19115 opgenomen. 
 
 # MIM Metamodel voor informatiemodellering
@@ -32,10 +32,17 @@ O&M 2.0 is zowel een ISO als een OGC standaard. Er is een [onofficiële werkvers
 [PROV-O](https://www.w3.org/TR/prov-o/) is een bij W3C gestandaardiseerde RDF vocabulaire voor het beschrijven van 'provenance', de oorsprong van data. Het gaat dan om ontstaansaspecten van de data, zoals hoe de data geproduceerd is, wanneer, door wie, enz. Dit is geen geo-data specifieke standaard. 
 
 # DQV Data quality vocabulary
-[DQV](https://www.w3.org/TR/vocab-dqv/) is een RDF vocabulaire voor het beschrijven van datakwaliteit. Komt voort uit het werk van de Data on the web Best Practices, dus is bij de W3C ontwikkeld, maar is geen officiële standaard. Het is ook geen geo-data specifieke standaard. De vocabulaire geeft elementen voor het beschrijven van kwaliteitsaspecten. Je kunt zelf definieren welke metrics dit zijn en hoe je de kwaliteit daarvan uitdrukt. Ook bevat het elementen om aan te geven aan welke standaard of policy de data voldoet, om te linken naar certificaten, om kwaliteitsfeedback op te nemen, etc.
+[DQV](https://www.w3.org/TR/vocab-dqv/) is een RDF vocabulaire voor het beschrijven van datakwaliteit. Komt voort uit het werk van de Data on the web Best Practices, dus is bij de W3C ontwikkeld, maar is geen officiële standaard. Het is ook geen geo-data specifieke standaard. De vocabulaire geeft elementen voor het beschrijven van kwaliteitsaspecten (en kwaliteitsdimensies, zoals gespecificeerd in ISO/IEC 25012). Je kunt zelf definieren welke metrics dit zijn en hoe je de kwaliteit daarvan uitdrukt. Ook bevat het elementen om aan te geven aan welke standaard of policy de data voldoet, om te linken naar certificaten, om kwaliteitsfeedback op te nemen, etc.
 
 # SDW-BP 13 en 14 Spatial data on the web best practices
 Twee van de [Spatial data on the Web best practices](https://www.w3.org/TR/sdw-bp/) gaan over metadata: [13 Include spatial metadata in dataset metadata](https://www.w3.org/TR/sdw-bp/#spatial-info-dataset-metadata) en [14 Include spatial metadata in dataset metadata](https://www.w3.org/TR/sdw-bp/#desc-accuracy). Best practice 13 beveelt aan om in ieder geval de spatial extent, coverage en representation op te nemen en noemt daarnaast nog een aantal andere aspecten. Best practice 14 geeft handvaten voor het beschrijven van positionele nauwkeurigheid. Er wordt verwezen naar ISO 19115, DCAT, Geo-DCAT-AP, en DQV.
 
 Zie ook de [editor's draft](https://w3c.github.io/sdw/bp/).
 
+# ISO 25012 Data Quality Model
+
+Deze standaard specificeert een generiek model ten behoeve van de evaluatie van data kwaliteit - het gaat hierbij om gestructureerde data in computer systemen. De standaard focust zich dus op het beschrijven van 15 kwaliteitsdimensies die relevant kunnen zijn voor de kwaliteitscontrole van een data product. Een dimensie kan meerdere zogenaamde kwaliteitsattributen bevatten - deze attributen kunnen worden gebruikt om meetbare eisen mee uit te drukken. De dimensies worden gegroepeerd in twee categorieën: dimensies voor de inherente data kwaliteit en dimensies voor systeem-afhankelijke data kwaliteit. De inherente data kwaliteit zegt iets over de mate waarin de data zelf aan de gestelde/impliciete behoeftes voldoet. Systeem-afhankelijke data kwaliteit zegt iets over de mate waarin data kwaliteit kan worden bereikt en behouden binnen een computer system - het gaat hierbij vooral om procesgegevens en afhankelijkheden vanuit gebruikte hardware en software.
+
+# Raamwerk Gegevenskwaliteit (NORA)
+
+Het [Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Raamwerk_gegevenskwaliteit#%22) van de Nederlandse Overheid Referentie Architectuur (NORA) kwam tot stand op basis van de verzamelde kennis omtrent [gegevensmanagement](https://www.noraonline.nl/wiki/Gegevensmanagement). Het raamwerk richt zich op het definieren van een aantal dimensies voor inherente data kwaliteit. Deze dimensies worden verder uitgewerkt in 32 kwaliteitsattributen met voorbeelden. Tevens wordt alles beschreven aan de hand van een begrippenlijst. Het raamwerk maakt gebruik van de in ISO 25012 benoemde kwaliteitsdimensies en legt in sommige gevallen ook de link met een aantal geo-specifieke dimensies van ISO 19157. Deze vergelijking is echter incompleet. 
