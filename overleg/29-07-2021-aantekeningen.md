@@ -10,6 +10,7 @@
 	- [analyse gegevenskwaliteit](https://github.com/Geonovum/disgeo-imsor/blob/master/issues/60-metadata/datakwaliteit-nora-iso19157.md)
 
 Aanwezig: tbd
+<!-- afwezig: Paul, Lennart, Jantien -->
 
 # Gedetailleerde aantekeningen van het gesprek
 tbd
