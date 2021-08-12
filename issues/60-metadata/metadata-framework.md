@@ -13,9 +13,7 @@ De term 'metadata' wordt op verschillende manieren gebruikt en geïnterpreteerd 
 - informatieobjecten
 - (object)gegevens
 
-In het EMSO worden de termen *kwaliteitsnorm*, *normkwaliteit*, en *kwaliteitseis* door elkaar gebruikt. Deze drie termen zijn synoniem. In dit framework hebben we het over *normkwaliteit*. Daarnaast is er *gerealiseerde kwaliteit* op het niveau van gegevens.
-
-***ISSUE***: checken met NORA of Normkwaliteit de juiste term is.</aside>
+In het EMSO worden de termen *kwaliteitsnorm*, *normkwaliteit*, en *kwaliteitseis* door elkaar gebruikt. In dit framework hebben we het over *kwaliteitseis*. Daarnaast is er *gerealiseerde kwaliteit* op het niveau van gegevens.
 
 Wat betreft bronhouderschap en autorisatie is het belangrijk deze drie zaken niet te verwarren: 
 - Het hebben van formele verantwoordelijkheid = bronhouderschap. Dit speelt op informatiemodelniveau (maar ook op het niveau van wetgeving).
