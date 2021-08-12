@@ -75,7 +75,7 @@ We kunnen dus in het formele, MIM conforme informatiemodel aspecten zoals bv de 
 **Kwaliteitsaspecten, zoals volledigheid (populatie), actualiteit, nauwkeurigheidsklasse, controlefrequentie, en inwinningswijze, worden apart uitgewerkt voor de SOR. In dit metadataframework komen ze niet verder aan de orde.**
 
 ### Metadata per objecttype
-De volgende tabel geeft aan welke metadata aspecten er, naast MIM Naam, MIM Begrip en andere verplichte MIM aspecten, worden vastgelegd als metadata bij het informatiemodel.
+De volgende tabel geeft aan welke metadata aspecten er, naast MIM Naam, MIM Begrip en andere verplichte MIM aspecten, worden vastgelegd als metadata bij alle objecttypen in het informatiemodel.
 
 Aspect                   | Gedefinieerd in | Domein  | Toelichting
 ------------------------ | --------------- | ------- | ------------
@@ -125,6 +125,52 @@ Indicatie abstract object | Nee
 Indicatie verplichtheid   | Nee
 Bronverwijzing            | Plaatsbepalingspunt? Of geen bronverwijzing nodig.
 Geautoriseerde bronhouder | Gemeente waar het straatmeubilair zich bevindt.
+
+### Metadata per attribuutsoort
+De volgende tabel geeft aan welke metadata aspecten er, naast MIM Naam, MIM Begrip en andere verplichte MIM aspecten, worden vastgelegd als metadata bij attribuutsoorten in het informatiemodel.
+
+Aspect                      | Gedefinieerd in | Domein  | Toelichting
+--------------------------- | --------------- | ------- | ------------
+Naam                        | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-naam)                                  | Tekst   | Naam van het informatiemodel-element 
+Begrip                      | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-begrip)                                | URI     | Link naar het corresponderende begrip in het begrippenkader
+Herkomst                    | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-herkomst)                              | Tekst   | (verplicht in MIM)
+Definitie                   | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-definitie)                             | Tekst   | (verplicht in MIM)
+Herkomst definitie          | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-herkomst-definitie)                    | Tekst   | (verplicht in MIM)
+Datum opname                | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-datum-opname)                          | Datum   | (verplicht in MIM)
+Domein type e.a.            | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-type-domein-van-een-waarde-een-gegeven)| Tekst   | (verplicht in MIM)
+Indicatie materiële historie| [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-indicatie-materiele-historie)          | Boolean | (verplicht in MIM) Of over het gegeven een tijdlijn geldigheid wordt bijgehouden
+Indicatie formele historie  | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-indicatie-formele-historie)            | Boolean | (verplicht in MIM) Of over het gegeven een tijdlijn registratie wordt bijgehouden
+Authentiek                  | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-authentiek)                             | Boolean | (verplicht in MIM) Wat voor soort bronverwijzing dient te worden opgenomen bij het objecttype
+Indicatie classificierend   | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-indicatie-classificerend)              | Boolean | (verplicht in MIM) 
+Mogeijk geen waarde         | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-mogelijk-geen-waarde)                  | Boolean | (verplicht in MIM)
+Bronverwijzing`*`           | SOR                                                                                              | Boolean | (verplicht in MIM)
+Geautoriseerde bronhouder`*`| SOR                                                                                              | Tekst   | Bronhoudersgroep die dit objecttype mag muteren. 
+Indicatie verplichtheid     | SOR                                                                                              | Boolean | Of een gegeven verplicht is wordt gespecificeerd middels kardinaliteit in het informatiemodel. 
+
+- `*` `Domein` wordt in MIM opgesplitst naar verschillende aspecten: Type, lengte, patroon, en formeel patroon. Al deze aspecten worden indien relevant gebruikt. Type is verplicht en wordt altijd ingevuld. 
+- `*` `Geautoriseerde bronhouder` wordt indien mogelijk buiten het informatiemodel opgeslagen, net als informatie over welke specifieke bronhouder(s) een specifiek object of gegeven mogen muteren. 
+
+### Voorbeeld
+
+#### Objecttype Gebouw - attribuutsoort Aard
+
+Aspect                      | Waarde 
+--------------------------- | ------ 
+Naam                        | Aard  
+Begrip                      | https://begrippen.geostandaarden.nl/sor/nl/page/gebouwaard
+Herkomst                    | SOR?
+Definitie                   | Fysieke verschijningsvorm van een gebouw
+Herkomst definitie          | SOR? 
+Datum opname                | 2021-08-12
+Domein type                 | Waardelijst Gebouwaard
+Indicatie materiële historie| Ja
+Indicatie formele historie  | Ja
+Authentiek                  | Ja
+Indicatie classificerend    | Ja
+Mogelijk geen waarde        | Nee
+Bronverwijzing              | Nee
+Geautoriseerde bronhouder   | Gemeente waar het gebouw zich bevindt.
+Indicatie verplichtheid     | Ja
 
 ## Metadata op dataset-niveau
 Standaarden die metadata op dit niveau beschrijven focussen dus op het beschrijven van datasets (en dataset series). Op dit niveau valt te denken aan eisen omtrent:
