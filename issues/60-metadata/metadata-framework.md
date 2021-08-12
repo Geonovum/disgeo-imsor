@@ -46,68 +46,84 @@ Datum opname | Datum (jjjjmmdd) | De datum waarop het informatiemodel-element is
 Populatie | Tekst | Beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende registratie voorhanden zijn.
 Kwaliteit | Tekst | Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type **volledig, juist, actueel, nauwkeurig en betrouwbaar** zijn.
 
-Niet alle punten (die op dit metadata niveau worden benoemd in EMSO) kunnen op passende wijze worden verwerkt middels de huidige MIM tagged values - echter kunnen we altijd nieuwe values toevoegen. ISO 19131 specificeert een aantal thema's die gebruikt kunnen worden om de verschillende eisen/beschrijvingen mee uit te drukken:
+### Kwaliteitseisen
+
+Niet alle punten (die op dit metadata niveau worden benoemd in EMSO) kunnen op passende wijze worden verwerkt middels de huidige MIM tagged values. Het gaat dan met name om metadata-aspecten die te maken hebben met eisen aan de kwaliteit van de gegevens in de SOR. ISO 19131 specificeert een aantal thema's die gebruikt kunnen worden om de verschillende eisen/beschrijvingen mee uit te drukken:
 - Referentie systemen: specificeren van ruimtelijke/temporele referentiesystemen die gebruikt worden in het kader van een product specificatie; 
 - Data kwaliteit: specificeren van kwaliteitseisen en conformiteitsniveaus - dit laatste gaat om het specificeren van acceptabele verschillen tussen de data zelf en de verwachtingen vanuit het model;
 - Inwinning (capture & production): specificeren van instructies, eisen of beschrijvingen omtrent de inwinning van de data;
 - Data onderhoud: specificeren van instructies, eisen of beschrijvingen omtrent de onderhoud van de data, na de inwinning. Het gaat bijvoorbeeld om hoe vaak een product veranderingen/toevoegingen ondergaat. 
 
-Daarnaast lijken eisen gekoppeld aan de kwaliteit erg van belang. In MIM is er één aspect *Kwaliteit* benoemd. Dit MIM aspect wordt in dit framework verder uitgesplitst. ISO 19157 maakt onderscheid in een aantal aspecten, onder andere: 
+Daarnaast lijken eisen gekoppeld aan de kwaliteit erg van belang. In MIM is er één aspect *Kwaliteit* benoemd. Relevante standaarden zoals de ISO 19157 en de NORA maakt echter onderscheid in een aantal aspecten, onder andere: 
  - Nauwkeurigheid: ruimtelijk, temporeel, thematisch, positioneel
  - Volledigheid: dataset, object, historie
  - Actualiteit: frequentie
  - ... etc.
 
-### ISSUE: Het MIM aspect *Kwaliteit* is niet toereikend voor wat men wil in de SOR. 
+Het MIM aspect *Kwaliteit* is, kortom, niet toereikend voor wat men wil in de SOR. 
 Dit speelt op twee punten: 
- 1. In MIM is het aspect *kwaliteit* gespecificeerd op objecttype niveau. 
- 2. In MIM is het aspect te algemeen. Dit is al eens aan de orde geweest in MIM, zie https://github.com/Geonovum/MIM-Werkomgeving/issues/125
+ 1. In MIM is het aspect *kwaliteit* gespecificeerd op objecttype niveau; in de SOR wil men dit ook op attribuutsoort-niveau kunnen toepassen.
+ 2. In MIM is het aspect te algemeen; het kan nog in vele aspecten worden opgesplitst. Dit is al eens aan de orde geweest in MIM, zie https://github.com/Geonovum/MIM-Werkomgeving/issues/125
 
-### NOOT
-Bij de eisen aan de inhoud van de SOR is het wenselijk om per objecttype kwaliteitsnormen te kunnen vastleggen, maar ook op hoofdgroepniveau al onderscheid te kunnen maken. Aan reële objecten worden meer eisen gesteld dan aan resp. functionele, registratieve en geografische objecten.
+Bij de eisen aan de inhoud van de SOR is het bovendien wenselijk om per objecttype kwaliteitsnormen te kunnen vastleggen, maar ook op _hoofdgroepniveau_ al onderscheid te kunnen maken. Aan reële objecten worden meer eisen gesteld dan aan resp. functionele, registratieve en geografische objecten.
 
 [MIM zegt](https://docs.geostandaarden.nl/mim/mim/#specificatie-metagegevens-modelelementen) echter over overerving van metadata aspecten, om de hoofdgroepen te kunnen beschrijven:
 > de metadata aspecten zijn specifiek voor elk modelelement apart. Dus als er in H2.2 sprake is van een generalisatie, dan worden deze metadata niet overerft (en de ingevulde waardes worden uiteraard zeker niet overerft).
 
-We kunnen dus in het formele, MIM conforme informatiemodel aspecten zoals bv de normkwaliteit niet beschrijven bij Registratief gebied en dit dan laten gelden voor alle subklassen van Registratief gebied. Dit moet formeel bij elk objecttype herhaald worden. 
+We kunnen dus in het formele, MIM conforme informatiemodel aspecten zoals bv de normkwaliteit niet beschrijven bij Registratief gebied en dit dan laten gelden voor alle subklassen van Registratief gebied. Dit moet formeel bij elk objecttype herhaald worden. Een workaround hiervoor zou kunnen zijn om  bij specifiekere objecttypen, voor metadata-aspecten die al bij een generiekere klasse zijn gespecificeerd, te verwijzen naar de generiekere klasse. 
 
-Mogelijke oplossing: bij specifiekere objecttypen, voor metadata-aspecten die al bij een generiekere klasse zijn gespecificeerd, verwijzen naar de generiekere klasse. 
+**Kwaliteitsaspecten, zoals volledigheid (populatie), actualiteit, nauwkeurigheidsklasse, controlefrequentie, en inwinningswijze, worden apart uitgewerkt voor de SOR. In dit metadataframework komen ze niet verder aan de orde.**
 
-De volgende tabel geeft aan welke metadata aspecten er, naast MIM Naam, MIM Begrip en andere MIM aspecten, worden vastgelegd.
+### Metadata per objecttype
+De volgende tabel geeft aan welke metadata aspecten er, naast MIM Naam, MIM Begrip en andere verplichte MIM aspecten, worden vastgelegd als metadata bij het informatiemodel.
 
-*Per informatiemodel-element:*
+Aspect                   | Gedefinieerd in | Domein  | Toelichting
+------------------------ | --------------- | ------- | ------------
+Naam                     | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-naam)             | Tekst   | Naam van het informatiemodel-element 
+Begrip                   | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-begrip)             | URI     | Link naar het corresponderende begrip in het begrippenkader
+Herkomst                 | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-herkomst)             | Tekst   | (verplicht in MIM)
+Definitie                | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-definitie)             | Tekst   | (verplicht in MIM)
+Herkomst definitie       | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-herkomst-definitie)             | Tekst   | (verplicht in MIM)
+Datum opname             | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-datum-opname)             | Datum   | (verplicht in MIM)
+Indicatie abstract object| [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-indicatie-abstract-object)             | Boolean | (verplicht in MIM)
+Indicatie verplichtheid  | SOR             | Boolean | Of het objecttype verplichte SOR inhoud is 
+Bronverwijzing* | SOR             | Tekst   | Wat voor soort bronverwijzing dient te worden opgenomen bij het objecttype
+Geautoriseerde bronhouder*| SOR             | Tekst   | Bronhoudersgroep die dit objecttype mag muteren. 
 
-Aspect | Domein | Toelichting
------- | ------ | -----------
-|Naam   | Tekst  | Naam van het informatiemodel-element |
-|Begrip | URI    | |
-Volledigheid | Getal | Bv: minimaal percentage
-Actualiteit | Getal | Bv: [x] maanden
-Nauwkeurigheidsklasse | Domeinwaarde | Bv: Hoog / Midden / Laag*
-Controlefrequentie | Getal | Bv: 1 keer per [x] jaar
-Inwinningswijze | Domeinwaarde | Bv: Luchtfoto / Terrestrisch / etc.
-
-*Nauwkeurigheidsklasse*
-- Hoog = centimeter tot decimeter
-- Midden = decimeter tot meter
-- Laag = meter tot hectometer
-
-In plaats van een van deze nauwkeurigheidsklassen mag ook een verwijzing naar een generiekere klasse worden opgenomen in de vorm `zie [naam objecttype]`
+- `*` `Bronverwijzing` kan bijvoorbeeld zijn: een vergunning, besluit, luchtfoto, plaatsbepalingspunten, een BIM model. Per objecttype moet nog worden bepaald welk(e) soorten bronverwijzing toegestaan en/of verplicht zijn. Dit wordt dan vastgelegd in het metadata-aspect `Bronverwijzing`. 
+- `*` `Geautoriseerde bronhouder` wordt indien mogelijk buiten het informatiemodel opgeslagen, net als informatie over welke specifieke bronhouder(s) een specifiek object of gegeven mogen muteren. 
 
 ### Voorbeeld
 
-#### Objecttype Abri
+#### Objecttype Gebouw
 
-Aspect | Waarde | 
------- | ------ |
-Naam   | Abri  
-|Begrip | https://begrippen.geostandaarden.nl/sor/nl/page/abri
-Volledigheid | 99 procent
-Actualiteit | 12 maanden
-Nauwkeurigheidsklasse | Midden 
-Controlefrequentie | 2 jaar
-Inwinningswijze | Luchtfoto 
+Aspect                    | Waarde 
+------------------------- | ------ 
+Naam                      | Gebouw  
+Begrip                    | https://begrippen.geostandaarden.nl/sor/nl/page/gebouw
+Herkomst                  | SOR
+Definitie                 | Overdekte en geheel of gedeeltelijk met wanden omsloten constructief zelfstandige eenheid bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen.
+Herkomst definitie        | NEN 3610:2021 (concept) 
+Datum opname              | 2021-08-12
+Indicatie abstract object | Nee
+Indicatie verplichtheid   | Ja
+Bronverwijzing            | Vergunning
+Geautoriseerde bronhouder | Gemeente waar het gebouw zich bevindt.
 
+#### Objecttype Straatmeubilair
+
+Aspect                    | Waarde 
+------------------------- | ------ 
+Naam                      | Straatmeubilair  
+Begrip                    | https://begrippen.geostandaarden.nl/sor/nl/page/straatmeubilair
+Herkomst                  | IMGeo
+Definitie                 | Constructie ter inrichting van de openbare ruimte niet verbonden met ondergrondse objecten.
+Herkomst definitie        | SOR 
+Datum opname              | 2021-08-12
+Indicatie abstract object | Nee
+Indicatie verplichtheid   | Nee
+Bronverwijzing            | Plaatsbepalingspunt? Of geen bronverwijzing nodig.
+Geautoriseerde bronhouder | Gemeente waar het straatmeubilair zich bevindt.
 
 ## Metadata op dataset-niveau
 Standaarden die metadata op dit niveau beschrijven focussen dus op het beschrijven van datasets (en dataset series). Op dit niveau valt te denken aan eisen omtrent:
