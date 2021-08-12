@@ -87,8 +87,9 @@ Herkomst definitie       | [MIM](https://docs.geostandaarden.nl/mim/mim/#metageg
 Datum opname             | [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-datum-opname)             | Datum   | (verplicht in MIM)
 Indicatie abstract object| [MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-indicatie-abstract-object)             | Boolean | (verplicht in MIM)
 Indicatie verplichtheid  | SOR             | Boolean | Of het objecttype verplichte SOR inhoud is 
-Bronverwijzing* | SOR             | Tekst   | Wat voor soort bronverwijzing dient te worden opgenomen bij het objecttype
-Geautoriseerde bronhouder*| SOR             | Tekst   | Bronhoudersgroep die dit objecttype mag muteren. 
+Bronverwijzing`*`          | SOR             | Tekst   | Wat voor soort bronverwijzing dient te worden opgenomen bij het objecttype
+Geautoriseerde bronhouder`*`| SOR            | Tekst   | Bronhoudersgroep die dit objecttype mag muteren. 
+Minimale geometrie       | SOR             | -       | Het geometrietype dat minimaal verplicht moet worden opgenomen wordt gespecificeerd in het informatiemodel. 
 
 - `*` `Bronverwijzing` kan bijvoorbeeld zijn: een vergunning, besluit, luchtfoto, plaatsbepalingspunten, een BIM model. Per objecttype moet nog worden bepaald welk(e) soorten bronverwijzing toegestaan en/of verplicht zijn. Dit wordt dan vastgelegd in het metadata-aspect `Bronverwijzing`. 
 - `*` `Geautoriseerde bronhouder` wordt indien mogelijk buiten het informatiemodel opgeslagen, net als informatie over welke specifieke bronhouder(s) een specifiek object of gegeven mogen muteren. 
