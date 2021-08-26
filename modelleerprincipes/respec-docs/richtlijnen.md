@@ -27,7 +27,7 @@ TODO  -->
 |-|-|-|
 | **id** | R1 |
 | **Stelling** | Scheidt registratie-, bron- en herkomstmetadata van <a>directe eigenschappen</a> |
-| **Status** | Ter vaststelling |
+| **Status** | Vastgesteld |
 | **Rationale** | Registratiemetadata zoals tijdlijnen, en bron- en herkomstmetadata zoals eigenschappen die een bronhouder, brondocument, of verwerkingsproces beschrijven, wordt vaak vermengd (als eigenschappen op hetzelfde <a>objecttype</a> gebruikt) met de <a>directe eigenschappen</a> van het <a>object</a>. Dit is meestal geen probleem in een specifieke registratie waar dit gebruik afgesproken is, maar hindert <a>samenhang</a> en hergebruik van <a>informatieobjecten</a> en <a>objecttypes</a> over registraties heen, vanwege verschil in <a>metadata</a>, onduidelijke, of verschillende definities, etc.|
 | **Implicaties** | Gebruik een construct om de registratie-, bron- en herkomstmetadata duidelijk te onderscheiden van directe eigenschappen. |
 
