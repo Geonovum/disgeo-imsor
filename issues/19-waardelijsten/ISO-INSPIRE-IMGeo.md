@@ -1,0 +1,2 @@
+# Waardelijsten in geo-informatiemodellering
+Dit document geeft een overzicht van hoe waardelijsten worden gemodelleerd in informatiemodellen in het geo-domein, zowel internationaal (in INSPIRE context) als nationaal (in IMGeo, dat conform NEN3610 is gemodelleerd). 
