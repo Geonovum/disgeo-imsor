@@ -26,7 +26,7 @@ Enumeraties zijn bedoeld voor het specificeren van een set waarden die volledig 
 
 > If extensions to an enumerated list are expected during the lifetime of the schema version, a code list shall be used.
 
-Als de enumeratie niet stabiel is, moet hiervoor een codelist gebruikt worden. 
+Als de enumeratie niet stabiel is, moet hiervoor een codelist gebruikt worden. Iets als de MIM Referentielijst kent ISO 19103 niet.
 
 ### Code list
 
@@ -72,3 +72,48 @@ Een voorbeeld van INSPIRE GML data met een codelijst waarde:
 Meer lezen: [WeTransform blog over INSIPRE Codelists](https://www.wetransform.to/news/2021/07/26/INSPIRE-codelists/).
 
 ## IMGeo
+
+Het IMGeo informatiemodel is ontwikkeld in 2010 - 2012 toen INSPIRE nog niet zo ver was. De werkwijze wijkt daarom op details iets af. 
+
+### Model
+
+In het UML model van IMGeo worden alle waardelijsten als `<<codelist>>` gedefinieerd. De waarden zijn IN het model gedefiniëerd, omdat het belangrijk was om de waardelijsten onder hetzelfde release management / beheer regime te hebben als de rest van het informatiemodel. Als een waardelijst waarde wijzigt, betekent dit een wijziging van het informatiemodel en dus een nieuwe versie van de IMGeo standaard. Omdat er toen nog geen goede manier voorhanden was om waardelijsten buiten het model te beheren, is ervoor gekozen ze onderdeel van het UML model te maken. 
+
+### Implementatie in GML
+Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
+
+Er is voor SKOS gekozen omdat de GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar middels de SKOS vocabulaire moesten worden uitgedrukt. 
+
+Uit GML 3.3: 
+> Definition and Dictionary encoding is part of the GML schema as a stop-gap, pending the availability of a suitable general purpose dictionary model. Since the GML Dictionary schema was developed, standards on
+this topic within the semantic web community have emerged and matured. In particular best-practice is to
+generally use URIs for referring to items in vocabularies, and RDF (OWL, SKOS) for encoding their
+descriptions. [...] The GML Schema for definitions and dictionaries was previously used for generic
+definitions and code lists but is now deprecated for these purposes.
+
+In de IMGeo GML implementatie wordt een gegeven dat als waardetype een codelijst heeft, geïmplementeerd als een XML element van het type `gml:CodeType`. 
+
+Dit GML type is 
+> a generalized type to be used for a term, keyword or name.
+
+Het type specificeert dat je de term als string opneemt met een XML attribuut `codeSpace`, waarin de URI verwijst naar de context van de term (i.e. het begrippenkader of iets vergelijkbaars). 
+
+In IMGeo ziet dat er zo uit in de data: 
+
+`<imgeo:plus-type codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1#TypeBakPlus">afval apart plaats</imgeo:plus-type>`
+
+Uit de tekst van GML 3.3. blijkt dat INSPIRE hierin de juiste keuze heeft gemaakt door `gml:ReferenceType` te gebruiken in plaats van `gml:CodeType`: 
+> `gml:CodeType` is a generalized type to be used for assigning a term, keyword or
+name.
+
+> NOTE Elements with `type='gml:CodeType'` are used to assign a name to a
+feature or other resource. `gml:ReferenceType` is used to hold a reference to
+another resource. The use of `CodeType` to reference code list entries is
+deprecated.
+
+## Voorlopige conclusie
+
+De correcte werkwijze, volgens de geldende geo-standaarden is: 
+- Gebruik een enumeratie of codelist voor het specificeren van waardelijsten. De eerste voor een onveranderlijke lijst (uitputtend of stabiel binnen versie van model), de tweede voor een veranderlijke 'open' lijst. De toegestane waarden van beide vormen van waardelijst zijn in de ISO 19103 beschouwing concepten, i.e. begrippen. 
+- Gebruik SKOS voor het publiceren van waardelijsten.
+- Neem vanuit de instantiedata een HTTP URI verwijzing naar een SKOS concept op als waarde van gegevens waarvan de waarde een concept is. Bij implementatie in GML gebruik je hiervoor het `gml:ReferenceType`.
