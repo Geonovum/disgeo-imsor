@@ -10,6 +10,7 @@ We baseren ons op ISO 19103:2015. In ISO 19103 heb je twee modelelementen die je
 Binnen ISO 19103 is een Enumeration een
 
 > list of valid mnemonic identifiers. Attributes of an enumerated type shall take values only from this list.
+
 en 
 
 > As the values of enumerated types are concepts, each value shall have a definition for the value.
@@ -47,10 +48,10 @@ Een waardelijst kan in INSPIRE een eenvoudige set van waarden zijn, maar ook een
 ### Model
 In het UML model van elk INSPIRE thema worden de codelijsten gedefinieerd. Ze hebben een naam, definitie en soms ook waardes; maar alle INSPIRE codelijsten worden extern beheerd. In het UML model wordt de URN van de codelijst vastgelegd zodat deze extern beheerde bron bekend is. Dit kan zowel een geversioneerde als een versieloze verwijzing zijn. Waardes worden eventueel (niet altijd) in het UML model bij de codelijst opgenomen, ter ondersteuning voor de lezer.  
 
-Elke waarde heeft een begrijpelijke naam in lowercamelcase en een definitie in het Engels binnen het UML model. 
-
 ### Codelijst register
-INSPIRE heeft een [codelijst register](https://inspire.ec.europa.eu/codelist) waarin alle codelijsten en hun waarden zijn opgenomen. Elke codelijst, en elke waarde heeft een eigen URI Identifier. De namen en defininities zijn meestal in meerdere talen beschikbaar. Waarden kunnen een hierarchische relatie hebben met een andere waarde.
+INSPIRE heeft een [codelijst register](https://inspire.ec.europa.eu/codelist) waarin alle codelijsten en hun waarden zijn opgenomen. Elke codelijst, en elke waarde heeft een eigen URI Identifier. De namen en definities van de waarden zijn meestal in meerdere talen beschikbaar. Waarden kunnen een hiërarchische relatie hebben met een andere waarde.
+
+Dit register heeft een beheeromgeving. De codelijsten worden hierin beheerd, niet in de UML modellen. Wijzigingen kunnen worden voorgesteld door de lidstaten en worden beoordeeld op impact voordat ze eventueel worden doorgevoerd, na toestemming van vertegenwoordigers van elke lidstaat.
 
 ### Implementatie in GML
 Binnen INSPIRE wordt GML gebruikt voor de uitwisseling van gegevens. Uit de UML modellen zijn GML Application Schemas gegenereerd.
@@ -73,18 +74,18 @@ Meer lezen: [WeTransform blog over INSIPRE Codelists](https://www.wetransform.to
 
 ## IMGeo
 
-Het IMGeo informatiemodel is ontwikkeld in 2010 - 2012 toen INSPIRE nog niet zo ver was. De werkwijze wijkt daarom op details iets af. 
+Het IMGeo informatiemodel is ontwikkeld in 2010 - 2012 voordat MIM bestond en toen INSPIRE nog niet zo ver ontwikkeld was. De werkwijze wijkt daarom op details iets af. 
 
 ### Model
 
-In het UML model van IMGeo worden alle waardelijsten als `<<codelist>>` gedefinieerd. De waarden zijn IN het model gedefiniëerd, omdat het belangrijk was om de waardelijsten onder hetzelfde release management / beheer regime te hebben als de rest van het informatiemodel. Als een waardelijst waarde wijzigt, betekent dit een wijziging van het informatiemodel en dus een nieuwe versie van de IMGeo standaard. Omdat er toen nog geen goede manier voorhanden was om waardelijsten buiten het model te beheren, is ervoor gekozen ze onderdeel van het UML model te maken. 
+In het UML model van IMGeo worden alle waardelijsten als codelist gedefinieerd. De waarden zijn IN het model gedefiniëerd, omdat het belangrijk was om de waardelijsten onder hetzelfde release management / beheer regime te hebben als de rest van het informatiemodel. Als een waardelijst waarde wijzigt, betekent dit een wijziging van het informatiemodel en dus een nieuwe versie van de IMGeo standaard. Omdat er toen nog geen goede manier voorhanden was om waardelijsten buiten het model te beheren, is ervoor gekozen ze onderdeel van het UML model te maken. 
 
 ### Implementatie in GML
 Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
 
-Er is voor SKOS gekozen omdat de GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar middels de SKOS vocabulaire moesten worden uitgedrukt. 
+Er is voor SKOS gekozen omdat de OGC GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar middels de SKOS vocabulaire moesten worden uitgedrukt. 
 
-Uit GML 3.3: 
+Uit GML 3.3 (2012): 
 > Definition and Dictionary encoding is part of the GML schema as a stop-gap, pending the availability of a suitable general purpose dictionary model. Since the GML Dictionary schema was developed, standards on
 this topic within the semantic web community have emerged and matured. In particular best-practice is to
 generally use URIs for referring to items in vocabularies, and RDF (OWL, SKOS) for encoding their
