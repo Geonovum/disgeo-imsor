@@ -6,7 +6,7 @@ We gaan tijdens deze sessie in op het modelleren van waardelijsten
 - Waardelijsten in geostandaarden: huidige praktijk
 - Concept uitwerking modelleren van waardelijsten SOR + argumentatie
 
-Aanwezig: 
+Aanwezig: Niels, Rik, Gabriella, Pano, Linda
 
 ## Gedetailleerde aantekeningen van het gesprek
 
