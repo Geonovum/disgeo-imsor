@@ -6,7 +6,7 @@ Resultaten voor deze opdracht:
 
 1. Modelleerprincipes (levend)
 2. Begrippenkader (werkversie, in ontwikkeling)
-3. Bevindingen wb modellering van generieke onderwerpen:
+3. Generieke onderwerpen, fundamenten voor de modellering (levend):
 - Historie 
 - levensloop
 - Metadata
