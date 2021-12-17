@@ -8,9 +8,9 @@ Resultaten voor deze opdracht zijn op te splitsen in een algemeen deel en een in
 2. Begrippenkader ([werkversie](https://begrippen.geostandaarden.nl/sor/nl/), in ontwikkeling)
 3. Generieke onderwerpen, fundamenten voor de modellering (levend). Deze onderwerpen worden in dit document beschreven:
 - Historie 
-- levensloop
+- Levensloop
 - Metadata
-- kwaliteit
+- Kwaliteit
 - Waardelijsten
 - Identificatie
 - Geometrie 
