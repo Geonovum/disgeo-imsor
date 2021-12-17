@@ -58,22 +58,22 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/geonovum/<naam van de repository>",
+  github: "https://github.com/geonovum/disgeo-imsor",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/geonovum/<naam van de repository>/issues",
+  issueBase: "https://github.com/geonovum/disgeo-imsor/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/<naam van de repository>",
+  edDraftURI: "https://github/geonovum/disgeo-imsor/documentatie",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
  [
     {
-      name:       "Naam Editor-1",
+      name:       "Linda van den Brink",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
     {
-      name:       "Naam Editor-n",
+      name:       "Gabriella Wiersma",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
@@ -94,9 +94,9 @@ var respecConfig =
     }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "et",  	              // Wordt gebruikt in de document URL
+  shortName: "gen",  	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
-  pubDomain: "et", 	              // Energie transitie
+  pubDomain: "disgeo", 	              // Doorontwikkeling basisregistraties in samenhang
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
   //pubDomain: "bor", 	            // Beheer Openbare Ruimte
   //pubDomain: "bro", 	            // Basisregistratie Ondergrond
@@ -119,6 +119,14 @@ var respecConfig =
   //-- NB: kijk eesrt naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
+    "EMSO":
+    {
+      title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+      href:       "https://docs.geostandaarden.nl/disgeo/emso/",
+      status:     "Versie ter vaststelling",
+      date:       "2021-02-16",
+      publisher:  "Geonovum",
+    },
     "PUB-1":
       {
         title:      "Titel van Publicatie-1",
