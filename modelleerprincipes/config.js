@@ -69,7 +69,7 @@ var respecConfig =
   //pubDomain: "serv", 	            // Services
   //pubDomain: "visu", 	            // Visualisatie
   //pubDomain: "wp", 	              // White Paper
-  //pubDomain: "disgeo", 	          // Doorontwikkeling basisregistraties in samenhang
+  pubDomain: "disgeo", 	          // Doorontwikkeling basisregistraties in samenhang
   //-- Repositorynaam op GitHub -------------------------------------------------------
   github: "https://github.com/Geonovum/disgeo-imsor",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
