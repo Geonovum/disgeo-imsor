@@ -2,18 +2,22 @@
 
 Resultaten voor deze opdracht zijn op te splitsen in een algemeen deel en een inhoudelijk deel. 
 
-### Modelleringsprincipes, begrippenkader, samenvatting/documentatie
+### Modelleerprincipes, begrippenkader, samenvatting/documentatie
 
-1. Modelleerprincipes ([levend document](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/))
-2. Begrippenkader ([werkversie](https://begrippen.geostandaarden.nl/sor/nl/), in ontwikkeling)
-3. Generieke onderwerpen, fundamenten voor de modellering (levend). Deze onderwerpen worden in dit document beschreven:
+1. Modelleerprincipes 
+De modelleerprinicpes zijn in een apart [document](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/) vastgelegd. Dit is een levend document, wat inhoudt dat deze niet statisch zijn maar als gedurende de ontwikkeling blijkt dat de principes moeten worden bijgesteld of aangevuld, dit moegelijk moet zijn. 
+2. Begrippenkader 
+De begrippen die in [[EMSO]] zijn gedefinieerd zijn vastgelegd in een [on-line systeem voor het definiëren en relateren van begrippen](https://begrippen.geostandaarden.nl/sor/nl/). Ook dit is een levend document. Het kan wordne aangevuld met begrippen die gedurende de ontwikkeling van belang blijken. Ook kunnen (definities van) begrippen uit [[EMSO]] worden aangescherpt op basis van gesprekken met het werkveld en afstemming met de klankbordgroep Inhoud van de SOR.
+3. Generieke onderwerpen, fundamenten voor de modellering.
+De SOR zal componentgewijs worden ontwikkeld. Voor elke component is het belangrijk dat er op dezelfde wijze bepaalde gezichtspunten wordne ontwikkeld. Daarom is vooruitlopend op de modellering per component er voor gekozen om uitspraken te doen voor een aantal generieke onderwerpen. Deze uitspraken vormen een fundament, maar het is belangrijk om te duiden dat pas bij het modelleren van componenten dit mede op basis van de daarbij naar voren komende gebruikersbehoeften dit scherp kan worden bepaald. 
+Deze generieke onderwerpen worden in dit levend document beschreven. Er is daarbij dankbaar gebruik gemaakt van een aantal experts van (semi-) overheidsorganisaties en het bedrijfsleven. Het gaat om de volgende onderwerpen:
 - Historie 
 - Levensloop
 - Metadata
 - Kwaliteit
 - Waardelijsten
 - Identificatie
-- Geometrie 
+- Geometrie  *(wordt in 2022 beschreven)*
 
 ### Informatiemodel + gegevenscatalogus en publicatiestandaarden
 Het informatiemodel zelf, plus een daaruit gegenereerde gegevenscatalogus en gegenereerde implementatiebestanden, is nog in een vroeg stadium van ontwikkeling. De oplevering hiervan is afhankelijk van verkregen input. Het [[EMSO]] en bijbehorende verkenningen vormden hierbij het uitgangspunt. Dit document bevat functionele eisen en beschrijft op hoofdlijnen wat de scope van de SOR zou moeten zijn. Echter is voor de oplevering van een bruikbaar model in het kader van de SOR meer input nodig. Deze input kan verkregen worden op twee manieren:
