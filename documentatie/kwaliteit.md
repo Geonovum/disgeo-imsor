@@ -99,7 +99,7 @@ Tekst overgenomen uit Github - disgeo-imsor/issues/60-metadata/datakwaliteit-sor
 
 ##### Informatiemodelniveau
 
-*Eisen
+*Eisen*
 
 | aspect  | beschrijving   | mogelijke kwaliteitsindicator   | mogelijk kwaliteitsaspect  |
 |----|----|----|----|
@@ -144,7 +144,7 @@ Tekst overgenomen uit Github - disgeo-imsor/issues/60-metadata/datakwaliteit-sor
 | Status  | per attribuut kunnen statussen worden toegekend: InOnderzoek,  inBewerking, reactieBelanghebbende  | Dit heeft te maken met de waarschijnlijkheid  | plausibiliteit   |
 | Aantekenveld   | vastlegging van aantekeningen voor objecten  | Dit heeft misschien iets te maken met gebruiksinzicht,  duidelijkheid en begrijpelijkheid   | traceerbaarheid / begrijpelijkheid   |
 
-**Mogelijke eisen**
+*Mogelijke eisen*
 
 | aspect  | beschrijving   | mogelijke kwaliteitsindicator   | mogelijk kwaliteitsaspect  |
 |----|----|----|----|
