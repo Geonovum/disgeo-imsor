@@ -53,4 +53,6 @@ We sluiten dit hoofdstuk af met een reeks afbeeldingen waarin dit wordt uitgewer
 
 <aside class="note">In afstemming met de werkgroep Inhoud is het onderwerp “Levensloop” uiteindelijk geparkeerd, in afwachting van een mogelijke wijziging (versimpeling) van de inhoudelijke eisen ten aanzien van levensloop van objecten. </aside>
 
+### Complex scenario: een verharding met meerdere geplande objecten
+
 ![Verharding met meerdere geplande objecten](media/2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-complex.png)
