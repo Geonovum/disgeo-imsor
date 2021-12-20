@@ -94,7 +94,7 @@ var respecConfig =
     }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "gen",  	              // Wordt gebruikt in de document URL
+  shortName: "gendoc",  	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "disgeo", 	              // Doorontwikkeling basisregistraties in samenhang
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
@@ -169,7 +169,7 @@ var respecConfig =
   //-- Optionele parameters:
   //emailComments: "mim@geonovum.nl",         // reactie mailadres, alleen bij CV!
   //subtitle: "iets",                         // Subtitel van het document
-  //maxTocLevel: 3,                           // Aantal niveau's ToC, default is 0
+  maxTocLevel: 3,                           // Aantal niveau's ToC, default is 0
   //-- LOGO: Hier kan je een ander logo opgeven indien nodig
   //logos: [{
   //  src: "https://tools.geostandaarden.nl/respec/style/logos/OmgevingswetLogo.svg",
