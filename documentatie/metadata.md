@@ -97,7 +97,7 @@ Dit is metadata met betrekking op objecttypes en kenmerken (attribuutsoorten en 
 - Het beschrijven van de populatie die wordt opgenomen in de SOR, per objecttype
 - De termijn waarbinnen een object van bepaald type beschikbaar moet zijn in de SOR, na zijn ontstaan
 - Minimale geometrie die van toepassing is voor een objecttype (2D, 2.5D, 3D)
-- Het beschrijven van de actualiteit / nauwkeurigheidsklasse van een bepaald attribuuttype
+- Het beschrijven van de actualiteit / nauwkeurigheidsklasse van een bepaald attribuuttype    
 
 Standaarden die van toepassing zijn: 
 - MIM
