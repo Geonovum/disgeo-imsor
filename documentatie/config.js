@@ -134,13 +134,13 @@ var respecConfig =
         status:     "levend document",
         publisher:  "Geonovum",
     },
-    "PUB-2":
+    "NEN-2660-2":
       {
-        title:      "Titel van Publicatie-2",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
-        publisher:  "Publisher-2",
-        company:    "Companynaam",
+        title:      "Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van deel 1",
+        href:       "https://www.nen.nl/nen-2660-2-2021-ontw-nl-279908",
+        status:     "Definitieve versie",
+        publisher:  "NEN",
+        date:       "1 april 2021",
     },
     "PUB-3":
       {
