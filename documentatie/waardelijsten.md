@@ -137,8 +137,130 @@ De correcte werkwijze, volgens de geldende geo-standaarden is:
 
 #### Wat is een waardelijst?
 
-Tekst overnemen uit Github - disgeo-imsor/overleg/03-11-2021-expertgroepvergadering-waardelijsten-imsor.pdf / oorspronkelijke powerpoint!
 
-**MIM** - Een datatype waarvan de mogelijke  waarden zijn opgesomd in een lijst. De waarde van een attribuutsoort moet één van de waarden zijn uit de gespecificeeerde waardenlijst.
+**MIM** - Een datatype waarvan de mogelijke waarden zijn opgesomd in een lijst. De waarde van een attribuutsoort moet één van de waarden zijn uit de gespecificeerde waardenlijst.
 
-**NEN3610:2022** - Waardelijsten zijn lijsten met waarden, of beter gezegd lijsten met woorden, die gebruikt mogen worden als waarde voor een eigenschap van een object. De waardelijst specificeert daarmee restrictief het waardebereik van een attribuut in een informatiemodel. 
+
+**NEN3610:2022** - Waardelijsten zijn lijsten met waarden, of beter gezegd lijsten met woorden, die gebruikt mogen worden als waarde voor een eigenschap van een object. De waardelijst specificeert daarmee restrictief het waardebereik van een attribuut in een informatiemodel.
+
+#### visie op waardelijsten
+
+IMSOR hanteert de volgende visie op waardelijsten:
+- Een waardelijst beperkt het waardebereik voor een type tot een gespecificeerde set waarden.
+- Mogelijke (waarde)types
+  - Objecttypes (Landenlijst, Gemeentelijst etc)
+    - Gebruik wanneer mogelijk. Introduceert mogelijkheid voor directe koppeling voor gebruik in samenhang
+  - Concepten (Statussen, Gebruiksdoelen, Typeringen etc)
+    - Gebruik wanneer nodig. Versimpelt informatiemodellen, maar behoudt nog steeds mogelijkheid voor samenhangend gebruik.
+
+#### requirements
+
+- Model voor waardelijsten (de gegevensstructuur van een waarde) moet bekend zijn.
+  **Rationale**: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
+  Bij waardelijst van objecten en concepten moet er voldoende informatie van objecten beschikbaar zijn voor het doel van de waardelijst.
+  Daarnaast moet het aanknopingspunt voor samenhangend gebruik bieden
+		
+- De inhoud van de waardelijst moet kunnen veranderen zonder dat het informatiemodel verandert.
+  **Rationale**: Waardelijsten kunnen veranderen, zonder dat dit de structuur van het gegevensmodel verandert. Deze moeten onafhankelijk van elkaar kunnen ontwikkelen.
+
+**WENS**: Waardelijsten moeten hierarchisch / taxonomisch gebruik ondersteunen
+
+#### Hierarchisch gebruik waardelijsten
+
+<aside class='example'>
+Voorbeeld:
+    SOR status:
+- Ontwerp
+- Gepland = Plan (BGT)
+    - Bouwvergunning verleend (BAG)
+- Aanwezig = Bestaand (BGT)
+    - Bouw gestart (BAG)
+    - Pand buiten gebruik  (BAG)
+    - Pand in gebruik  (BAG)
+    - Pand in gebruik (niet ingemeten) (BAG)
+    - Sloopvergunning verleend  (BAG)
+    - Verbouwing pand (BAG)
+- Afwezig – Historie (BGT)
+    - Pand gesloopt (BAG)
+- Afgevoerd
+    - Niet gerealiseerd pand (BAG
+    - Pand ten onrechte opgevoerd (BAG)
+
+Vraag:
+Geef me alle gebouwen met status *Aanwezig* uit de SOR.
+
+Levert:
+- Panden met BAG substatussen
+- Gebouwen met BGT *Bestaand* statussen
+
+</aside>
+
+
+#### Waardelijsten in MIM
+
+**Enumeratie**
+
+Een datatype waarvan de mogelijke waarden limitatief zijn opgesomd in een statische lijst.
+
+**Referentielijst**
+
+De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunznen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat een aantal kenmerken, die overgenomen zijn van de specificatie van de externe waardelijst.
+
+**Codelijst**
+
+De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat geen kenmerken, voor alle kenmerken wordt verwezen naar de specificatie van de externe waardelijst.
+
+
+#### Metagegeven: Indicatie classificerend
+
+- Indicatie dat een attribuutsoort het objecttype waar het bijhoort classificeert in (sub)typen.
+- Een objecttype kan middels een attribuutsoort geclassificeerd worden in subtypen. Bijvoorbeeld: type gebouw. Een toren, kerk, bunker, zwembad zijn allemaal typen gebouwen. In een model op niveau 2 kunnen dergelijke typen als objecttypen en specialisaties van het objecttype gebouw zijn gemodelleerd. Met name op niveau 3 kan het relevant zijn om deze informatie daadwerkelijk te structureren door expliciet een aspect op te nemen waarmee direct het type gebouw kan worden vastgelegd, los van de modellering van objecttypen.
+
+#### SOR Waardelijsten
+
+- MIM Referentielijst past het beste
+    - Gegevensstructuur beschreven in informatiemodel
+    - ogelijk om een samenvattende representatie van een objecttype te gebruiken
+    - Beheer van inhoud van de lijst los van informatiemodel
+
+- Er worden twee soorten lijsten voorzien
+    - Waardelijst van objecten (instanties van Objecttype) uit een andere dataset.
+        Bijv. De lijst van alle Nederlandse Gemeentes (Openbaar Lichaam)
+        Eis: Deze dataset moet ook voldoen aan SOR-stelsel eisen voor identificatie, historie, etc.
+    - Waardelijst van concepten
+        Bijv. Een lijst met statussen; Een lijst met gebruiksdoelen.
+        Bijv. Een categoriserende lijst van Gebouwtypes.
+
+#### Waardelijsten van concepten op basis van SKOS
+
+Waarom SKOS?
+   - Wordt breed toegepast voor dit doeleinde
+   - SKOS biedt een standaardmodel voor het modelleren van Concepten
+    
+        Concept
+        Code / Techniche notatie
+        Definitie
+        Term 
+        Etc.
+    - SKOS biedt een standaardmodel voor hierarchie / taxonomie van concepten
+
+        Concept
+        Broader
+        Narrower
+        Etc.
+    - SKOS biedt een standaardmodel om samenhang van concepten uit verschillende contexten uit te drukken
+
+        Concept
+        exactMatch
+        broaderMatch
+        narrowerMatch
+        Etc.
+
+#### Beheeraspecten bij waardelijst van concepten
+
+Beheer van waardelijsten staat los van beheer van begrippen in een begrippenkader.
+
+Aanpak:
+- 1 conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie.
+- - Historie op concept / waarde-niveau conform NEN 3610
+Waarde-concepten kunnen met SKOS matching relaties gerelateerd worden aan een algemeen SOR begrippenkader.
