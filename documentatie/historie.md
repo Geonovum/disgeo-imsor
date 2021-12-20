@@ -20,16 +20,17 @@ Hoewel historie op objectniveau, met twee verschillende tijdslijnen, al lastig g
 
 Historie op gegevensniveau is nodig voor (schatting) 10% van de use cases, waaronder WOZ, waar men per gegeven de historie en andere metagegevens wil kunnen zien. Het zorgt echter voor een complexer semantisch model en datastructuur – hoe hou je dit weg bij de andere 90% van het gebruik?
 
-Allereerst hebben we geprobeerd duidelijker te krijgen wat de functionele eis precies was: gaat het erom metadata inclusieef historie, over de *gegevens* (i.e. de waardes van attributen) van een object vast te leggen, zoals nodig is bij attributen die meerdere waardes kunnen krijgen (bv `Gebouw` `gebruiksdoel`)? Of is het voldoende om historie op attribuutniveau vast te leggen? 
+Allereerst hebben we geprobeerd duidelijker te krijgen wat de functionele eis precies was: gaat het erom metadata inclusieef historie, over de *gegevens* (i.e. de waardes van attributen) van een object vast te leggen, zoals nodig is bij attributen die meerdere waardes kunnen krijgen (bv `gebruiksdoel` van `Gebouw` )? Of is het voldoende om historie op attribuutniveau vast te leggen? 
 
 **Fictief voorbeeld feitelijk gebruik van een willekeurig object:**
+
 Van|Tot|waarde
 ---|---|------
 1-1-2005|1-3-2021|wonen
 1-1-2010|1-11-2019|kantoor
 1-8-2016|1-4-2020|bijeenkomsten
 
-Hierop gaf de Werkgroep Inhoud aan dat volledig uitmodelleren van historie op gegevensniveau te intewikkeld zou kunnen zijn. Historie op attribuutniveau, waarbij er sprake is van perioden waarin een bepaalde combinatie van waarden hoort bij een attribuut, is wellicht al voldoende. Als de combinatie verandert, dan verandert er iets in de historie:
+Volledig uitmodelleren van historie op gegevensniveau is niet per sé noodzakelijk. Historie op attribuutniveau, waarbij er sprake is van perioden waarin een bepaalde combinatie van waarden hoort bij een attribuut, is wellicht al voldoende. Als de combinatie verandert, dan verandert er iets in de historie:
 
 
 Van|Tot|waarde
@@ -40,7 +41,7 @@ Van|Tot|waarde
 1-11-2019|1-4-2020|wonen, bijeenkomsten
 1-4-2020|1-3-2021|wonen
 
-We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er geen duidelijke voorkeursoptie was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, het waard is. Optie C is in ieder geval niet toereikend als historie op gegevensniveau vereist is.
+We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er in de expertgroep geen duidelijke voorkeursoptie was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren om de argumenten voor een keuze te kunnen leveren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, te verantwoorden is. Optie C is in ieder geval niet toereikend als historie op gegevensniveau vereist is.
 
 ## Historie casus "Informatiemodel Boom"
 
@@ -99,6 +100,7 @@ De provincie houdt gegevens bij voor kenmerk:
 </ul>
 
 ### De witte kastanje
+
 In gemeente Kemeltoet staat een Aesculus hippocastanum (Witte paardenkastanje). Deze boom mag worden gerekend tot de fraaiste bomen in gemeente Kemeltoet en de provincie Neder-Over-Bakzijl. Prominent staat hij centraal in het park aan de oostzijde van een pittoresk kasteeltje. Het park is rond 1830 ontworpen door de fameuze architect J. van Rooij. Gedurende de inrichting van de tuin liet hij de kastanje en enkele omringende esdoorns planten. De takken van de kastanje reiken rondom tot op de grond.
 
 <u>Bij de gemeente staat geregistreerd voor deze boom:</u>
