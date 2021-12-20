@@ -93,11 +93,8 @@ De gemeente houdt gegevens bij voor kenmerk:
 
 De provincie houdt gegevens bij voor kenmerk:
 
-<li><b>monumentaleStatus</b>:
-  <ul>
-    <li>brondocument: het brondocument, identificeerbaar met een nummer (CharacterString), waarin de beslissing staat voor de specifiek status van de boom.</li>
-  </ul>
-</ul>
+- **monumentaleStatus**:
+    - brondocument: het brondocument, identificeerbaar met een nummer (CharacterString), waarin de beslissing staat voor de specifiek status van de boom.
 
 ### De witte kastanje
 
