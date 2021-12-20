@@ -10,7 +10,6 @@ Zie https://github.com/Geonovum/disgeo-imsor/tree/master/kwaliteitseisen en de s
 
 #### NORA vs ISO 19157
 
-Tekst overgenomen uit Github - disgeo-imsor/issues/60-metadata/datakwaliteit-nora-iso19157.md
 
 
 Gegevenskwaliteit is een relevant onderwerp in het kader van de SOR. [Vanuit de Architectuurvisie](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) wordt het volgende gezegd over gegevenskwaliteit:
@@ -95,7 +94,6 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 
 #### Datakwaliteit in de SOR
 
-Tekst overgenomen uit Github - disgeo-imsor/issues/60-metadata/datakwaliteit-sor.md
 
 ##### Informatiemodelniveau
 
