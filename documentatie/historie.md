@@ -4,7 +4,7 @@
 
 Zoals gespecificeerd in [[EMSO]] worden zowel de tijdslijn geldigheid als de tijdslijn registratie gemodelleerd. Dit gebeurt conform de nieuwe versie van NEN 3610, die in 2021 in consultatie is gekomen.
 
-Deze historiegegevens zijn gescheiden van het object zelf. 
+Om samenhang tussen objecten optimaal mogelijk te maken wordt een duidelijk onderscheid gemaakt tussen gegevens over objecten in ‘werkelijkheid’ en gegevens over de registratie van objecten in het model. Ook historiegegevens zijn daarom gescheiden van het object zelf. 
 
 ![Object en registratiegegevens als objecttype](media/historie-2.png)
 
@@ -14,11 +14,33 @@ Er is een tweede optie die object en registratiegegevens iets minder streng sche
 
 ![Object met registratiegegevens als gegevensgroep](media/historie-1.png)
 
-## Historie op gegevensniveau
+## Historie op attribuut- of gegevensniveau
 
-Hoewel historie op objectniveau, met twee verschillende tijdslijnen, al lastig genoeg te begrijpen en implementeren is, is het modelleren hiervan met de houvast die NEN 3610:2021 ons biedt niet heel complex. [[EMSO]] beschrijft echter ook als functionele eis dat van sommige  individuele gegevens historie (en andere metadata, zoals of iets in onderzoek is) moet worden bijgehouden. Hiervoor is nog geen gestandaardiseerd modelleerpatroon voorhanden en het is niet eenvoudig om dit te modelleren op een manier die aan de modelleerprincipes voldoet en ook nog begrijpelijk en implementeerbaar is.
+Hoewel historie op objectniveau, met twee verschillende tijdslijnen, al lastig genoeg te begrijpen en implementeren is, is het modelleren hiervan met de houvast die NEN 3610:2021 ons biedt niet heel complex. [[EMSO]] beschrijft echter ook als functionele eis dat van sommige *individuele gegevens* historie (en andere metadata, zoals of iets in onderzoek is) moet worden bijgehouden. Hiervoor is nog geen gestandaardiseerd modelleerpatroon voorhanden en het is niet eenvoudig om dit te modelleren op een manier die aan de modelleerprincipes voldoet en ook nog begrijpelijk en implementeerbaar is.
 
-We hebben om hier grip op te krijgen een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er geen duidelijke winnaar was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, het waard is.
+Historie op gegevensniveau is nodig voor (schatting) 10% van de use cases, waaronder WOZ, waar men per gegeven de historie en andere metagegevens wil kunnen zien. Het zorgt echter voor een complexer semantisch model en datastructuur – hoe hou je dit weg bij de andere 90% van het gebruik?
+
+Allereerst hebben we geprobeerd duidelijker te krijgen wat de functionele eis precies was: gaat het erom metadata inclusieef historie, over de *gegevens* (i.e. de waardes van attributen) van een object vast te leggen, zoals nodig is bij attributen die meerdere waardes kunnen krijgen (bv `Gebouw` `gebruiksdoel`)? Of is het voldoende om historie op attribuutniveau vast te leggen? 
+
+**Fictief voorbeeld feitelijk gebruik van een willekeurig object:**
+Van|Tot|waarde
+---|---|------
+1-1-2005|1-3-2021|wonen
+1-1-2010|1-11-2019|kantoor
+1-8-2016|1-4-2020|bijeenkomsten
+
+Hierop gaf de Werkgroep Inhoud aan dat volledig uitmodelleren van historie op gegevensniveau te intewikkeld zou kunnen zijn. Historie op attribuutniveau, waarbij er sprake is van perioden waarin een bepaalde combinatie van waarden hoort bij een attribuut, is wellicht al voldoende. Als de combinatie verandert, dan verandert er iets in de historie:
+
+
+Van|Tot|waarde
+---|---|------
+1-1-2005|1-1-2010|wonen
+1-1-2010|1-8-2016|wonen, kantoor
+1-8-2016|1-11-2019|wonen, kantoor, bijeenkomsten
+1-11-2019|1-4-2020|wonen, bijeenkomsten
+1-4-2020|1-3-2021|wonen
+
+We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er geen duidelijke voorkeursoptie was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, het waard is. Optie C is in ieder geval niet toereikend als historie op gegevensniveau vereist is.
 
 ## Historie casus "Informatiemodel Boom"
 
