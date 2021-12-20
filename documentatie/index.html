@@ -29,10 +29,61 @@
 		<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
         <script class="remove" src="./config.js"></script>
         <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
+        <script>
+            function tabs() {
+              // store tabs variable
+              var theTabs = document.querySelectorAll("ul.nav-tabs > li");
+        
+              function theTabClicks(tabClickEvent) {
+                  var clickedTab = tabClickEvent.currentTarget;
+                  var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+                  var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
+                  for (var i = 0; i < theTabs.length; i++) {
+                      theTabs[i].classList.remove("active");
+                  }
+        
+                  clickedTab.classList.add("active");
+                  tabClickEvent.preventDefault();
+                  var contentPanes = tabParent.querySelectorAll(".tab-pane");
+                  for (i = 0; i < contentPanes.length; i++) {
+                      contentPanes[i].classList.remove("active");
+                  }
+                  var anchorReference = tabClickEvent.target;
+                  var activePaneId = anchorReference.getAttribute("href");
+                  var activePane = tabParent.querySelector(activePaneId);
+                  activePane.classList.add("active");
+              }
+              for (i = 0; i < theTabs.length; i++) {
+                  theTabs[i].addEventListener("click", theTabClicks)
+              }
+            }
+            if (window.addEventListener) {
+              window.addEventListener("load", tabs, false);
+            } else {
+              window.attachEvent('onload', tabs);
+            }
+          </script>
+          <script type='text/javascript'>
+        
+            (function()
+            {
+              if( window.localStorage )
+              {
+                if( !localStorage.getItem('firstLoad') )
+                {
+                  localStorage['firstLoad'] = true;
+                  window.location.reload();
+                }
+                else
+                  localStorage.removeItem('firstLoad');
+              }
+            })();
+        
+            </script>
     </head>
     <!-- HTML-Body - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <body>
-        <section id='abstract' data-format="markdown">Dit document beschrijft de tot nu toe gedane inzichten van het DiSGeo modelleerteam van Geonovum, over de zogenaamde 'generieke onderwerpen' die bij de modellering van de SOR aan bod komen. Het gaat hierbij om algemene zaken als metadata, historie, identificatie, geometrie, enz. TEST</section>
+        <section id='abstract' data-format="markdown">Dit document beschrijft de tot nu toe gedane inzichten van het DiSGeo modelleerteam van Geonovum, over de zogenaamde 'generieke onderwerpen' die bij de modellering van de SOR aan bod komen. Het gaat hierbij om algemene zaken als metadata, historie, identificatie, geometrie, enz. </section>
         <!-- sodt = 'status of this document'. ReSpec genereert automatisch een tekst hierin - - - - -->
         <!-- op basis van specType en specStatus.- - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <!-- Deze automatische tekst kun je aanvullen door tussen <p></p> iets te typen. - - - - - - -->

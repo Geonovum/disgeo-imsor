@@ -127,13 +127,12 @@ var respecConfig =
       date:       "2021-02-16",
       publisher:  "Geonovum",
     },
-    "PUB-1":
+    "MODPR":
       {
-        title:      "Titel van Publicatie-1",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
-        publisher:  "Publisher-1",
-        company:    "Companynaam",
+        title:      "Modelleerprincipes samenhangende objectenregistratie",
+        href:       "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
+        status:     "levend document",
+        publisher:  "Geonovum",
     },
     "PUB-2":
       {
