@@ -265,5 +265,5 @@ Beheer van waardelijsten staat los van beheer van begrippen in een begrippenkade
 
 Aanpak:
 - 1 conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie.
-- - Historie op concept / waarde-niveau conform NEN 3610
+- Historie op concept / waarde-niveau conform NEN 3610
 Waarde-concepten kunnen met SKOS matching relaties gerelateerd worden aan een algemeen SOR begrippenkader. 
