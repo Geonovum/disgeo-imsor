@@ -1,31 +1,40 @@
 ## Kwaliteit
 
-Kwaliteit van gegevens is een soort metadata, maar zo'n groot onderwerp dat we het apart behandelen.
+Kwaliteit van gegevens wordt over het algemeen beschouwd als een soort metadata, maar omdat het een uitgebreid onderwerp is en belangrijk voor de SOR behandelen we het in een apart hoofdstuk. 
 
-Zie https://github.com/Geonovum/disgeo-imsor/tree/master/kwaliteitseisen en de subfolder respec-docs.
+### Kwaliteitsaspecten
 
+Kwaliteit is een relevant onderwerp in het kader van de SOR. Het gaat hierbij zowel om kwaliteits*eisen* als om de daadwerkelijke kwaliteit van gegevens, die als metadata bij die gegevens wordt opgenomen. 
 
-### NORA vs ISO 19157
+<aside class="note">In het [[EMSO]] worden de termen *kwaliteitsnorm*, *normkwaliteit*, en *kwaliteitseis* door elkaar gebruikt. In de Architectuurvisie [[DiSGeo-Arch]] spreekt men ook wel van *kwaliteitsindicatoren*. In dit document hebben we het over *kwaliteitseis*. 
 
+Voorbeeld van een kwaliteitseis: de vereiste actualiteit van gegevens in de SOR. Deze actualiteitseis wordt opgenomen op het niveau van het informatiemodel / de gegevenscatalogus.
 
-Gegevenskwaliteit is een relevant onderwerp in het kader van de SOR. [Vanuit de Architectuurvisie](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) wordt het volgende gezegd over gegevenskwaliteit:
->Het doel van de component Gegevenskwaliteit is om de afgesproken kwaliteitsindicatoren vast te leggen, te meten en monitoren wat de waarde van deze indicatoren is en zowel de indicatoren als de gemeten waarden beschikbaar te stellen voor bronhouders, afnemers en andere betrokkenen, zoals toezichthouders en beleidsverantwoordelijke.
+Daarnaast is er *gerealiseerde* kwaliteit op het niveau van gegevens, ook wel de gegevenskwaliteit genoemd. 
 
->Met kwaliteitsindicatoren kan de algehele kwaliteit van de opgeslagen gegevens gemonitord worden. De opslag bevat naast de feitelijke gegevens ook proces- en metagegevens (zie opslag). Dit betekent dat de kwaliteitsindicatoren naast de kwaliteit van de gegevens zelf ook resultaten kunnen geven over bijvoorbeeld gemiddelde duur van verwerking door bronhouder (procesgegevens) of meta-gegevens van de gegevens zelf.
+Voorbeeld van gegevenskwaliteit: de positionele nauwkeurigheid van een bij een individueel object horende geometrie. Deze kwaliteitsinformatie wordt opgenomen bij de desbetreffende geometrie.
 
-Dit onderwerp is ook gekoppeld aan metadata, aangezien je bepaalde informatie over gegevenskwaliteit kunt opnemen in metadata. Echter kunnen deze stappen alleen worden genomen wanneer een concreet kwaliteitsraamwerk is beschreven. Dit wordt uitgebreid besproken in ISO 25012. Zo'n raamwerk bestaat uit kwaliteitsdimensies, indicatoren en meetfuncties. Een kwaliteitsdimensie is een aspect dat wordt gebruikt om indicatoren te categoriseren. Voorbeelden van kwaliteitsdimensies zijn: juistheid, nauwkeurigheid, compleetheid en consistentie. Een kwaliteitsdimensie kan worden onderverdeeld in kwaliteitsattributen (indicatoren) - deze zijn iets specifieker van aard. Voorbeelden van indicatoren voor de dimensie 'juistheid' zijn: classificatie juistheid, thematische juistheid, positionele juistheid. Om kwaliteit te beschrijven moeten de indicatoren meetbaar worden gemaakt. Hiervoor worden meetfuncties gespecificeerd. Voorbeelden van meetfuncties voor de indicator 'positionele juistheid' zijn: linear error probable (LEP), root mean square error (RMSE), circular standard deviation (CSE). Hoe je deze meetfuncties toepast in de context van een dataset wordt beschreven in kwaliteitseisen. Middels kwaliteitsmetingen kan worden nagegaan of aan een kwaliteitseis wordt voldaan. De resultaten van zulke metingen kunnen worden vastgelegd in een kwaliteitsrapport. 
+</aside>
 
-Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systeem-afhankelijke gegevens), kan het ook specifiek ingaan op geometrische of topologische controles van de gegevens zelf. We hebben het dan over de inherente gegevenskwaliteit. Met dit voor ogen is een vergelijk uitgevoerd tussen NORA indicatoren en indicatoren uit de ISO 19157. Hierbij worden de 'kwaliteitseisen' uit EMSO gekoppeld aan de juiste indicatoren. In het vervolg kunnen geschikte meetfuncties worden gezocht voor deze eisen, en kan de vastlegging van deze eisen verder worden uitgewerkt.  
+Vanuit de Architectuurvisie wordt [het volgende gezegd](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) over gegevenskwaliteit:
+- Het doel van de component Gegevenskwaliteit is om de afgesproken kwaliteitsindicatoren vast te leggen, te meten en monitoren wat de waarde van deze indicatoren is en zowel de indicatoren als de gemeten waarden beschikbaar te stellen voor bronhouders, afnemers en andere betrokkenen, zoals toezichthouders en beleidsverantwoordelijken.
+- Met kwaliteitsindicatoren kan de algehele kwaliteit van de opgeslagen gegevens gemonitord worden. De opslag bevat naast de feitelijke gegevens ook proces- en metagegevens (zie opslag). Dit betekent dat de kwaliteitsindicatoren naast de kwaliteit van de gegevens zelf ook resultaten kunnen geven over bijvoorbeeld gemiddelde duur van verwerking door bronhouder (procesgegevens) of meta-gegevens van de gegevens zelf.
+
+Het is mogelijk om informatie over gegevenskwaliteit op te nemen in metadata. Hiervoor is echter een concreet kwaliteitsraamwerk nodig, zoals beschreven in [[ISO-25012]]. Zo'n raamwerk bestaat uit kwaliteitsdimensies, indicatoren en meetfuncties. Een kwaliteitsdimensie is een aspect dat wordt gebruikt om indicatoren te categoriseren. Voorbeelden van kwaliteitsdimensies zijn: juistheid, nauwkeurigheid, compleetheid en consistentie. Een kwaliteitsdimensie kan worden onderverdeeld in kwaliteitsattributen (indicatoren) - deze zijn iets specifieker van aard. Voorbeelden van indicatoren voor de dimensie 'juistheid' zijn: classificatie juistheid, thematische juistheid, positionele juistheid. Om kwaliteit te beschrijven moeten de indicatoren meetbaar worden gemaakt. Hiervoor worden meetfuncties gespecificeerd. Voorbeelden van meetfuncties voor de indicator 'positionele juistheid' zijn: linear error probable (LEP), root mean square error (RMSE), circular standard deviation (CSE). Hoe je deze meetfuncties toepast in de context van een dataset wordt beschreven in kwaliteitseisen. Middels kwaliteitsmetingen kan worden nagegaan of aan een kwaliteitseis wordt voldaan. De resultaten van zulke metingen kunnen worden vastgelegd in een kwaliteitsrapport. 
+
+Het Nederlandse [NORA Raamwerk gegevenskwaliteit](https://www.noraonline.nl/wiki/Raamwerk_gegevenskwaliteit) is op onder andere [[ISO-25012]] gebaseerd en beschrijft een set van kwaliteitsdimensies en kwaliteitsattributen, waarbij wordt aangegeven op welk toepassingsniveau (dataset, gegevensobject, attribuut, of waarde) ze kunnen worden gebruikt. 
+
+Hoewel een kwaliteitsraamwerk heel generiek kan zijn (procesgegevens, systeem-afhankelijke gegevens), kan het ook specifiek ingaan op bijvoorbeeld geometrische of topologische controles van de gegevens zelf. We hebben het dan over de inherente gegevenskwaliteit, die voor de SOR van groot belang is. Met dit voor ogen is een vergelijk uitgevoerd tussen NORA indicatoren en indicatoren uit de ISO 19157. Hierbij worden de kwaliteitseisen uit [[EMSO]] gekoppeld aan de juiste indicatoren. In het vervolg kunnen geschikte meetfuncties worden gezocht voor deze eisen, en kan de vastlegging van deze eisen verder worden uitgewerkt.  
 
 #### Juistheid / Nauwkeurigheid
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  |   |
-| Classificatie juistheid  | DQ_ThematicClassificationCorrectness  |
-| Thematische juistheid  | DQ_ThematicAccuracy (DQ_NonQuantitativeAttributeCorrectness   & DQ_QuantitativeAttributeAccuracy)   |
-| Positionele juistheid  | DQ_PositionalAccuracy (DQ_AbsoluteExternalPositionalAccuracy   & DQ_RelativeInternalPositionalAccuracy &   DQ_GriddedDataPositionalAccuracy)  |
-|  | DQ_AccuracyOfATimeMeasurement   |
+| Classificatie juistheid  | `DQ_ThematicClassificationCorrectness`  |
+| Thematische juistheid  | `DQ_ThematicAccuracy` (`DQ_NonQuantitativeAttributeCorrectness` & `DQ_QuantitativeAttributeAccuracy`)   |
+| Positionele juistheid  | `DQ_PositionalAccuracy` (`DQ_AbsoluteExternalPositionalAccuracy` & `DQ_RelativeInternalPositionalAccuracy` & `DQ_GriddedDataPositionalAccuracy`)  |
+|  | `DQ_AccuracyOfATimeMeasurement`   |
 
 #### Compleetheid
 
@@ -33,12 +42,12 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  |   |
 | Ruimtelijke dekking  | ?   |
-| Attribuut compleetheid   | DQ_CompletenessOmission > DQ_Scope.level = feature,   DQ_Scope.levelDescription = attribuutX  |
-| Dataset compleetheid   | DQ_CompletenessOmission > DQ_Scope.level = dataset  |
+| Attribuut compleetheid   | `DQ_CompletenessOmission` > `DQ_Scope.level` = feature,   `DQ_Scope.levelDescription` = attribuutX  |
+| Dataset compleetheid   | `DQ_CompletenessOmission` > `DQ_Scope.level` = dataset  |
 | Historie compleetheid  | ?   |
-| Identificeerbaarheid   | DQ_CompletenessOmission > DQ_Scope.level = dataset / feature,   DQ_Scope.levelDescription = identificatie attribuut   |
-| Metadata compleetheid  | DQ_CompletenessOmission > DQ_Scope.level = dataset / feature /   attribute, DQ_Scope.levelDescription = metadataAttribuutX,   metadataAttribuutY, etc |
-| Overcompleetheid   | DQ_CompletenessComission > DQ_Scope.level = dataset/featuretype   |
+| Identificeerbaarheid   | `DQ_CompletenessOmission` > `DQ_Scope.level` = dataset / feature,   `DQ_Scope.levelDescription` = identificatie attribuut   |
+| Metadata compleetheid  | `DQ_CompletenessOmission` > `DQ_Scope.level` = dataset / feature /   attribute, `DQ_Scope.levelDescription` = metadataAttribuutX,   metadataAttribuutY, etc |
+| Overcompleetheid   | `DQ_CompletenessComission` > `DQ_Scope.level` = dataset/featuretype   |
 
 #### Validiteit
 
@@ -48,22 +57,21 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Geometrische validiteit  |   |
 | Domeinvaliditeit   |   |
 | Formaatvaliditeit  |   |
-|  | DQ_TemporalValidity   |
+|  | `DQ_TemporalValidity`   |
 
 #### Consistentie
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  |   |
-| Topologische consistentie  |   |
+| Topologische consistentie  | `DQ_TopologicalConsistency`  |
 | Homogeniteit   |   |
 | Referentiële integriteit   |   |
-|  | DQ_TemporalConsistency  |
+|  | `DQ_TemporalConsistency`  |
 | Logische consistentie  |   |
-|  | DQ_TopologicalConsistency   |
-|  | DQ_ConceptualConsistency  |
-|  | DQ_DomainConsistency  |
-|  | DQ_FormatConsistency  |
+|  | `DQ_ConceptualConsistency`  |
+|  | `DQ_DomainConsistency`  |
+|  | `DQ_FormatConsistency`  |
 
 #### Overige dimensies
 
@@ -81,10 +89,10 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Traceerbaarheid  | Herleidbaarheid   |   |
 | Traceerbaarheid  | Reproduceerbaarheid   |   |
 | Begrijpelijkheid   | Duidelijkheid   |   |
-| Gebruik  |   | DQ_UsabilityElement 			 |
-| Metakwaliteit  |   | DQ_Confidence   |
-| Metakwaliteit  |   | DQ_Representativity   |
-| Metakwaliteit  |   | DQ_Homogeneity  |
+| Gebruik  |   | `DQ_UsabilityElement` 			 |
+| Metakwaliteit  |   | `DQ_Confidence`   |
+| Metakwaliteit  |   | `DQ_Representativity`   |
+| Metakwaliteit  |   | `DQ_Homogeneity`  |
 
 
 
@@ -103,7 +111,7 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Verplichtheid   | per objecttype wordt aangegeven of het objecttype behoort tot  de verplichte inhoud of optioneel is   | Dit heeft te maken met dataset compleetheid  | compleetheid  |
 | Inwinning / opname  | Er zijn afspraken nodig wat betreft de opname van informatie  in de SOR: objecten worden in de SOR opgenomen op het moment dat deze volgens  de voor het betreffende objecttype gedefinieerde criteria ontstaan   | Dit heeft te maken met conceptualConsistency  | consistentie  |
 | Authenticatie / Autorisatie  | vastleggen welke bronhouders er zijn voor een attribuuttype,  wanneer 'mogelijke bronhouderschap' afwijkt van wat er bij het objecttype is  vastgelegd   | authenticatie   | plausibiliteit   |
-| Verplichtheid   | per attribuuttype wordt aangegeven of het attribuuttpe behoort  tot de verplichte inhoud of optioneel is   | Dit heeft te maken met attribuut compleetheid   | compleetheid  |
+| Verplichtheid   | per attribuuttype wordt aangegeven of het attribuuttype behoort  tot de verplichte inhoud of optioneel is   | Dit heeft te maken met attribuut compleetheid   | compleetheid  |
 | Bronverwijzing  | vastleggen of bronverwijzing aan de orde is, per objecttype  (dit is afhankelijk van de achtergrond van het opvoeren of beëindigen van een  object in de registratie).   | Dit heeft te maken met attribuut compleetheid   | compleetheid  |
 | Bronverwijzing  | vastleggen of bronverwijzing aan de orde is, per attribuuttype  (dit is afhankelijk van de achtergrond van het opvoeren of wijzigen van een  attribuut in de registratie).   | Dit heeft te maken met attribuut compleetheid   | compleetheid  |
 | Geometrie   | Minimale geometrietype die van toepassing is (2D, 2.5D, 3D)  | Dit heeft te maken met toplogische consistentie (zoals in NORA  beschreven)  | consistentie  |

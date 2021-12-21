@@ -184,6 +184,22 @@ var respecConfig =
         date:       "30 juni 2020",
         version:    "2.1.0",
     },
+    "DiSGeo-Arch":
+    {
+      title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
+      href:       "https://docs.geostandaarden.nl/disgeo/arch/",
+      status:     "Consultatieversie",
+      date:       "2020-10-05",
+      publisher:  "Geonovum",
+    },
+    "ISO-25012":
+    {
+      title:      "Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model",
+      href:       "https://www.iso.org/standard/35736.html",
+      status:     "Published",
+      date:       "2008-12",
+      publisher:  "ISO/IEC",
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
