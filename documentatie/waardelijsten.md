@@ -143,17 +143,17 @@ De correcte werkwijze, volgens de geldende geo-standaarden is:
 
 **NEN3610:2022** - Waardelijsten zijn lijsten met waarden, of beter gezegd lijsten met woorden, die gebruikt mogen worden als waarde voor een eigenschap van een object. De waardelijst specificeert daarmee restrictief het waardebereik van een attribuut in een informatiemodel.
 
-#### visie op waardelijsten
+#### Visie op waardelijsten
 
 IMSOR hanteert de volgende visie op waardelijsten:
 - Een waardelijst beperkt het waardebereik voor een type tot een gespecificeerde set waarden.
 - Mogelijke (waarde)types
-  - Objecttypes (Landenlijst, Gemeentelijst etc)
-    - Gebruik wanneer mogelijk. Introduceert mogelijkheid voor directe koppeling voor gebruik in samenhang
-  - Concepten (Statussen, Gebruiksdoelen, Typeringen etc)
-    - Gebruik wanneer nodig. Versimpelt informatiemodellen, maar behoudt nog steeds mogelijkheid voor samenhangend gebruik.
+     - Objecttypes (Landenlijst, Gemeentelijst etc)
+        - Gebruik wanneer mogelijk. Introduceert mogelijkheid voor directe koppeling voor gebruik in samenhang
+    - Concepten (Statussen, Gebruiksdoelen, Typeringen etc)
+        - Gebruik wanneer nodig. Versimpelt informatiemodellen, maar behoudt nog steeds mogelijkheid voor samenhangend gebruik.
 
-#### requirements
+#### Requirements
 
 - Model voor waardelijsten (de gegevensstructuur van een waarde) moet bekend zijn.
   *Rationale*: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
@@ -172,21 +172,22 @@ Voorbeeld:
     SOR status:
 - Ontwerp
 - Gepland = Plan (BGT)
-    - Bouwvergunning verleend (BAG)
+       - Bouwvergunning verleend (BAG)
 - Aanwezig = Bestaand (BGT)
-    - Bouw gestart (BAG)
-    - Pand buiten gebruik  (BAG)
-    - Pand in gebruik  (BAG)
-    - Pand in gebruik (niet ingemeten) (BAG)
-    - Sloopvergunning verleend  (BAG)
-    - Verbouwing pand (BAG)
-- Afwezig – Historie (BGT)
-    - Pand gesloopt (BAG)
+        - Bouw gestart (BAG)
+        - Pand buiten gebruik  (BAG)
+        - Pand in gebruik  (BAG)
+        - Pand in gebruik (niet ingemeten) (BAG)
+        - Sloopvergunning verleend  (BAG)
+        - Verbouwing pand (BAG)
+- Afwezig = Historie (BGT)
+        - Pand gesloopt (BAG)
 - Afgevoerd
-    - Niet gerealiseerd pand (BAG
-    - Pand ten onrechte opgevoerd (BAG)
+        - Niet gerealiseerd pand (BAG
+        - Pand ten onrechte opgevoerd (BAG)
 
 Vraag:
+
 Geef me alle gebouwen met status *Aanwezig* uit de SOR.
 
 Levert:
