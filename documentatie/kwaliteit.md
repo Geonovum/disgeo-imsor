@@ -5,11 +5,7 @@ Kwaliteit van gegevens is een soort metadata, maar zo'n groot onderwerp dat we h
 Zie https://github.com/Geonovum/disgeo-imsor/tree/master/kwaliteitseisen en de subfolder respec-docs.
 
 
-
-### Gegevenskwaliteit
-
-#### NORA vs ISO 19157
-
+### NORA vs ISO 19157
 
 
 Gegevenskwaliteit is een relevant onderwerp in het kader van de SOR. [Vanuit de Architectuurvisie](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) wordt het volgende gezegd over gegevenskwaliteit:
@@ -21,7 +17,7 @@ Dit onderwerp is ook gekoppeld aan metadata, aangezien je bepaalde informatie ov
 
 Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systeem-afhankelijke gegevens), kan het ook specifiek ingaan op geometrische of topologische controles van de gegevens zelf. We hebben het dan over de inherente gegevenskwaliteit. Met dit voor ogen is een vergelijk uitgevoerd tussen NORA indicatoren en indicatoren uit de ISO 19157. Hierbij worden de 'kwaliteitseisen' uit EMSO gekoppeld aan de juiste indicatoren. In het vervolg kunnen geschikte meetfuncties worden gezocht voor deze eisen, en kan de vastlegging van deze eisen verder worden uitgewerkt.  
 
-##### Juistheid / Nauwkeurigheid
+#### Juistheid / Nauwkeurigheid
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -31,7 +27,7 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Positionele juistheid  | DQ_PositionalAccuracy (DQ_AbsoluteExternalPositionalAccuracy   & DQ_RelativeInternalPositionalAccuracy &   DQ_GriddedDataPositionalAccuracy)  |
 |  | DQ_AccuracyOfATimeMeasurement   |
 
-##### Compleetheid
+#### Compleetheid
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -44,7 +40,7 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Metadata compleetheid  | DQ_CompletenessOmission > DQ_Scope.level = dataset / feature /   attribute, DQ_Scope.levelDescription = metadataAttribuutX,   metadataAttribuutY, etc |
 | Overcompleetheid   | DQ_CompletenessComission > DQ_Scope.level = dataset/featuretype   |
 
-##### Validiteit
+#### Validiteit
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -54,7 +50,7 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Formaatvaliditeit  |   |
 |  | DQ_TemporalValidity   |
 
-##### Consistentie
+#### Consistentie
 
 |  NORA Kwaliteitsattribuut  |   ISO 19157 Kwaliteitsattribuut   |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -69,7 +65,7 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 |  | DQ_DomainConsistency  |
 |  | DQ_FormatConsistency  |
 
-##### Overige dimensies
+#### Overige dimensies
 
 |   Kwaliteitsdimensie   |  NORA Kwaliteitsattribuut | ISO 19157 Kwaliteitsattribuut |
 |:--------------------------:|:-------------------------:|:-----------------------------:|
@@ -90,12 +86,12 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Metakwaliteit  |   | DQ_Representativity   |
 | Metakwaliteit  |   | DQ_Homogeneity  |
 
-##### Opmerkingen
-
-#### Datakwaliteit in de SOR
 
 
-##### Informatiemodelniveau
+### Datakwaliteit in de SOR
+
+
+#### Informatiemodel niveau
 
 *Eisen*
 
@@ -114,13 +110,14 @@ Hoewel een kwaliteitsraamwerk dus heel generiek kan zijn (procesgegevens, systee
 | Topologie   | vastleggen van topologieregels voor objecttypes (bv: Knopen en  verbindingen bevinden zich binnen de contouren van de bijbehorende reële  objecten.)  | Dit heeft te maken met toplogische consistentie (zoals in ISO  19157 beschreven)   | consistentie  |
 
 *Mogelijke eisen*
+
 | aspect  | beschrijving   | mogelijke kwaliteitsindicator   | mogelijk kwaliteitsaspect  |
 |----|----|----|----|
 | Autorisatie  | Gebruiksautorisaties voor specifieke objecten in de SOR worden  in het informatiemodel expliciet benoemd   | -   | -  |
 | Nauwkeurigheid  | Bij de uitwerking van de inhoud van de samenhangende  objectenregistratie wordt voor de verschillende objecttypen bepaald wat de  kleinste geometrische/cartografische eenheid is die nog van belang is voor  meerdere gebruikers van de registratie. |  | consistentie (homogeneiteit) / juistheid|
 | Bronverwijzing  | vastleggen in welke gevallen men een verwijzing moet opnemen  naar een bron(document)  |  | compleetheid  |
 
-##### Object/Attribuutniveau
+#### Object/Attribuut niveau
 
 *Eisen*
 
