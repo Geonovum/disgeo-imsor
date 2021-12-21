@@ -214,23 +214,28 @@ De representatie van een lijst met een opsomming van de mogelijke domeinwaarden 
 
 #### Metagegeven: Indicatie classificerend
 
-- Indicatie dat een attribuutsoort het objecttype waar het bijhoort classificeert in (sub)typen.
-- Een objecttype kan middels een attribuutsoort geclassificeerd worden in subtypen. Bijvoorbeeld: type gebouw. Een toren, kerk, bunker, zwembad zijn allemaal typen gebouwen. In een model op niveau 2 kunnen dergelijke typen als objecttypen en specialisaties van het objecttype gebouw zijn gemodelleerd. Met name op niveau 3 kan het relevant zijn om deze informatie daadwerkelijk te structureren door expliciet een aspect op te nemen waarmee direct het type gebouw kan worden vastgelegd, los van de modellering van objecttypen.
+Deze indicatie betekent dat een attribuutsoort het objecttype waar het bijhoort classificeert in (sub)typen.
+
+Een objecttype kan middels een attribuutsoort geclassificeerd worden in subtypen. Bijvoorbeeld: type gebouw. Een toren, kerk, bunker, zwembad zijn allemaal typen gebouwen. In een model op niveau 2 kunnen dergelijke typen als objecttypen en specialisaties van het objecttype gebouw zijn gemodelleerd. Met name op niveau 3 kan het relevant zijn om deze informatie daadwerkelijk te structureren door expliciet een aspect op te nemen waarmee direct het type gebouw kan worden vastgelegd, los van de modellering van objecttypen.
 
 #### SOR Waardelijsten
 
-- MIM Referentielijst past het beste
-    - Gegevensstructuur beschreven in informatiemodel
-    - ogelijk om een samenvattende representatie van een objecttype te gebruiken
-    - Beheer van inhoud van de lijst los van informatiemodel
+De MIM Referentielijst past het beste, want 
+- De gegevensstructuur is beschreven in informatiemodel
+- Het is mogelijk om een samenvattende representatie van een objecttype te gebruiken
+- Het beheer van de inhoud van de lijst staat los van informatiemodel
 
-- Er worden twee soorten lijsten voorzien
-    - Waardelijst van objecten (instanties van Objecttype) uit een andere dataset.
-        Bijv. De lijst van alle Nederlandse Gemeentes (Openbaar Lichaam)
+Er worden twee soorten lijsten voorzien:
+1. Waardelijst van objecten (instanties van Objecttype) uit een andere dataset.
+        
+        Bijvoorbeeld de lijst van alle Nederlandse Gemeentes (Openbaar Lichaam)
+
         Eis: Deze dataset moet ook voldoen aan SOR-stelsel eisen voor identificatie, historie, etc.
-    - Waardelijst van concepten
-        Bijv. Een lijst met statussen; Een lijst met gebruiksdoelen.
-        Bijv. Een categoriserende lijst van Gebouwtypes.
+2. Waardelijst van concepten
+        
+        Bijvoorbeeld een lijst met statussen; Een lijst met gebruiksdoelen.
+        
+        Bijvoorbeeld eEen categoriserende lijst van Gebouwtypes.
 
 #### Waardelijsten van concepten op basis van SKOS
 
