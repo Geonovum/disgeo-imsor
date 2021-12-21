@@ -156,12 +156,12 @@ IMSOR hanteert de volgende visie op waardelijsten:
 #### requirements
 
 - Model voor waardelijsten (de gegevensstructuur van een waarde) moet bekend zijn.
-  **Rationale**: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
+  *Rationale*: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
   Bij waardelijst van objecten en concepten moet er voldoende informatie van objecten beschikbaar zijn voor het doel van de waardelijst.
   Daarnaast moet het aanknopingspunt voor samenhangend gebruik bieden
 		
 - De inhoud van de waardelijst moet kunnen veranderen zonder dat het informatiemodel verandert.
-  **Rationale**: Waardelijsten kunnen veranderen, zonder dat dit de structuur van het gegevensmodel verandert. Deze moeten onafhankelijk van elkaar kunnen ontwikkelen.
+  *Rationale*: Waardelijsten kunnen veranderen, zonder dat dit de structuur van het gegevensmodel verandert. Deze moeten onafhankelijk van elkaar kunnen ontwikkelen.
 
 **WENS**: Waardelijsten moeten hierarchisch / taxonomisch gebruik ondersteunen
 
