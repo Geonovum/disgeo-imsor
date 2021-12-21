@@ -239,28 +239,25 @@ Er worden twee soorten lijsten voorzien:
 
 #### Waardelijsten van concepten op basis van SKOS
 
-Waarom SKOS?
-   - Wordt breed toegepast voor dit doeleinde
-   - SKOS biedt een standaardmodel voor het modelleren van Concepten
-    
-        Concept
-        Code / Techniche notatie
-        Definitie
-        Term 
-        Etc.
-    - SKOS biedt een standaardmodel voor hierarchie / taxonomie van concepten
-
-        Concept
-        Broader
-        Narrower
-        Etc.
-    - SKOS biedt een standaardmodel om samenhang van concepten uit verschillende contexten uit te drukken
-
-        Concept
-        exactMatch
-        broaderMatch
-        narrowerMatch
-        Etc.
+Waarom kiezen we voor SKOS?
+- Wordt breed toegepast voor dit doeleinde
+- SKOS biedt een standaardmodel voor het modelleren van Concepten
+        - Concept
+        - Code / Techniche notatie
+        - Definitie
+        - Term 
+        - Etc.
+- SKOS biedt een standaardmodel voor hierarchie / taxonomie van concepten
+        - Concept
+        - Broader
+        - Narrower
+        - Etc.
+- SKOS biedt een standaardmodel om samenhang van concepten uit verschillende contexten uit te drukken
+        - Concept
+        - exactMatch
+        - broaderMatch
+        - narrowerMatch
+        - Etc.
 
 #### Beheeraspecten bij waardelijst van concepten
 
