@@ -152,21 +152,37 @@ var respecConfig =
         publisher:  "NEN",
         date:       "1 april 2021",
     },
-    "PUB-3":
-      {
-        title:      "Titel van Publicatie-3",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
-        publisher:  "Publisher-3",
-        company:    "Companynaam",
+    "MIM": {
+      title: "MIM - Metamodel Informatie Modellering",
+      href: "https://docs.geostandaarden.nl/mim/mim/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2020-10-23"
     },
-    "PUB-4":
+    "ISO-19131":
       {
-        title:      "Titel van Publicatie-4",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
-        publisher:  "Publisher-4",
-        company:    "Companynaam",
+        title:      "Geographic information — Data product specifications",
+        href:       "https://www.iso.org/standard/36760.html",
+        status:     "Published",
+        publisher:  "ISO",
+        date:       "2007-04",
+    },
+    "ISO-19110":
+      {
+        title:      "Geographic information — Methodology for feature cataloguing",
+        href:       "https://www.iso.org/standard/57303.html",
+        status:     "Published",
+        publisher:  "ISO",
+        date:       "2016-12",
+    },
+    "NL-profiel-ISO-19115":
+      {
+        title:      "Nederlands metadata profiel op ISO 19115 voor geografie",
+        href:       "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+        status:     "Definitief",
+        publisher:  "Geonovum",
+        date:       "30 juni 2020",
+        version:    "2.1.0",
     },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
