@@ -77,21 +77,31 @@ var respecConfig =
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
+    {
+      name:       "Dick Krijtenburg",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    }, 
   ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
   authors: 
   [
     {
-      name:       "Naam Auteur-1",
+      name:       "Linda van den Brink",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
     {
-      name:       "Naam Auteur-2",
+      name:       "Pano Maria",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
+    {
+      name:       "Gabriella Wiersma",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "gendoc",  	              // Wordt gebruikt in de document URL
