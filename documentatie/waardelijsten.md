@@ -282,11 +282,75 @@ Waarom kiezen we voor SKOS?
     </ul></li>
 </ul>
 
+Het volgende voorbeeld laat zien hoe we waardelijsten denken te gaan modelleren en hoe ze uit concepten zouden kunnen worden samengesteld:
+
+![Voorbeeld waardelijst van concepten](media/waardelijst-voorbeeld.png)
+
 #### Beheeraspecten bij waardelijst van concepten
 
 Beheer van waardelijsten staat los van beheer van begrippen in een begrippenkader.
+
+![Informatiemodel, waardelijsten en begrippenkader](media/waardelijst-beheer.png)
 
 Aanpak:
 - Eén SKOS conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie. Hoewel SKOS wordt gebruikt, net zoals in het DisGeo begrippenkader, worden de begrippen uit het kader niet hergebruikt in waardelijsten. Dit omdat het beheer van het begrippenkader los moet staan van het beheer van de waardelijsten.
 - Historie op concept / waarde-niveau zoals beschreven in de nieuwe NEN 3610 versie [[NEN3610-2021-ontw]].
 - Waarde-concepten kunnen met SKOS matching relaties gerelateerd worden aan het algemene SOR begrippenkader. 
+
+<aside class="example">
+##### informatieobject
+
+<pre>
+{
+  "identificatie": "12345",
+  "type": {
+    "identificatie": "http://sor.nl/id/concept/Kantoorgebouw",
+    "code": "Kantoorgebouw"
+  },
+  "geregistreerdMet": {
+    "beginGeldigheid": "10-03-2021",
+    "eindGeldigheid": "24-09-2021"     
+  } 
+}
+</pre>
+
+##### waardelijst
+
+<pre>
+{
+  "identificatie": "http://sor.nl/id/waardelijst/TypeGebouw",
+  "geregistreerdMet": {
+     "beginGeldigheid": "03-01-2021"
+  }
+}
+</pre>
+
+##### waarde
+
+<pre>
+{
+  "identificatie": "http://sor.nl/imsor/id/concept/Kantoorgebouw",
+  "code": "Kantoorgebouw",
+  "isOnderdeelVan": {
+    "identificatie": "http://sor.nl/imsor/id/waardelijst/TypeGebouw"
+  },
+  "context": {
+    "identificatie": "http://sor.nl/imsor/id/concept-scheme/imsor"
+  },
+  "voorkeursterm" :{
+    "waarde": "Kantoorgebouw",
+    "taal": "nl"
+  },
+  "definitie": { 
+    "waarde": "Gebouw met een constructieve opzet gericht op het daarbinnen kunnen uitoefenen van administratieve werkzaamheden", 
+    "taal": "nl"
+  },
+  "isSpecialisatieVan": {
+    "identificatie": "http://sor.nl/imsor/id/concept/Gebouw"
+  },
+  "geregistreerdMet": {
+    "beginGeldigheid": "03-01-2021",
+    "eindGeldigheid": "24-09-2021"     
+  }
+}
+</pre>
