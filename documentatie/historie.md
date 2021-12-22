@@ -6,7 +6,10 @@ Zoals gespecificeerd in [[EMSO]] worden zowel de tijdslijn geldigheid als de tij
 
 Om samenhang tussen objecten optimaal mogelijk te maken wordt een duidelijk onderscheid gemaakt tussen gegevens over objecten in ‘werkelijkheid’ en gegevens over de registratie van objecten in het model. Ook historiegegevens zijn daarom gescheiden van het object zelf. 
 
-![Object en registratiegegevens als objecttype](media/historie-1.png)
+<figure id="historie-1">
+    <img src="media/historie-1.png" alt="Object en registratiegegevens als objecttype">
+    <figcaption>Object en registratiegegevens als objecttype</figcaption>
+</figure>
 
 Het scheiden van object en registratiegegevens komt voort uit de door ons opgestelde modelleerprincipes [[MODPR]]. Met name [principe 3](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#p3-alleen-directe-eigenschappen) legt uit dat dit nodig is om gegevens goed in samenhang te kunnen gebruiken. 
 

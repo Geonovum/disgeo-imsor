@@ -22,7 +22,10 @@ De levensfase `Ten onrechte` zetten we niet in dezelfde lijst, omdat deze status
 
 We modelleren de levensfasen als een taxonomische statuslijst, zodat een gebruiker eenvoudig bijvoorbeeld alle statussen die duiden op de aanwezigheid van een fysiek object kan opvragen. Zie [Statussen](https://begrippen.geostandaarden.nl/sor/nl/page/levensfasen) in het begrippenkader voor deze modellering.
 
-![Taxonomie van levensfasen](media/levensfase-taxonomie.png)
+<figure id="levensfase-tax">
+    <img src="media/levensfase-taxonomie.png" alt="Taxonomie van levensfasen">
+    <figcaption>Taxonomie van levensfasen</figcaption>
+</figure>
 
 Modellering van levensfasen wordt ingewikkeld als zaken moeten worden ondersteund zoals:
 - situaties waarin er meerdere plannen zijn voor een object te ondersteunen
@@ -37,7 +40,10 @@ Dit is een uitwerking van levensfasen die:
 - Ondersteuning biedt voor meerdere plannen tegelijkertijd
 - Ondersteuning biedt voor het bekijken van geplande objecten (icm met bestaande objecten) op een willekeurig moment in tijd.
 
-![Object en gepland object](media/2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-model.png)
+<figure id="2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-model">
+    <img src="media/2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-model.png" alt="Object en gepland object">
+    <figcaption>Object en gepland object</figcaption>
+</figure>
 
 In dit model is het volgende te zien: 
 * expliciete relaties tussen `ObjectGepland`s en `Object`en
@@ -55,4 +61,7 @@ We sluiten dit hoofdstuk af met een reeks afbeeldingen waarin dit wordt uitgewer
 
 ### Complex scenario: een verharding met meerdere geplande objecten
 
-![Verharding met meerdere geplande objecten](media/2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-complex.png)
+<figure id="2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-complex">
+    <img src="media/2-c-schaduw-gepland-objecttype-relaties-realisatiedatum-complex.png" alt="Verharding met meerdere geplande objecten">
+    <figcaption>Verharding met meerdere geplande objecten</figcaption>
+</figure>

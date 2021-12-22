@@ -278,13 +278,19 @@ Waarom kiezen we voor SKOS?
 
 Het volgende voorbeeld laat zien hoe we waardelijsten denken te gaan modelleren en hoe ze uit concepten zouden kunnen worden samengesteld:
 
-![Voorbeeld waardelijst van concepten](media/waardelijst-voorbeeld.png)
+<figure id="waardelijst-voorbeeld">
+    <img src="media/waardelijst-voorbeeld.png" alt="Voorbeeld waardelijst van concepten">
+    <figcaption>Voorbeeld waardelijst van concepten</figcaption>
+</figure>
 
 #### Beheeraspecten bij waardelijst van concepten
 
 Beheer van waardelijsten staat los van beheer van begrippen in een begrippenkader.
 
-![Informatiemodel, waardelijsten en begrippenkader](media/waardelijst-beheer.png)
+<figure id="waardelijst-beheer">
+    <img src="media/waardelijst-beheer.png" alt="Informatiemodel, waardelijsten en begrippenkader">
+    <figcaption>Informatiemodel, waardelijsten en begrippenkader</figcaption>
+</figure>
 
 Aanpak:
 - Eén SKOS conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie. Hoewel SKOS wordt gebruikt, net zoals in het DisGeo begrippenkader, worden de begrippen uit het kader niet hergebruikt in waardelijsten. Dit omdat het beheer van het begrippenkader los moet staan van het beheer van de waardelijsten.
