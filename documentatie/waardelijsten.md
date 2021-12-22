@@ -15,7 +15,7 @@ We zijn gestart met een inventarisatie van de modelleerwijze van waardelijsten i
 #### ISO 19103: Geographic information - Conceptual schema language
 Deze standaard is het fundament onder de modelleerwijze die wordt gevolgd in het geo-domein bij het maken van informatiemodellen. Denk hierbij onder andere aan de informatiemodellen van INSPIRE. In Nederland is NEN 3610 hier op gebaseerd, waar de Nederlandse sectormodellen in het geo-domein weer op zijn gebaseerd. Een voorbeeld hiervan is IMGeo, het informatiemodel voor de BGT.
 
-We baseren ons op ISO 19103:2015 [[iso-19103-2015]]. In deze standaard heb je twee modelelementen die je zou kunnen gebruiken voor waardelijsten: `Enumeration` en `Codelist`. 
+We baseren ons op ISO 19103:2015 [[ISO-19103-2015]]. In deze standaard heb je twee modelelementen die je zou kunnen gebruiken voor waardelijsten: `Enumeration` en `Codelist`. 
 
 **Enumeration**
 
@@ -101,7 +101,7 @@ In het UML model van IMGeo worden alle waardelijsten als codelist gedefinieerd. 
 
 **Implementatie in GML**
 
-Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS [[skos-reference]] vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
+Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS [[SKOS-reference]] vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
 
 Er is voor SKOS gekozen omdat de OGC GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar bij voorkeur middels RDF, bijvoorbeeld met de SKOS vocabulaire moesten worden uitgedrukt. 
 

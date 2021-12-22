@@ -241,7 +241,7 @@ Op dit niveau gaat het specifiek om metadata over informatieobjecten en hun gege
 - In onderzoek zijn van een gegeven / terugmeldingen
 
 Standaarden die van toepassing zijn: 
-- ISO Observations & Measurements [[iso-19156-2011]]
+- ISO Observations & Measurements [[ISO-19156-2011]]
 - W3C/OGC Semantic Sensor Networks ontology [[vocab-ssn]]
 - W3C Provenance ontology [[PROV-O]]
 
