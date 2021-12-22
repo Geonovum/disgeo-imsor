@@ -6,24 +6,26 @@ Zie
 - https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/03-11-2021-expertgroepvergadering-waardelijsten-imsor.pdf
 
 
+Het modelleren van waardelijsten lijkt op het eerste gezicht eenvoudig: je maakt een lijst van waarden en definieert in het informatiemodel dat deze lijst van toegestane waarden het domein is van een kenmerk. Maar er zijn vele keuzes te maken. In MIM zijn er bijvoorbeeld drie verschillende manieren om een waardelijst te modelleren. Er is vaak, mogelijk ook in de SOR, de wens om een hiërarchie in de waarden aan te brengen. Sommigen willen in een begrippenkader gedefinieerde begrippen als waarde hergebruiken, anderen juist niet. En dan zijn er nog vragen rondom beheer, zoals: zijn de waardelijsten onderdeel van hetzelfde beheerregime als het informatiemodel, of kunnen ze wijzigen zonder dat het informatiemodel wijzigt? Is de beheerder van het informatiemodel ook de beheerder van de waardelijst?
+
 ### Waardelijsten in geo-informatiemodellering
 
-Dit document geeft een overzicht van hoe waardelijsten worden gemodelleerd in informatiemodellen in het geo-domein, zowel internationaal (in INSPIRE context) als nationaal (in IMGeo, dat conform NEN3610 is gemodelleerd). 
+We zijn gestart met een inventarisatie van de modelleerwijze van waardelijsten in informatiemodellen in het geo-domein, zowel internationaal (in ISO en in INSPIRE context) als nationaal (in IMGeo, dat conform NEN3610 is gemodelleerd). 
 
 #### ISO 19103: Geographic information - Conceptual schema language
 Deze standaard is het fundament onder de modelleerwijze die wordt gevolgd in het geo-domein bij het maken van informatiemodellen. Denk hierbij onder andere aan de informatiemodellen van INSPIRE. In Nederland is NEN 3610 hier op gebaseerd, waar de Nederlandse sectormodellen in het geo-domein weer op zijn gebaseerd. Een voorbeeld hiervan is IMGeo, het informatiemodel voor de BGT.
 
-We baseren ons op ISO 19103:2015. In ISO 19103 heb je twee modelelementen die je zou kunnen gebruiken voor waardelijsten: `Enumeration` en `Codelist`. 
+We baseren ons op ISO 19103:2015 [[iso-19103-2015]]. In deze standaard heb je twee modelelementen die je zou kunnen gebruiken voor waardelijsten: `Enumeration` en `Codelist`. 
 
 **Enumeration**
 
-Binnen ISO 19103 is een Enumeration een
+Binnen ISO 19103 is een Enumeration een:
 
 > list of valid mnemonic identifiers. Attributes of an enumerated type shall take values only from this list.
 
-en 
+Bovendien wordt gezegd: 
 
-> As the values of enumerated types are concepts, each value shall have a definition for the value.
+> As the values of enumerated types are concepts, each value shall have a definition for the value.<br/>
 > NOTE Values of enumerated types that have overlapping meanings or with some internal structure can be further described in separate tables outside of the UML model.
 
 De toegestane waarden van een enumeratie zijn dus in de ISO 19103 beschouwing concepten, i.e. begrippen. 
@@ -51,7 +53,7 @@ Verder wordt aangeraden om een referentie naar de codelijst in de data op te nem
 
 ####  INSPIRE
 
-De meeste waardelijsten zijn in INSPIRE codelijsten, omdat ze uitgebreid mogen worden door de lidstaten. Alleen als een lijst duidelijk uitputtend is, wordt een enumeratie gebruikt. 
+De meeste waardelijsten zijn in INSPIRE codelijsten (zoals bedoeld in ISO 19103), omdat ze uitgebreid mogen worden door de lidstaten. Alleen als een lijst duidelijk uitputtend is, wordt een enumeratie gebruikt. 
 
 Een waardelijst kan in INSPIRE een eenvoudige set van waarden zijn, maar ook een collectie van waarden met een interne, bijvoorbeeld hiërarchische structuur. In beide gevallen wordt een codelijst gebruikt. 
 
@@ -80,10 +82,14 @@ Een voorbeeld van INSPIRE GML data met een codelijst waarde:
 
 `au:nationalLevel` is in dit voorbeeld een gegeven van een instantie van  `AdministrativeUnit`, vergelijkbaar met het NEN3610 concept Registratief Gebied. Het gaat hier om de administratieve eenheid Nederland. 
 
-`
-<au:nationalLevel xlink:href="http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/1stOrder" xlink:title="1stOrder"></au:nationalLevel>`
+<pre>
+&lt;au:nationalLevel 
+        xlink:href="http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/1stOrder" 
+        xlink:title="1stOrder">
+&lt;/au:nationalLevel>
+</pre>
 
-Meer lezen: [WeTransform blog over INSIPRE Codelists](https://www.wetransform.to/news/2021/07/26/INSPIRE-codelists/).
+Meer lezen: [WeTransform blog over INSPIRE Codelists](https://www.wetransform.to/news/2021/07/26/INSPIRE-codelists/).
 
 ####  IMGeo
 
@@ -91,15 +97,15 @@ Het IMGeo informatiemodel is ontwikkeld in 2010 - 2012 voordat MIM bestond en to
 
 **Model**
 
-In het UML model van IMGeo worden alle waardelijsten als codelist gedefinieerd. De waarden zijn IN het model gedefiniëerd, omdat het belangrijk was om de waardelijsten onder hetzelfde release management / beheer regime te hebben als de rest van het informatiemodel. Als een waardelijst waarde wijzigt, betekent dit een wijziging van het informatiemodel en dus een nieuwe versie van de IMGeo standaard. Omdat er toen nog geen goede manier voorhanden was om waardelijsten buiten het model te beheren, is ervoor gekozen ze onderdeel van het UML model te maken. 
+In het UML model van IMGeo worden alle waardelijsten als codelist gedefinieerd. De waarden zijn IN het model gedefiniëerd, omdat het belangrijk was om de waardelijsten onder hetzelfde beheer regime te hebben als de rest van het informatiemodel. Als een waardelijst waarde wijzigt, betekent dit een wijziging van het informatiemodel en dus een nieuwe versie van de IMGeo standaard. Ook omdat er toen nog geen goede tooling voorhanden was om waardelijsten buiten het model te beheren, en ze niet erg omvangrijk waren, is ervoor gekozen ze onderdeel van het UML model te maken. 
 
 **Implementatie in GML**
 
-Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
+Uit het informatiemodel wordt een GML Application schema gegenereerd plus een bestand in RDF-XML serialisatie dat alle waardelijsten en -waardes bevat, uitgedrukt in de SKOS [[skos-reference]] vocabulaire. Deze SKOS waardelijsten zijn [gepubliceerd](https://register.geostandaarden.nl/waardelijst/imgeo/20140401/) in het [technisch register van Geonovum](https://register.geostandaarden.nl). 
 
-Er is voor SKOS gekozen omdat de OGC GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar middels de SKOS vocabulaire moesten worden uitgedrukt. 
+Er is voor SKOS gekozen omdat de OGC GML werkgroep rond die tijd had bepaald dat externe waardelijsten niet meer als `gml:Dictionary`, maar bij voorkeur middels RDF, bijvoorbeeld met de SKOS vocabulaire moesten worden uitgedrukt. 
 
-Uit GML 3.3 (2012): 
+Uit GML 3.3 (2012) [[GML3.3]]: 
 > Definition and Dictionary encoding is part of the GML schema as a stop-gap, pending the availability of a suitable general purpose dictionary model. Since the GML Dictionary schema was developed, standards on
 this topic within the semantic web community have emerged and matured. In particular best-practice is to
 generally use URIs for referring to items in vocabularies, and RDF (OWL, SKOS) for encoding their
@@ -115,7 +121,12 @@ Het type specificeert dat je de term als string opneemt met een XML attribuut `c
 
 In IMGeo ziet dat er zo uit in de data: 
 
-`<imgeo:plus-type codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1#TypeBakPlus">afval apart plaats</imgeo:plus-type>`
+<pre>
+&lt;imgeo:plus-type 
+        codeSpace="http://www.geostandaarden.nl/imgeo/def/2.1#TypeBakPlus">
+        afval apart plaats
+&lt;/imgeo:plus-type>
+</pre>
 
 Uit de tekst van GML 3.3. blijkt dat INSPIRE hierin de juiste keuze heeft gemaakt door `gml:ReferenceType` te gebruiken in plaats van `gml:CodeType`: 
 > `gml:CodeType` is a generalized type to be used for assigning a term, keyword or
@@ -146,26 +157,31 @@ De correcte werkwijze, volgens de geldende geo-standaarden is:
 #### Visie op waardelijsten
 
 IMSOR hanteert de volgende visie op waardelijsten:
-- Een waardelijst beperkt het waardebereik voor een type tot een gespecificeerde set waarden.
-- Mogelijke (waarde)types
-     - Objecttypes (Landenlijst, Gemeentelijst etc)
-        - Gebruik wanneer mogelijk. Introduceert mogelijkheid voor directe koppeling voor gebruik in samenhang
-    - Concepten (Statussen, Gebruiksdoelen, Typeringen etc)
-        - Gebruik wanneer nodig. Versimpelt informatiemodellen, maar behoudt nog steeds mogelijkheid voor samenhangend gebruik.
+<ul>
+  <li>Een waardelijst beperkt het waardebereik voor een type tot een gespecificeerde set waarden.</li>
+  <li>Mogelijke (waarde)types
+  <ul>
+    <li>Objecttypes (Landenlijst, Gemeentelijst etc)<br/>
+    Gebruik wanneer mogelijk. Introduceert mogelijkheid voor directe koppeling voor gebruik in samenhang</li>
+    <li>Concepten (Statussen, Gebruiksdoelen, Typeringen etc)<br/>
+    Gebruik wanneer nodig. Versimpelt informatiemodellen, maar behoudt nog steeds mogelijkheid voor samenhangend gebruik.</li>
+  </ul></li></ul>
 
 #### Requirements
 
-- Model voor waardelijsten (de gegevensstructuur van een waarde) moet bekend zijn.
-  *Rationale*: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
+<ul>
+  <li>Model voor waardelijsten (de gegevensstructuur van een waarde) moet bekend zijn.<br/>
+  <em>Rationale</em>: We willen kunnen garanderen dat we een waarde voldoende kunnen beschrijven voor het gebruik in samenhang. 
   Bij waardelijst van objecten en concepten moet er voldoende informatie van objecten beschikbaar zijn voor het doel van de waardelijst.
-  Daarnaast moet het aanknopingspunt voor samenhangend gebruik bieden
-		
-- De inhoud van de waardelijst moet kunnen veranderen zonder dat het informatiemodel verandert.
-  *Rationale*: Waardelijsten kunnen veranderen, zonder dat dit de structuur van het gegevensmodel verandert. Deze moeten onafhankelijk van elkaar kunnen ontwikkelen.
+  Daarnaast moet het aanknopingspunt voor samenhangend gebruik bieden.</li>
+  <li>De inhoud van de waardelijst moet kunnen veranderen zonder dat het informatiemodel verandert.<br/>
+  <em>Rationale</em>: Waardelijsten kunnen veranderen, zonder dat dit de structuur van het gegevensmodel verandert. Deze moeten onafhankelijk van elkaar kunnen ontwikkelen.</li>
+</ul>
 
-**WENS**: Waardelijsten moeten hierarchisch / taxonomisch gebruik ondersteunen
 
 #### Hierarchisch gebruik waardelijsten
+
+<strong>WENS</strong>: Waardelijsten moeten hierarchisch / taxonomisch gebruik ondersteunen.
 
 <aside class='example'>
 Voorbeeld:
@@ -199,6 +215,8 @@ Levert:
 
 #### Waardelijsten in MIM
 
+[[MIM]] specificeert de volgende drie modelleerconstructen waarmee je waardelijsten zou kunnen modelleren: 
+
 *Enumeratie*
 
 Een datatype waarvan de mogelijke waarden limitatief zijn opgesomd in een statische lijst.
@@ -211,59 +229,64 @@ De representatie van een lijst met een opsomming van de mogelijke domeinwaarden 
 
 De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat geen kenmerken, voor alle kenmerken wordt verwezen naar de specificatie van de externe waardelijst.
 
-
-#### Metagegeven: Indicatie classificerend
+Daarnaast definieert MIM een voor waardelijsten relevant metagegeven: de **Indicatie classificerend**.
 
 Deze indicatie betekent dat een attribuutsoort het objecttype waar het bijhoort classificeert in (sub)typen.
 
-Een objecttype kan middels een attribuutsoort geclassificeerd worden in subtypen. Bijvoorbeeld: type gebouw. Een toren, kerk, bunker, zwembad zijn allemaal typen gebouwen. In een model op niveau 2 kunnen dergelijke typen als objecttypen en specialisaties van het objecttype gebouw zijn gemodelleerd. Met name op niveau 3 kan het relevant zijn om deze informatie daadwerkelijk te structureren door expliciet een aspect op te nemen waarmee direct het type gebouw kan worden vastgelegd, los van de modellering van objecttypen.
+Een objecttype kan middels een attribuutsoort geclassificeerd worden in subtypen. Bijvoorbeeld: type gebouw. Een toren, kerk, bunker, zwembad zijn allemaal typen gebouwen. In een model op MIM niveau 2 kunnen dergelijke typen als objecttypen en specialisaties van het objecttype gebouw zijn gemodelleerd. Met name op niveau 3 kan het relevant zijn om deze informatie daadwerkelijk te structureren door expliciet een aspect op te nemen waarmee direct het type gebouw kan worden vastgelegd, los van de modellering van objecttypen.
 
 #### SOR Waardelijsten
 
 De MIM Referentielijst past het beste, want 
-- De gegevensstructuur is beschreven in informatiemodel
+- De gegevensstructuur is beschreven in het informatiemodel
 - Het is mogelijk om een samenvattende representatie van een objecttype te gebruiken
-- Het beheer van de inhoud van de lijst staat los van informatiemodel
+- Het beheer van de inhoud van de lijst staat los van het informatiemodel
 
 Er worden twee soorten lijsten voorzien:
 1. Waardelijst van objecten (instanties van Objecttype) uit een andere dataset.
         
-        Bijvoorbeeld de lijst van alle Nederlandse Gemeentes (Openbaar Lichaam)
+        Bijvoorbeeld de lijst van alle Nederlandse Gemeentes (Openbaar Lichaam).
 
         Eis: Deze dataset moet ook voldoen aan SOR-stelsel eisen voor identificatie, historie, etc.
 2. Waardelijst van concepten
         
-        Bijvoorbeeld een lijst met statussen; Een lijst met gebruiksdoelen.
-        
-        Bijvoorbeeld eEen categoriserende lijst van Gebouwtypes.
+        Bijvoorbeeld een lijst met statussen; een lijst met gebruiksdoelen, een categoriserende lijst van Gebouwtypes.
 
 #### Waardelijsten van concepten op basis van SKOS
 
 Waarom kiezen we voor SKOS?
-- Wordt breed toegepast voor dit doeleinde
-- SKOS biedt een standaardmodel voor het modelleren van Concepten
-        - Concept
-        - Code / Techniche notatie
-        - Definitie
-        - Term 
-        - Etc.
-- SKOS biedt een standaardmodel voor hierarchie / taxonomie van concepten
-        - Concept
-        - Broader
-        - Narrower
-        - Etc.
-- SKOS biedt een standaardmodel om samenhang van concepten uit verschillende contexten uit te drukken
-        - Concept
-        - exactMatch
-        - broaderMatch
-        - narrowerMatch
-        - Etc.
+<ul>
+  <li>Wordt breed toegepast voor dit doeleinde, o.a. in INSPIRE, IMGeo, en andere geo-informatiemodellen.</li>
+  <li>SKOS biedt een standaardmodel voor het modelleren van Concepten
+    <ul>
+      <li>Concept</li>
+      <li>Code / Techniche notatie</li>
+      <li>Definitie</li>
+      <li>Term </li>
+      <li>Etc.</li>
+     </ul></li>
+  <li>SKOS biedt een standaardmodel voor hierarchie / taxonomie van concepten
+    <ul>
+      <li>Concept</li>
+      <li>Broader</li>
+      <li>Narrower</li>
+      <li>Etc.</li>
+    </ul></li>
+  <li>SKOS biedt een standaardmodel om samenhang van concepten uit verschillende contexten uit te drukken
+    <ul>
+      <li>Concept</li>
+      <li>Exact match</li>
+      <li>Broader match</li>
+      <li>Narrower match</li>
+      <li>Etc.</li>
+    </ul></li>
+</ul>
 
 #### Beheeraspecten bij waardelijst van concepten
 
 Beheer van waardelijsten staat los van beheer van begrippen in een begrippenkader.
 
 Aanpak:
-- 1 conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie.
-- Historie op concept / waarde-niveau conform NEN 3610
-Waarde-concepten kunnen met SKOS matching relaties gerelateerd worden aan een algemeen SOR begrippenkader. 
+- Eén SKOS conceptschema voor waardes in waardelijsten, horende bij het informatiemodel. Voor elke waardelijst een collectie. Hoewel SKOS wordt gebruikt, net zoals in het DisGeo begrippenkader, worden de begrippen uit het kader niet hergebruikt in waardelijsten. Dit omdat het beheer van het begrippenkader los moet staan van het beheer van de waardelijsten.
+- Historie op concept / waarde-niveau zoals beschreven in de nieuwe NEN 3610 versie [[NEN3610-2021-ontw]].
+- Waarde-concepten kunnen met SKOS matching relaties gerelateerd worden aan het algemene SOR begrippenkader. 

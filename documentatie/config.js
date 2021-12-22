@@ -200,6 +200,14 @@ var respecConfig =
       date:       "2008-12",
       publisher:  "ISO/IEC",
     },
+    "GML3.3":
+    {
+      title:      "OGC® Geography Markup Language (GML) - Extended schemas and encoding rules ",
+      href:       "https://portal.ogc.org/files/?artifact_id=46568",
+      status:     "International standard",
+      date:       "2012 –02-07",
+      publisher:  "OGC",
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
