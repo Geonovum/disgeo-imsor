@@ -39,14 +39,14 @@ function custGHPG(respecConfig)
 var respecConfig = 
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  //specStatus: "GN-BASIS",             // Basis Document
-  specStatus: "GN-WV",              // Werk Versie
+  specStatus: "GN-BASIS",             // Basis Document
+  //specStatus: "GN-WV",              // Werk Versie
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                   // Norm
-  specType: "ST",                   // Standaard
+  //specType: "ST",                   // Standaard
   //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijkrichtlijn
   //specType: "HR",                   // HandReiking
@@ -62,7 +62,7 @@ var respecConfig =
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/geonovum/disgeo-imsor/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/disgeo-imsor/documentatie",
+  edDraftURI: "https://geonovum.github.io/disgeo-imsor/documentatie",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
