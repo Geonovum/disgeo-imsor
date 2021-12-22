@@ -1,12 +1,6 @@
 ## Waardelijsten
 
-Zie 
-- de uitwerking in https://github.com/Geonovum/disgeo-imsor/tree/master/issues/19-waardelijsten
-- https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/2021103-disgeo-expertgroep-waardelijsten.pdf
-- https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/03-11-2021-expertgroepvergadering-waardelijsten-imsor.pdf
-
-
-Het modelleren van waardelijsten lijkt op het eerste gezicht eenvoudig: je maakt een lijst van waarden en definieert in het informatiemodel dat deze lijst van toegestane waarden het domein is van een kenmerk. Maar er zijn vele keuzes te maken. In MIM zijn er bijvoorbeeld drie verschillende manieren om een waardelijst te modelleren. Er is vaak, mogelijk ook in de SOR, de wens om een hiërarchie in de waarden aan te brengen. Sommigen willen in een begrippenkader gedefinieerde begrippen als waarde hergebruiken, anderen juist niet. En dan zijn er nog vragen rondom beheer, zoals: zijn de waardelijsten onderdeel van hetzelfde beheerregime als het informatiemodel, of kunnen ze wijzigen zonder dat het informatiemodel wijzigt? Is de beheerder van het informatiemodel ook de beheerder van de waardelijst?
+Het modelleren van waardelijsten lijkt op het eerste gezicht eenvoudig: je maakt een lijst van waarden en definieert in het informatiemodel dat deze lijst van toegestane waarden het domein is van een kenmerk. Maar er zijn vele keuzes te maken. In MIM zijn er drie verschillende manieren om een waardelijst te modelleren. Er is vaak, mogelijk ook in de SOR, de wens om een hiërarchie in de waarden aan te brengen. Sommigen willen in een begrippenkader gedefinieerde begrippen als waarde hergebruiken, anderen juist niet. En dan zijn er nog belangrijke vragen rondom beheer, zoals: zijn de waardelijsten onderdeel van hetzelfde beheerregime als het informatiemodel, of kunnen ze wijzigen zonder dat het informatiemodel wijzigt? Is de beheerder van het informatiemodel ook de beheerder van de waardelijst?
 
 ### Waardelijsten in geo-informatiemodellering
 
@@ -31,7 +25,7 @@ Bovendien wordt gezegd:
 De toegestane waarden van een enumeratie zijn dus in de ISO 19103 beschouwing concepten, i.e. begrippen. 
 - Zie ISO definitie van [concept](https://isotc211.geolexica.org/concepts/64/), [value](https://isotc211.geolexica.org/concepts/489/) en [value domain](https://isotc211.geolexica.org/concepts/490/).
 
-Enumeraties worden cf ISO 19103 gedefineerd in UML als een klasse, waarbij de attributen de toegestane waarden representeren. Daarbij geldt de naamgevingsconventie voor attribuutnamen; de gegeven naam zou 'mnemonic' i.e. goed te herinneren moeten zijn of een naam die breed geaccepteerd is. 
+Enumeraties worden conform ISO 19103 gedefineerd in UML als een klasse, waarbij de attributen de toegestane waarden representeren. Daarbij geldt de naamgevingsconventie voor attribuutnamen; de gegeven naam zou 'mnemonic' i.e. goed te herinneren moeten zijn of een naam die breed geaccepteerd is. 
 
 Het wordt aangeraden om geen betekenisloze namen te gebruiken voor de waardelijst waarden, ook niet als de waardes buiten het model nader beschreven worden. Om de concepten begrijpelijk te maken wordt het wel aangeraden om labels en definities in natuurlijke taal aan het concept toe te voegen, ofwel in het UML model, ofwel daarbuiten.
 
