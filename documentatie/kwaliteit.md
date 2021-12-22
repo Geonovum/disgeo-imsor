@@ -16,7 +16,7 @@ Voorbeeld van gegevenskwaliteit: de positionele nauwkeurigheid van een bij een i
 
 </aside>
 
-Vanuit de Architectuurvisie wordt [het volgende gezegd](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) over gegevenskwaliteit:
+Vanuit de Architectuurvisie van DisGeo wordt [het volgende gezegd](https://docs.geostandaarden.nl/disgeo/vv-al-arch-20210216/#gegevenskwaliteit) over gegevenskwaliteit:
 - Het doel van de component Gegevenskwaliteit is om de afgesproken kwaliteitsindicatoren vast te leggen, te meten en monitoren wat de waarde van deze indicatoren is en zowel de indicatoren als de gemeten waarden beschikbaar te stellen voor bronhouders, afnemers en andere betrokkenen, zoals toezichthouders en beleidsverantwoordelijken.
 - Met kwaliteitsindicatoren kan de algehele kwaliteit van de opgeslagen gegevens gemonitord worden. De opslag bevat naast de feitelijke gegevens ook proces- en metagegevens (zie opslag). Dit betekent dat de kwaliteitsindicatoren naast de kwaliteit van de gegevens zelf ook resultaten kunnen geven over bijvoorbeeld gemiddelde duur van verwerking door bronhouder (procesgegevens) of meta-gegevens van de gegevens zelf.
 
@@ -99,7 +99,7 @@ Hoewel een kwaliteitsraamwerk heel generiek kan zijn (procesgegevens, systeem-af
 ### Datakwaliteit in de SOR
 
 
-#### Informatiemodel niveau
+#### Datakwaliteit op informatiemodel-niveau
 
 *Eisen*
 
@@ -125,7 +125,7 @@ Hoewel een kwaliteitsraamwerk heel generiek kan zijn (procesgegevens, systeem-af
 | Nauwkeurigheid  | Bij de uitwerking van de inhoud van de samenhangende  objectenregistratie wordt voor de verschillende objecttypen bepaald wat de  kleinste geometrische/cartografische eenheid is die nog van belang is voor  meerdere gebruikers van de registratie. |  | consistentie (homogeneiteit) / juistheid|
 | Bronverwijzing  | vastleggen in welke gevallen men een verwijzing moet opnemen  naar een bron(document)  |  | compleetheid  |
 
-#### Object/Attribuut niveau
+#### Datakwaliteit op object- en attribuutniveau
 
 *Eisen*
 
