@@ -206,7 +206,14 @@ var respecConfig =
       href:       "https://portal.ogc.org/files/?artifact_id=46568",
       status:     "International standard",
       date:       "2012 –02-07",
-      publisher:  "OGC",
+      publisher:  "ISO/IEC",
+    },
+    "NEN3610-2021-ontw": {
+      title: "Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      href: "https://www.nen.nl/nen-3610-2021-ontw-nl-287554",
+      status: "Ontwerp",
+      publisher: "NEN",
+      date: "2021-10-01"
     },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
