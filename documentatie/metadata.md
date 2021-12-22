@@ -277,7 +277,7 @@ De [[EMSO]] stelt eisen aan de bronverwijzing als metadata van informatieobjecte
 
 Gezien deze eisen is het van belang om een modelleerpatroon te formuleren voor het vastleggen van metadata voor brongegevens, opdat dit voor alle informatieobjecten in de SOR op een standaardmanier kan worden toegepast.
 
-Naast de eisen in [[EMSO]], zijn er ook modelleerprincipes geformuleerd in [[MPSOR]] die er voor zorgen dat het object centraal wordt gesteld, zodat samenhang gerealiseerd kan worden.
+Naast de eisen in [[EMSO]], zijn er ook modelleerprincipes geformuleerd in [[MODPR]] die er voor zorgen dat het object centraal wordt gesteld, zodat samenhang gerealiseerd kan worden.
 Eén van de [modelleerrichtlijnen](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#r1-scheidt-registratie-bron-en-herkomstmetadata-van-directe-eigenschappen) luidt:
 
 > Scheidt registratie-, bron- en herkomstmetadata van directe eigenschappen
