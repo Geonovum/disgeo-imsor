@@ -29,13 +29,7 @@ img#Geonovum
 /*-- Definite van BlockQuotes (uitgelichte tekstblokken) ----------------------------*/
 blockquote 
 {
-  /* margin-left: 20px !important; */
-  font-family:  'Esteban', serif !important;
-  font-style: italic;
-  border-color: transparent !important;
-  border-style: none !important;
-  background-color: darkgray;
-  color: white;
+  background-color: rgb(245, 245, 245);
 }
 
 /*-- Optioneel een symbool voor de blockquote --------------------------------------*/
