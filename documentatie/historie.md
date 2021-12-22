@@ -10,6 +10,10 @@ Om samenhang tussen objecten optimaal mogelijk te maken wordt een duidelijk onde
 
 Het scheiden van object en registratiegegevens komt voort uit de door ons opgestelde modelleerprincipes [[MODPR]]. Met name [principe 3](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#p3-alleen-directe-eigenschappen) legt uit dat dit nodig is om gegevens goed in samenhang te kunnen gebruiken. 
 
+<aside class="issue">
+  Dit weglaten of nuanceren. Gebruik van gevensgroepen zijn nog in tegenstrijd met onze modelleerprincipes. Gebruik in de high5 is puur pragmatisch.
+</aside>
+
 Er is een tweede optie die object en registratiegegevens iets minder streng scheidt, door de registratiegegevens in een gegevensgroep te zetten. Deze variant wordt beproefd in de High-5 van begin 2022: 
 
 ![Object met registratiegegevens als gegevensgroep](media/historie-1.png)
@@ -20,7 +24,7 @@ Hoewel historie op objectniveau, met twee verschillende tijdslijnen, al lastig g
 
 Historie op gegevensniveau is nodig voor (schatting) 10% van de use cases, waaronder WOZ, waar men per gegeven de historie en andere metagegevens wil kunnen zien. Het zorgt echter voor een complexer semantisch model en datastructuur – hoe hou je dit weg bij de andere 90% van het gebruik?
 
-Allereerst hebben we geprobeerd duidelijker te krijgen wat de functionele eis precies was: gaat het erom metadata inclusieef historie, over de *gegevens* (i.e. de waardes van attributen) van een object vast te leggen, zoals nodig is bij attributen die meerdere waardes kunnen krijgen (bv `gebruiksdoel` van `Gebouw` )? Of is het voldoende om historie op attribuutniveau vast te leggen? 
+Allereerst hebben we geprobeerd duidelijker te krijgen wat de functionele eis precies was: gaat het erom metadata inclusief historie, over de *gegevens* (i.e. de waardes van attributen) van een object vast te leggen, zoals nodig is bij attributen die meerdere waardes kunnen krijgen (bv `gebruiksdoel` van `Gebouw` )? Of is het voldoende om historie op attribuutniveau vast te leggen?
 
 **Fictief voorbeeld feitelijk gebruik van een willekeurig object:**
 
@@ -42,6 +46,11 @@ Van|Tot|waarde
 1-4-2020|1-3-2021|wonen
 
 We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er in de expertgroep geen duidelijke voorkeursoptie was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren om de argumenten voor een keuze te kunnen leveren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, te verantwoorden is. Optie C is in ieder geval niet toereikend als historie op gegevensniveau vereist is.
+
+
+<aside class="issue">
+  Waarom is optie C niet toereikend? Of wordt hier optie B bedoeld?
+</aside>
 
 ## Historie casus "Informatiemodel Boom"
 
