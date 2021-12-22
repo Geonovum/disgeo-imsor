@@ -6,17 +6,9 @@ Zoals gespecificeerd in [[EMSO]] worden zowel de tijdslijn geldigheid als de tij
 
 Om samenhang tussen objecten optimaal mogelijk te maken wordt een duidelijk onderscheid gemaakt tussen gegevens over objecten in ‘werkelijkheid’ en gegevens over de registratie van objecten in het model. Ook historiegegevens zijn daarom gescheiden van het object zelf. 
 
-![Object en registratiegegevens als objecttype](media/historie-2.png)
+![Object en registratiegegevens als objecttype](media/historie-1.png)
 
 Het scheiden van object en registratiegegevens komt voort uit de door ons opgestelde modelleerprincipes [[MODPR]]. Met name [principe 3](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#p3-alleen-directe-eigenschappen) legt uit dat dit nodig is om gegevens goed in samenhang te kunnen gebruiken. 
-
-<aside class="issue">
-  Dit weglaten of nuanceren. Gebruik van gevensgroepen zijn nog in tegenstrijd met onze modelleerprincipes. Gebruik in de high5 is puur pragmatisch.
-</aside>
-
-Er is een tweede optie die object en registratiegegevens iets minder streng scheidt, door de registratiegegevens in een gegevensgroep te zetten. Deze variant wordt beproefd in de High-5 van begin 2022: 
-
-![Object met registratiegegevens als gegevensgroep](media/historie-1.png)
 
 ## Historie op attribuut- of gegevensniveau
 
@@ -36,7 +28,6 @@ Van|Tot|waarde
 
 Volledig uitmodelleren van historie op gegevensniveau is niet per sé noodzakelijk. Historie op attribuutniveau, waarbij er sprake is van perioden waarin een bepaalde combinatie van waarden hoort bij een attribuut, is wellicht al voldoende. Als de combinatie verandert, dan verandert er iets in de historie:
 
-
 Van|Tot|waarde
 ---|---|------
 1-1-2005|1-1-2010|wonen
@@ -45,12 +36,7 @@ Van|Tot|waarde
 1-11-2019|1-4-2020|wonen, bijeenkomsten
 1-4-2020|1-3-2021|wonen
 
-We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties. Een keuze is uiteindelijk niet gemaakt, deels omdat er in de expertgroep geen duidelijke voorkeursoptie was en deels omdat de use cases voor historie (en andere metadata) op gegevensniveau niet duidelijk genoeg waren om de argumenten voor een keuze te kunnen leveren. Het is daarom ook nog de vraag of de extra complexiteit, die met elk van deze opties geïntroduceerd wordt, te verantwoorden is. Optie C is in ieder geval niet toereikend als historie op gegevensniveau vereist is.
-
-
-<aside class="issue">
-  Waarom is optie C niet toereikend? Of wordt hier optie B bedoeld?
-</aside>
+We hebben om grip te krijgen op deze problematiek een casus uitgewerkt in verschillende modelleeropties die in [](#historie-casus-informatiemodel-boom) te vinden zijn. Deze modelleeropties zijn door de expertgroep DiSGeo informatiemodellering nauwgezet overwogen. Daarbij kwam naar voren dat optie A en C vergelijkbaar waren, waarbij optie C uiteindelijk de voorkeur van de expertgroep kreeg. Wel bleek hierbij dat optie C niet toereikend is als historie op gegevensniveau vereist is, in het specifieke geval dat een gegeven meerdere keren voor kan komen (zoals bij het voorbeeld in de tabel hierboven). 
 
 ## Historie casus "Informatiemodel Boom"
 
