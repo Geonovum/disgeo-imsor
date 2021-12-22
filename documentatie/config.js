@@ -215,6 +215,13 @@ var respecConfig =
       publisher: "NEN",
       date: "2021-10-01"
     },
+    "UOI-ontw": {
+      title: "UOI Ontwerp",
+      href: "https://www.nen.nl/nen-3610-2021-ontw-nl-287554",
+      status: "Consultatieversie",
+      publisher: "Geonovum",
+      date: "2021-04-20"
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
