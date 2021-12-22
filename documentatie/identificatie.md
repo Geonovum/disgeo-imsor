@@ -114,6 +114,6 @@ Het UOI ontwerp [stelt](https://geonovum.github.io/UOI-Ontwerp/#object-versus-in
 
 Deze stelling introduceert een aantal incompatibiliteiten met de uitgangspunten voor identificatie in de SOR. Het koppelen van identificatie aan informatieobjecten en niet aan de objecten waar de informatieobjecten over gaan, maakt dat een identificatie niet gelijk kan blijven tijdens de levensloop van een object.
 
-Daarnaast stelt het UOI ontwerp dat er geen semantische harmonisatie zal plaatsvinden bij het introduceren van de UOI, maar dat er een verwantschap tussen informatieobjecten gerealiseerd gaat worden. Het is echter onduidelijk hoe dit in zijn werk zal gaan. Ook is dit tegenstrijdig met de aanpak die gehanteerd wordt voor de SOR, waar semantische harmonisatie centraal staat en daarmee ook tegenstrijdig met de IMSOR modelleerprincipes, waaronder [P2 van de IMSOR modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#p2-objecttypes-zijn-relateerbaar-en-herbruikbaar). [[MODPR]]
+Daarnaast stelt het UOI ontwerp dat er geen semantische harmonisatie zal plaatsvinden bij het introduceren van de UOI, maar dat er een verwantschap tussen informatieobjecten gerealiseerd gaat worden. Het is echter onduidelijk hoe dit in zijn werk zal gaan. Ook is dit tegenstrijdig met de aanpak die gehanteerd wordt voor de SOR, waar semantische harmonisatie centraal staat en daarmee tegenstrijdig met de IMSOR modelleerprincipes, waaronder [P2 van de IMSOR modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#p2-objecttypes-zijn-relateerbaar-en-herbruikbaar). [[MODPR]]
 
-Vanwege bovenstaande onduidelijkheden is dit scenario is niet verder uitgewerkt.
+Vanwege bovenstaande onduidelijkheden is dit scenario niet verder uitgewerkt.
