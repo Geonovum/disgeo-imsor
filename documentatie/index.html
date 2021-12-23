@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang='nl'>
-  <!-- HTML-Header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <head>
-        <meta charset='utf-8'>
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <!-- File. . . :  index.html                                                                 -->
-        <!-- Bevat . . :  Template voor de index.html die verplicht is voor respec                   -->
-        <!--              Gebaseerd op https://github.com/Geonovum/respec/wiki                       -->
-        <!--              Deze file moet worden neergezet in de root-directory van de                -->
-        <!--              betreffende standaard.                                                     -->
-        <!-- Door. . . :  Jan van Gelder                                                             -->
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <!-- Log . . . :  20181015 - JvG - Initiele versie                                           -->
-        <!-- - - - - - - -20191022 - IE - ReSpec file Handreiking Archiveren ruimtelijke plannen     -->
-		<!-- - - - - - - - - - - - - - - -                          -  - - - - - - - - - - - - - - - -->
+<!-- HTML-Header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <!-- meta tags - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <meta content="text/html; charset=utf-8" http-equiv="content-type">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Invullen: de titel van de standaard of het document - - - - - - - - - - - - - - - - - - -->
-        <title>Overzicht generieke onderwerpen voor DisGeo informatiemodellering</title>    
+<head>
+  <meta charset='utf-8'>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- File. . . :  index.html                                                                 -->
+  <!-- Bevat . . :  Template voor de index.html die verplicht is voor respec                   -->
+  <!--              Gebaseerd op https://github.com/Geonovum/respec/wiki                       -->
+  <!--              Deze file moet worden neergezet in de root-directory van de                -->
+  <!--              betreffende standaard.                                                     -->
+  <!-- Door. . . :  Jan van Gelder                                                             -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Log . . . :  20181015 - JvG - Initiele versie                                           -->
+  <!-- - - - - - - -20191022 - IE - ReSpec file Handreiking Archiveren ruimtelijke plannen     -->
+  <!-- - - - - - - - - - - - - - - -                          -  - - - - - - - - - - - - - - - -->
 
-        <!-- Kan hier een 'ondertitel' tag worden gemaakt? -->
-		
-        <!-- Invullen: de naam van de lokale CSS file  - - - - - - - - - - - - - - - - - - - - - - - -->
-        <link rel="stylesheet" type="text/css" href="./media/Geonovumstyle.css">
-		<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
-        <script class="remove" src="./config.js"></script>
-        <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
-        <link rel="stylesheet" type="text/css" href="media/tab-style.css?">
-        <script>
-            function tabs() {
-              // store tabs variable
-              var theTabs = document.querySelectorAll("ul.nav-tabs > li");
-        
-              function theTabClicks(tabClickEvent) {
-                  var clickedTab = tabClickEvent.currentTarget;
-                  var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
-                  var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
-                  for (var i = 0; i < theTabs.length; i++) {
-                      theTabs[i].classList.remove("active");
-                  }
-        
-                  clickedTab.classList.add("active");
-                  tabClickEvent.preventDefault();
-                  var contentPanes = tabParent.querySelectorAll(".tab-pane");
-                  for (i = 0; i < contentPanes.length; i++) {
-                      contentPanes[i].classList.remove("active");
-                  }
-                  var anchorReference = tabClickEvent.target;
-                  var activePaneId = anchorReference.getAttribute("href");
-                  var activePane = tabParent.querySelector(activePaneId);
-                  activePane.classList.add("active");
-              }
-              for (i = 0; i < theTabs.length; i++) {
-                  theTabs[i].addEventListener("click", theTabClicks)
-              }
-            }
-            if (window.addEventListener) {
-              window.addEventListener("load", tabs, false);
-            } else {
-              window.attachEvent('onload', tabs);
-            }
-          </script>
-          <script type='text/javascript'>
-        
-            (function()
-            {
-              if( window.localStorage )
-              {
-                if( !localStorage.getItem('firstLoad') )
-                {
-                  localStorage['firstLoad'] = true;
-                  window.location.reload();
-                }
-                else
-                  localStorage.removeItem('firstLoad');
-              }
-            })();
-        
-            </script>
-    </head>
-    <!-- HTML-Body - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <body>
-        <section id='abstract' data-format="markdown">Dit document beschrijft de tot nu toe gedane inzichten van het DiSGeo modelleerteam van Geonovum, over de zogenaamde 'generieke onderwerpen' die bij de modellering van de SOR aan bod komen. Het gaat hierbij om algemene zaken als metadata, historie, identificatie, geometrie, enz. </section>
-        <!-- sodt = 'status of this document'. ReSpec genereert automatisch een tekst hierin - - - - -->
-        <!-- op basis van specType en specStatus.- - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <!-- Deze automatische tekst kun je aanvullen door tussen <p></p> iets te typen. - - - - - - -->
-        <section id='sotd'></section>
+  <!-- meta tags - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- vanaf hier per hoofdstuk een sectie of een div in het document- - - - - - - - - - - - - -->
-        <!-- Secties komen in de inhoudsopgave div's niet- - - - - - - - - - - - - - - - - - - - - - -->
-        <!-- Secties hebben verplicht <h2> tags, div's niet- - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Invullen: de titel van de standaard of het document - - - - - - - - - - - - - - - - - - -->
+  <title>Overzicht generieke onderwerpen voor DisGeo informatiemodellering</title>
 
-        <!-- Voorbeelden:- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <!-- <div id='H00' data-format="markdown" data-include="filenaam.md"></div>- - - - - - - - - -->
-        <!-- voor een nieuw hoofdstuk kopieer je een regel, en voegt die toe - - - - - - - - - - - - -->
-        
-        <section data-format="markdown" data-include="overzicht.md"></section>
-        <section data-format="markdown" data-include="metamodellen.md"></section>
-        <section data-format="markdown" data-include="historie.md"></section>
-        <section data-format="markdown" data-include="levensloop.md"></section>
-        <section data-format="markdown" data-include="metadata.md"></section>
-        <section data-format="markdown" data-include="kwaliteit.md"></section>
-        <section data-format="markdown" data-include="waardelijsten.md"></section>
-        <section data-format="markdown" data-include="identificatie.md"></section>
-        <section data-format="markdown" data-include="geometrie.md"></section>
-        <section data-format="markdown" data-include="netwerken.md"></section>
-        
-        <!-- genereer hier een afbeeldingen lijst- - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <!--<section id="tof"><h2>Lijst van afbeeldingen</h2></section> -->
-    </body>
+  <!-- Kan hier een 'ondertitel' tag worden gemaakt? -->
+
+  <!-- Invullen: de naam van de lokale CSS file  - - - - - - - - - - - - - - - - - - - - - - - -->
+  <link rel="stylesheet" type="text/css" href="./media/Geonovumstyle.css">
+  <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
+  <script class="remove" src="./config.js"></script>
+  <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
+  <link rel="stylesheet" type="text/css" href="media/tab-style.css?">
+  
+</head>
+<!-- HTML-Body - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body>
+  <section id='abstract' data-format="markdown">Dit document beschrijft de tot nu toe gedane inzichten van het DiSGeo modelleerteam van Geonovum, over de zogenaamde 'generieke onderwerpen' die bij de modellering van de SOR aan bod komen. Het gaat hierbij om algemene zaken als metadata, historie, identificatie, geometrie, enz. </section>
+  <!-- sodt = 'status of this document'. ReSpec genereert automatisch een tekst hierin - - - - -->
+  <!-- op basis van specType en specStatus.- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Deze automatische tekst kun je aanvullen door tussen <p></p> iets te typen. - - - - - - -->
+  <section id='sotd'></section>
+
+  <!-- vanaf hier per hoofdstuk een sectie of een div in het document- - - - - - - - - - - - - -->
+  <!-- Secties komen in de inhoudsopgave div's niet- - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- Secties hebben verplicht <h2> tags, div's niet- - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- Voorbeelden:- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- <div id='H00' data-format="markdown" data-include="filenaam.md"></div>- - - - - - - - - -->
+  <!-- voor een nieuw hoofdstuk kopieer je een regel, en voegt die toe - - - - - - - - - - - - -->
+
+  <section data-format="markdown" data-include="overzicht.md"></section>
+  <section data-format="markdown" data-include="metamodellen.md"></section>
+  <section data-format="markdown" data-include="historie.md"></section>
+  <section data-format="markdown" data-include="levensloop.md"></section>
+  <section data-format="markdown" data-include="metadata.md"></section>
+  <section data-format="markdown" data-include="kwaliteit.md"></section>
+  <section data-format="markdown" data-include="waardelijsten.md"></section>
+  <section data-format="markdown" data-include="identificatie.md"></section>
+  <section data-format="markdown" data-include="geometrie.md"></section>
+  <section data-format="markdown" data-include="netwerken.md"></section>
+
+  <!-- genereer hier een afbeeldingen lijst- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--<section id="tof"><h2>Lijst van afbeeldingen</h2></section> -->
+  <script>
+    function tabs() {
+      // store tabs variable
+      var theTabs = document.querySelectorAll("ul.nav-tabs > li");
+
+      function theTabClicks(tabClickEvent) {
+        var clickedTab = tabClickEvent.currentTarget;
+        var tabParent = tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+        var theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
+        for (var i = 0; i < theTabs.length; i++) {
+          theTabs[i].classList.remove("active");
+        }
+
+        clickedTab.classList.add("active");
+        tabClickEvent.preventDefault();
+        var contentPanes = tabParent.querySelectorAll(".tab-pane");
+        for (i = 0; i < contentPanes.length; i++) {
+          contentPanes[i].classList.remove("active");
+        }
+        var anchorReference = tabClickEvent.target;
+        var activePaneId = anchorReference.getAttribute("href");
+        var activePane = tabParent.querySelector(activePaneId);
+        activePane.classList.add("active");
+      }
+      for (i = 0; i < theTabs.length; i++) {
+        theTabs[i].addEventListener("click", theTabClicks)
+      }
+    }
+    if (window.addEventListener) {
+      window.addEventListener("load", tabs, false);
+    } else {
+      window.attachEvent('onload', tabs);
+    }
+  </script>
+  <script type='text/javascript'>
+
+    (function () {
+      if (window.localStorage) {
+        if (!localStorage.getItem('firstLoad')) {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+  </script>
+</body>
+
 </html>

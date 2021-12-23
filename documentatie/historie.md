@@ -231,33 +231,38 @@ Het stereotype **«Metadata»** geeft aan dat het informatie-element gegevens be
     </ul>
     <div class="tab-content">
       <div id="tab-informatiemodel-a" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <div class="figure"><img src="media/a-informatiemodel.png" alt="a-informatiemodel"/></div>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <div class="figure"><img src="media/a-informatiemodel.png" alt="a-informatiemodel"/></div>
+          </span>
         </span>
       </div>
       <div id="tab-informatiemodel-b" class="tab-pane">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <div class="figure"><img src="media/b-informatiemodel.png" alt="b-informatiemodel"/></div>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+           <div class="figure"><img src="media/b-informatiemodel.png" alt="b-informatiemodel"/></div>
+          </span>
         </span>
       </div>
       <div id="tab-informatiemodel-c" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <div class="figure"><img src="media/c-informatiemodel.png" alt="c-informatiemodel"/></div>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <div class="figure"><img src="media/c-informatiemodel.png" alt="c-informatiemodel"/></div>
+          </span>
         </span>
       </div>
       <div id="tab-informatiemodel-d-object" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <div class="figure"><img src="media/d-informatiemodel-object.png" alt="d-informatiemodel-object"/></div>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <div class="figure"><img src="media/d-informatiemodel-object.png" alt="d-informatiemodel-object"/></div>
+          </span>
         </span>
       </div>
       <div id="tab-informatiemodel-d-gegevensmeta" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <div class="figure"><img src="media/d-informatiemodel-gegevensmeta.png" alt="d-informatiemodel-gegevensmeta"/></div>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <div class="figure"><img src="media/d-informatiemodel-gegevensmeta.png" alt="d-informatiemodel-gegevensmeta"/></div>
+          </span>
         </span>
       </div>
     </div>
@@ -307,9 +312,9 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-a-xml-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 &lt;bomen&gt;
   &lt;Boom&gt;
     &lt;geregistreerdMet&gt;
@@ -352,13 +357,14 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
   &lt;/Boom&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-xml-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 &lt;gegevens&gt;
    &lt;gegeven&gt;
       &lt;onderwerp&gt;de-witte-kastanje&lt;/onderwerp&gt;
@@ -397,13 +403,14 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
       &lt;/bronhouder&gt;
    &lt;/gegeven&gt;
 &lt;/gegevens&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-xml-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 &lt;bomen&gt;
   &lt;Boom&gt;
     &lt;geregistreerdMet&gt;
@@ -486,7 +493,8 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
   &lt;/Boom&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -507,9 +515,9 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-a-json-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 [
   {
     "geregistreerdMet": {
@@ -548,13 +556,14 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     "monumentaleStatus": "monumentaal"
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-json-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 [
   {
     "onderwerp": "de-witte-kastanje",
@@ -593,13 +602,14 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     }
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-json-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 [
   {
     "geregistreerdMet": {
@@ -678,7 +688,8 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     "monumentaleStatus": "monumentaal"
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -699,9 +710,9 @@ In het voorbeeld zie je steeds twee versie-instanties van dezelfde boom.
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-a-rdf-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -741,13 +752,14 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-rdf-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix s: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#subject&gt; .
 @prefix p: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate&gt; .
@@ -791,13 +803,14 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:uitgevoerdOp &quot;2020-09-16&quot;^^xsd:date ;
   ] ;
 .
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-rdf-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -881,7 +894,8 @@ doc:de-witte-kastanje-v10 {
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -909,9 +923,9 @@ Omdat uitwerking A uitgaat van het kunnen modelleren van een gegeven als onderwe
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-a-rdf-star-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -951,13 +965,14 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-rdf-star-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 @prefix : &lthttp://example.disgeo.nl/id/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
@@ -997,13 +1012,14 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:uitgevoerdOp "2020-09-16"^^xsd:date ;
   ] ;
 .
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-a-rdf-star-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -1084,7 +1100,8 @@ doc:de-witte-kastanje-v10 {
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1108,9 +1125,9 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-xml-object-en-gegevens" class="tab-pane active">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 &lt;Boom&gt;
    &lt;beginGeldigheid&gt;1835-01-01&lt;/beginGeldigheid&gt;
    &lt;boom_aantalBladeren&gt;
@@ -1165,7 +1182,8 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
       &lt;Boomstatus /&gt;
    &lt;/boom_status&gt;
 &lt;/Boom&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1182,9 +1200,9 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-json-object-en-gegevens" class="tab-pane active">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 {
   "beginGeldigheid": "1835-01-01",
   "boom_aantalBladeren" : [
@@ -1224,7 +1242,8 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
   "boom_soort": [ {}, {} ],
   "boom_status": [ {} ]
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1246,9 +1265,9 @@ Het is uiteraard mogelijk om deze af te leiden, maar hiervoor zou een apart uitw
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-b-rdf-object-en-gegevens" class="tab-pane active">
-        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix disgeo: &lt;http://ld.disgeo.nl/def/sor/objecttypen/&gt; .
 @prefix data: &lt;http://ld.disgeo.nl/id/sor/data/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
@@ -1295,7 +1314,8 @@ data-gem:aant_bladeren_2 a rdfs:Resource;
   disgeo:aantalBladeren 372000;
   nen3610:tijdstipRegistratie &quot;2020-09-16T00:00:00Z&quot;^^xsd:dateTime ;
 .
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1321,9 +1341,9 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-c-xml-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 &lt;bomen&gt;
   &lt;BoomVoorkomen&gt;
     &lt;Boom&gt;
@@ -1369,12 +1389,13 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     &lt;/Boom&gt;
   &lt;/BoomVoorkomen&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-c-xml-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
           <pre>
 &lt;bomen&gt;
   &lt;BoomVoorkomen&gt;
@@ -1457,7 +1478,8 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     &lt;/MetadataOverData&gt;
   &lt;/BoomVoorkomen&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1475,9 +1497,9 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-c-json-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 [
   {
     "voorkomen": {
@@ -1516,13 +1538,14 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     "monumentaleStatus": "monumentaal"
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-c-json-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 [
   {
     "voorkomen": {
@@ -1597,7 +1620,8 @@ Uitwerking C laat het concreet representeren van de metadata aan de specifieke s
     "monumentaleStatus": "monumentaal"
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1617,9 +1641,9 @@ Het is niet eenvoudig mogelijk om standaard RDF reificatie, of RDF* toe te passe
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-c-rdf-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -1658,15 +1682,16 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
     <div class="tab-content">
       <div id="tab-gegevens-c-rdf-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -1744,7 +1769,8 @@ doc:de-witte-kastanje-v10 {<br>
     ] ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1764,9 +1790,9 @@ doc:de-witte-kastanje-v10 {<br>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-d-xml-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 &lt;bomen&gt;
   &lt;Boom&gt;
     &lt;registratiegegevens&gt;
@@ -1809,13 +1835,14 @@ doc:de-witte-kastanje-v10 {<br>
     &lt;monumentaleStatus&gt;monumentaal&lt;/monumentaleStatus&gt;
   &lt;/Boom&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-d-xml-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 &lt;bomen&gt;
   &lt;Boomregistratie&gt;
     &lt;Boom&gt;
@@ -1896,7 +1923,8 @@ doc:de-witte-kastanje-v10 {<br>
     &lt;/Bronhouder&gt;
   &lt;/Boomregistratie&gt;
 &lt;/bomen&gt;
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -1914,9 +1942,9 @@ doc:de-witte-kastanje-v10 {<br>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-d-json-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 [
   {
     "registratiegegevens": {
@@ -1955,13 +1983,14 @@ doc:de-witte-kastanje-v10 {<br>
     "monumentaleStatus": "monumentaal"
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-d-json-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 [
   {
     "registratiegegevens": {
@@ -2029,7 +2058,8 @@ doc:de-witte-kastanje-v10 {<br>
     "monumentaleStatus": {}
   }
 ]
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
     </div>
@@ -2049,9 +2079,9 @@ doc:de-witte-kastanje-v10 {<br>
     </ul>
     <div class="tab-content">
       <div id="tab-gegevens-d-rdf-object" class="tab-pane active">
-        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center">
+          <span>
+           <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -2091,13 +2121,14 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:monumentaleStatus disgeo:Monumentaal ;
   .
 }
-          </pre>
+            </pre>
+          </span>
         </span>
       </div>
       <div id="tab-gegevens-d-rdf-object-en-gegevens" class="tab-pane">
-        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-        <span class="col-md-10">
-          <pre>
+        <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center">
+          <span>
+            <pre>
 @prefix : &lt;http://example.disgeo.nl/id/boom/&gt; .
 @prefix doc: &lt;http://example.disgeo.nl/doc/boom/&gt; .
 @prefix disgeo: &lt;http://example.disgeo.nl/def/disgeo#&gt; .
@@ -2169,8 +2200,8 @@ doc:de-witte-kastanje-v10 {<br>
     disgeo:monumentaleStatus [] ;
   .
 }
-          </pre>
-        </span>
+            </pre>
+          </span>
       </div>
     </div>
   </div>
