@@ -222,6 +222,19 @@ var respecConfig =
       publisher: "Geonovum",
       date: "2021-04-20"
     },
+    "gimeg": {
+      href: "https://docs.geostandaarden.nl/nen3610/gimeg",
+      publisher: "Geonovum", 
+      authors: ["Linda van den Brink", "Paul Janssen", "Wilko Quak",],
+      title: "Geometrie in model en GML",
+    },
+    "iso-19107-2019": {
+      title: "Geographic information — Spatial schema",
+      href: "https://www.iso.org/standard/66175.html", 
+      status: "Definitief", 
+      publisher: "ISO",
+      date: "2019-12",
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
