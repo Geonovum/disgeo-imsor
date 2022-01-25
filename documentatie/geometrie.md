@@ -63,6 +63,9 @@ Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemode
 </figure>
 </aside>
 
+<aside class="note">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
+</aside>
+
 #### Nauwkeurigheidseisen
 Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO nauwkeurigheid wordt genoemd, hetzelfde is als [positionele juistheid](https://www.noraonline.nl/wiki/Positionele_juistheid) in het NORA raamwerk gegevenskwaliteit en hetzelfde als wat in de BGT positionele nauwkeurigheid wordt genoemd: 
 
@@ -85,7 +88,18 @@ Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al en
 Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. 
 
 #### Topologische regels
-Later uit te werken. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. 
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+
+- **`Equals`** - gelijk
+- **`Disjoint`** - disjunct (geen enkel punt gemeen)
+- **`Touches`** - raakt
+- **`Crosses`** - kruist
+- **`Within`** - binnen
+- **`Contains`** - bevat
+- **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
+geometrieën kunnen verschillende dimensie hebben)
+
+Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. 
 
 > Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt.
 
