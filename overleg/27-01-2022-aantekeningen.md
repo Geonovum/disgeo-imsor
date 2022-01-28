@@ -256,7 +256,9 @@ Wens: graag een metagegeven CRS in het informatiemodel (de CRS van de data in de
 
 **Dick**: Beschrijving 
 > De coördinaten van plaatsbepalingspunten moeten samenvallen met de coördinaten in de bijbehorende objectgeometrie.
+
 zou ik eerder andersom schrijven.
+
 **Michel**: "Samenvallen" klinkt ook te sterk. Misschien moeten voorkomen in?
 
 
