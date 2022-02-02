@@ -181,7 +181,7 @@ Semantische hoogte, wiskundige hoogte, beide, waar modelleren, in geometrie of i
 
 **Michel**: Moet je de regels ook kunnen checken? Dan zou je wel baat hebben
 
-**Linda**: Nee, ...(?)
+**Linda**: Nee, dat kan alleen door ter plekke in de fysieke werkelijkheid te gaan kijken.
 
 **Linda**: Maar, annotatisch verbinden aan het model is wel een relevante toepassing.
 
