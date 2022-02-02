@@ -2,6 +2,87 @@
 
 ### Uitgangspunten
 
+Relevante input uit verschillende standaardenorganisaties en initiatieven:
+
+Principes: 
+- het gaat om het representeren van de locatie, orientatie en de vorm van objecten. 
+- dimensionaliteit: 2D, 3D space versus 0D, 1D, 2D(, 3D) objecten
+
+#### Coordinaatreferentiesystemen:
+- WGS84 gebaseerd op ITRS, gebruikt voor GPS
+- European Terrestrial Reference System 1989 (ETRS89)
+- Rijksdriehoek systeem (RD)
+- Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU Inspire)
+
+#### Technologieën (formaten, direct access methods: APIs/QLs, data languages)
+ISO STEP tech:
+- EXPRESS
+- SPFF
+
+W3C Base/XML tech: 
+- HTML (also ISO & IEC: ISO/IEC 15445:2000(E))
+- XML
+- XSD
+- XPATH
+- XQuery
+- CSS
+
+W3C Linked Data / Semantic Web tech: 
+- RDF, serialisations: Turtle, TriG, RDF-XML, JSON-LD
+- languages: RDFS, OWL, SHACL, SHACL-AF
+- SPARQL (often GraphQL frontend in case of JSON-LD serialisation). DE-9IM, 2-only!
+
+ECMA/IETF JSON tech
+- JSON (IETF RFC 8259)
+
+GraphQL Foundation
+- GraphQL, potential replacement for IETF's REST
+
+IETF
+- HTTP
+- REST
+
+OMG
+- UML
+- UMLtoOWL specs
+
+#### Gremia en geometrie-gerelateerde specificaties
+ISO
+- ISO TC184 STEP, Part 42
+- ISO TC211
+    - ISO 19101 - reference model
+    - ISO 19107 (2019) - spatial schema
+    - ISO 19125-1, Simple Features Access; incl. WellKnownText (WKT) strings option
+    - ISO TC5?
+
+Open Geospatial Consortium (OGC)
+- GML (XML based)
+- CityGML using GML
+- GeoSPARQL (Small ontology & set of topological functions; zie [Semantic web journal paper](http://www.semantic-web-journal.net/sites/default/files/swj176_0.pdf)
+- JSON-FG, uitbreiding op GeoJSON, in ontwikkeling
+
+CEN
+- TC442 WG4 / TG 3 SML. == ~NEN 2660; small top level: abstract concept <> concrete concept with subclass Representation: SpatialEntity(/TempralEntity from W3C Time Ontology)
+
+buildingSmart International (bSI)
+- IFC (3D): 
+    - IFC2x3, IFC4x1 (infra support like alignments), IFC4x3RC2. 
+    - Placement (Location, Orientation). 
+    - BREPS, ExtrudedSolid, BoundingBox, ... based on former ISO STEP Part 42,  Integrated generic resource: Geometric and topological representation
+
+W3C
+- Spatial Data on the Web Best Practices (w3.org) (also OGC) [[sdw-bp]] met ref naar  Spatial Thing (https://www.w3.org/2003/01/geo/), GeoSPARQL en GeoJSON. 
+
+IETF
+- RFC7946: GeoJSON [[rfc7946]]
+
+Geonovum
+- NEN 3610 [[NEN3610-2021-ontw]]
+- Geometrie in model en GML [[gimeg]]
+- Handreiking coördinaatreferentiesystemen [[gebruik-crs]]
+
+Hieronder iets meer over NEN 3610 en de handreiking Geometrie in model en over inhoudelijke uitgangspunten uit EMSO. 
+
 #### NEN 3610
 NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
 
@@ -28,6 +109,8 @@ Een eis uit [[EMSO]] is:
 
 <aside class="issue">ISO 19125 definieert een model voor <strong>2 dimensionale </strong> geometrietypen. 3D geometrie is uitgesloten in deze standaard. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.</aside>
 
+We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
+
 #### Uitgangspunten uit EMSO
 - De vastlegging van geometrie wordt zodanig vormgegeven dat de driedimensionale (3D) beschrijving van een object kan worden opgenomen.
 - EMSO beschrijft een aantal algemene topologische regels over vlakdekkendheid en topologie, bv "Objecten op verschillende hoogten moeten goed op elkaar aansluiten waar ze elkaar raken en consistent zijn"
@@ -37,6 +120,20 @@ Een eis uit [[EMSO]] is:
 - De [precisie](https://www.noraonline.nl/wiki/Geometrische_precisie) van coördinaten is op millimeterniveau en in RD betekent dit dat er coördinaten met 3 decimalen worden opgenomen.
 
 <aside class ="issue">Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.</aside>
+
+### Modelleren van geometrie bij objecttype
+
+<aside class="issue">We moeten gaan uitwerken hoe we de eigenschap geometrie modelleren. Is het een datatype of wiskundig object; of een bijzonder datatype of een interface. Of misschien modelleren als een objecttype `Locatie` (zoals [locn](https://www.w3.org/ns/locn)). 
+
+Ook: Gebruiken we een attribuutsoort of relatiesoort om geometrie aan het objecttype te verbinden? 
+
+</aside>
+
+Semantisch gezien positioneren we de geometrie als een eigenschap van het object. de betekenis van een geometrie vereist altijd een context, bv. een attribuutsoort of relatiesoort van een objecttype. Bv.`begrenzing` of `bovenaanzicht`. 
+
+Wiskundig gezien kun je zeggen dat de geometrie zelf een object is. Het is een set van coördinaten volgens een classificerende typering (surface, point enz) met samenhangende metadata die vereist is voor de interpretatie ervan (crs, …) waar je ruimtelijk mee kan rekenen. 
+
+We gebruiken in ieder geval de ISO typen `GM_Surface` etc. In ISO hebben deze een complexe structuur. 
 
 ### Geometrie-aspecten per objecttype
 
@@ -62,6 +159,8 @@ Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemode
     <figcaption>Voorbeeld geometrietype omschrijving IMGeluid</figcaption>
 </figure>
 </aside>
+
+#### 3D geometrie
 
 <aside class="note">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
 </aside>

@@ -235,6 +235,13 @@ var respecConfig =
       publisher: "ISO",
       date: "2019-12",
     },
+    "gebruik-crs": {
+      title: "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+      href: "https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/", 
+      status: "Consultatieversie", 
+      publisher: "Geonovum",
+      date: "2021-11-25",
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
