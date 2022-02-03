@@ -118,8 +118,13 @@ We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zove
 - De ruimtelijke dekking van de SOR is inclusief de territoriale zee.
 - Het te gebruiken coördinatenstelsel is RD. 
 - De [precisie](https://www.noraonline.nl/wiki/Geometrische_precisie) van coördinaten is op millimeterniveau en in RD betekent dit dat er coördinaten met 3 decimalen worden opgenomen.
+- Gegeneraliseerde data objecttypen [worden niet opgenomen in de SOR](https://docs.geostandaarden.nl/disgeo/emso/#generalisatie). Ze kunnen wel onderdeel zijn van informatieproducten. Generalisatie is "het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten (of op attribuutniveau)", ten behoeve van minder gedetailleerde kaartschalen.
 
-<aside class ="issue">Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.</aside>
+<aside class ="issue">Is RD wel het juiste coördinaatreferentiesysteem? 
+
+- Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.
+- Vanuit verschillende (basis)registraties is niet RD maar ETRS-89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]] .
+</aside>
 
 ### Modelleren van geometrie bij objecttype
 
@@ -129,11 +134,13 @@ Ook: Gebruiken we een attribuutsoort of relatiesoort om geometrie aan het object
 
 </aside>
 
-Semantisch gezien positioneren we de geometrie als een eigenschap van het object. de betekenis van een geometrie vereist altijd een context, bv. een attribuutsoort of relatiesoort van een objecttype. Bv.`begrenzing` of `bovenaanzicht`. 
+Semantisch gezien, vanuit de MIM gedachte, positioneren we de geometrie als een eigenschap van het object. De betekenis van een geometrie vereist altijd een context, bv. een attribuutsoort of relatiesoort van een objecttype. Bv.`begrenzing` of `bovenaanzicht`. 
 
 Wiskundig gezien kun je zeggen dat de geometrie zelf een object is. Het is een set van coördinaten volgens een classificerende typering (surface, point enz) met samenhangende metadata die vereist is voor de interpretatie ervan (crs, …) waar je ruimtelijk mee kan rekenen. 
 
-We gebruiken in ieder geval de ISO typen `GM_Surface` etc. In ISO hebben deze een complexe structuur. 
+We gebruiken in ieder geval de ISO typen `GM_Surface` etc. In ISO hebben deze een complexe structuur. In geo-informatiemodellen worden deze typen meestal behandeld als `interface` en kunnen ze zowel aan een attribuut en aan een relatie worden gekoppeld.  OGC CityGML en IMGeo zijn voorbeelden van informatiemodellen waar met een relatie wordt gewerkt. 
+
+In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2660 is dit zo. Het is daar een abstract (in de zin van: wiskundig) object waarnaar je een relatie kan leggen.
 
 ### Geometrie-aspecten per objecttype
 
@@ -146,6 +153,9 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
     <img src="https://docs.geostandaarden.nl/nen3610/gimeg/media/86bee1823dfd4f2ae0112c0462d2ccec.png" alt="ISO 19107 ruimtelijk schema"/>
     <figcaption>Het ruimtelijk schema van ISO 19107, geometrische primitieven.</figcaption>
 </figure>
+
+<aside class="issue">
+Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een `GM_Surface` of `GM_Curve` heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 
 #### Dimensionaliteit
 Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevuld met een aanduiding dat het om 2.5D gaat in de definitie van het attribuut. 
@@ -160,9 +170,18 @@ Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemode
 </figure>
 </aside>
 
+<aside class="issue">
+Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
+</aside>
+
 #### 3D geometrie
 
-<aside class="note">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
+<aside class="issue">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
+
+Een aantal vragen: 
+- Is het mogelijk om van een object naast een 3D geometrie ook de 2D geometrie registreren? En is dat wenselijk? Op de korte termijn is er wellicht behoefte aan een flexibele aanbodkant waar organisaties als ze er aan toe zijn 3D kunnen aanleveren maar voorlopig wel 2D.
+- Ook is er waarschijnlijk wel behoefte aan 2D geometrie bij afnemers. Is dit dan iets dat je in een product afleidt, of is het iets dat we in het informatiemodel ook modelleren?
+- Kun je de 2D geometrie altijd afleiden uit de 3D geometrie?
 </aside>
 
 #### Nauwkeurigheidseisen
