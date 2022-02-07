@@ -107,9 +107,25 @@ De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het 
 Een eis uit [[EMSO]] is: 
 > aansluiting op Simple Features (ISO 19125)
 
+Simple Features maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
+
 <aside class="issue">ISO 19125 definieert een model voor <strong>2 dimensionale </strong> geometrietypen. 3D geometrie is uitgesloten in deze standaard. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.</aside>
 
 We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
+
+Simple Features gebruikt zoals gezegd geometrietypen uit de veel uitgebreidere standaard ISO 19107, waarin het volledige geometriemodel gedefinieerd is. De typen uit dit model hanteren we doorgaans als 'black box' typen of interfaces. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
+
+<figure>
+    <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
+    <figcaption>Het Geometry object met al zijn kenmerken zoals gedefinieerd in het ruimtelijk schema van ISO 19107.</figcaption>
+</figure>
+
+Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vlak en volume afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk voor ons zijn: 
+- `SRID`: dit modelleert de verwijzing naar het "Spatial Reference system", in ons geval het coördinaatreferentiesysteem. 
+- `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
+
+<aside class="note">*Spatial reference system* is een breder begrip dan *coördinaatreferentiesysteem*. Het gaat om een algemene locatieaanduiding, een "ruimtelijk referentiesysteem" dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
+</aside>
 
 #### Uitgangspunten uit EMSO
 - De vastlegging van geometrie wordt zodanig vormgegeven dat de driedimensionale (3D) beschrijving van een object kan worden opgenomen.
@@ -122,8 +138,9 @@ We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zove
 
 <aside class ="issue">Is RD wel het juiste coördinaatreferentiesysteem? 
 
-- Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.
-- Vanuit verschillende (basis)registraties is niet RD maar ETRS-89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]] .
+- Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee. 
+- Vanuit verschillende (basis)registraties is niet RD maar ETRS-89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]].
+- Op zee zijn noch RD noch ETRS-89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
 </aside>
 
 ### Modelleren van geometrie bij objecttype
@@ -138,7 +155,7 @@ Semantisch gezien, vanuit de MIM gedachte, positioneren we de geometrie als een 
 
 Wiskundig gezien kun je zeggen dat de geometrie zelf een object is. Het is een set van coördinaten volgens een classificerende typering (surface, point enz) met samenhangende metadata die vereist is voor de interpretatie ervan (crs, …) waar je ruimtelijk mee kan rekenen. 
 
-We gebruiken in ieder geval de ISO typen `GM_Surface` etc. In ISO hebben deze een complexe structuur. In geo-informatiemodellen worden deze typen meestal behandeld als `interface` en kunnen ze zowel aan een attribuut en aan een relatie worden gekoppeld.  OGC CityGML en IMGeo zijn voorbeelden van informatiemodellen waar met een relatie wordt gewerkt. 
+We gebruiken in ieder geval de ISO typen `GM_Surface` etc (zie [](#geometrietype)). In ISO hebben deze een complexe structuur. In geo-informatiemodellen worden deze typen meestal behandeld als `interface` en kunnen ze zowel aan een attribuut en aan een relatie worden gekoppeld.  OGC CityGML en IMGeo zijn voorbeelden van informatiemodellen waar met een relatie wordt gewerkt. 
 
 In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2660 is dit zo. Het is daar een abstract (in de zin van: wiskundig) object waarnaar je een relatie kan leggen.
 
@@ -156,6 +173,8 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 
 <aside class="issue">
 Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een `GM_Surface` of `GM_Curve` heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
+</aside>
+
 
 #### Dimensionaliteit
 Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevuld met een aanduiding dat het om 2.5D gaat in de definitie van het attribuut. 
@@ -198,12 +217,22 @@ Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurighe
 </figure>
 </aside>
 
-Eventueel zou het ook in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
+Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van het desbetreffende objecttype gezet kunnen worden. 
+
+<aside class="issue">
+- Zoeken naar een manier om dit machineleesbaar vast te leggen.
+
+VOORSTEL: 
+
+Leg dit vast in een te definiëren metadata aspect bij de eigenschap in een MIM extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden.
+
+Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).
+</aside>
 
 #### Inwinregels
 Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
 
-Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. 
+Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten wel te relateren aan de bijbehorende modelelementen (annotatie).
 
 #### Topologische regels
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
@@ -217,9 +246,11 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topo
 - **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
 geometrieën kunnen verschillende dimensie hebben)
 
-Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. 
+Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 
-> Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt.
+> Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt.
+
+<aside class="issue">Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.</aside>
 
 #### Benodigde kwaliteitsmetadata
 
@@ -229,6 +260,8 @@ Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden 
 - gerealiseerde nauwkeurigheid van de geometrie van het object in de vorm van een nauwkeurigheidsklasseaanduiding
 - helemaal geen kwaliteitsmetadata
 
+We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
+
 ### Geometrie-object
 Per individuele geometrie vastleggen:
 - Coördinatenstelsel
@@ -236,10 +269,14 @@ Per individuele geometrie vastleggen:
 - De coördinaten zelf
 - Indien van toepassing, kwaliteitsmetadata zoals beschreven in [](#benodigde-kwaliteitsmetadata).
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
+<aside class="issue">
+Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
+</aside>
 
 ### Plaatsbepalingspunt
-Plaatsebepalingspunten zijn van belang voor sommige geometrieën als metadata over de inwinning. 
+Plaatsbepalingspunten zijn van belang voor sommige geometrieën als metadata over de inwinning. 
 
 Elk plaatsbepalingspunt wordt vastgelegd met de volgende kenmerken:
 - Unieke aanduiding
@@ -248,15 +285,24 @@ Elk plaatsbepalingspunt wordt vastgelegd met de volgende kenmerken:
 - Inwinnende instantie
 - Inwinningsdatum
 
-De coördinaten van plaatsbepalingspunten moeten samenvallen met de coördinaten in de bijbehorende objectgeometrie. 
+De coördinaten van plaatsbepalingspunten moeten voorkomen in de coördinaten in de bijbehorende objectgeometrie, in de zin dat ze overeenkomen met één coördinatenpaar in deze objectgeometrie. Andersom geldt niet dat alle objectgeometrieën bijbehorende plaatsbepalingspunten hebben. Zie [](#wanneer-plaatsbepalingspunten) voor de details.
 
-<aside class="note">Deze regel kan alleen gecontroleerd worden als er een relatie is tussen object danwel geometrie, en bijbehorende plaatsbepalingspunten.</aside>
+<aside class="note">Deze regel kan alleen gecontroleerd worden als er een relatie is tussen object / geometrie en bijbehorende plaatsbepalingspunten.</aside>
 
 #### Wanneer plaatsbepalingspunten? 
 
 Bij een **objecttype** modelleren: als het een reëel object betreft EN de grens in het terrein goed is aan te wijzen (goed idealiseerbaar is).
 
 Bij een **individueel object** verplicht opnemen: als de coördinaten daadwerkelijk ingewonnen zijn middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden.
+
+<aside class="issue">
+Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen: 
+- Is er een associatie tussen objecttype en `Plaatsbepalingspunt` nodig?
+- Moet `Plaatsbepalingspunt` gerelateerd moeten worden aan de reële objecttypen, of aan de geometrie zelf?
+- Kan de relatie beter van objecttype naar `Plaatsbepalingspunt` gericht zijn of andersom?
+- Is het een optie om `Plaatsbepalingspunt` te modelleren als O&M `Observation`?
+- Het is niet wenselijk om van `Plaatsbepalingspunt` historie bij te houden bij een object. Hier rekening mee houden bij modellering.
+</aside>
 
 ### Uitwerking in voorbeeld
 
@@ -267,16 +313,10 @@ Bij een **individueel object** verplicht opnemen: als de coördinaten daadwerkel
     </figure>
 </aside>
 
-In dit voorbeeld is de geometrie van het objecttype `OpenBouwwerk` gemodelleerd als `GM_Solid`. 
+In dit voorbeeld zien we het volgende: 
+- de geometrie van het objecttype `OpenBouwwerk` gemodelleerd als `GM_Solid`. Modelleren als relatie lijkt vooralsnog niet nodig.
+- TODO verder uitwerken. 
 
 In het MIM aspect `Regels` zijn de **nauwkeurigheidseis**, **inwinregels**, en **topologische regels** opgenomen. 
 
 Optioneel kan bij een `OpenBouwwerk` 1 of meer `Plaatsbepalingspunten` opgenomen worden. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen als de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden.
-
-<aside class="issue">
-Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen: 
-- Is er een associatie tussen objecttype en `Plaatsbepalingspunt` nodig?
-- Moet `Plaatsbepalingspunt` gerelateerd moeten worden aan de reële objecttypen, of aan de geometrie zelf?
-- Kan de relatie beter van objecttype naar `Plaatsbepalingspunt` gericht zijn of andersom?
-- Is het een optie om `Plaatsbepalingspunt` te modelleren als O&M `Observation`?
-</aside>
