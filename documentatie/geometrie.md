@@ -311,12 +311,68 @@ Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen:
         <img src="media/voorbeeld-geometrie-modelleren.png" alt="Voorbeeld van het modelleren van geometrische aspecten"/>
         <figcaption>Voorbeeld van het modelleren van geometrische aspecten</figcaption>
     </figure>
+
+<table>
+  <tr>
+    <th>Naam</th>
+    <td>grondvlakgeometrie</td>
+  </tr>
+  <tr>
+    <th>Herkomst</th>
+    <td>https://docs.geostandaarden.nl/disgeo/emso/</td>
+  </tr>
+  <tr>
+    <th>Definitie</th>
+    <td>Geometrische representatie van een open bouwwerk <strong>in de vorm van een 3D volume</strong>.</td>
+  </tr>
+  <tr>
+    <th>Herkomst definitie</th>
+    <td>https://docs.geostandaarden.nl/disgeo/emso/</td>
+  </tr>
+  <tr>
+    <th>Toelichting</th>
+    <td>...</td>
+  </tr>
+  <tr>
+    <th>Mogelijk geen waarde</th>
+    <td>Nee</td>
+  </tr>
+  <tr>
+    <th>Kardinaliteit</th>
+    <td>1</td>
+  </tr>
+  <tr>
+    <th>Patroon</th>
+    <td>...</td>
+  </tr>
+  <tr>
+    <th>Type</th>
+    <td>GM_Solid</td>
+  </tr>
+  <tr>
+    <th>Regels</th>
+    <td>CRS aanlevering: RD/ETRS-89</td>
+  </tr>
+  <tr>
+    <th>Positionele juistheid</th>
+    <td>30 cm.</td>
+  </tr>
+  <tr>
+    <th>Inwinregels</th>
+    <td>https://docs.geostandaarden.nl/disgeo/imsor-inwinning</td>
+  </tr>
+  <tr>
+    <th>Naam</th>
+    <td>geometrie</td>
+  </tr>
+</table>
+
 </aside>
 
 In dit voorbeeld zien we het volgende: 
-- de geometrie van het objecttype `OpenBouwwerk` gemodelleerd als `GM_Solid`. Modelleren als relatie lijkt vooralsnog niet nodig.
-- TODO verder uitwerken. 
-
-In het MIM aspect `Regels` zijn de **nauwkeurigheidseis**, **inwinregels**, en **topologische regels** opgenomen. 
-
-Optioneel kan bij een `OpenBouwwerk` 1 of meer `Plaatsbepalingspunten` opgenomen worden. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen als de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden.
+- De geometrie van het objecttype `OpenBouwwerk` is getypeerd als `GM_Solid`. 
+- De geometrie is gemodelleerd als attribuuttype. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
+- Optioneel kan bij een `OpenBouwwerk` 1 of meer `Plaatsbepalingspunten` opgenomen worden. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen *als* de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden. Daarom is de relatie optioneel.
+- In het MIM aspect `Regels` is opgenomen wat de CRS van de geometrie moet zijn. 
+- **Topologische regels** staan hier niet; deze worden bij het objecttype opgenomen (bijvoorbeeld dat het objecttype moet voldoen aan de vlakdekkendheidseis). 
+- De **Positionele juistheid** (vernoemd naar NORA) en **inwinregels** zijn opgenomen in aparte, hiervoor toegevoegde metadata aspecten.
