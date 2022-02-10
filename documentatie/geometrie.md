@@ -298,19 +298,40 @@ Bij een **individueel object** verplicht opnemen: als de coördinaten daadwerkel
 <aside class="issue">
 Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen: 
 - Is er een associatie tussen objecttype en `Plaatsbepalingspunt` nodig?
-- Moet `Plaatsbepalingspunt` gerelateerd moeten worden aan de reële objecttypen, of aan de geometrie zelf?
+- Moet `Plaatsbepalingspunt` gerelateerd worden aan de reële objecttypen, of aan de geometrie zelf?
 - Kan de relatie beter van objecttype naar `Plaatsbepalingspunt` gericht zijn of andersom?
 - Is het een optie om `Plaatsbepalingspunt` te modelleren als O&M `Observation`?
 - Het is niet wenselijk om van `Plaatsbepalingspunt` historie bij te houden bij een object. Hier rekening mee houden bij modellering.
 </aside>
 
-### Uitwerking in voorbeeld
+### Uitwerking
 
-<aside class="example">
+#### Optie 1
+
+Deze uitwerking is geïnspireerd op de modellering in veel geo-informatiemodellen (sectormodellen van NEN 3610). 
+
+In optie 1 hebben we de volgende keuzen gemaakt:
+- Geometrie is gemodelleerd als attribuut. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
+- De geometrie van het objecttype `OpenBouwwerk` is getypeerd als `GM_Solid`. 
+- Er is een associatie gemodelleerd tussen objecttype en `Plaatsbepalingspunt`. Zonder een relatie tussen beiden levert het beheer van plaatsbepalingspunten problemen op, zo is in de BGT praktijk gebleken. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen *als* de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden. Daarom is de relatie optioneel.
+- `Plaatsbepalingspunt` is gerelateerd aan het reële objecttype.
+- De relatie is gericht van objecttype naar `Plaatsbepalingspunt`.
+- O&M is niet toegepast. 
+- In het MIM aspect `Regels` is opgenomen wat de CRS van de geometrie moet zijn. 
+- **Topologische regels** staan hier niet; deze worden bij het objecttype opgenomen (bijvoorbeeld dat het objecttype moet voldoen aan de vlakdekkendheidseis). 
+- De **Positionele juistheid** (vernoemd naar NORA) en **inwinregels** zijn opgenomen in aparte, hiervoor toegevoegde metadata aspecten.
+
+Problemen met deze modelleerwijze: 
+- Omdat `Plaatsbepalingspunt` is gerelateerd aan het reële objecttype, is het niet goed mogelijk om plaatsbepalingspunten voor meerdere geometrieën bij één object te hebben. Je weet dan niet welk plaatsbepalingspunt bij welke geometrie hoort. 
+- Semantisch gezien horen plaatsbepalingspunten eigenlijk bij de geometrie en niet bij het object. Ze zeggen iets over hoe de geometrie tot stand gekomen is. 
+
+<aside class="example" id="geometrie-model-optie-1" title="Geometrie modellering, optie 1">
     <figure>
         <img src="media/voorbeeld-geometrie-modelleren.png" alt="Voorbeeld van het modelleren van geometrische aspecten"/>
         <figcaption>Voorbeeld van het modelleren van geometrische aspecten</figcaption>
     </figure>
+
+MIM metadata van het attribuut `grondvlakgeometrie`:
 
 <table>
   <tr>
@@ -369,10 +390,29 @@ Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen:
 
 </aside>
 
-In dit voorbeeld zien we het volgende: 
-- De geometrie van het objecttype `OpenBouwwerk` is getypeerd als `GM_Solid`. 
-- De geometrie is gemodelleerd als attribuuttype. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
-- Optioneel kan bij een `OpenBouwwerk` 1 of meer `Plaatsbepalingspunten` opgenomen worden. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen *als* de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden. Daarom is de relatie optioneel.
-- In het MIM aspect `Regels` is opgenomen wat de CRS van de geometrie moet zijn. 
-- **Topologische regels** staan hier niet; deze worden bij het objecttype opgenomen (bijvoorbeeld dat het objecttype moet voldoen aan de vlakdekkendheidseis). 
-- De **Positionele juistheid** (vernoemd naar NORA) en **inwinregels** zijn opgenomen in aparte, hiervoor toegevoegde metadata aspecten.
+#### Optie 2
+
+Deze uitwerking is geïnspireerd op de standaard Observations, Measurements and Samples (O&M 3.0 conceptversie) [[iso-19156-2021]]. Zie bijlage voor overzichtsdiagram Observation uit O&M. 
+
+In optie 2 hebben we de volgende keuzen gemaakt:
+- Geometrie is gemodelleerd als attribuut. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
+- Er zijn twee geometrie attributen, ieder met een beschrijvende naam.
+- De geometrie attributen gebruiken een ISO 19107 geometrietype. 
+- Er is een associatie gemodelleerd tussen objecttype en `Plaatsbepalingspunt`. Zonder een relatie tussen beiden levert het beheer van plaatsbepalingspunten problemen op, zo is in de BGT praktijk gebleken. 
+- O&M is toegepast: Plaatsbepalingspunt is een subklasse van de O&M klasse `Observation`. 
+- De relatie is gericht van `Plaatsbepalingspunt` naar objecttype, analoog aan de relatie in O&M van `Observation` naar het `FeatureOfInterest`. 
+- `Plaatsbepalingspunt` heeft een attribuut `kenmerk` dat de naam van het geometrie-attribuut uit het object als waarde heeft, analoog aan de `observedProperty` bij `Observation` in O&M. 
+- MIM metadata op dezelfde wijze als bij optie 1 (tabel hier niet gedupliceerd)
+
+Problemen met deze modelleerwijze: 
+- ...
+
+<aside class="example" id="geometrie-model-optie-2" title="Geometrie modellering, optie 2">
+
+In het voorbeeld is een objecttype `Gebouw` gebruikt; dit is slechts een voorbeeld en geen vastgestelde modellering van het objecttype SOR Gebouw. 
+
+  <figure>
+      <img src="media/voorbeeld-geometrie-modelleren-2.png" alt="Voorbeeld van het modelleren van geometrische aspecten met OandM"/>
+      <figcaption>Voorbeeld van het modelleren van geometrische aspecten</figcaption>
+  </figure>
+</aside>

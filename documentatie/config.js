@@ -242,6 +242,13 @@ var respecConfig =
       publisher: "Geonovum",
       date: "2021-11-25",
     },
+    "iso-19156-2021": {
+      title: "Geographic information — Observations, measurements and samples",
+      href: "https://www.iso.org/standard/82463.html", 
+      status: "DIS", 
+      publisher: "ISO",
+      date: "2021-11-15",
+    },
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
