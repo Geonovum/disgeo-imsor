@@ -328,7 +328,7 @@ Problemen met deze modelleerwijze:
 <aside class="example" id="geometrie-model-optie-1" title="Geometrie modellering, optie 1">
     <figure>
         <img src="media/voorbeeld-geometrie-modelleren.png" alt="Voorbeeld van het modelleren van geometrische aspecten"/>
-        <figcaption>Voorbeeld van het modelleren van geometrische aspecten</figcaption>
+        <figcaption>Voorbeeld van het modelleren van geometrische aspecten, optie 1</figcaption>
     </figure>
 
 MIM metadata van het attribuut `grondvlakgeometrie`:
@@ -382,26 +382,23 @@ MIM metadata van het attribuut `grondvlakgeometrie`:
     <th>Inwinregels</th>
     <td>https://docs.geostandaarden.nl/disgeo/imsor-inwinning</td>
   </tr>
-  <tr>
-    <th>Naam</th>
-    <td>geometrie</td>
-  </tr>
 </table>
 
 </aside>
 
 #### Optie 2
 
-Deze uitwerking is geïnspireerd op de standaard Observations, Measurements and Samples (O&M 3.0 conceptversie) [[iso-19156-2021]]. Zie bijlage voor overzichtsdiagram Observation uit O&M. 
+Deze uitwerking is geïnspireerd op de standaard Observations, Measurements and Samples (O&M 3.0 conceptversie) [[iso-19156-2021]]. Zie bijlage [](#de-o-m-standaard-observations-measurements-and-samples) voor de inhoud van deze standaard. 
 
 In optie 2 hebben we de volgende keuzen gemaakt:
 - Geometrie is gemodelleerd als attribuut. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
-- Er zijn twee geometrie attributen, ieder met een beschrijvende naam.
+- Er zijn meerdere geometrie attributen mogelijk (in onderstaand voorbeeld zijn het er twee), ieder met een beschrijvende naam.
 - De geometrie attributen gebruiken een ISO 19107 geometrietype. 
 - Er is een associatie gemodelleerd tussen objecttype en `Plaatsbepalingspunt`. Zonder een relatie tussen beiden levert het beheer van plaatsbepalingspunten problemen op, zo is in de BGT praktijk gebleken. 
 - O&M is toegepast: Plaatsbepalingspunt is een subklasse van de O&M klasse `Observation`. 
 - De relatie is gericht van `Plaatsbepalingspunt` naar objecttype, analoog aan de relatie in O&M van `Observation` naar het `FeatureOfInterest`. 
-- `Plaatsbepalingspunt` heeft een attribuut `kenmerk` dat de naam van het geometrie-attribuut uit het object als waarde heeft, analoog aan de `observedProperty` bij `Observation` in O&M. 
+- `Plaatsbepalingspunt` heeft een specialisatie `GebouwPlaatsbepalingspunt`.
+- `GebouwPlaatsbepalingspunt` heeft een attribuut `kenmerk` dat de naam van het geometrie-attribuut uit het object als waarde heeft, analoog aan de `observedProperty` bij `Observation` in O&M. De specialisatie-klasse is nodig omdat de waarde van het attribuut `kenmerk` per objecttype kan verschillen.
 - MIM metadata op dezelfde wijze als bij optie 1 (tabel hier niet gedupliceerd)
 
 Problemen met deze modelleerwijze: 
@@ -413,6 +410,6 @@ In het voorbeeld is een objecttype `Gebouw` gebruikt; dit is slechts een voorbee
 
   <figure>
       <img src="media/voorbeeld-geometrie-modelleren-2.png" alt="Voorbeeld van het modelleren van geometrische aspecten met OandM"/>
-      <figcaption>Voorbeeld van het modelleren van geometrische aspecten</figcaption>
+      <figcaption>Voorbeeld van het modelleren van geometrische aspecten, optie 2</figcaption>
   </figure>
 </aside>
