@@ -1,9 +1,13 @@
 # Verslag 21e expertgroepbijeenkomst
 24 februari 2022
 
+Aanwezig: Pano, Linda, Dick, Paul, Michel, Lennart, Rik
+
+Onderwerp: geometrie modellering zoals beschreven in [generieke onderwerpen document](https://geonovum.github.io/disgeo-imsor/documentatie/#geometrie)
+
 ### Eerste opmerkingen?
 
-**Lennart**: Interne review Kadaster: Wanneer moet je Hoogte tov NAP gebruiken en wanneer Z coordinaten?
+**Lennart**: Interne review Kadaster: Wanneer moet je Hoogte tov NAP gebruiken en wanneer Z coördinaten?
 
 **Lennart (chat)**: Het is in ieder geval van belang is om het NAP toe te voegen bij de bullets in 9.1.1. Het lijkt erop dat er meer besef nodig is van onze hoogte definitie langs een gekromd equipotentiaalvlak (de geoïde) en die uitgedrukt moet worden in H i.p.v. van Z. Vooral als er onderscheid gemaakt moet worden tussen lokaal/relatief en absoluut (zoals ik ergens las) is dat besef van belang.
 
@@ -18,9 +22,9 @@
 
 **Linda** presenteert: https://geonovum.github.io/disgeo-imsor/documentatie/#optie-1
 
-**Rik**: Optie 1 voelt gekunsteld. Er zijn meerdere mogelijkheiden om geometrieen vast te leggen van iets wat gemodelleerd kan worden als geometrie. Ik zou zeggen, trek de geometrie los van het object als representatie van het ding.
+**Rik**: Optie 1 voelt gekunsteld. Er zijn meerdere mogelijkheden om geometrieën vast te leggen van iets wat gemodelleerd kan worden als geometrie. Ik zou zeggen, trek de geometrie los van het object als representatie van het ding.
 
-**Michel**: Is dat ook niet de GeoSparql manier:  er kunnen meerdere geomtrieen horen bij een feature.
+**Michel**: Is dat ook niet de GeoSparql manier:  er kunnen meerdere geometrieën horen bij een feature.
 
 **Rik**: Klopt. Ik vind het een goed idee om het gerepresenteerde van de representatie te scheiden. Dit geeft je meerdere mogelijkheden.
 
@@ -36,7 +40,7 @@
 
 **Michel**: Dat klopt, voor mijn gevoel is een geometrie toch iets complexers.
 
-**Lennart**: Is een contour van een persoon een eigenschap of een geraleerd object?
+**Lennart**: Is een contour van een persoon een eigenschap of een gerelateerd object?
 
 **Pano**: Hang af van je perspectief. Wanneer je gegevens over contour wilt vastleggen dan moet je die kunnen aanwijzen. In MIM kan dat alleen maar als contour een objecttype is. De crux zit volgens mij in de vraag: Wil je er gegevens over kunnen vastleggen? Als het antwoord ja is dan moet je het als objecttype modelleren.
 
@@ -64,13 +68,15 @@
 
 [ Discussie Michel: Openbouwwerk -> Grondvlak, Bovenaanzicht met eigen geometrie ]
 
+[ TODO `grondvlakgeometrie` hernoemen naar `grondvlak`]
+
 **Michel**: Je kunt Bovenaanzicht en Grondvlak eigen objecttypes maken met een eigen geometrie eigenschap en naar deze relateren vanuit OpenBouwwerk. Dat is hoe we dat vanuit NEN2660 doen.
 
 **Niels**: Wegen de voordelen van die semantische zuiverheid wel op tegen de complexiteit die je dan introduceert?
 
 **Pano**: Goed punt. We willen het niet complexer maken dan nodig.
 
-**Lennart**: We hebben twee opties. Als attribuut, of als relatie naar een gerlateerd object met attribuut.
+**Lennart**: We hebben twee opties. Als attribuut, of als relatie naar een gerelateerd object met attribuut.
 
 **Pano**: En nog de derde optie dat we een geometrie als objecttype modelleren.
 
@@ -92,17 +98,19 @@
 
 [ Discussie ]
 
-[ Groep lijkt het en goede modellering te vinden ]
+[ Groep lijkt het een goede modellering te vinden ]
 
-**Pano**: Een nadeel van deze modellering is dat observaties van eigenschappen met meervoudige kardinaliteit niet passen in dit model. Stel dat je OpenBouwerk een eigenschap `kleur: CharacterString [1..*]` heeft en we hebben een instantie van OpenBouwwerk met kleur geel en kleur blauw. Nu hebben we een observatie die gaat over alleen de kleur blauw. Hoe modelleren we dat dan?
+[ Opmerking: observation is een activiteit, dus klasse heet Plaatsbepaling oid ]
+
+**Pano**: Een nadeel van deze modellering is dat observaties van eigenschappen met meervoudige kardinaliteit niet passen in dit model. Stel dat je Open Bouwwerk een eigenschap `kleur: CharacterString [1..*]` heeft en we hebben een instantie van OpenBouwwerk met kleur geel en kleur blauw. Nu hebben we een observatie die gaat over alleen de kleur blauw. Hoe modelleren we dat dan?
 
 [ Discussie over uitdaging. Conclusie is dat optie 1 en 2 dat niet afdekken.]
 
 **Lennart**: Andere optie is koppelklasse of relatieklasse, waarin je aanvullende informatie kunt opnemen over precies welk gegeven het gaat.
 
-**Lennart (chat)**: Aantekening mbt correlatie tussen coordinaten van omtrek van gebouw en ptb:
+**Lennart (chat)**: Aantekening mbt correlatie tussen coördinaten van omtrek van gebouw en pbp:
 
-voor de koppeling van een ptb aan de omtrek om bij een coordinaat van de omtrek weer het ptb te kunnen vinden, is nodig: identificatie van gebouw, naam van kenmerk (optoneel, alleen nodig als gebouw meerdere kenmerken heeft met een geometrie, en een keuze uit: ofwel tijdreisvraag ofwel versie van object.
+voor de koppeling van een pbp aan de omtrek om bij een coördinaat van de omtrek weer het pbp te kunnen vinden, is nodig: identificatie van gebouw, naam van kenmerk (optioneel, alleen nodig als gebouw meerdere kenmerken heeft met een geometrie, en een keuze uit: ofwel tijdreisvraag ofwel versie van object.
 
 Dit kan je modelleren als een koppelklasse, wat met name nuttig is als het ptb voor meerdere objecten gebruikt kan worden. Dan zijn ptb en gebouw ook netjes van elkaar ontkoppeld maar toch wel gekoppeld via de data.
 
@@ -142,7 +150,7 @@ Arnoud:
 >
 > Nog een argument: in de BGT en BAG staan de objecten centraal. Daaraan koppelen we metadata over herkomst en kwaliteit.
 
-**Linda**: Arnoud gaf ook nog aan: 1 Plaatsbepalingspunt kan zijn gebruikt in meerdere geometrieen.
+**Linda**: Arnoud gaf ook nog aan: 1 Plaatsbepalingspunt kan zijn gebruikt in meerdere geometrieën.
 
 **Rik** : Ik kan de [Arnoud's] redenatie volgen vanuit het oogpunt van objectregistraties, maar vanuit digital twins en modelleren van de werkelijkheid vind ik het niet passen.
 
@@ -152,11 +160,11 @@ Linda: Arnoud: Geometrie van het object is bepaald obv de plaatsbepalingspunten.
 
 **Paul**: De observatie gaat over het object, maar daarmee kun je 
 
-**Dick**: Plaatsbepalingspunten hebben we destijds geintroduceerd. Maar misschien zijn er wel alternatieven. Neem dat ook mee in de overwegingen.
+**Dick**: Plaatsbepalingspunten hebben we destijds geïntroduceerd. Maar misschien zijn er wel alternatieven. Neem dat ook mee in de overwegingen.
 
 **Lennart**: Voorstel: Waarom copy pasten we de metagegeven kwaliteit niet van mee naar het object? Dan is het niet nodig om een relatie te leggen tussen plaatsbepalingspunt en object/geometrie.
 
-Dan kun je het coordinaat uit een geometrie pakken, stuur je deze icm de objectidentificatie en versie naar een plaatsbepalingspunt api en krijg je informatie.
+Dan kun je het coördinaat uit een geometrie pakken, stuur je deze icm de objectidentificatie en versie naar een plaatsbepalingspunt api en krijg je informatie.
 
 **Paul**: Als de relatie niet is gelegd is het resultaat arbitrair en mogelijk verkeerd.
 
@@ -164,13 +172,15 @@ Dan kun je het coordinaat uit een geometrie pakken, stuur je deze icm de objecti
 
 **Lennart**: Eens.
 
-**Michel**: De geometrie is in dit model niet de waarde van observed property, want dat is niet de hele geometrie. Hier lijkt nog niet een perfecte match met SOSA.
+**Michel**: De geometrie is in dit model niet de waarde van observed property, want dat is niet de hele geometrie. Hier lijkt nog niet een perfecte match met SOSA. In SOSA is het gebruikelijk om een kwantiteit te gebruiken als waarde van een observed property. Dat de geometrie onderwerp is van een observatie is wel een speciaal geval. Vraag is of het gebruik van O&M dan wel rond te krijgen is. Misschien schieten we door.
 
-**Pano**: Michel heeft gelijk. We passen ook het observation en measurements model eigenlijk niet helemaal correct toe. Volgens mij hebben we nog een laag ertussen nodig om aan te geven hoe de meting van de punt in verhouding staat tot de gehele (afgeleide) geometrie.
+**Pano**: Michel heeft gelijk. We passen ook het observation en measurements model eigenlijk niet helemaal correct toe. Volgens mij hebben we nog een laag ertussen nodig om aan te geven hoe de meting van de punt in verhouding staat tot de gehele (afgeleide) geometrie. De  observatie gaat niet echt over de omtrekgeometrie, maar over een van de punten in die omtrek.
 
 **Linda**: Dit model kent ook het concept Collection. Mogelijk kunnen we dit daarmee oplossen?
 
 **Michel**: Plaatsbepalingspunt is semantisch en die moet je geometrisch uitdrukken. Volgens mij moeten we dit strakker maken naar SOSA.
+
+[ We zouden misschien ook het O&M Result expliciet moeten modelleren, met een `GM_Point` ]
 
 **Lennart**: Hoe waargenomen meetpunten te modelleren speelt ook bij het Kadaster. Ik vind het interessant om te kijken of wat hier uitkomt ook bruikbaar is voor het Kadaster.
 

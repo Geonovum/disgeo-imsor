@@ -1,4 +1,5 @@
 Bijeenkomsten van Expertgroep informatiemodel samenhangende objectenregistratie
+- 22ste bijeenkomst: 24 februari 2022 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/24-02-2022-aantekeningen.md)]
 - 21ste bijeenkomst: 27 januari 2022 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/27-01-2022-aantekeningen.md)]
 - 20ste bijeenkomst: 16 december 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/16-12-2021-aantekeningen.md)]
 - 19e bijeenkomst: 3 november 2021 [[verslag](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/03-11-2021-aantekeningen.md), [slides Linda](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/2021103-disgeo-expertgroep-waardelijsten.pdf), [slides Pano](https://github.com/Geonovum/disgeo-imsor/blob/master/overleg/03-11-2021-expertgroepvergadering-waardelijsten-imsor.pdf)]
