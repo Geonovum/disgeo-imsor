@@ -50,7 +50,7 @@ var respecConfig =
   //specType: "US",                   // Uitwisselings standaard
   //specType: "PS",                   // Presentatie sstandaard
   //-- format is verplicht! -----------------------------------------------------------
-  format: "markdown",                 // altijd "markdown"     
+  format: "html",                 // "markdown" of "html"
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   // publishDate: "2021-05-18",  	      // Format is "YYY-MM-DD"
