@@ -82,7 +82,12 @@ var respecConfig =
       name:       "Pano Maria",
       company:    "Skemu",
       companyURL: "https://skemu.com/"
-    }
+    },
+    {
+      name:       "Gerard Trouborst",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "imsor", 	            // Wordt gebruikt in de document URL
