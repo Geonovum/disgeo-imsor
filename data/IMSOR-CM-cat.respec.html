@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220323-172644 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220329-221341 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
       <h3>Domein   NEN3610</h3>
       <section id="">
          <h4>Objecttypen   </h4>
@@ -1326,8 +1326,8 @@
       <h3>Domein   Bestuurlijke Gebieden</h3>
       <section id="">
          <h4>Objecttypen   </h4>
-         <a class="anchor" id="graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Gemeentegrens"></a><section id="global_class_BestuurlijkeGebieden_Gemeentegrens">
-            <h5>   Gemeentegrens</h5>
+         <a class="anchor" id="graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_BestuurlijkGebied"></a><section id="global_class_BestuurlijkeGebieden_BestuurlijkGebied">
+            <h5>   Bestuurlijk gebied</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1335,14 +1335,51 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Gemeentegrens</td>
+                     <td>Bestuurlijk gebied</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De kadastrale grens van een gemeente</p>
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. </p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>EMSO</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+         <a class="anchor" id="graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Gemeentegebied"></a><section id="global_class_BestuurlijkeGebieden_Gemeentegebied">
+            <h5>   Gemeentegebied</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Gemeentegebied</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar
+                           lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124
+                           van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 3 van de Wet algemene regels
+                           herindeling</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Grondwet en Gemeentewet</td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
@@ -1367,11 +1404,57 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegrens_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_identificatie">identificatie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_NEN3610_NEN3610ID">NEN3610ID</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_gemeentecode">gemeentecode</a>
                         </td>
                      <td>
                         
-                        <p>...</p>
+                        <p>Codering van een gemeente zoals deze door het CBS wordt gebruikt. </p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentecode">Gemeentecode</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_formeleNaam">formele naam</a>
+                        </td>
+                     <td>
+                        
+                        <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied">Formele naam gemeentegebied</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_alternatieveNaam">alternatieve naam</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied">Alternatieve naam gemeentegebied</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie">geometrie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geometrische representatie van het gebied dat als gemeente is benoemd </p>
                         </td>
                      <td>
                         <a class="external-link" href="https://isotc211.geolexica.org/concepts/695/">GM_Polygon</a>
@@ -1380,14 +1463,14 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegrens_naam">naam</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Gemeentegebied_status">status</a>
                         </td>
                      <td>
                         
-                        <p>Naam van Nederlandse gemeente (op het vaste land o.i.d.?)</p>
+                        <p>Fase van de levenscyclus waarin een gemeente zich bevindt.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentenaam">gemeentenaam</a>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -1408,20 +1491,38 @@
                   </tr>
                   <tr>
                      <td>
-                        Gemeentegrens
+                        Gemeentegebied
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied">ligt in: gerelateerd provinciegebied</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Gemeentegebied
                         is specialisatie van
                         
                         <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
                         
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. </p>
+                        </td>
                   </tr>
                </tbody>
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_BestuurlijkGebied"></a><section id="global_class_BestuurlijkeGebieden_BestuurlijkGebied">
-            <h5>   Bestuurlijk gebied</h5>
+         <a class="anchor" id="graph_EAID_3C488FE1_753E_40b8_9C2F_2E521B28DC18"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Provinciegebied"></a><section id="global_class_BestuurlijkeGebieden_Provinciegebied">
+            <h5>   Provinciegebied</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1429,7 +1530,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Bestuurlijk gebied</td>
+                     <td>Provinciegebied</td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
@@ -1437,6 +1538,49 @@
                   </tr>
                </tbody>
             </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied">ligt in: gerelateerd provinciegebied</a>
+                        
+                        Provinciegebied
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Provinciegebied
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
             </section>
          </section>
       <section id="">
@@ -1447,7 +1591,7 @@
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
                <tr>
-                  <th><a class="anchor" id="graph_EAID_79D7B406_B0A2_40be_BD43_87B07D5EEB39"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Gemeentenaam"></a><a class="link" href="#detail_class_BestuurlijkeGebieden_Gemeentenaam">gemeentenaam</a></th>
+                  <th><a class="anchor" id="graph_EAID_79D7B406_B0A2_40be_BD43_87B07D5EEB39"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied"></a><a class="link" href="#detail_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied">Formele naam gemeentegebied</a></th>
                   <td>
                      
                      <p>
@@ -1464,6 +1608,31 @@
                         </ol>
                      </td>
                </tr>
+               <tr>
+                  <th><a class="anchor" id="graph_EAID_7F9398F5_3912_4b2c_8FD3_9FDF90E87868"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied"></a><a class="link" href="#detail_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied">Alternatieve naam gemeentegebied</a></th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th><a class="anchor" id="graph_EAID_B145E3D6_1735_49a4_A9DF_4901299925E2"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Gemeentecode"></a><a class="link" href="#detail_class_BestuurlijkeGebieden_Gemeentecode">Gemeentecode</a></th>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      <section id="">
+         <h4>Enumeraties   </h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th><a class="anchor" id="graph_EAID_4C474734_5C1D_4344_8776_29ACD288EEB8"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_StatusRegistratieveRuimte"></a><a class="link" href="#detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a></th>
+                  <td>
+                     
+                     <p>Fasen van de levenscycli van een registratieve ruimte.</p>
+                     </td>
+               </tr>
             </tbody>
          </table>
          </section>
@@ -1472,10 +1641,172 @@
          
          <section id="">
             <h5>Objecttype details  </h5>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentegrens"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentegrens">
-               <h6>   Gemeentegrens</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegrens_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegrens_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegrens">Gemeentegrens</a> geometrie</h7>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentegebied"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentegebied">
+               <h6>   Gemeentegebied</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_identificatie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_NEN3610_NEN3610ID">NEN3610ID</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_gemeentecode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_gemeentecode">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> gemeentecode</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>gemeentecode</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Codering van een gemeente zoals deze door het CBS wordt gebruikt. </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_Gemeentecode">Gemeentecode</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_formeleNaam"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_formeleNaam">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> formele naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>formele naam</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied">Formele naam gemeentegebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_alternatieveNaam"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_alternatieveNaam">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> alternatieve naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>alternatieve naam</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied">Alternatieve naam gemeentegebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> geometrie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -1489,7 +1820,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>...</p>
+                              <p>Geometrische representatie van het gebied dat als gemeente is benoemd </p>
                               </td>
                         </tr>
                         <tr>
@@ -1518,8 +1849,8 @@
                      </tbody>
                   </table>
                   </div>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegrens_naam"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegrens_naam">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegrens">Gemeentegrens</a> naam</h7>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_status"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_status">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> status</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -1527,13 +1858,13 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>naam</td>
+                           <td>status</td>
                         </tr>
                         <tr>
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Naam van Nederlandse gemeente (op het vaste land o.i.d.?)</p>
+                              <p>Fase van de levenscyclus waarin een gemeente zich bevindt.</p>
                               </td>
                         </tr>
                         <tr>
@@ -1556,7 +1887,32 @@
                         <tr>
                            <th>Type</th>
                            <td>
-                              <a class="link" href="#detail_class_BestuurlijkeGebieden_Gemeentenaam">gemeentenaam</a>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> ligt in</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>ligt in</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
                               </td>
                         </tr>
                      </tbody>
@@ -1575,13 +1931,13 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220323-172644 imvertor 1.65.4-->
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220329-221341 imvertor 1.65.4-->
    <section id="">
       <h3>Referentielijst inhoud   </h3>
    </section>
    <section id="">
-      <h3>Codelijst inhoud   </h3><a class="anchor" id="graph_EAID_79D7B406_B0A2_40be_BD43_87B07D5EEB39"></a><a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentenaam"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentenaam">
-         <h4>Codelijst details  gemeentenaam</h4>
+      <h3>Codelijst inhoud   </h3><a class="anchor" id="graph_EAID_79D7B406_B0A2_40be_BD43_87B07D5EEB39"></a><a class="anchor" id="detail_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied"></a><section id="detail_class_BestuurlijkeGebieden_FormeleNaamGemeentegebied">
+         <h4>Codelijst details  Formele naam gemeentegebied</h4>
          
          <table style="width: 100%;" class="list">
             <colgroup></colgroup>
@@ -1614,9 +1970,100 @@
                </tr>
             </tbody>
          </table>
+         </section><a class="anchor" id="graph_EAID_7F9398F5_3912_4b2c_8FD3_9FDF90E87868"></a><a class="anchor" id="detail_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied"></a><section id="detail_class_BestuurlijkeGebieden_AlternatieveNaamGemeentegebied">
+         <h4>Codelijst details  Alternatieve naam gemeentegebied</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
+         </section><a class="anchor" id="graph_EAID_B145E3D6_1735_49a4_A9DF_4901299925E2"></a><a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentecode"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentecode">
+         <h4>Codelijst details  Gemeentecode</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
          </section>
    </section>
    <section id="">
-      <h3>Enumeratie inhoud   </h3>
+      <h3>Enumeratie inhoud   </h3><a class="anchor" id="graph_EAID_4C474734_5C1D_4344_8776_29ACD288EEB8"></a><a class="anchor" id="detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte"></a><section id="detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">
+         <h4>Enumeratie details  Status registratieve ruimte</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Fasen van de levenscycli van een registratieve ruimte.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup style="width: 40%;"></colgroup>
+            <colgroup style="width: 60%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+               <tr>
+                  <th>Ontwerp</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Vastgesteld</th>
+                  <td>
+                     
+                     <p>Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Ingetrokken</th>
+                  <td>
+                     
+                     <p>Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Afgevoerd</th>
+                  <td>
+                     
+                     <p>Object dat ten onrechte is opgevoerd in de registratie of waarvan de voorbereiding
+                        niet heeft geleid tot vaststelling.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
    </section>
 </section>
