@@ -413,3 +413,58 @@ In het voorbeeld is een objecttype `Gebouw` gebruikt; dit is slechts een voorbee
       <figcaption>Voorbeeld van het modelleren van geometrische aspecten, optie 2</figcaption>
   </figure>
 </aside>
+
+#### Optie 3
+
+Deze uitwerking is werkt verder door op de ideëen van optie 2 en de feedback vanuit model experts.
+
+Bij deze uitwerking hebben we de volgende aanpak gekozen:
+- Beginnen bij de plaatsbepalingspunten. Wanneer een geometrie plaatsbepalingspunten heeft, betekent het eigenlijk dat de geometrie is afgeleid van deze plaatbepalingspunten.De Plaatsbepalingspunten zijn er dus eerder dan de geometrie. Dat beketent ook dat plaatsbepalingsgegevens over een object al opgenomen en uitgewisseld moeten kunnen worden voordat de geometrie is opgenomen.
+- Vervolgens toevoegen van geometrie. Dit zou geen impact moeten hebben op de al opgenomen plaatsbepalingsgegevens.
+
+Net als in optie 2 maken we gebruik van O&M. Hierbij zijn de volgende keuzes gemaakt:
+- `Plaatsbepaling` is een subklasse van de O&M klasse `Observation`. Het plaatsbepalingspunt is het resultaat van de observation - de plaatsbepaling.
+
+<aside class="note">Momenteel hebben we geen Nederlandse vertaling gemaakt van de eigenschappen:
+- observedProperty 
+- result
+- featureOfInterest
+
+Dit is uiteraard nog wel mogelijk.
+</aside>
+
+We gebruiken verder hetzelfde model als in Optie 2 voor gebouwen. Naast Observation kent O&M ook de klasse ObservableProperty. Deze is in de standaard verder niet uitgewerkt, maar heeft als bedoeling om een modeldefinitie van een geobserveerd kenmerksoort op te nemen. Wij specialiseren dit hier naar een objecttype Kenmerk met een attribuutsoort `naam` en een optionele relatiesoort `heeftAfleiding` om te definieren wel objectgegeven op basis van het geobserveerde kenmerk kan worden afgeleid.
+
+<figure>
+  <img src="media/geometrie-optie3-1-model.drawio.png" alt="Optie 3 - informatiemodel van gebouw en plaatsbepaling op basis van OandM"/>
+  <figcaption>Optie 3 - informatiemodel van gebouw en plaatsbepaling op basis van O&M</figcaption>
+</figure>
+
+Om de werking van het model aan te tonen, gebruiken we een voorbeeld:
+
+Gegeven een gebouw, waarvan de geometrie nog niet is opgenomen. Voor dit object zal een aantal plaatsbepalingen gedaan worden op basis waarvan een geometrie afgeleid kan worden.
+
+Van het grondvlak van het gebouw worden drie `grondvlakpunten` gemeten en geregistreerd.
+
+<figure>
+  <img src="media/geometrie-optie3-2-data.drawio.png" alt="Grondvlakpunten die als plaatsbepaling van een gebouw 1234 worden opgenomen"/>
+  <figcaption>Grondvlakpunten die als plaatsbepaling van een gebouw 1234 worden opgenomen</figcaption>
+</figure>
+
+Later in het proces wordt deze informatie gebruikt voor het afleiden van een nieuw gegeven `geometrie2DGrondvlak` voor het gebouw.
+
+Conceptueel gezien kunnen de grondvlak-plaatsbepalingen gezien worden als direct gegevens over het gebouw, op basis waarvan het gegeven met kenmerk `geometrie2dGrondvlak` wordt afgeleid.
+
+<figure>
+  <img src="media/geometrie-optie3-3-afleiding.drawio.png" alt="Afleiding van geometrie2dGrondvlak op basis van plaatsbepalingen"/>
+  <figcaption>Afleiding van geometrie2dGrondvlak op basis van plaatsbepalingen</figcaption>
+</figure>
+
+Met deze afleiding is het plaatje compleet en is de geometrie van het gebouw, naast de andere gegevens opgenomen in de registratie. Daarnaast vormt het één passend geheel met de eerder geregistreerde plaatsbepalingen.
+
+<figure>
+  <img src="media/geometrie-optie3-4-data-compleet.drawio.png" alt="Gebouwgegevens naast plaatsebepalingen"/>
+  <figcaption>Gebouwgegevens naast plaatsebepalingen</figcaption>
+</figure>
+
+In deze optie hebben we de O&M standaard zo nauw mogelijk gevolgd en ook de koppeling kunnen leggen met de modellering van specifiek geometrie-gegevens, zonder dat we daarvoor nieuwe modelleerconstructies hoefden te introduceren voor geometrieën.
