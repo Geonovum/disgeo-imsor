@@ -1,2 +1,7 @@
 # Inleiding
 TODO
+
+## Doel
+...
+## Leeswijzer
+...

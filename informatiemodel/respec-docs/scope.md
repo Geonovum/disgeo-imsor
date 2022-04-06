@@ -1,2 +1,3 @@
 # Scope
-TODO
+## Achtergrond
+## Buiten scope
