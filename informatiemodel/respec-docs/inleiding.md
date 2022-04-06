@@ -1,7 +1,0 @@
-# Inleiding
-TODO
-
-## Doel
-...
-## Leeswijzer
-...
