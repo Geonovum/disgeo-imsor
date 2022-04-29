@@ -27,12 +27,18 @@ Voor objecten binnen de EEZ geldt:
 
 
 Bij 2D geometrieen geldt de volgende EPSG code horende bij het CRS:
-* RD - epsg:28992
-* ETRF2000 - epsg:7931
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
+| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
 
 Bij 3D geometrieen geldt de volgende EPSG code horende bij het CRS:
-* RDNAP - epsg:7415
-* ETRF2000 - epsg:9067
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
+| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
 De keuze voor de ETRF2000 realisaties van ETRS89 baseren we op het advies uit [[gebruik-crs]], waarin het gebruik van ETRF2000 [wordt aangeraden](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs).
 
@@ -43,12 +49,18 @@ Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal
 Bij uitlevering als RD dezelfde realisaties beschikbaar als bij aanlevering.
 
 Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografische ensemble CRSen opgevraagd worden. Te weten:
-* ETRS89 - epsg:4258
-* ETRS89 - epsg:4937
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
+| ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
 
 Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
-* WGS 84 - epsg:4326
-* WGS 84 - epsg:4979
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| WGS 84   | 4326  | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
+| WGS 84   | 4979  | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
 
 ##### Nauwkeurigheid
 
