@@ -25,6 +25,13 @@ Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en:
 Voor objecten binnen de EEZ geldt:
 * ETRS89
 
+<aside class="issue">
+Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden voor aanlevering van geometrieen in de EEZ.
+</aside>
+
+<aside class="issue">
+Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
+</aside>
 
 Bij 2D geometrieen geldt de volgende EPSG code horende bij het CRS:
 
