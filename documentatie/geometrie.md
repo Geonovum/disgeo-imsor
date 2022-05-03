@@ -64,10 +64,21 @@ Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als 
 
 Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
 
-| CRS-Naam | Code  | URI                                             |
-|----------|-------|-------------------------------------------------|
-| WGS 84   | 4326  | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
-| WGS 84   | 4979  | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
+| CRS-Naam | Code   | URI                                             |
+|----------|--------|-------------------------------------------------|
+| WGS 84   | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
+| WGS 84   | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
+| WGS 84   | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
+| WGS 84h  | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
+
+Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84 realisaties 4326 en 4979.
+
+In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
+
+<figure id="crs-overview">
+    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
+    <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
+</figure>
 
 ##### Nauwkeurigheid
 
