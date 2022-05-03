@@ -237,10 +237,10 @@ var respecConfig =
     },
     "gebruik-crs": {
       title: "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
-      href: "https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/", 
-      status: "Consultatieversie", 
+      href: "https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/",
+      status: "Vastgestelde versie",
       publisher: "Geonovum",
-      date: "2021-11-25",
+      date: "2022-03-14",
     },
     "iso-19156-2021": {
       title: "Geographic information — Observations, measurements and samples",

@@ -8,11 +8,81 @@ Principes:
 - het gaat om het representeren van de locatie, orientatie en de vorm van objecten. 
 - dimensionaliteit: 2D, 3D space versus 0D, 1D, 2D(, 3D) objecten
 
-#### Coordinaatreferentiesystemen:
-- WGS84 gebaseerd op ITRS, gebruikt voor GPS
+#### Coordinaatreferentiesystemen (CRS):
+- WGS 84 gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (ETRS89)
 - Rijksdriehoek systeem (RD)
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU Inspire)
+
+##### Ondersteunde CRS-en bij aanlevering:
+
+We maken onderscheid tussen geometrieën die aangeleverd worden voor objecten binnen het Europese deel van Nederland en de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Daarnaast maken we onderscheid tussen 2D- en 3D-geometrieën.
+
+Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en:
+* RD
+* ETRS89
+
+Voor objecten binnen de EEZ geldt:
+* ETRS89
+
+<aside class="issue">
+Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden voor aanlevering van geometrieen in de EEZ.
+</aside>
+
+<aside class="issue">
+Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
+</aside>
+
+Bij 2D geometrieen geldt de volgende EPSG code horende bij het CRS:
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
+| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
+
+Bij 3D geometrieen geldt de volgende EPSG code horende bij het CRS:
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
+| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
+
+De keuze voor de ETRF2000 realisaties van ETRS89 baseren we op het advies uit [[gebruik-crs]], waarin het gebruik van ETRF2000 [wordt aangeraden](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs).
+
+Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal 200 meter, op basis van het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [[gebruik-crs]], in verband met compatibiliteit met RDNAPTRANS™.
+
+##### Ondersteunde CRS-en bij uitlevering:
+
+Bij uitlevering als RD dezelfde realisaties beschikbaar als bij aanlevering.
+
+Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografische ensemble CRSen opgevraagd worden. Te weten:
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
+| ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
+
+Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
+
+| CRS-Naam | Code   | URI                                             |
+|----------|--------|-------------------------------------------------|
+| WGS 84   | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
+| WGS 84   | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
+| WGS 84   | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
+| WGS 84h  | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
+
+Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84 realisaties 4326 en 4979.
+
+In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
+
+<figure id="crs-overview">
+    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
+    <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
+</figure>
+
+##### Nauwkeurigheid
+
+Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [[gebruik-crs]].
 
 #### Technologieën (formaten, direct access methods: APIs/QLs, data languages)
 ISO STEP tech:
@@ -139,8 +209,8 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
 <aside class ="issue">Is RD wel het juiste coördinaatreferentiesysteem? 
 
 - Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee. 
-- Vanuit verschillende (basis)registraties is niet RD maar ETRS-89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]].
-- Op zee zijn noch RD noch ETRS-89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
+- Vanuit verschillende (basis)registraties is niet RD maar ETRS89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]].
+- Op zee zijn noch RD noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
 </aside>
 
 ### Modelleren van geometrie bij objecttype
@@ -372,7 +442,7 @@ MIM metadata van het attribuut `grondvlakgeometrie`:
   </tr>
   <tr>
     <th>Regels</th>
-    <td>CRS aanlevering: RD/ETRS-89</td>
+    <td>CRS aanlevering: RD/ETRS89</td>
   </tr>
   <tr>
     <th>Positionele juistheid</th>
