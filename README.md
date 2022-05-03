@@ -5,7 +5,7 @@ Producten in ontwikkeling in deze repository:
 - [Modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes)
 - [Generieke onderwerpen](https://geonovum.github.io/disgeo-imsor/documentatie) document
 
-Het informatiemodel zelf wordt ondwikkeld in een apparte repository voor het [Informatiemodel](https://geonovum.github.io/disgeo-im)
+Het informatiemodel zelf wordt ondwikkeld in een aparte repository voor het [Informatiemodel](https://geonovum.github.io/disgeo-im)
 
 Er wordt ook gewerkt aan een [Begrippenkader](https://geonovum.github.io/disgeo-begrippen/) voor de samenhangende objectenregistratie, dit gebeurt in een andere repository ([disgeo-begrippen](https://github.com/Geonovum/disgeo-begrippen/)). 
 
