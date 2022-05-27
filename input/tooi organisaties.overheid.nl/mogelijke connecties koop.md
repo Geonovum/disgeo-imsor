@@ -1,4 +1,6 @@
 # Mogelijke connecties bestuurlijke gebieden en Koop
+Status: Concept
+
 Dinsdag 24 mei hebben Frank, Pano en Linda afgestemd met Hans Overbeek en  Dorine Berkvens van Koop. Daarin hebben we de mogelijkheden verkend voor connecties tussen bestuurlijke gebieden als onderdeel van DiS-Geo en informatie over bestuursorganen die Koop bijhoud.
 
 ## Tooi
