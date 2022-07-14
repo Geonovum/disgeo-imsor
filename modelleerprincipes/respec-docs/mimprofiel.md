@@ -8,7 +8,7 @@ Drie van deze metadata-elementen zijn aspecten van kwaliteit. MIM kent een metad
 
 Het gaat in totaal om de volgende vier metadata-elementen die het DiS-Geo MIM profiel toevoegt: 
 
-## Specificatie voor `&lt;<Objecttype>>`
+## Specificatie voor `Objecttype`
 
 Aspect | Kardinaliteit | Toelichting | In EA
 -------|---------------|-------------|------
@@ -16,7 +16,7 @@ actualiteit | 1 | Beschrijving van eisen aan de update frequentie. | Tagged valu
 compleetheid | 1 | Geeft de mate van compleetheid van het objecttype aan. | Tagged value
 
 
-## Specificatie voor `&lt;<Attribuutsoort>>`
+## Specificatie voor `Attribuutsoort`
 
 Aspect | Kardinaliteit | Toelichting | In EA
 -------|---------------|-------------|------
