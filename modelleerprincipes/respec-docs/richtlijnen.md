@@ -38,7 +38,7 @@ invulling van:
 
 **Voorbeelden**
 
-Een manier om de registratie-, bron- en herkomstmetadata duidelijk te onderscheiden van directe eigenschappen is doormiddel van een standaard modelleerpatroon, waarbij je via een voorgedefinieerde relatie van een <a>informatieobject</a> kunt vinden wat de registratiecontext van dat <a>informatieobject</a> is, en wat de registratie-, bron- en herkomstmetadata is die daarbij hoort. [[NEN3610-2021-ontw]] zet hier al een goede stap in door het introduceren van het concept Registratiegegevens. Zie ook het voorbeeld in [](#p3-alleen-directe-eigenschappen).
+Een manier om de registratie-, bron- en herkomstmetadata duidelijk te onderscheiden van directe eigenschappen is doormiddel van een standaard modelleerpatroon, waarbij je via een voorgedefinieerde relatie van een <a>informatieobject</a> kunt vinden wat de registratiecontext van dat <a>informatieobject</a> is, en wat de registratie-, bron- en herkomstmetadata is die daarbij hoort. [[NEN3610-2022]] zet hier al een goede stap in door het introduceren van het concept Registratiegegevens. Zie ook het voorbeeld in [](#p3-alleen-directe-eigenschappen).
 
 ## **R2**. Gebruik gegevensgroeptype wacht op verduidelijking in MIM
 

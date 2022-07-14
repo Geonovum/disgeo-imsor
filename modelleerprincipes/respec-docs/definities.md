@@ -27,9 +27,9 @@ Een object, ook wel fenomeen genoemd, is een ding, een onderwerp van gesprek, in
 
 Een informatieobject is een set gegevens over een <a>object</a>. Een informatieobject is meestal een (gegevens)instantie van een <a>objecttype</a>.
 
-Deze definitie volgt de definitie in [[NEN3610-2021-ontw]], gebaseerd op [[NEN2660-1-2021-ontw]] die luidt:
+Deze definitie volgt de definitie in [[NEN3610-2022]], gebaseerd op [[NEN2660-1-2021-ontw]] die luidt:
 
-> Een informatieobject is een op zichzelf staand geheel van gegevens met een eigen identiteit. In de context van een objecttype is het één voorkomen (instantie) van een objecttype en representeert een specifiek object/ding in de werkelijkheid. Een object/ding in de werkelijkheid wordt dus gerepresenteerd door een informatieobject conform het informatiemodel.
+> Een informatieobject is een op zichzelf staand geheel van gegevens met een eigen identiteit. In de context van een objecttype is het één instantie (voorkomen) van een objecttype en representeert een specifiek object/ding in de werkelijkheid. Een object/ding in de werkelijkheid wordt dus gerepresenteerd door een informatieobject conform het informatiemodel.
 
 Een geo-informatieobject is een specifiekere vorm van informatieobjecten, namelijk een informatieobject waarvan één of meerdere gegevens een geometrie van het <a>object</a> in kwestie uitdrukt.
 

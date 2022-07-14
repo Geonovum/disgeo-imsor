@@ -34,7 +34,7 @@ De gegevensmodellering zal plaatsvinden conform het Metamodel Informatie Modelle
 
 <aside class="note">Mochten er modelleerconstructies nodig zijn die nog niet zijn opgenomen in een standaard, of die tegenstrijdig zijn met een van de standaarden, dan zal het modelleerteam dit bespreken met de relevante partijen die de standaarden beheren om te onderzoeken of de betreffende standaard hierop aangepast kan worden.</aside>
 
-Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie [[NEN3610-2021-ontw]]. 
+Het informatiemodel voor de samenhangende objectenregistratie zal zodanig worden opgesteld dat deze volledig aansluit op de nieuwe versie van het basismodel geo-informatie [[NEN3610-2022]]. 
 
 De ontwikkeling van het informatiemodel wordt daarnaast zoveel als mogelijk afgestemd met de nieuwe versie van de Ordeningsregels voor gegevens in de bouw, deel 1 [[NEN2660-1-2021-ontw]] en 2 [[NEN2660-2-2021-ontw]].
 

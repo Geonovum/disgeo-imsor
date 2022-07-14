@@ -131,11 +131,12 @@ var respecConfig =
       date:       "Maart 2011",
       publisher:  "NEN",
     },
-    "NEN3610-2021-ontw":
+    "NEN3610-2022":
     {
       title:      "NEN-3610 Basismodel geo-informatie",
-      status:     "Ontwerp",
-      date:       "2021",
+      href:       "https://www.nen.nl/nen-3610-2022-nl-296137",
+      status:     "Definitief",
+      date:       "Juni 2022",
       publisher:  "NEN",
     },
     "NEN2660-1996":

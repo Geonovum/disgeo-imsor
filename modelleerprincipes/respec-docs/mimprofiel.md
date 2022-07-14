@@ -45,7 +45,7 @@ Dit metadata-aspect geeft aan in welke mate gegevens aanwezig zijn over het obje
 De compleetheid wordt beschreven bij het objecttype in de tagged value `Compleetheid`. Het domein van deze tagged value is `Verplicht | Optioneel`. 
 
 ### Inwinregels
-Uit [[nen-3610-2022]]: 
+Uit [[NEN3610-2022]]: 
 > Inwinregels geven aan welke punten van een object ingemeten moeten worden en waar de geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing.
 
 Verreweg de meeste objecttypen in die in DiS-Geo een rol spelen hebben in hun huidige registratie al enige vorm van inwinregels. Omdat dit vaak omvangrijke instructies zijn, zijn ze meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. 
