@@ -8,7 +8,7 @@ Drie van deze metadata-elementen zijn aspecten van kwaliteit. MIM kent een metad
 
 Het gaat in totaal om de volgende vier metadata-elementen die het DiS-Geo MIM profiel toevoegt: 
 
-## Specificatie voor `<<Objecttype>>`
+## Specificatie voor `&lt;<Objecttype>>`
 
 Aspect | Kardinaliteit | Toelichting | In EA
 -------|---------------|-------------|------
@@ -16,7 +16,7 @@ actualiteit | 1 | Beschrijving van eisen aan de update frequentie. | Tagged valu
 compleetheid | 1 | Geeft de mate van compleetheid van het objecttype aan. | Tagged value
 
 
-## Specificatie voor `<<Attribuutsoort>>`
+## Specificatie voor `&lt;<Attribuutsoort>>`
 
 Aspect | Kardinaliteit | Toelichting | In EA
 -------|---------------|-------------|------
@@ -31,7 +31,7 @@ Actualiteit is de mate waarin gegevens recent genoeg zijn. Het is één van de N
 
 Dit metadata-aspect geeft aan binnen welke termijn (aantal dagen/maanden) na realisatie/ontstaan van een object, dit object beschikbaar is. Het geeft dus de [updatefrequentie](https://www.noraonline.nl/wiki/Updatefrequentie) aan. 
 
-<aside class="issue">De actualiteitseis en in meer of mindere mate ook de andere metadata-aspecten doen erg denken aan de situatie dat de SOR een nieuwe, aparte registratie zou worden. Maar in het geval dat DiS-Geo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk geen *eisen* die gesteld worden. Dan gaat het meer om DiS-Geo als dataproduct, en de metadata aspecten *beschrijven* dan wat de actualiteit, compleetheid, positionele juistheid en inwinregels zijn. Die worden dan niet gesteld maar afgeleid uit de onderliggende registraties. 
+<aside class="issue">De actualiteitseis en in meer of mindere mate ook de andere metadata-aspecten doen erg denken aan de situatie dat de SOR een nieuwe, aparte registratie zou worden. Maar in het geval dat DiS-Geo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk geen <i>eisen</i> die gesteld worden. Dan gaat het meer om DiS-Geo als dataproduct, en de metadata aspecten <i>beschrijven</i> dan wat de actualiteit, compleetheid, positionele juistheid en inwinregels zijn. Die worden dan niet gesteld maar afgeleid uit de onderliggende registraties. 
 
 In dat geval is het niet nodig om deze metadata aspecten bij het IM op te nemen (hoewel het zou kunnen als extra informatie voor de lezer), tenzij eventueel voor nieuw te introduceren objecttypen. Maar dan nog heeft DiS-Geo misschien niet zoveel te eisen. 
 </aside>
