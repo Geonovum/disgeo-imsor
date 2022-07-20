@@ -1,12 +1,14 @@
-@prefix : <https://begrippen.geostandaarden.nl/disgeo/id/begrip/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <https://begrippen.geostandaarden.nl/sor/nl/page/> .
 @prefix grddl: <http://www.w3.org/2003/g/data-view#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://begrippen.geostandaarden.nl/sor/nl/page/> a owl:Ontology .
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/> a owl:Ontology;
   owl:imports <http://purl.org/dc/terms/>, <http://purl.org/iso25964/skos-thes> .
@@ -22,66 +24,70 @@
     <https://begrippen.geostandaarden.nl/disgeo/nl/page/ingetrokken>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/ontwerp_registratieve_ruimte>,
     <https://begrippen.geostandaarden.nl/disgeo/nl/page/vastgesteld>;
   skos:prefLabel "Statussen van registratieve ruimten"@nl .
-  
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/ontwerp_registratieve_ruimte> a skos:Concept;
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/ontwerp_registratieve_ruimte>
+  a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/planfase>;
   skos:definition "Object waarvan de vaststelling wordt voorbereid."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Ontwerp (registratieve ruimte)"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/vastgesteld> a skos:Concept;
   dct:created "2021-02-12"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/aanwezige_toestand>;
   skos:definition "Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Vastgesteld"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/ingetrokken> a skos:Concept;
   dct:created "2021-02-12"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/afwezige_toestand>;
   skos:definition "Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Ingetrokken"@nl .
-  
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/afgevoerd_registratieve_ruimte> a
-    skos:Concept;
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/afgevoerd_registratieve_ruimte>
+  a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/afwezige_toestand>;
   skos:definition "Object dat ten onrechte is opgevoerd in de registratie of waarvan de voorbereiding niet heeft geleid tot vaststelling."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Afgevoerd (registratieve ruimte)"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/afwezige_toestand> a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/levensfase>;
   skos:definition "De staat waarin een object als ongeschikt wordt gezien voor het vervullen van zijn functie. Het object bestaat dan niet meer binnen de beschouwde werkelijkheid."@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
+  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl,
+    "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van DiS-Geo. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/ingetrokken>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/afgevoerd_registratieve_ruimte>;
   skos:prefLabel "Afwezige toestand"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/planfase> a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/levensfase>;
   skos:definition "De staat waarin een object zich bevindt voordat het zijn functie kan vervullen. Het object kan dan als ongeschikt worden gezien voor het vervullen van zijn functie, maar het bestaat nog wel binnen de beschouwde werkelijkheid."@en;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
+  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl,
+    "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van DiS-Geo. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/ontwerp_registratieve_ruimte>;
   skos:prefLabel "Plantoestand"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/aanwezige_toestand> a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/levensfase>;
   skos:definition "De staat waarin een object als geschikt kan worden gezien voor het vervullen van zijn functie."@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
+  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl,
+    "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van DiS-Geo. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/vastgesteld>;
   skos:prefLabel "Aanwezige toestand"@nl .
@@ -92,10 +98,12 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_begrippen> a skos:Collection;
   skos:member <https://begrippen.geostandaarden.nl/disgeo/nl/page/gemeentegebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_aansluitende_zone>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_exclusieve_economische_zone>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/provinciegebied>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/rijksgebied>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregio>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/waterschapsgebied>;
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_exclusieve_economische_zone>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/provinciegebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/rijksgebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregio>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/waterschapsgebied>;
   skos:prefLabel "Registratieve begrippen"@nl .
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/thematische_verzamelingen> a skos:Collection;
@@ -111,11 +119,12 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/alternatieve_naam> a skos:Concept;
   dct:created "2021-06-03"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/naam_aanduiding>;
   skos:definition "Naam zoals deze bekend staat in het Fries (bij een formele benaming in het Nederlands) of in het Nederlands (bij een formele benaming in het Fries)"@nl;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip dat van toepassing is op meerdere modelelementen. Dit begrip is niet definitief."@nl,
-    "Dit begrip is wel terug te vinden in de huidige versie van het EMSO document, maar het wordt gerepresenteerd door een term die vaker voorkomt in de tekst.  De relatie met andere begrippen die gebruik maken van dezelfde term vergt meer aandacht. Om deze reden is het begrip in de huidige vorm niet definitief.  Echter is gekozen om het voorlopig zo op te nemen, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
+    "Dit begrip is wel terug te vinden in de huidige versie van het EMSO document, maar het wordt gerepresenteerd door een term die vaker voorkomt in de tekst.  De relatie met andere begrippen die gebruik maken van dezelfde term vergt meer aandacht. Om deze reden is het begrip in de huidige vorm niet definitief.  Echter is gekozen om het voorlopig zo op te nemen, zodat samenhang met het EMSO document gewaarborgd wordt."@nl,
+    "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van DiS-Geo. In dit geval gaat het om een begrip dat van toepassing is op meerdere modelelementen. Dit begrip is niet definitief."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Alternatieve naam (formele benaming in Fries/Nederlands)"@nl .
 
@@ -128,21 +137,23 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte> a skos:Concept;
   dct:created "2020-12-01"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   rdfs:label "Registratieve ruimte"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/object>;
   skos:definition "Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@nl;
   skos:editorialNote "Check de bron";
   skos:exactMatch <https://begrippen.geostandaarden.nl/nen3610/nl/page/registratieve_ruimte>;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/benoemdeplaats>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/buurt>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/gemeentegebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_aansluitende_zone>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_exclusieve_economische_zone>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/nummeraanduiding>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/openbareruimte>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/provinciegebied>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/rijksgebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregio>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/waterschapsgebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/wijk>,
-    <https://begrippen.geostandaarden.nl/disgeo/nl/page/woonplaats>;
+  skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/benoemdeplaats>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/buurt>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/gemeentegebied>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_aansluitende_zone>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_exclusieve_economische_zone>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/nummeraanduiding>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/openbareruimte>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/provinciegebied>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/rijksgebied>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregio>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/waterschapsgebied>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/wijk>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/woonplaats>;
   skos:prefLabel "Registratieve ruimte"@nl;
   skos:scopeNote "Het gaat vaak om gebieden waarin sprake is van een eenheid van politiek/bestuurlijke verantwoordelijkheid. Denk hierbij aan de begrenzing van provincies en gemeenten."@nl .
 
@@ -150,13 +161,13 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/gemeentecode> a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap>;
   skos:definition "De codering van een gemeente zoals deze door het CBS wordt gebruikt."@nl;
   skos:editorialNote "Check de bron";
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Gemeentecode"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/gemeentegebied> a skos:Concept;
   dct:created "2020-12-01"^^xsd:date;
   dct:source "Grondwet en Gemeentewet"@nl;
@@ -169,7 +180,7 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/provinciecode> a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap>;
   skos:definition "De codering van een provincie zoals deze door het CBS wordt gebruikt."@nl;
   skos:editorialNote "Check de bron";
@@ -198,7 +209,7 @@
 
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/waterschapscode> a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap>;
   skos:definition "De codering van een waterschap zoals deze door het CBS wordt gebruikt."@nl;
   skos:editorialNote "Check de bron";
@@ -214,15 +225,15 @@
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Waterschapsgebied"@nl;
   skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag)."@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregiocode> a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
-  dct:source "Samenhangende Objectenregistratie (SOR)"@nl;
+  dct:source "Samenhangende Objectenregistratie (SOR)"@nl, "DiS-Geo"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap>;
   skos:definition "Codering van een veiligheidsregio zoals deze door het CBS wordt gebruikt."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Veiligheidsregiocode"@nl .
-  
+
 <https://begrippen.geostandaarden.nl/disgeo/nl/page/veiligheidsregio> a skos:Concept;
   dct:created "2021-02-12"^^xsd:date;
   dct:source "Wet Veiligheidsregio’s."@nl;
@@ -230,9 +241,9 @@
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio’s."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Veiligheidsregio"@nl .
-  
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_aansluitende_zone> a
-    skos:Concept;
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_aansluitende_zone>
+  a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
   dct:source "Rijkswet instelling aansluitende zone"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte>;
@@ -241,8 +252,8 @@
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Nederlandse aansluitende zone"@nl .
 
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat> a
-    skos:Concept;
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_continentaal_plat>
+  a skos:Concept;
   dct:created "2021-02-12"^^xsd:date;
   dct:source "Mijnwet continentaal plat"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte>;
@@ -261,7 +272,8 @@
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Nederlandse exclusieve economische zone"@nl .
 
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee> a skos:Concept;
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/nederlandse_territoriale_zee>
+  a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
   dct:source "Wet grenzen Nederlandse territoriale zee"@nl;
   skos:broader <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratieve_ruimte>;
@@ -269,3 +281,43 @@
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Nederlandse territoriale zee"@nl .
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/object> a skos:Concept;
+  skos:definition "Een onderdeel van de (tastbare of denkbare) werkelijkheid."@nl;
+  skos:closeMatch <http://ont.cbnl.org/cb/def/CB00001>;
+  dct:created "2021-01-15"^^xsd:date;
+  dct:source "Gebaseerd op de definitie in MIM 1.1 en in de Nederlandse Conceptenbibliotheek (CB-NL)"@nl;
+  skos:topConceptOf <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:narrower <https://begrippen.geostandaarden.nl/disgeo/nl/page/geografisch_gebied>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/onbepaald_terrein>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/registratief_object>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/water>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/functioneel_object>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/constructie>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/begroeiing>;
+  skos:prefLabel "Object"@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl .
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap> a skos:Concept;
+  dct:source "Gebaseerd op de definitie in MIM 1.1 en in de Nederlandse Conceptenbibliotheek (CB-NL)"@nl;
+  dct:created "2021-01-15"^^xsd:date;
+  skos:closeMatch <http://ont.cbnl.org/cb/def/CB00038>;
+  skos:definition "Een typering van gegevens die samen dezelfde mate van een kwaliteit of karakteristiek weerspiegelen"@nl;
+  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:prefLabel "Eigenschap"@nl;
+  skos:topConceptOf <https://begrippen.geostandaarden.nl/disgeo/nl> .
+
+<https://begrippen.geostandaarden.nl/disgeo/nl> a skos:ConceptScheme;
+  dct:creator "Geonovum"@nl;
+  dct:description "Een thesaurus van begrippen die betrekking hebben op de inhoud van de Doorontwikkeling in samenhang van de geo-basisregistraties (DiS-Geo)"@nl;
+  dct:format "SKOS"@nl;
+  dct:language "Nederlands"@nl;
+  skos:hasTopConcept <https://begrippen.geostandaarden.nl/disgeo/nl/page/eigenschap>,
+    <https://begrippen.geostandaarden.nl/disgeo/nl/page/levensfase>, <https://begrippen.geostandaarden.nl/disgeo/nl/page/object>;
+  skos:prefLabel "Begrippenkader DiS-Geo"@nl .
+
+<https://begrippen.geostandaarden.nl/disgeo/nl/page/levensfase> a skos:Concept;
+  dct:created "2021-03-17"^^xsd:date;
+  dct:source "DiS-Geo"@nl;
+  skos:definition "De staat waarin een object zich bevindt"@nl;
+  skos:prefLabel "Levensfase"@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl> .
