@@ -33,9 +33,9 @@
   skos:prefLabel "Levensfase"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:topConceptOf <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  dct:created "2021-03-17"^^xsd:date;
   dct:source "DiS-Geo"@nl;
-  skos:definition "De staat waarin een object zich bevindt"@nl .
+  skos:definition "De staat waarin een object zich bevindt"@nl;
+  dct:created "2021-03-17"^^xsd:date .
 
 :plantoestand a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
@@ -138,11 +138,29 @@
   skos:prefLabel "Hoofdthema's"@nl .
 
 :registratieve_begrippen a skos:Collection;
-  skos:member :gemeentegebied, :nederlandse_aansluitende_zone, :nederlandse_continentaal_plat,
-    :nederlandse_exclusieve_economische_zone, :nederlandse_territoriale_zee, :provinciegebied,
-    :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :waterschapsgebied, :gemeente,
-    :openbaar_lichaam, :waterschap, :provincie;
+  skos:member :gemeentegebied, :nederlandse_exclusieve_economische_zone, :nederlandse_territoriale_zee,
+    :provinciegebied, :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :waterschapsgebied,
+    :gemeente, :openbaar_lichaam, :provincie, :nederlandse_aansluitende_zone, :nederlandse_continentaal_plat,
+    :waterschap;
   skos:prefLabel "Registratieve begrippen"@nl .
+
+:nederlandse_aansluitende_zone a skos:Concept;
+  dct:created "2021-01-15"^^xsd:date;
+  dct:source "Rijkswet instelling aansluitende zone"@nl;
+  skos:definition "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn"@nl;
+  skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:prefLabel "Nederlandse aansluitende zone"@nl;
+  skos:broader :bestuurlijk_gebied_op_zee .
+
+:nederlandse_continentaal_plat a skos:Concept;
+  dct:created "2021-02-12"^^xsd:date;
+  dct:source "Mijnwet continentaal plat"@nl;
+  skos:definition "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee."@nl;
+  skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:prefLabel "Nederlands continentaal plat"@nl;
+  skos:broader :bestuurlijk_gebied_op_zee .
 
 :gemeente a skos:Concept;
   skos:broader :openbaar_lichaam;
@@ -199,14 +217,6 @@
   skos:scopeNote "Het gaat vaak om gebieden waarin sprake is van een eenheid van politiek/bestuurlijke verantwoordelijkheid. Denk hierbij aan de begrenzing van provincies en gemeenten."@nl;
   dct:source "DiS-Geo"@nl .
 
-:veiligheidsregiocode a skos:Concept;
-  dct:source "DiS-Geo"@nl;
-  dct:created "2021-03-17"^^xsd:date;
-  skos:broader :eigenschap;
-  skos:definition "Codering van een veiligheidsregio zoals deze door het CBS wordt gebruikt."@nl;
-  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Veiligheidsregiocode"@nl .
-
 :veiligheidsregio a skos:Concept;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :openbaar_lichaam;
@@ -215,14 +225,14 @@
   skos:definition "Een veiligheidsregio is een gebied waarin wordt samenwerkt door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid."@nl;
   skos:prefLabel "Veiligheidsregio"@nl .
 
-:gemeentecode a skos:Concept;
+:code a skos:Concept;
   dct:source "DiS-Geo"@nl;
   dct:created "2021-01-15"^^xsd:date;
   skos:broader :eigenschap;
-  skos:definition "De codering van een gemeente zoals deze door het CBS wordt gebruikt."@nl;
+  skos:definition "Codering van een openbaar lichaam zoals deze door het CBS (op land) of door het RVIG (op zee) wordt gebruikt."@nl;
   skos:editorialNote "Check de bron";
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Gemeentecode"@nl .
+  skos:prefLabel "Code"@nl .
 
 :gemeentegebied a skos:Concept;
   dct:created "2020-12-01"^^xsd:date;
@@ -237,78 +247,48 @@
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :bestuurlijk_gebied .
 
-:provinciecode a skos:Concept;
-  dct:created "2021-01-15"^^xsd:date;
-  skos:broader :eigenschap;
-  skos:definition "De codering van een provincie zoals deze door het CBS wordt gebruikt."@nl;
-  skos:editorialNote "Check de bron";
-  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Provinciecode"@nl;
-  dct:source "DiS-Geo"@nl .
-
 :provinciegebied a skos:Concept;
+  skos:broader :bestuurlijk_gebied_op_land;
   dct:created "2020-12-01"^^xsd:date;
   dct:source "Grondwet en provinciewet"@nl;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Provinciegebied"@nl;
-  skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden."@nl;
-  skos:broader :bestuurlijk_gebied_op_land .
+  skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden."@nl .
 
 :rijksgebied a skos:Concept;
+  skos:broader :bestuurlijk_gebied_op_land;
   dct:created "2021-01-15"^^xsd:date;
   dct:source "Basisregistratie Kadaster (BRK)"@nl;
   skos:definition "Het grondgebied van het Koninkrijk der Nederlanden"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Rijksgebied"@nl;
-  skos:scopeNote "Dit betreft het Europese deel van het Koninkrijk der Nederlanden."@nl;
-  skos:broader :bestuurlijk_gebied_op_land .
-
-:waterschapscode a skos:Concept;
-  dct:created "2021-01-15"^^xsd:date;
-  skos:broader :eigenschap;
-  skos:definition "De codering van een waterschap zoals deze door het CBS wordt gebruikt."@nl;
-  skos:editorialNote "Check de bron";
-  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Waterschapscode"@nl;
-  dct:source "DiS-Geo"@nl .
+  skos:scopeNote "Dit betreft het Europese deel van het Koninkrijk der Nederlanden."@nl .
 
 :waterschapsgebied a skos:Concept;
+  skos:broader :bestuurlijk_gebied_op_land;
   dct:created "2020-12-01"^^xsd:date;
   dct:source "Grondwet, Waterschapswet en INSPIRE"@nl;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld op basis van artikel 133 van de Grondwet en de Waterschapswet."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Waterschapsgebied"@nl;
-  skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag)."@nl;
-  skos:broader :bestuurlijk_gebied_op_land .
+  skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag)."@nl .
 
-:nederlandse_aansluitende_zone a skos:Concept;
-  dct:created "2021-01-15"^^xsd:date;
-  dct:source "Rijkswet instelling aansluitende zone"@nl;
-  skos:definition "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn"@nl;
-  skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
-  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Nederlandse aansluitende zone"@nl;
-  skos:broader :bestuurlijk_gebied_op_zee .
+<https://begrippen.geostandaarden.nl/disgeo/nl> a skos:ConceptScheme;
+  dct:format "SKOS"@nl;
+  dct:language "Nederlands"@nl;
+  skos:hasTopConcept :eigenschap, :levensfase, :object;
+  skos:prefLabel "Begrippenkader DiS-Geo"@nl;
+  dct:creator "Geonovum"@nl;
+  dct:description "Een thesaurus van begrippen die betrekking hebben op de inhoud van de Doorontwikkeling in samenhang van de geo-basisregistraties (DiS-Geo)"@nl .
 
 :bestuurlijk_gebied_op_zee a skos:Concept;
   skos:prefLabel "Bestuurlijk gebied op zee"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :bestuurlijk_gebied .
 
-:nederlandse_continentaal_plat a skos:Concept;
-  dct:created "2021-02-12"^^xsd:date;
-  dct:source "Mijnwet continentaal plat"@nl;
-  skos:definition "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee."@nl;
-  skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
+:formele_naam a skos:Concept;
+  skos:prefLabel "Formele naam"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Nederlandse continentaal plat"@nl;
-  skos:broader :bestuurlijk_gebied_op_zee .
-
-<https://begrippen.geostandaarden.nl/disgeo/nl> a skos:ConceptScheme;
-  dct:creator "Geonovum"@nl;
-  dct:description "Een thesaurus van begrippen die betrekking hebben op de inhoud van de Doorontwikkeling in samenhang van de geo-basisregistraties (DiS-Geo)"@nl;
-  dct:format "SKOS"@nl;
-  dct:language "Nederlands"@nl;
-  skos:hasTopConcept :eigenschap, :levensfase, :object;
-  skos:prefLabel "Begrippenkader DiS-Geo"@nl .
+  skos:broader :eigenschap;
+  skos:definition "Naam van een openbaar lichaam zoals formeel benoemd door het bevoegd gezag."@nl .
