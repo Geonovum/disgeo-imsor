@@ -20,7 +20,7 @@
 							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Mogelijk geen waarde" type="enumeration" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="Ja,Nee" default="Nee"/>
-							<Tag name="Inwinningsregels" type="structured" description="" unit="" values="" default=""/>
+							<Tag name="Inwinningsregels" type="String" description="Hyperlink naar inwinregels voor het objecttype. Deze zijn te omvangrijk om in EA op te nemen." unit="" values="" default=""/>
 							<Tag name="PositioneleJuistheid" type="Integer" description="De nauwkeurigheid van de geometrie." unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
@@ -114,12 +114,13 @@
 							<Tag name="Herkomst" type="" description="De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is." unit="" values="" default=""/>
 							<Tag name="Begrip" type="" description="Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI." unit="" values="" default=""/>
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
-							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
-							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
 							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
+							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
+							<Tag name="Inwinningsregels" type="String" description="Hyperlink naar inwinregels voor het objecttype. Deze zijn te omvangrijk om in EA op te nemen." unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Gegevensgroep" notes="Een typering van een groep van gelijksoortige gegevens die voor een objecttype van toepassing is." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -302,12 +303,13 @@
 							<Tag name="Herkomst" type="" description="De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is." unit="" values="" default=""/>
 							<Tag name="Begrip" type="" description="Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI." unit="" values="" default=""/>
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
-							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
-							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
 							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
+							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
+							<Tag name="Inwinningsregels" type="String" description="Hyperlink naar inwinregels voor het objecttype. Deze zijn te omvangrijk om in EA op te nemen." unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="View" notes="Een groepering van objecttypen die gespecificeerd zijn in een extern informatiemodel en vanuit het perspectief van het eigen informatiemodel inzicht geeft welke gegevens van deze objecttypen relevant zijn binnen het eigen informatiemodel." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -517,7 +519,7 @@
 				<Metamodel/>
 			</Content>
 		</UMLProfile>
-	</UIToolboxes><WorkspaceLayouts><WorkspaceLayout name="standaard"><Content xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAPZVEVWDMHL0V0MAADKdAwAHABEAc3RyLmRhdFVUDQAHT8f8Yk/H/GJPx/xi
+	</UIToolboxes><WorkspaceLayouts><WorkspaceLayout name="standaard"><Content xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIADhgEVWDMHL0V0MAADKdAwAHABEAc3RyLmRhdFVUDQAHiNj8YojY/GKI2Pxi
 7X1rj+XIcSU/L7D/QRDgb/Ziqqqru8vAftCOZK9gazUr+bHGemFUdVWPx5ZmjHlYsn/9Mhg3
 J4IRcYKRvLxVt24TjTrDiZtMnhOZkS8myd8O/zbcD98Ofxx+Mvx2+I/hu+H74Wn4/fjfnwy/
 GY++HL6abN+Ov/1k+MWY7t+Gb8b/o1Tfjpar4Xb4b8P1+EdHt8Pd8F+H/zL9/d/hfw5/NZ7x
@@ -837,5 +839,5 @@ yX04/B6M78d85C3h3w1/Nqb64bDf5tvhP9S7wvl32nPzOF6f3pvxeHhTuP7HqX87tk/Ej965
 8fnwf5KzKCrjs/4hOet2Ou/lfPf30ztCHscc/zDafzfmSGMe2r1EHm0++4vply8XvXZ9SP+r
 MTXlq3On56TpPSX+7ez9aFvs9mWUeR/TyuKfp+t/Pqp6XOB/86Il8dvhr8fjP/7o9Z9N/vpq
 +Pcx578b//s0Xmf+bDmn+2JS8/1Ab3r5+Xj8YfjXyYZLi3Yd0Jq4P/+X41k/m96m/83oga/G
-NLw7LcqF/1396LP/D1BLAQIXCxQAAAAIAPZVEVWDMHL0V0MAADKdAwAHAAkAAAAAAAAAAAAA
-gAAAAABzdHIuZGF0VVQFAAdPx/xiUEsFBgAAAAABAAEAPgAAAI1DAAAAAA==</Content></WorkspaceLayout></WorkspaceLayouts></MDG.Technology>
+NLw7LcqF/1396LP/D1BLAQIXCxQAAAAIADhgEVWDMHL0V0MAADKdAwAHAAkAAAAAAAAAAAAA
+gAAAAABzdHIuZGF0VVQFAAeI2PxiUEsFBgAAAAABAAEAPgAAAI1DAAAAAA==</Content></WorkspaceLayout></WorkspaceLayouts></MDG.Technology>
