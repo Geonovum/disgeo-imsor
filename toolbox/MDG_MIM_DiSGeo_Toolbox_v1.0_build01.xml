@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<MDG.Technology version="1.0"><Documentation id="build03" name="MIM-DiSGeo" version="1.0" notes="MIM 1.1.1 - DiSGeo extensie - Geonovum - build 03&#xA;&#xA;&#xA;Inhoudelijk&#xA; ï¿½ Alt-1 en Alt-2 gecombineerd. (relatiesoort leidend en relatierol leidend)&#xA; ï¿½ Enumeratiewaarde als extent op attribuut.&#xA; ï¿½ Toevoeging en uniformering keuze-elementen&#xA; ï¿½ Uniformering definities model-elementen&#xA; ï¿½ Uniformering definities tagged values&#xA;&#xA;Praktisch&#xA; ï¿½ MIM-versienummer duidelijker in toolbox verwerkt&#xA; ï¿½ MIM-relaties aan Quick Linker toegevoegd&#xA; ï¿½ MIM-diagram toegevoegd&#xA; ï¿½ Koppeling MIM-diagram en MIM-toolbox" infoURI="https://docs.geostandaarden.nl/mim/mim/" supportURI="https://github.com/Geonovum/MIM-Werkomgeving/issues/"/><UMLProfiles><UMLProfile profiletype="uml2">
-			<Documentation id="EDFDE9C6-3" name="MIM-DiSGeo" version="1.0" alias="MIM -DiSGeo 1.0" notes="MIM DiSGeo extensie"/>
+<MDG.Technology version="1.0"><Documentation id="build01" name="MIM-DiSGeo" version="1.0" notes="Deze toolbox is een extensie op de MIM-toolbox v1.1.1. De extensie bevat extra metadata voor het vastleggen kwaliteitseisen voor:&#xA;&#xA;«Objecttype» met:&#xA; • Actualiteit&#xA; • InwinningVerplicht&#xA;&#xA; «Attribuuttype» met:&#xA; • Inwinningsregels&#xA; • PositioneleJuistheid"/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="59109140-5" name="MIM" version="1.0" alias="DG-MIM 1.1.1" notes="MIM"/>
 			<Content>
 				<Stereotypes>
 					<Stereotype name="Attribuutsoort" notes="De typering van gelijksoortige gegevens die voor een objecttype van toepassing is." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -15,13 +15,13 @@
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
 							<Tag name="Lengte" type="" description="De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze." unit="" values="" default=""/>
 							<Tag name="Patroon" type="" description="De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." unit="" values="" default="&lt;memo&gt;"/>
-							<Tag name="Formeel patroon" type="" description="Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
-							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
+							<Tag name="Formeel patroon" type="" description="Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend." unit="" values="" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Mogelijk geen waarde" type="enumeration" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="Ja,Nee" default="Nee"/>
-                            <Tag name="Inwinregels" type="" description="Referentie, in de vorm van een hyperlink (URI), naar inwinregels voor het objecttype. Alleen in te vullen bij geometrieattributen." unit="" values="" default=""/>
-                            <Tag name="Positionele juistheid" type="" description="De nauwkeurigheid van de geometrie als een getal in centimeters. Alleen in te vullen bij geometrieattributen." unit="" values="" default=""/>
+							<Tag name="Inwinningsregels" type="structured" description="" unit="" values="" default=""/>
+							<Tag name="PositioneleJuistheid" type="Integer" description="De nauwkeurigheid van de geometrie." unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Codelijst" notes="De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat geen kenmerken, voor alle kenmerken wordt verwezen naar de specificatie van de externe waardelijst." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -103,7 +103,7 @@
 							<Tag name="Locatie" type="" description="Als het type van het attribuutsoort een waardenlijst is, dan wordt hier de locatie waar deze te vinden is opgegeven." unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="Externe koppeling" notes="Een associatie waarmee vanuit het perspectief van het eigen informatiemodel een objecttype uit het ï¿½eigenï¿½ informatiemodel gekoppeld wordt aan een objecttype van een extern informatiemodel. De relatie zelf hoort bij het ï¿½eigenï¿½ objecttype." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+					<Stereotype name="Externe koppeling" notes="Een associatie waarmee vanuit het perspectief van het eigen informatiemodel een objecttype uit het ‘eigen’ informatiemodel gekoppeld wordt aan een objecttype van een extern informatiemodel. De relatie zelf hoort bij het ‘eigen’ objecttype." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
 						<AppliesTo>
 							<Apply type="Association">
 								<Property name="compositionKind" value="none"/>
@@ -116,7 +116,7 @@
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
@@ -132,7 +132,7 @@
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
 						</TaggedValues>
@@ -187,7 +187,7 @@
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Informatiemodeltype" type="" description="De beschrijving van de aard van het informatiemodel, hoe het geï¿½nterpreteerd moet worden." unit="" values="" default=""/>
+							<Tag name="Informatiemodeltype" type="" description="De beschrijving van de aard van het informatiemodel, hoe het geïnterpreteerd moet worden." unit="" values="" default=""/>
 							<Tag name="Informatiedomein" type="" description="Aanduiding van het functionele domein waartoe het informatiemodel behoort." unit="" values="" default=""/>
 							<Tag name="MIM versie" type="" description="De versie van de MIM specificatie die gebruikt is om het informatiemodel in uit te drukken." unit="" values="" default=""/>
 							<Tag name="MIM extensie" type="" description="De aanduiding van een extensie op MIM." unit="" values="" default=""/>
@@ -205,13 +205,13 @@
 						<TaggedValues>
 							<Tag name="Herkomst" type="" description="De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is." unit="" values="" default=""/>
 							<Tag name="Begrip" type="" description="Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI." unit="" values="" default=""/>
-							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
-							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
+							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Populatie" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Kwaliteit" type="" description="Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn." unit="" values="" default=""/>
-                            <Tag name="Actualiteit" type="" description="Beschrijving van eisen aan de update frequentie in aantal dagen/weken/maanden" unit="" values="" default=""/>
-                            <Tag name="Compleetheid" type="enumeration" description="Geeft de mate van compleetheid van het objecttype aan; meer specifiek of een objecttype in het kader van een registratie verplicht moet worden ingewonnen." unit="" values="Verplicht,Optioneel" default=""/>
+							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
+							<Tag name="Actualiteit" type="String" description="Beschrijving van eisen aan de update-frequentie" unit="" values="" default=""/>
+							<Tag name="InwinningVerplicht" type="Boolean" description="Geeft de mate van compleetheid van de inwinning van het objecttype aan." unit="" values="True,False" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Primitief datatype" notes="Een primitief datatype is een datatype met een eenvoudige basisstructuur, oftewel enkelvoudig en zonder gelaagdheid." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -269,7 +269,7 @@
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
@@ -285,7 +285,7 @@
 							<Tag name="Herkomst defintie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
@@ -304,7 +304,7 @@
 							<Tag name="Herkomst definitie" type="" description="De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld." unit="" values="" default=""/>
 							<Tag name="Toelichting" type="" description="" unit="" values="" default="&lt;memo&gt;"/>
 							<Tag name="Datum opname" type="" description="De datum waarop het modelelement is opgenomen in het informatiemodel." unit="" values="" default=""/>
-							<Tag name="Indicatie materiï¿½le historie" type="enumeration" description="Indicatie of de materiï¿½le historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
+							<Tag name="Indicatie materiële historie" type="enumeration" description="Indicatie of de materiële historie van het kenmerk van het object te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Indicatie formele historie" type="enumeration" description="Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is." unit="" values="Ja,Nee" default=""/>
 							<Tag name="Authentiek" type="enumeration" description="Aanduiding of het kenmerk een authentiek gegeven betreft." unit="" values="Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig" default=""/>
 							<Tag name="Mogelijk geen waarde" type="" description="Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is." unit="" values="" default="Nee"/>
@@ -328,11 +328,11 @@
 				<TaggedValueTypes/>
 				<ViewDefinitions/>
 				<Metamodel/>
-				<QuickLink data="//Source Element Type,Source ST filter,Target Element Type,Target ST Filter,Diagram Filter,New Element Type,New Element ST,New Link Type,New Link ST,New Link Direction,New Link Caption,New Link &amp; Element Caption,Create Link,Create Element,Disallow Self connector,Exclusive to ST Filter + No inherit from metatype,Menu Group,Complexity Level,Target Must Be Parent,Embed element,Precedes Separator LEAF,Precedes Separator GROUP,DUMMY COLUMN&#xA;Class,Objecttype,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Gestructureerd datatype,DataType,Gestructureerd datatype,MIM::MIM Diagram,DataType,Gestructureerd datatype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Referentielijst,DataType,Referentielijst,MIM::MIM Diagram,DataType,Referentielijst,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Codelijst,DataType,Codelijst,MIM::MIM Diagram,DataType,Codelijst,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;PrimitiveType,Primitief datatype,PrimitiveType,Primitief datatype,MIM::MIM Diagram,PrimitiveType,Primitief datatype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Enumeration,Enumeratie,Enumeration,Enumeratie,MIM::MIM Diagram,Enumeration,Enumeratie,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Gegevensgroeptype,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,DataType,Keuze,MIM::MIM Diagram,DataType,Keuze,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,AssociationClass,Relatieklasse,to,MIM Relatieklasse,MIM Relatieklasse,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,Association,Externe koppeling,to,MIM Externe koppeling,MIM Externe koppeling,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Keuze,Class,Objecttype,MIM::MIM Diagram,Class,Objecttype,Association,Keuze,to,MIM Keuze,MIM Keuze,TRUE,TRUE,TRUE,TRUE,MIM,0,TRUE,,,,&#xA;"/>
+				<QuickLink data="//Source Element Type,Source ST filter,Target Element Type,Target ST Filter,Diagram Filter,New Element Type,New Element ST,New Link Type,New Link ST,New Link Direction,New Link Caption,New Link &amp; Element Caption,Create Link,Create Element,Disallow Self connector,Exclusive to ST Filter + No inherit from metatype,Menu Group,Complexity Level,Target Must Be Parent,Embed element,Precedes Separator LEAF,Precedes Separator GROUP,DUMMY COLUMN&#xA;Class,Objecttype,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Gestructureerd datatype,DataType,Gestructureerd datatype,MIM::DG-MIM Diagram,DataType,Gestructureerd datatype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Referentielijst,DataType,Referentielijst,MIM::DG-MIM Diagram,DataType,Referentielijst,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Codelijst,DataType,Codelijst,MIM::DG-MIM Diagram,DataType,Codelijst,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;PrimitiveType,Primitief datatype,PrimitiveType,Primitief datatype,MIM::DG-MIM Diagram,PrimitiveType,Primitief datatype,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Enumeration,Enumeratie,Enumeration,Enumeratie,MIM::DG-MIM Diagram,Enumeration,Enumeratie,Generalization,Generalisatie,to,MIM Generalisatie,MIM Generalisatie,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Gegevensgroeptype,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,DataType,Keuze,MIM::DG-MIM Diagram,DataType,Keuze,Association,Relatiesoort,to,MIM Relatiesoort,MIM Relatiesoort,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,AssociationClass,Relatieklasse,to,MIM Relatieklasse,MIM Relatieklasse,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;Class,Objecttype,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,Association,Externe koppeling,to,MIM Externe koppeling,MIM Externe koppeling,TRUE,TRUE,TRUE,TRUE,MIM,0,,,,,&#xA;DataType,Keuze,Class,Objecttype,MIM::DG-MIM Diagram,Class,Objecttype,Association,Keuze,to,MIM Keuze,MIM Keuze,TRUE,TRUE,TRUE,TRUE,MIM,0,TRUE,,,,&#xA;"/>
 			</Content>
 		</UMLProfile>
 		<UMLProfile profiletype="uml2">
-			<Documentation id="29A061BB-D" name="MIM_Keuzeattribuut" version="1.1.1" alias="MIM 1.1.1 - Keuzeattribuut" notes="MIM_Keuzeattribuut"/>
+			<Documentation id="F3E78B33-1" name="MIM_Keuzeattribuut" version="1.0" alias="DG | MIM 1.1.1 - Keuzeattribuut" notes="MIM_Keuzeattribuut"/>
 			<Content>
 				<Stereotypes>
 					<Stereotype name="Keuze" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -347,10 +347,10 @@
 			</Content>
 		</UMLProfile>
 		<UMLProfile profiletype="uml2">
-			<Documentation id="4A1612D4-A" name="MIM_Keuzebasis" version="1.1.1" alias="MIM 1.1.1 - Keuzebasis" notes="MIM_Keuzebasis"/>
+			<Documentation id="8EB66F03-5" name="MIM_Keuzebasis" version="1.0" alias="DG | MIM 1.1.1 - Keuzebasis" notes="MIM_Keuzebasis"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="Keuze" notes="Gestructureerd datatype, waarmee wordt aangegeven dat er maar ï¿½ï¿½n van de eigenschappen van dit datatype mogelijk is in een instantie van dit datatype." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+					<Stereotype name="Keuze" notes="Gestructureerd datatype, waarmee wordt aangegeven dat er maar één van de eigenschappen van dit datatype mogelijk is in een instantie van dit datatype." cx="0" cy="0" bgcolor="16777164" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
 						<AppliesTo>
 							<Apply type="DataType"/>
 						</AppliesTo>
@@ -369,7 +369,7 @@
 			</Content>
 		</UMLProfile>
 		<UMLProfile profiletype="uml2">
-			<Documentation id="1D9A4364-6" name="MIM_Keuzedatatype" version="1.1.1" alias="MIM 1.1.1 - Keuzedatatype" notes="MIM_Keuzedatatype"/>
+			<Documentation id="AF113D79-9" name="MIM_Keuzedatatype" version="1.0" alias="DG | MIM 1.1.1 - Keuzedatatype" notes="MIM_Keuzedatatype"/>
 			<Content>
 				<Stereotypes>
 					<Stereotype name="Datatype" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -384,7 +384,7 @@
 			</Content>
 		</UMLProfile>
 		<UMLProfile profiletype="uml2">
-			<Documentation id="EE6A2E72-5" name="MIM_Keuzerelatie" version="1.1.1" alias="MIM 1.1.1 - Keuzerelatie" notes="MIM_Keuzerelatie"/>
+			<Documentation id="C96E23DF-5" name="MIM_Keuzerelatie" version="1.0" alias="DG | MIM 1.1.1 - Keuzerelatie" notes="MIM_Keuzerelatie"/>
 			<Content>
 				<Stereotypes>
 					<Stereotype name="Keuze" notes="Een element van een Keuze waarmee een keuze uit datatypen wordt gespecificeerd. Alleen toepasbaar bij een klasse met het stereotype Keuze." cx="0" cy="0" bgcolor="14480885" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
@@ -402,10 +402,10 @@
 			</Content>
 		</UMLProfile>
 	</UMLProfiles><DiagramProfile><UMLProfile profiletype="uml2">
-			<Documentation id="7E0118D7-0" name="MIM" version="1.1.1" alias="MIM 1.1.1" notes="MIM"/>
+			<Documentation id="47195FF0-1" name="MIM" version="1.0" alias="DG-MIM 1.1.1" notes="MIM"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="MIM Diagram" notes="Dit diagram vormt de basis voor modelleren met MIM. Het is gekoppeld aan de MIM-toolbox, waardoor deze continue beschikbaar blijft. De MIM-toolbox is een extensie op het standaard UML::Class diagram." cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="DG-MIM Diagram" notes="Dit diagram vormt de basis voor modelleren met MIM. Het is gekoppeld aan de MIM-toolbox, waardoor deze continue beschikbaar blijft. De MIM-toolbox is een extensie op het standaard UML::Class diagram." cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
 							<Apply type="Diagram_Logical">
 								<Property name="alias" value="MIM"/>
@@ -421,72 +421,84 @@
 			</Content>
 		</UMLProfile>
 	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
-			<Documentation id="AEC3F119-8" name="MIM-DiSGeo" version="1.0" alias="MIM-DiSGeo 1.0" notes="MIM DiSGeo extensie"/>
+			<Documentation id="8E4CFCE0-5" name="MIM" version="1.0" alias="DG-MIM 1.1.1" notes="MIM"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="MIM: Objecten en attributen" alias="MIM 1.1.1: Objecten en attributen" notes="Selecteer en klik ergens op het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="MIM: Objecten en attributen" alias="DG-MIM 1.1.1: Objecten en attributen" notes="Selecteer en klik ergens op het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="MIM-DiSGeo::Objecttype(UML::Class)" type="" description="" unit="" values="" default="Objecttype"/>
-							<Tag name="MIM-DiSGeo::Attribuutsoort(UML::Attribute)" type="" description="" unit="" values="" default="Attribuutsoort"/>
+							<Tag name="MIM::Objecttype(UML::Class)" type="" description="" unit="" values="" default="Objecttype"/>
+							<Tag name="MIM::Attribuutsoort(UML::Attribute)" type="" description="" unit="" values="" default="Attribuutsoort"/>
 							<Tag name="MIM_Keuzeattribuut::Keuze(UML::Attribute)" type="" description="" unit="" values="" default="Keuze(attribuut)"/>
-							<Tag name="MIM-DiSGeo::Gegevensgroeptype(UML::Class" type="" description="" unit="" values="" default="Gegevensgroeptype"/>
-							<Tag name="MIM-DiSGeo::Gegevensgroep(UML::Attribute)" type="" description="" unit="" values="" default="Gegevensgroep"/>
+							<Tag name="MIM::Gegevensgroeptype(UML::Class" type="" description="" unit="" values="" default="Gegevensgroeptype"/>
+							<Tag name="MIM::Gegevensgroep(UML::Attribute)" type="" description="" unit="" values="" default="Gegevensgroep"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="MIM: Relaties" alias="MIM 1.1.1: Relaties" notes="Selecteer en trek van type naar type om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="MIM: Relaties" alias="DG-MIM 1.1.1: Relaties" notes="Selecteer en trek van type naar type om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="MIM-DiSGeo::Generalisatie(UML::Generalization)" type="" description="" unit="" values="" default="Generalisatie"/>
-							<Tag name="MIM-DiSGeo::Relatiesoort(UML::Association)" type="" description="" unit="" values="" default="Relatiesoort"/>
-							<Tag name="MIM-DiSGeo::Relatierol(UML::AssociationEnd)" type="" description="" unit="" values="" default="Relatierol"/>
-							<Tag name="MIM-DiSGeo::Relatieklasse(UML::AssociationClass)" type="" description="" unit="" values="" default="Relatieklasse"/>
-							<Tag name="MIM-DiSGeo::Externe koppeling(UML::Association)" type="" description="" unit="" values="" default="Externe koppeling"/>
+							<Tag name="MIM::Generalisatie(UML::Generalization)" type="" description="" unit="" values="" default="Generalisatie"/>
+							<Tag name="MIM::Relatiesoort(UML::Association)" type="" description="" unit="" values="" default="Relatiesoort"/>
+							<Tag name="MIM::Relatierol(UML::AssociationEnd)" type="" description="" unit="" values="" default="Relatierol"/>
+							<Tag name="MIM::Relatieklasse(UML::AssociationClass)" type="" description="" unit="" values="" default="Relatieklasse"/>
+							<Tag name="MIM::Externe koppeling(UML::Association)" type="" description="" unit="" values="" default="Externe koppeling"/>
 							<Tag name="MIM_Keuzerelatie::Keuze(UML::Association)" type="" description="" unit="" values="" default="Keuze(relatie)"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="MIM: Datatypen" alias="MIM 1.1.1: Datatypen" notes="Selecteer en klik in het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="MIM: Datatypen" alias="DG-MIM 1.1.1: Datatypen" notes="Selecteer en klik in het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="MIM-DiSGeo::Primitief datatype(UML::PrimitiveType)" type="" description="" unit="" values="" default="Primitief datatype"/>
-							<Tag name="MIM-DiSGeo::Gestructureerd datatype(UML::DataType)" type="" description="" unit="" values="" default="Gestructureerd datatype"/>
-							<Tag name="MIM-DiSGeo::Data element(UML::Attribute)" type="" description="" unit="" values="" default="Data element"/>
+							<Tag name="MIM::Primitief datatype(UML::PrimitiveType)" type="" description="" unit="" values="" default="Primitief datatype"/>
+							<Tag name="MIM::Gestructureerd datatype(UML::DataType)" type="" description="" unit="" values="" default="Gestructureerd datatype"/>
+							<Tag name="MIM::Data element(UML::Attribute)" type="" description="" unit="" values="" default="Data element"/>
 							<Tag name="MIM_Keuzebasis::Keuze(UML::DataType)" type="" description="" unit="" values="" default="Keuze"/>
 							<Tag name="MIM_Keuzedatatype::Datatype(UML::Attribute)" type="" description="" unit="" values="" default="Datatype(Keuze)"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="MIM-DiSGeo: Waardelijsten" alias="MIM 1.1.1: Waardelijsten" notes="Selecteer en klik ergens op het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="MIM: Waardelijsten" alias="DG-MIM 1.1.1: Waardelijsten" notes="Selecteer en klik ergens op het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="MIM-DiSGeo::Enumeratie(UML::Enumeration)" type="" description="" unit="" values="" default="Enumeratie"/>
-							<Tag name="MIM-DiSGeo::Enumeratiewaarde(UML::Attribute)" type="" description="" unit="" values="" default="Enumeratiewaarde"/>
-							<Tag name="MIM-DiSGeo::CodeLijst(UML::DataType)" type="" description="" unit="" values="" default="CodeLijst"/>
-							<Tag name="MIM-DiSGeo::Referentielijst(UML::DataType)" type="" description="" unit="" values="" default="Referentielijst"/>
-							<Tag name="MIM-DiSGeo::Referentie element(UML::Attribute)" type="" description="" unit="" values="" default="Referentie element"/>
+							<Tag name="MIM::Enumeratie(UML::Enumeration)" type="" description="" unit="" values="" default="Enumeratie"/>
+							<Tag name="MIM::Enumeratiewaarde(UML::Attribute)" type="" description="" unit="" values="" default="Enumeratiewaarde"/>
+							<Tag name="MIM::CodeLijst(UML::DataType)" type="" description="" unit="" values="" default="CodeLijst"/>
+							<Tag name="MIM::Referentielijst(UML::DataType)" type="" description="" unit="" values="" default="Referentielijst"/>
+							<Tag name="MIM::Referentie element(UML::Attribute)" type="" description="" unit="" values="" default="Referentie element"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="MIM-DiSGeo: Packages" alias="MIM 1.1.1: Packages" notes="Selecteer en klik ergens in het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="MIM: Packages" alias="DG-MIM 1.1.1: Packages" notes="Selecteer en klik ergens in het diagram om te plaatsen" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="MIM-DiSGeo::Extern(UML::Package)" type="" description="" unit="" values="" default="Extern"/>
-							<Tag name="MIM-DiSGeo::View(UML::Package)" type="" description="" unit="" values="" default="View"/>
-							<Tag name="MIM-DiSGeo::Informatiemodel(UML::Package)" type="" description="" unit="" values="" default="Informatiemodel"/>
-							<Tag name="MIM-DiSGeo::Domein(UML::Package)" type="" description="" unit="" values="" default="Domein"/>
+							<Tag name="MIM::Extern(UML::Package)" type="" description="" unit="" values="" default="Extern"/>
+							<Tag name="MIM::View(UML::Package)" type="" description="" unit="" values="" default="View"/>
+							<Tag name="MIM::Informatiemodel(UML::Package)" type="" description="" unit="" values="" default="Informatiemodel"/>
+							<Tag name="MIM::Domein(UML::Package)" type="" description="" unit="" values="" default="Domein"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="UMLClassRelationships" alias="UML: Relaties" notes="Relationships for Class Diagrams" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
-							<Apply type="ToolboxPage"/>
+							<Apply type="ToolboxPage">
+								<Property name="toolboxPage" value="MIM: Objecten en attributen=1; MIM: Relaties=1; MIM: Datatypen=1; MIM: Waardelijsten=1; MIM: Packages=1; "/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
 							<Tag name="UML::Association" type="" description="" unit="" values="" default="Associate"/>
@@ -505,4 +517,325 @@
 				<Metamodel/>
 			</Content>
 		</UMLProfile>
-	</UIToolboxes></MDG.Technology>
+	</UIToolboxes><WorkspaceLayouts><WorkspaceLayout name="standaard"><Content xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">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
+Os5+7se55tM06+D/+/dxFvblNMOieeJPD+l+PR6Tnea99+Nc5pfj70/jmXa+suX8ozLrEB/3
+jPkq8w/BKPI02npZaSMR9tUznF5HIfFDajN+kdaq7houp0f80Jlad9/IPlK4rBbxyxGxR4jS
+i1o0nl/mF2ld1u3zwZilz/mhM3UpV8begpHCTO1yH41xq/RarR0v5v4TjLRmujEbhHH6Cr/4
+zLluYnaKUvb8EBuEW6UXtdru+WUYaY11+3NraNnX+dkztX3deDFSaNXqMZjWjdgg3CL9fCT1
+m4FWrOm+IBpL+XsxrEDyfn1jKbSWW6mh9bqWY1Q2S/Zjx1KnXsvFKKoQv1g3rnNr1nIrK7i2
+/j3nWm6k3JYJ8t8xGPse2VGZ8Jqm5Zevbm6xpilYWdNEbfFWGDNAdr+maf3ne2O9uunrRy9G
++WRrmsKvsrr5/Guawg+NVnM89ZqmLd8I47qS29eNUf2apuW3lW6MmSpv1/xEt0+X56LbsAjX
+q7X+wxgzy+3rxqh6fS7md7zuJcxUacucHx3T37nsmuBddfptEtvtm7hSpaRro/ZRfawtfqyM
+uuvjm6vp3Peu3HrR9sPnUPcYmYPlNy8FO/pEpdDje3lLfRtJ8mg1LhPdD0vpMMv2FlurLMI4
+5fFlErczEcYMsL0X43xsP9J+oxLkVpZ3w9Z9GfUjGrUvaUySf5vL+m+eQkZeum3Xbc0bNWab
+35/R+cTz4Aoi/1WwNz3CLB/rP91/cinXS9bvJmaMStamQej55Yi4ZvZjxka2/Ytwje4axsy0
+HflPdH+cavoDKLsI7ViYcZ1axC/HZd3ezmr5re5LJS6o+UnroHGd7h7MVOX+07orNV2jtH8a
+e9Xm/HLMdCM7K7yeeo5Ky+X52aejGHt192PMtdJ/aN00aqrobhjPjepqvf96EXHN7Ev1WM6N
++UWt9Mu02J6fTaHtTTeNWXpK2X5pg7Gi1vNbh4hrZm9qqSV6D/qnnJ99oxBjRfdxuFT/arop
+Nuul/F6tD2rM1SJ+6xBxzex5LC+3f1H8Pl8s5/6LGWvdj9PxAxhTRdhXyjm/dZipQnZWy7vb
+9KpInZ88paYR6d4Kl+tfbs9rNzo3qsdxna77rxdjZsiu+ek0wu/K7eXfYjWI74txGl4Z4jRk
+8XfK/CqR8PNreB8mxu/dvSeM8TqBLzWfBmFv+calg+x3YLTb5nh0Fq+W6DtUGi2/SCv1wjcq
+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</Content></WorkspaceLayout></WorkspaceLayouts></MDG.Technology>
