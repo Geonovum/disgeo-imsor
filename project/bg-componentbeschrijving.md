@@ -1,4 +1,4 @@
-# DisGeo  Component Bestuurlijke Gebieden
+# DisGeo Component Bestuurlijke Gebieden
 We willen graag van BZK horen wat zij minstens willen hebben om mee in productie te gaan. 
 
 ## MVP 
