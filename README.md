@@ -4,10 +4,9 @@ Repository voor ontwikkeling van het informatiemodel voor de samenhangende objec
 Producten in ontwikkeling in deze repository: 
 - [Modelleerprincipes](https://geonovum.github.io/disgeo-imsor/modelleerprincipes)
 - [Generieke onderwerpen](https://geonovum.github.io/disgeo-imsor/documentatie) document
+- [Begrippenkader](https://github.com/Geonovum/disgeo-imsor/blob/master/begrippen/disgeo-begrippen.ttl) - wordt ontwikkeld in Vocbench, kopie wordt hier bewaard voor versiebeheer. De werkversie van het begrippenkader is te raadplegen in de [publicatieomgeving](https://begrippen.geostandaarden.nl/disgeo/).
 
 Het informatiemodel zelf wordt ondwikkeld in een aparte repository voor het [Informatiemodel](https://geonovum.github.io/disgeo-im)
-
-Er wordt ook gewerkt aan een [Begrippenkader](https://geonovum.github.io/disgeo-begrippen/) voor de samenhangende objectenregistratie, dit gebeurt in een andere repository ([disgeo-begrippen](https://github.com/Geonovum/disgeo-begrippen/)). 
 
 De modelleerprincipes en het informatiemodel worden regelmatig besproken met de hiervoor opgerichte *Expertgroep DiSGeo-informatiemodel*. Zie voor de verslagen van deze bijeenkomsten: 
 - [de overleg folder](https://github.com/Geonovum/disgeo-imsor/tree/master/overleg)
