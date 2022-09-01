@@ -1,0 +1,1348 @@
+<http://www.w3.org/2004/02/skos/core#scopeNote>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Opmerkingen"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/BeginGeldigheid> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Begintijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/EindGeldigheid> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/EindRegistratie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Eindtijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleHistorie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleLevensduur> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleHistorie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleLevensduur> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectBegintijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectEindtijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/TijdstipRegistratie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuutwaarde> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ConceptueelInformatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaat> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Data> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/DataproductSpecificatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataset> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datasetserie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datatype> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Gegeven> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoInformatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeografischeIdentificatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Georeferentie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Informatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Interoperabiliteit> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/LogischInformatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Metadata> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Model> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Presentatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratiehouder> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Representatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/RuimtelijkReferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Sector> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Symbool> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Werkelijkheid> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Domein> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeenWaarde> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Identificatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/NietGeautoriseerd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/NietOndersteund> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/VastgesteldOnbekend> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Versie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/VorigGeldigeVersie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/VorigGeregistreerdeVersie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/WaardeOnbekend> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Begrippenkader NEN3610:2020"@nl .
+
+<https://isotc211.geolexica.org/concepts/104>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Data> .
+
+<https://isotc211.geolexica.org/concepts/110>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct> .
+
+<https://isotc211.geolexica.org/concepts/111>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/DataproductSpecificatie> .
+
+<https://isotc211.geolexica.org/concepts/123>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datatype> .
+
+<https://isotc211.geolexica.org/concepts/124>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataset> .
+
+<https://isotc211.geolexica.org/concepts/125>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datasetserie> .
+
+<https://isotc211.geolexica.org/concepts/15>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema> .
+
+<https://isotc211.geolexica.org/concepts/1650>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Metadata> .
+
+<https://isotc211.geolexica.org/concepts/170>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut> .
+
+<https://isotc211.geolexica.org/concepts/203>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> .
+
+<https://isotc211.geolexica.org/concepts/2038>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaat> .
+
+<https://isotc211.geolexica.org/concepts/204>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeografischeIdentificatie> .
+
+<https://isotc211.geolexica.org/concepts/205>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoInformatie> .
+
+<https://isotc211.geolexica.org/concepts/342>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Presentatie> .
+
+<https://isotc211.geolexica.org/concepts/422>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/RuimtelijkReferentiesysteem> .
+
+<https://isotc211.geolexica.org/concepts/486>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Werkelijkheid> .
+
+<https://isotc211.geolexica.org/concepts/68>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Informatiemodel> .
+
+<https://isotc211.geolexica.org/concepts/703>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem> .
+
+<https://isotc211.geolexica.org/concepts/704>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum> .
+
+<https://isotc211.geolexica.org/concepts/93>
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <http://purl.org/dc/terms/> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/SemantischeHoofdklassen>
+        a       <http://www.w3.org/2004/02/skos/core#Collection> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Verzameling van NEN3610 begrippen die de geografische en thematische classificatie van geo-objecten weerspiegelen. De concepten betreffen in dit verband de fenomenen uit de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#member>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Begroeiing> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Bodem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Functioneel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Gebouw> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Geografisch_gebied> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Juridisch_werkingsgebied> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Kunstwerk> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Leiding> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratief_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verharding> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Water> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Spoorverkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Wegverkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Scheepvaartruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Waterverplaatsingsruimte> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Semantische hoofdklassen"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Begroeiing>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Begroeiing"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Begroeiing"@nl ;
+        <http://www.w3.org/2004/02/skos/core#skopeNote>
+                "Dit omvat alle niet veprlaatsende fotosynthese organismen (zoals bomen, struiken, gras etc.)"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Bodem>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bodem"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Bovenste deel van het natuurlijke aardoppervlak."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Bodem"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Constructie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Gebouwd object dat direct of indirect met de grond is verbonden en bedoeld is om ter plaatse te functioneren."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Gebouw> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Kunstwerk> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Leiding> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verharding> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Constructie"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Functioneel_object>
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Gebouw>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gebouw"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Overdekte en geheel of gedeeltelijk met wanden omsloten constructief zelfstandige eenheid bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Gebouw"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Geo-object"@nl , "Geographic feature"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19125-2:2006  Geographic information - Simple feature access - Part 2: SQL option"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Abstractie van een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde (bijvoorbeeld ten opzichte van het aardoppervlak)"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/203> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Geo-object"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Indien met een geo-object een gebied wordt bedoeld, kan dit in twee of drie dimensies zijn begrensd."@nl , "Of een fenomeen een geo-object is of niet hangt af van de context waarin het object is geplaatst. Is er een associatie met een geo-gerefereerde locatie dan is het een geo-object. Is de associatie er niet dan is het fenomeen geen geo-object. Zo is bijvoorbeeld het fenomeen huis weergegeven op een landkaart een geo-object. Is het weergegeven op een foto dan is het geen geo-object. Met andere woorden: koppeling van geo-informatie maakt van een object een geo-object."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Geografisch_gebied>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Geografische ruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Ruimte die bekend staat onder een vanuit de historie of in de volksmond bekende benaming of een fysisch-geografische samenhang kent."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Geografische ruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Juridisch_werkingsgebied>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Juridische ruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Ruimte waar een juridisch instrument beleid of regelgeving toepast."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Juridische ruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Kunstwerk>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Kunstwerk"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Kunstwerk"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Leiding>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Leiding"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Een geheel van geleiders of ruimte welke voorzien zijn van één ommanteling en bestemd is voor transport van materie, data of energie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Leiding"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Reëel object"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Geo-object waarvan het fenomeen in de werkelijkheid tastbaar, zichtbaar en begrensd aanwezig is."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Begroeiing> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Bodem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Water> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Reëel object"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratief_object>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Registratieve ruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Op basis van wet-of regelgeving afgebakende ruimte die als eenheid geldtvan politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Registratieve ruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Verharding>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Verharding"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Constructie> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakte oppervlak, bestaande uit in één of meer lagen over een ondergrond of onderliggende constructie aangelegd materiaal."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Verharding"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Virtuele ruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Geo-object waarvan geen tastbaar, zichtbaar en begrensd fenomeen in de werkelijkheid aanwezig is, maar die slechts in abstracte en/of geregistreerde vorm bestaat."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Functioneel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Geografisch_gebied> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Juridisch_werkingsgebied> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratief_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Functionele_ruimte> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Virtuele ruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Water>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Water"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Reeel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Oppervlaktewater"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/TemporeleKenmerken>
+        a       <http://www.w3.org/2004/02/skos/core#Collection> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Verzameling van NEN3610 begrippen die betrekking hebben op het modelleren van de historie van objecten."@nl ;
+        <http://www.w3.org/2004/02/skos/core#member>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/BeginGeldigheid> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Begintijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/EindGeldigheid> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/EindRegistratie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Eindtijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleHistorie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleLevensduur> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleHistorie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleLevensduur> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectBegintijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectEindtijd> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/TijdstipRegistratie> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Temporele kenmerken en versies"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "De temporele kenmerken zijn geen kenmerken van het object in de werkelijkheid maar zijn kenmerken die iets zeggen over de kenmerken van het object in de werkelijkheid. Het gaat immers om de geldigheid van gegevens."@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/BeginGeldigheid>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Start van de periode waarop deze versie van het informatieobject geldig is in de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Begin geldigheid"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Begintijd>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Tijdstip waarop het object in de werkelijkheid is ontstaan."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Begintijd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/EindGeldigheid>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Eind van de periode waarop deze versie van het informatieobject geldig is in de werkelijkheid. Wanneer deze waarde niet is ingevuld is de versie nog geldig."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Eind geldigheid"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/EindRegistratie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Eind registratie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Eind van de periode dat deze versie van het informatieobject geldig is in de registratie. Wanneer deze waarde niet is ingevuld is de versie nog geldig."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Eind registratie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Eindtijd>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Tijdstip waarop het object in de werkelijk niet meer geldig is."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Eindtijd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleHistorie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Formele historie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Formele historie beschrijft veranderingen van eigenschappen van een object in de registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Formele historie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Dit houdt in dat tijdstippen van aanpassing van attributen of attribuutwaarden in een registratie of database worden vastgelegd."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/FormeleLevensduur>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Formele levensduur beschrijft de tijdsinterval van geldigheid van het object in de registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Formele levensduur"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleHistorie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Materiële historie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Materiële historie beschrijft veranderingen van eigenschappen van een object in de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Materiële historie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/MaterieleLevensduur>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Materiële levensduur beschrijft de tijdsinterval van geldigheid van het object in de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Materiële levensduur"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectBegintijd>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Tijdstip waarop het informatieobject in de registratie is ontstaan."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Object begintijd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/ObjectEindtijd>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Tijdstip waarop het informatieobject in de registratie niet meer geldig is."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Object eindtijd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/TijdstipRegistratie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tijdstip registratie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Tijdstip waarop deze versie van het informatieobject is opgenomen in de registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Tijdstip registratie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/TermenDefinities>
+        a       <http://www.w3.org/2004/02/skos/core#Collection> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Verzameling van termen en definities die gelden voor de toepassing van de NEN3610."@nl ;
+        <http://www.w3.org/2004/02/skos/core#member>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoObject> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuutwaarde> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/ConceptueelInformatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaat> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Data> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/DataproductSpecificatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataset> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datasetserie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datatype> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Gegeven> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoInformatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/GeografischeIdentificatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Georeferentie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Informatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Interoperabiliteit> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/LogischInformatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Metadata> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Model> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Presentatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratiehouder> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Representatie> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/RuimtelijkReferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Sector> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Symbool> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Werkelijkheid> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Termen en definities"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Applicatieschema"@nl , "Application schema"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/15> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Applicatieschema"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/ConceptueelInformatiemodel> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/LogischInformatiemodel> ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Dit Basismodel geo-informatie is met UML beschreven in een applicatieschema."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Attribuut"@nl , "Feature attribute"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Kenmerk of gegeven van een geo-object"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/170> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Attribuut"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuutwaarde> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Gegeven> ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Een attribuut is de typering van gelijksoortige gegevens toegepast bij een geo-object."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuutwaarde>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Attribuutwaarde"@nl , "Value"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Waarde die een attribuut aanneemt"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Attribuutwaarde"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/ConceptueelInformatiemodel>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Conceptueel Informatiemodel"@nl , "Conceptual Information model"@en ;
+        <http://purl.org/dc/terms/source>
+                "Metamodel Informatiemodellering"@nl , "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Modellering van de werkelijkheid binnen het beschouwde domein, onafhankelijk van ontwerp van en implementatie in systemen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Conceptueel Informatiemodel"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaat>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coördinaat"@nl , "Coordinate"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Getal in een sequentie van n getallen om de positie van een punt in een n-dimensionale ruimte te bepalen"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/2038> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Coördinaat"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "In een coördinaatreferentiesysteem zijn de getallen voorzien van een eenheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coördinaatreferentiesysteem"@nl , "Coordinate reference system"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Coördinaatsysteem dat aan een object is gerelateerd door een datum."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/703> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Coördinaatreferentiesysteem"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum> ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Voor geodetische en verticale datums is de aarde het gerelateerde object."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Coordinate system"@en , "Coördinaatsysteem"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Set van wiskundige regels voor het toekennen van coördinaten aan punten"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/93> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Coördinaatsysteem"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Data>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Data"@nl , "Data"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "ISO/IEC 2382-1:1993 Information technology — Vocabulary — Part 1: Fundamental terms"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Herinterpreteerbare representatie van informatie op een formele manier die geschikt is voor communicatie, interpretatie of verwerking."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/104> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Data"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dataproduct"@nl , "Data product"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19131:2008 Geographic information - Data product specifications"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Dataset of datasetserie conform een dataproductspecificatie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/110> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Dataproduct"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Data> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/DataproductSpecificatie> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/DataproductSpecificatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dataproduct specificatie"@nl , "Dataproduct specification"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19131:2008 Geographic information - Data product specifications"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Dataspecificatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Gedetailleerde beschrijving van een dataset of datasetserie inclusief additionele informatie die nodig is voor inwinning, transport en gebruik van data."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/111> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Dataproduct specificatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataproduct> ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Een dataproductspecificatie bevat een beschrijving van het beschouwingsgebied en een specificatie om het beschouwingsgebied te representeren in een dataset. Het kan gebruikt worden voor dataproductie, verkoop, eindgebruik of andere toepassingen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataset>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dataset"@nl , "Dataset"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19115-1:2014 Geographic information - Metadata - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Identificeerbare collectie van data."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/124> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Dataset"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Datasetserie> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Datasetserie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Datasetserie"@nl , "Dataset series"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19115-1:2014 Geographic information - Metadata - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Collectie van datasets met dezelfde specificaties."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/125> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Datasetserie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Dataset> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Datatype>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Datatype"@nl , "Data type"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19103:2016 Geographic information - Conceptual schema language"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Specificatie van een waardedomein met operaties die zijn toegestaan op waarden binnen dit domein."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/123> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Datatype"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Datum>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Datum"@nl , "Datum"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19111:2020 Geographic information - Referencing by coordinates "@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Parameter of set van parameters voor het definiëren van het nulpunt, de schaal en de oriëntatie van een coördinaatsysteem."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/704> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Datum"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatreferentiesysteem> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Coordinaatsysteem> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Gegeven>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gegeven"@nl ;
+        <http://purl.org/dc/terms/source>
+                "Metamodel Informatiemodellering"@nl , "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "De betekenisvolle formulering van een waargenomen feit, waaraan een waarde kan worden toegekend."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Gegeven"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Attribuut> ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/GeoInformatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Geo-informatie"@nl , "Geo-information"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Geografische informatie"@nl , "Geographic Information"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Informatie over fenomenen met een implicite of explicite referentie naar een locatie relatief ten opzichte van de aarde (bijvoorbeeld ten opzichte van het aardoppervlak)."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/205> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Geo-informatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Geo-informatie is synoniem voor geografische informatie." ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/GeografischeIdentificatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Geografische identificatie"@nl , "Geographic identifier"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19112:2019 Geographic information - Spatial referencing by geographic identifiers"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Ruimtelijke referentie door een label of code waarmee een locatie wordt geïdentificeerd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/204> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Geografische identificatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "'Nederland' is een voorbeeld voor een identificatie van een land. '6711 AD' is een voorbeeld van een postcode."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Georeferentie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Georeferentie"@nl , "Georeference"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Locatie van een ruimtelijk object vastgelegd in een ruimtelijk referentiesysteem"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Georeferentie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Informatiemodel>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Informatiemodel"@nl , "Conceptual model"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Conceptual schema"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Formele beschijving van een beschouwingsgebied."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/68> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Informatiemodel"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Interoperabiliteit>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Interoperabiliteit"@nl , "Interoperability"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Mogelijkheid van verschillende autonome, heterogene eenheden, systemen of partijen om met elkaar te communiceren en interacteren."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Interoperabiliteit"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/LogischInformatiemodel>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Informatiemodel"@nl , "Conceptual model"@en ;
+        <http://purl.org/dc/terms/source>
+                "Metamodel Informatiemodellering"@nl , "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "gegevensmodel"@nl , "Conceptual schema"@en , "applicationschema"@en , "datamodel"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Modellering van de werkelijkheid voor representatie in een digitale omgeving."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Logisch informatiemodel"@nl ;
+        <http://www.w3.org/2004/02/skos/core#related>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Applicatieschema> ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Het logisch model wordt opgesteld voor ICT-interoperabiliteit, voor gebruik door met name de ontwerpers, bouwers en beheerders van ICT-voorzieningen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Metadata>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Metadata"@nl , "Metadata"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19115-1:2014 Geographic information - Metadata - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Gegevens over gegevens."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/1650> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Metadata"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Model>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Model"@nl , "Model"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19109:2015 Geographic information - Rules for application schema"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Abstractie van enige aspecten van de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Model"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Bij een model hoeft er nog geen sprake te zijn van het gebruik van een formele taal om het model mee te beschrijven."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Presentatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Portrayal"@en , "Presentatie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19117:2014 Geographic information - Portrayal"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Presentatie van informatie aan mensen"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/342> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Presentatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Presentatie van informatie door visualisatie, hoorbaar maken, tastbaar maken (tactiel) of combinaties hiervan."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Registratie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Op nationaal niveau geïdentificeerde en erkende gegevensverzameling"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Registratie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Een basisregistratie is een registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Registratiehouder>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Registratiehouder"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Organisatie verantwoordelijk voor het houden van de registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Registratiehouder"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "De registratiehouder is de organisatie die unieke objectidentificaties toekent voor objecten in een registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Representatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Representatie"@nl , "Representation"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Inhoudelijk vastleggen van de werkelijkheid"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Representatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Een instantie van een informatiemodel, een dataset, is een representatie van de werkelijkheid."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/RuimtelijkReferentiesysteem>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ruimtelijk referentiesysteem"@nl , "Spatial reference system"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19112:2019 Geographic information - Spatial referencing by geographic identifiers"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Model (systeem) voor identificatie van een positie (locatie) in de werkelijkheid"@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/422> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Ruimtelijk referentiesysteem"@nl ;
+        <http://www.w3.org/2004/02/skos/core#scopeNote>
+                "Identificatie van een positie kan door coördinaten (directe locatie) en door geografische identificatoren (indirecte locatie)."@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Sector>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Domain"@en , "Sector"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Kennisgebied of activiteit gekarakteriseerd door een verzameling van begrippen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Sector"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Symbool>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Symbool"@nl , "Symbol"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Presentatieprimitieve van grafische, audio of tactiele aard of een combinatie hiervan."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Symbool"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Werkelijkheid>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Werkelijkheid"@nl , "Universe of discourse"@en ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 3"@nl , "NEN-EN-ISO 19101-1:2014 Geographic information - Reference model - Part 1: Fundamentals"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel>
+                "Werkelijkheid"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Beeld van de echte of hypothetische wereld dat binnen de context van een domein alles van belang omvat."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch>
+                <https://isotc211.geolexica.org/concepts/486> ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Beschouwingsgebied"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Domein>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Een unieke verwijzing naar een registratie van objecten."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Domein"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/GeenWaarde>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Geen waarde"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Element heeft in werkelijkheid geen waarde"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Geen waarde"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Identificatie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Identificatie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Een unieke identificatiecode van een object binnen een registratie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Identificatie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/NietGeautoriseerd>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Niet geautoriseerd"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Deze zender vindt dat de ontvanger niet geautoriseerd is om de waarde te kennen"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Niet geautoriseerd"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/NietOndersteund>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Niet ondersteund"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Zender houdt in zijn registratie geen waarde voor dit attribuut bij. Geldt voor alle objecten van dit objecttype"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Niet ondersteund"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/VastgesteldOnbekend>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Vastgesteld onbekend"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Er is vastgesteld dat de waarde van het attribuut onbekend is en hoogst waarschijnlijk niet meer kan worden achterhaald (bijvoorbeeld omdat het brondocument onleesbaar is of het object niet meer bestaat in de werkelijkheid)"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Vastgesteld onbekend"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Versie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "De versie-aanduiding van een object."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Versie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/VorigGeldigeVersie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Vorige geldige versie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "De vorige materieel geldige versie van de registratie van een geo-object"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Vorige geldige versie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/VorigGeregistreerdeVersie>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Vorige geregistreerde versie"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "De vorige formeel geldige versie van de registratie van een geo-object"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Vorige geregistreerde versie"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/WaardeOnbekend>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Waarde onbekend"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Element is verplicht maar de waarde is bij de zender niet bekend"@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Waarde onbekend"@nl ;
+        <http://www.w3.org/2004/02/skos/core#topConceptOf>
+                <https://begrippen.geostandaarden.nl/nen3610> .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Spoorverkeerruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Spoorverkeerruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transportruimte voor voertuigen die zich over rails verplaatsen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Spoorverkeerruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Transportruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Functioneel_object> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Functionele_ruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich verplaatsen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Waterverplaatsingsruimte> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Transportruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Verkeerruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transportruimte voor verkeer over land, water of door de lucht."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Spoorverkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Wegverkeerruimte> , <https://begrippen.geostandaarden.nl/nen3610/nl/page/Scheepvaartruimte> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Verkeerruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Wegverkeerruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Wegverkeerruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transportruimte voor voertuigen die zich over wegen verplaatsen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Wegverkeerruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Scheepvaartruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Scheepvaartruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Verkeerruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transportruimte voor voertuigen die zich over waterverplaatsen."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Scheepvaartruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Waterverplaatsingsruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Waterverplaatsingsruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transportruimte waardoor water zich verplaatst."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Waterverplaatsingsruimte"@nl .
+
+<https://begrippen.geostandaarden.nl/nen3610/nl/page/Functionele_ruimte>
+        a       <http://www.w3.org/2004/02/skos/core#Concept> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Functionele ruimte"@nl ;
+        <http://purl.org/dc/terms/source>
+                "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl ;
+        <http://www.w3.org/2004/02/skos/core#broader>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Virtueel_object> ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Ruimte met een specifieke functie."@nl ;
+        <http://www.w3.org/2004/02/skos/core#inScheme>
+                <https://begrippen.geostandaarden.nl/nen3610> ;
+        <http://www.w3.org/2004/02/skos/core#narrower>
+                <https://begrippen.geostandaarden.nl/nen3610/nl/page/Transportruimte> ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Functionele ruimte"@nl .
