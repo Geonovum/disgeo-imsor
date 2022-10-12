@@ -203,7 +203,7 @@ col:registratieve_begrippen a skos:Collection;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :registratieve_ruimte .
 
-:veiligheidregiogebied a skos:Concept;
+:veiligheidsregiogebied a skos:Concept;
   skos:broader :bestuurlijk_gebied_op_land;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Veiligheidsregiogebied"@nl .
