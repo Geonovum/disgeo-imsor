@@ -141,7 +141,7 @@ col:themas a skos:Collection;
 
 col:registratieve_begrippen a skos:Collection;
   skos:member :gemeentegebied, :nederlandse_exclusieve_economische_zone, :nederlandse_territoriale_zee,
-    :provinciegebied, :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :waterschapsgebied,
+    :provinciegebied, :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :veiligheidsregiogebied, :waterschapsgebied,
     :gemeente, :openbaar_lichaam, :provincie, :nederlandse_aansluitende_zone, :nederlandse_continentaal_plat,
     :waterschap, :rijk;
   skos:prefLabel "Registratieve begrippen"@nl .
