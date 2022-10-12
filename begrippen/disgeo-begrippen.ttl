@@ -6,17 +6,19 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix : <https://begrippen.geostandaarden.nl/disgeo/nl/page/> .
+@prefix bk:	<http://begrippen.geostandaarden.nl/disgeo/id/begrippenkader/> .
+@prefix col: <http://begrippen.geostandaarden.nl/disgeo/id/collectie/> .
+@prefix : <http://begrippen.geostandaarden.nl/disgeo/id/begrip/> .
 
-<https://begrippen.geostandaarden.nl/disgeo/nl/page/> a owl:Ontology;
+<https://begrippen.geostandaarden.nl/disgeo/id/begrippenkader/> a owl:Ontology;
   owl:imports <http://purl.org/dc/terms/>, <http://purl.org/iso25964/skos-thes> .
 
-:levensfasen a skos:Collection;
+col:levensfasen a skos:Collection;
   skos:definition "Statussen voor de levensloop van objecten"@nl;
   skos:member :levensfasen_registratieve_ruimten;
   skos:prefLabel "Statussen"@nl .
 
-:levensfasen_registratieve_ruimten a skos:Collection;
+col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:member :afgevoerd_registratieve_ruimte, :ingetrokken, :ontwerp_registratieve_ruimte,
     :vastgesteld;
   skos:prefLabel "Statussen van registratieve ruimten"@nl .
@@ -133,11 +135,11 @@
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:prefLabel "Nederlandse exclusieve economische zone"@nl .
 
-:themas a skos:Collection;
+col:themas a skos:Collection;
   skos:member :registratieve_begrippen;
   skos:prefLabel "Hoofdthema's"@nl .
 
-:registratieve_begrippen a skos:Collection;
+col:registratieve_begrippen a skos:Collection;
   skos:member :gemeentegebied, :nederlandse_exclusieve_economische_zone, :nederlandse_territoriale_zee,
     :provinciegebied, :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :waterschapsgebied,
     :gemeente, :openbaar_lichaam, :provincie, :nederlandse_aansluitende_zone, :nederlandse_continentaal_plat,
@@ -274,7 +276,7 @@
   skos:prefLabel "Waterschapsgebied"@nl;
   skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag)."@nl .
 
-<https://begrippen.geostandaarden.nl/disgeo/nl> a skos:ConceptScheme;
+bk:begrippenkader-disgeo a skos:ConceptScheme;
   dct:format "SKOS"@nl;
   dct:language "Nederlands"@nl;
   skos:hasTopConcept :eigenschap, :levensfase, :object;
