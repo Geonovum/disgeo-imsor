@@ -203,7 +203,8 @@ col:registratieve_begrippen a skos:Collection;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl> .
 
 :bestuurlijk_gebied a skos:Concept;
-  skos:definition "Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s."@nl;
+  skos:definition "Een bestuurlijk gebied is een registratieve ruimte die op basis van wet- of regelgeving als eenheid geldt van bestuurlijke verantwoordelijkheid."@nl;
+  skos:scopeNote "Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio's."@nl;
   skos:prefLabel "Bestuurlijk gebied"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :registratieve_ruimte .
