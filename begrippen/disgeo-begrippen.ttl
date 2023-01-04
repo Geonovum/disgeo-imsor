@@ -91,12 +91,19 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:prefLabel "Afwezige toestand"@nl;
   dct:source "DiS-Geo"@nl .
 
+:overheidsorganisatie a skos:Concept;
+  skos:prefLabel "Overheidsorganisatie"@nl;
+  skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
+  skos:definition "Een overheidsorganisatie is een organisatie die naar algemene opvatting als onderdeel van de overheid wordt beschouwd."@nl;
+  rdfs:label "Overheidsorganisatie"@nl;
+  skos:broader :object .
+
 :openbaar_lichaam a skos:Concept;
   skos:prefLabel "Openbaar lichaam"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:definition "In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied."@nl;
+  skos:definition "Een openbaar lichaam is, in de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheidsorganisatie met publiekrechtelijke rechtspersoonlijkheid, die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied."@nl;
   rdfs:label "Openbaar lichaam"@nl;
-  skos:broader :object .
+  skos:broader :overheidsorganisatie .
 
 :nederlandse_territoriale_zee a skos:Concept;
   skos:broader :bestuurlijk_gebied_op_zee;
@@ -167,9 +174,7 @@ col:registratieve_begrippen a skos:Collection;
 :gemeente a skos:Concept;
   skos:broader :openbaar_lichaam;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:definition "De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en wethouders."@nl,
-    """Een overheidsorganisatie die een deel van een provincie bestuurt.
-"""@nl;
+  skos:definition "Een gemeente is een openbaar lichaam met algemene bevoegdheden, die een deel van een provinciegebied bestuurt."@nl;
   skos:prefLabel "Gemeente"@nl .
 
 <http://ont.cbnl.org/cb/def/CB00001> skos:closeMatch :object .
@@ -182,17 +187,17 @@ col:registratieve_begrippen a skos:Collection;
 :provincie a skos:Concept;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :openbaar_lichaam;
-  skos:definition "De bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. "@nl;
+  skos:definition "Een provincie is een openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk."@nl;
   skos:prefLabel "Provincie"@nl .
 
 :rijk a skos:Concept;
   skos:prefLabel "Rijk"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
   skos:broader :openbaar_lichaam;
-  skos:definition "Het onderdeel van de Nederlandse overheid dat wettelijke taken heeft op landelijk niveau: de 'centrale overheid'."@nl .
+  skos:definition "Een rijk is een openbaar lichaam dat wettelijke taken heeft op landelijk niveau."@nl .
 
 :waterschap a skos:Concept;
-  skos:definition "Een waterschap is een overheidsorganisatie die zorgt voor het waterbeheer in een bepaald gebied. "@nl;
+  skos:definition "Een waterschap is een openbaar lichaam dat uitsluitend bevoegd is met betrekking tot de waterhuishouding."@nl;
   skos:broader :openbaar_lichaam;
   skos:prefLabel "Waterschap"@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl> .
@@ -224,7 +229,7 @@ col:registratieve_begrippen a skos:Collection;
   skos:broader :openbaar_lichaam;
   dct:created "2021-02-12"^^xsd:date;
   dct:source "Wet Veiligheidsregio’s."@nl;
-  skos:definition "Een veiligheidsregio is een gebied waarin wordt samenwerkt door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid."@nl;
+  skos:definition "Een veiligheidsregio is een openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid."@nl;
   skos:prefLabel "Veiligheidsregio"@nl .
 
 :code a skos:Concept;
