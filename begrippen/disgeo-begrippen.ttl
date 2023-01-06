@@ -19,7 +19,7 @@ col:levensfasen a skos:Collection;
   skos:prefLabel "Statussen"@nl .
 
 col:levensfasen_registratieve_ruimten a skos:Collection;
-  skos:member :afgevoerd_registratieve_ruimte, :ingetrokken, :ontwerp_registratieve_ruimte,
+  skos:member :niet_gerealiseerd_registratieve_ruimte, :ingetrokken, :ontwerp_registratieve_ruimte,
     :vastgesteld;
   skos:prefLabel "Statussen van registratieve ruimten"@nl .
 
@@ -74,12 +74,12 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:prefLabel "Ingetrokken"@nl;
   dct:source "DiS-Geo"@nl .
 
-:afgevoerd_registratieve_ruimte a skos:Concept;
+:niet_gerealiseerd_registratieve_ruimte a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
   skos:broader :afwezige_toestand;
-  skos:definition "Object dat ten onrechte is opgevoerd in de registratie of waarvan de voorbereiding niet heeft geleid tot vaststelling."@nl;
+  skos:definition "Object waarvan de het ontwerp niet is gerealiseerd."@nl;
   skos:inScheme <https://begrippen.geostandaarden.nl/disgeo/nl>;
-  skos:prefLabel "Afgevoerd (registratieve ruimte)"@nl;
+  skos:prefLabel "Niet gerealiseerd (registratieve ruimte)"@nl;
   dct:source "DiS-Geo"@nl .
 
 :afwezige_toestand a skos:Concept;
