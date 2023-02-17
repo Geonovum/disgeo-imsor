@@ -260,7 +260,9 @@ Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemode
 </aside>
 
 <aside class="issue">
-Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
+   Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
+
+   <strong>Aanvulling:</strong> Dit zou je kunnen overwegen indien de hele geometrie dezelfde hoogte heeft. Dat is bij een <code>GM_Point</code> ook weer logischer dan bij <code>GM_Linestring</code> (bijv. één hoogteaanduiding voor een weg(deel) of <code>GM_Surface</code> (bijv. een plat dat van een gebouw). Het wordt complex indien het om een <i>set</i> met hoogtewaarden/-coördinaten gaat. Die moet je dan weer matchen met de geometrie. Bovendien vervalt dan het voordeel van 'direct inzicht'.
 </aside>
 
 #### 3D geometrie
