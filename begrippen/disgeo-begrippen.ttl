@@ -96,6 +96,22 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :object ;
   dct:source bron:tooi_ontologie_162 .
 
+:samenwerkingsorganisatie a skos:Concept;
+  dct:created "2025-10-14"^^xsd:date;
+  skos:definition "Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren in een publiekrechtelijke of privaatrechtelijke constructie."@nl;
+  skos:broader :overheidsorganisatie;
+  skos:inScheme bk:begrippenkader-disgeo;
+  skos:prefLabel "Samenwerkingsorganisatie"@nl;
+  dct:source bron:tooi_ontologie_162 .
+
+:openbaar_lichaam_uit_gemeenschappelijke_regeling a skos:Concept;
+  dct:created "2025-10-14"^^xsd:date;
+  skos:definition "Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren uit hoofde van de Wet gemeenschappelijke regelingen (Wgr)."@nl;
+  skos:broader :samenwerkingsorganisatie, :regionaal_openbaar_lichaam ;
+  skos:inScheme bk:begrippenkader-disgeo;
+  skos:prefLabel "Openbaar lichaam uit gemeenschappelijke regeling"@nl;
+  dct:source bron:tooi_ontologie_162 .
+
 :regionaal_openbaar_lichaam a skos:Concept;
   skos:prefLabel "Regionaal openbaar lichaam"@nl;
   skos:altLabel "Territoriaal openbaar lichaam"@nl;
@@ -140,13 +156,6 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
   skos:inScheme bk:begrippenkader-disgeo;
   skos:prefLabel "Nederlandse exclusieve economische zone"@nl .
-
-col:registratieve_begrippen a skos:Collection;
-  skos:member :gemeentegebied, :nederlandse_exclusieve_economische_zone, :nederlandse_territoriale_zee,
-    :provinciegebied, :registratieve_ruimte, :rijksgebied, :veiligheidsregio, :veiligheidsregiogebied, :waterschapsgebied,
-    :gemeente, :regionaal_openbaar_lichaam, :provincie, :nederlandse_aansluitende_zone, :nederlandse_continentaal_plat,
-    :waterschap, :rijk;
-  skos:prefLabel "Registratieve begrippen"@nl .
 
 :nederlandse_aansluitende_zone a skos:Concept;
   dct:created "2021-01-15"^^xsd:date;
@@ -228,7 +237,7 @@ col:registratieve_begrippen a skos:Collection;
 
 :veiligheidsregio a skos:Concept;
   skos:inScheme bk:begrippenkader-disgeo;
-  skos:broader :regionaal_openbaar_lichaam;
+  skos:broader: :openbaar_lichaam_uit_gemeenschappelijke_regeling ;
   dct:created "2021-02-12"^^xsd:date;
   dct:source bron:wet_veiligheidsregios ;
   skos:definition "Een veiligheidsregio is een openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid."@nl;
