@@ -121,7 +121,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :overheidsorganisatie .
 
 :nederlandse_territoriale_zee a skos:Concept;
-  skos:broader :bestuurlijk_gebied_op_zee;
+  skos:broader :maritieme_zone;
   dct:created "2021-01-15"^^xsd:date;
   dct:source bron:wet_grenzen_nederlandse_territoriale_zee ;
   skos:definition "Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk."@nl;
@@ -149,7 +149,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:prefLabel "Object"@nl .
 
 :nederlandse_exclusieve_economische_zone a skos:Concept;
-  skos:broader :bestuurlijk_gebied_op_zee;
+  skos:broader :maritieme_zone;
   dct:created "2021-01-15"^^xsd:date;
   dct:source bron:rijkswet_instelling_exclusieve_economische_zone ;
   skos:definition "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn."@nl;
@@ -164,7 +164,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
   skos:inScheme bk:begrippenkader-disgeo;
   skos:prefLabel "Nederlandse aansluitende zone"@nl;
-  skos:broader :bestuurlijk_gebied_op_zee .
+  skos:broader :maritieme_zone .
 
 :nederlandse_continentaal_plat a skos:Concept;
   dct:created "2021-02-12"^^xsd:date;
@@ -173,7 +173,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
   skos:inScheme bk:begrippenkader-disgeo;
   skos:prefLabel "Nederlands continentaal plat"@nl;
-  skos:broader :bestuurlijk_gebied_op_zee .
+  skos:broader :maritieme_zone .
 
 :gemeente a skos:Concept;
   skos:broader :regionaal_openbaar_lichaam;
@@ -219,7 +219,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 
 :veiligheidsregiogebied a skos:Concept;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio's"@nl;
-  skos:broader :bestuurlijk_gebied_op_land;
+  skos:broader :bestuurlijk_gebied;
   skos:inScheme bk:begrippenkader-disgeo;
   skos:prefLabel "Veiligheidsregiogebied"@nl;
   dct:source bron:emso .
@@ -257,16 +257,10 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 van de Grondwet en de Gemeentewet."@nl;
   skos:inScheme bk:begrippenkader-disgeo;
   skos:prefLabel "Gemeentegebied"@nl;
-  skos:broader :bestuurlijk_gebied_op_land .
-
-:bestuurlijk_gebied_op_land a skos:Concept;
-  skos:definition "Een bestuurlijk gebied op land is een bestuurlijk gebied dat geheel op het land ligt."@nl;
-  skos:prefLabel "Bestuurlijk gebied op land"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
   skos:broader :bestuurlijk_gebied .
 
 :provinciegebied a skos:Concept;
-  skos:broader :bestuurlijk_gebied_op_land;
+  skos:broader :bestuurlijk_gebied;
   dct:created "2020-12-01"^^xsd:date;
   dct:source bron:grondwet, bron:provinciewet ;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling."@nl;
@@ -276,7 +270,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 
 :rijksgebied a skos:Concept;
   skos:definition "Het grondgebied van het Koninkrijk der Nederlanden."@nl;
-  skos:broader :bestuurlijk_gebied_op_land;
+  skos:broader :bestuurlijk_gebied;
   dct:created "2021-01-15"^^xsd:date;
   dct:source bron:emso;
   skos:inScheme bk:begrippenkader-disgeo;
@@ -285,7 +279,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:scopeNote "Dit betreft het Europese deel van het Koninkrijk der Nederlanden."@nl .
 
 :waterschapsgebied a skos:Concept;
-  skos:broader :bestuurlijk_gebied_op_land;
+  skos:broader :bestuurlijk_gebied;
   dct:created "2020-12-01"^^xsd:date;
   dct:source bron:grondwet, bron:waterschapswet ;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld op basis van artikel 133 van de Grondwet en de Waterschapswet."@nl;
@@ -301,11 +295,12 @@ bk:begrippenkader-disgeo a skos:ConceptScheme;
   dct:creator "Geonovum"@nl;
   rdfs:comment "Een thesaurus van begrippen die betrekking hebben op de inhoud van de Doorontwikkeling in samenhang van de geo-basisregistraties (DiS-Geo)"@nl .
 
-:bestuurlijk_gebied_op_zee a skos:Concept;
-  skos:definition "Een bestuurlijk gebied op zee is een bestuurlijk gebied dat geheel op zee ligt."@nl;
-  skos:prefLabel "Bestuurlijk gebied op zee"@nl;
+:maritieme_zone a skos:Concept;
+  skos:definition "Een zeegebied, inclusief de zeebodem en de ondergrond daarvan, waarbinnen een kuststaat soevereiniteit, soevereine rechten of rechtsmacht uitoefent, zoals gedefinieerd in het Verdrag van de Verenigde Naties inzake het recht van de zee."@nl;
+  skos:prefLabel "Maritieme zone"@nl;
   skos:inScheme bk:begrippenkader-disgeo;
-  skos:broader :bestuurlijk_gebied .
+  skos:broader :bestuurlijk_gebied ;
+  dct:source bron:unclos .
 
 :formele_naam a skos:Concept;
   skos:prefLabel "Formele naam"@nl;
@@ -360,3 +355,7 @@ bron:wet_grenzen_nederlandse_territoriale_zee a foaf:Document;
 bron:mim12 a foaf:Document;
   dct:title "MIM - Metamodel Informatie Modellering (Versie 1.2)"@nl;
   foaf:page <https://docs.geostandaarden.nl/mim/def-st-mim-20240613/> .
+
+bron:unclos a foaf:Document;
+  dct:title "Verdrag van de Verenigde Naties inzake het recht van de zee"@nl;
+  foaf:page <https://wetten.overheid.nl/BWBV0003172/1996-07-28> .
