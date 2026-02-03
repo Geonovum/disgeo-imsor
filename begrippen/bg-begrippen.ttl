@@ -40,7 +40,6 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-03-17"^^xsd:date;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object zich bevindt voordat het zijn functie kan vervullen. Het object kan dan als ongeschikt worden gezien voor het vervullen van zijn functie, maar het bestaat nog wel binnen de beschouwde werkelijkheid."@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Plantoestand"@nl;
   dct:source bron:emso .
@@ -56,7 +55,6 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 :eigenschap a skos:Concept;
   skos:topConceptOf bk:begrippenkader-bg;
   skos:definition "Een typering van gegevens die samen dezelfde mate van een kwaliteit of karakteristiek weerspiegelen"@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme bk:begrippenkader-bg;
   skos:closeMatch <http://ont.cbnl.org/cb/def/CB00038>;
   skos:prefLabel "Eigenschap"@nl;
@@ -83,7 +81,6 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-03-17"^^xsd:date;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object als ongeschikt wordt gezien voor het vervullen van zijn functie. Het object bestaat dan niet meer binnen de beschouwde werkelijkheid."@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Afwezige toestand"@nl;
   dct:source bron:emso .
@@ -133,13 +130,11 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-03-17"^^xsd:date;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object als geschikt kan worden gezien voor het vervullen van zijn functie."@nl;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Aanwezige toestand"@nl;
   dct:source bron:emso .
 
 :object a skos:Concept;
-  skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
   skos:inScheme bk:begrippenkader-bg;
   skos:definition "Een onderdeel van de (tastbare of denkbare) werkelijkheid."@nl;
   skos:closeMatch <http://ont.cbnl.org/cb/def/CB00001>;
@@ -290,9 +285,9 @@ bk:begrippenkader-bg a skos:ConceptScheme;
   dct:format "SKOS"@nl;
   dct:language "Nederlands"@nl;
   skos:hasTopConcept :eigenschap, :levensfase, :object;
-  dct:title "Begrippenkader DiS-Geo"@nl;
+  dct:title "Begrippenkader Bestuurlijke gebieden"@nl;
   dct:creator "Geonovum"@nl;
-  rdfs:comment "Een thesaurus van begrippen die betrekking hebben op de inhoud van de Doorontwikkeling in samenhang van de geo-basisregistraties (DiS-Geo)"@nl .
+  rdfs:comment "Een thesaurus van begrippen die betrekking hebben op bestuurlijke gebieden"@nl .
 
 :maritieme_zone a skos:Concept;
   skos:definition "Een zeegebied, inclusief de zeebodem en de ondergrond daarvan, waarbinnen een kuststaat soevereiniteit, soevereine rechten of rechtsmacht uitoefent, zoals gedefinieerd in het Verdrag van de Verenigde Naties inzake het recht van de zee."@nl;
@@ -309,7 +304,7 @@ bk:begrippenkader-bg a skos:ConceptScheme;
 
 bron:emso a foaf:Document;
   dct:title "DiS Geo : Eisen aan model samenhangende objectenregistratie"@nl;
-  foaf:page <https://docs.geostandaarden.nl/bg/vv-al-emso-20210616/> .
+  foaf:page <https://docs.geostandaarden.nl/disgeo/vv-al-emso-20210604/> .
 
 bron:tooi_ontologie_162 a foaf:Document;
   dct:title "TOOI Ontologie versie 1.6.2"@nl;
