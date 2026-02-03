@@ -268,15 +268,14 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:prefLabel "Provinciegebied"@nl;
   skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden."@nl .
 
-:rijksgebied a skos:Concept;
-  skos:definition "Het grondgebied van het Koninkrijk der Nederlanden."@nl;
+:landgebied a skos:Concept;
+  skos:definition "Gebied aan de landzijde van de basislijn als bedoeld in artikel 2, eerste lid, van het Verdrag van de Verenigde Naties inzake het recht van de zee."@nl;
   skos:broader :bestuurlijk_gebied;
   dct:created "2021-01-15"^^xsd:date;
-  dct:source bron:emso;
+  dct:source bron:unclos;
   skos:inScheme bk:begrippenkader-disgeo;
-  skos:prefLabel "Rijksgebied"@nl;
-  skos:narrowMatch <http://brk.basisregistraties.overheid.nl/id/concept/NederlandsGrondgebied>;
-  skos:scopeNote "Dit betreft het Europese deel van het Koninkrijk der Nederlanden."@nl .
+  skos:prefLabel "Landgebied"@nl;
+  skos:narrowMatch <http://brk.basisregistraties.overheid.nl/id/concept/NederlandsGrondgebied> .
 
 :waterschapsgebied a skos:Concept;
   skos:broader :bestuurlijk_gebied;
