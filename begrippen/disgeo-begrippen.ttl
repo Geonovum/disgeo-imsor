@@ -7,12 +7,12 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix bk:	<http://begrippen.geostandaarden.nl/disgeo/id/begrippenkader/> .
-@prefix col: <http://begrippen.geostandaarden.nl/disgeo/id/collectie/> .
-@prefix bron: <http://begrippen.geostandaarden.nl/disgeo/id/bron/> .
-@prefix : <http://begrippen.geostandaarden.nl/disgeo/id/begrip/> .
+@prefix bk:	<http://begrippen.geostandaarden.nl/bg/id/begrippenkader/> .
+@prefix col: <http://begrippen.geostandaarden.nl/bg/id/collectie/> .
+@prefix bron: <http://begrippen.geostandaarden.nl/bg/id/bron/> .
+@prefix : <http://begrippen.geostandaarden.nl/bg/id/begrip/> .
 
-<https://begrippen.geostandaarden.nl/disgeo/id/begrippenkader/> a owl:Ontology;
+<https://begrippen.geostandaarden.nl/bg/id/begrippenkader/> a owl:Ontology;
   owl:imports <http://purl.org/dc/terms/>, <http://purl.org/iso25964/skos-thes> .
 
 col:levensfasen_registratieve_ruimten a skos:Collection;
@@ -23,15 +23,15 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 :ontwerp_registratieve_ruimte a skos:Concept;
   dct:created "2021-03-17"^^xsd:date;
   skos:definition "Object waarvan de vaststelling wordt voorbereid."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Ontwerp (registratieve ruimte)"@nl;
   skos:broader :plantoestand;
   dct:source bron:emso .
 
 :levensfase a skos:Concept;
   skos:prefLabel "Levensfase"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
-  skos:topConceptOf bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
+  skos:topConceptOf bk:begrippenkader-bg;
   dct:source bron:emso;
   skos:definition "De staat waarin een object zich bevindt"@nl;
   dct:created "2021-03-17"^^xsd:date .
@@ -41,7 +41,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object zich bevindt voordat het zijn functie kan vervullen. Het object kan dan als ongeschikt worden gezien voor het vervullen van zijn functie, maar het bestaat nog wel binnen de beschouwde werkelijkheid."@nl;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Plantoestand"@nl;
   dct:source bron:emso .
 
@@ -49,15 +49,15 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-02-12"^^xsd:date;
   skos:broader :aanwezige_toestand;
   skos:definition "Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Vastgesteld"@nl;
   dct:source bron:emso .
 
 :eigenschap a skos:Concept;
-  skos:topConceptOf bk:begrippenkader-disgeo;
+  skos:topConceptOf bk:begrippenkader-bg;
   skos:definition "Een typering van gegevens die samen dezelfde mate van een kwaliteit of karakteristiek weerspiegelen"@nl;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:closeMatch <http://ont.cbnl.org/cb/def/CB00038>;
   skos:prefLabel "Eigenschap"@nl;
   dct:source bron:mim12;
@@ -67,7 +67,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-02-12"^^xsd:date;
   skos:broader :afwezige_toestand;
   skos:definition "Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Ingetrokken"@nl;
   dct:source bron:emso .
 
@@ -75,7 +75,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-03-17"^^xsd:date;
   skos:broader :afwezige_toestand;
   skos:definition "Object waarvan het ontwerp niet is gerealiseerd."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Niet gerealiseerd (registratieve ruimte)"@nl;
   dct:source bron:emso .
 
@@ -84,13 +84,13 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object als ongeschikt wordt gezien voor het vervullen van zijn functie. Het object bestaat dan niet meer binnen de beschouwde werkelijkheid."@nl;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Afwezige toestand"@nl;
   dct:source bron:emso .
 
 :overheidsorganisatie a skos:Concept;
   skos:prefLabel "Overheidsorganisatie"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:definition "Een organisatie die namens de overheid taken uitvoert en onder het gezag en toezicht van de overheid valt."@nl;
   rdfs:label "Overheidsorganisatie"@nl;
   skos:broader :object ;
@@ -100,7 +100,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2025-10-14"^^xsd:date;
   skos:definition "Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren in een publiekrechtelijke of privaatrechtelijke constructie."@nl;
   skos:broader :overheidsorganisatie;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Samenwerkingsorganisatie"@nl;
   dct:source bron:tooi_ontologie_162 .
 
@@ -108,14 +108,14 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2025-10-14"^^xsd:date;
   skos:definition "Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren uit hoofde van de Wet gemeenschappelijke regelingen (Wgr)."@nl;
   skos:broader :samenwerkingsorganisatie, :regionaal_openbaar_lichaam ;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Openbaar lichaam uit gemeenschappelijke regeling"@nl;
   dct:source bron:tooi_ontologie_162 .
 
 :regionaal_openbaar_lichaam a skos:Concept;
   skos:prefLabel "Regionaal openbaar lichaam"@nl;
   skos:altLabel "Territoriaal openbaar lichaam"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:definition "Een openbaar lichaam is, in de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheidsorganisatie met publiekrechtelijke rechtspersoonlijkheid, die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied."@nl;
   rdfs:label "Openbaar lichaam"@nl;
   skos:broader :overheidsorganisatie .
@@ -126,7 +126,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:source bron:wet_grenzen_nederlandse_territoriale_zee ;
   skos:definition "Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk."@nl;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Nederlandse territoriale zee"@nl .
 
 :aanwezige_toestand a skos:Concept;
@@ -134,18 +134,18 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :levensfase;
   skos:definition "De staat waarin een object als geschikt kan worden gezien voor het vervullen van zijn functie."@nl;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Aanwezige toestand"@nl;
   dct:source bron:emso .
 
 :object a skos:Concept;
   skos:editorialNote "Dit begrip is niet direct terug te vinden in de huidige versie van het EMSO document, maar definieert iets wat wel van belang is voor de ontwikkeling van de SOR. In dit geval gaat het om een begrip die de structuur van dit begrippenkader overzichtelijk houdt. Dit begrip is niet definitief."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:definition "Een onderdeel van de (tastbare of denkbare) werkelijkheid."@nl;
   skos:closeMatch <http://ont.cbnl.org/cb/def/CB00001>;
   dct:created "2021-01-15"^^xsd:date;
   dct:source bron:mim12 ;
-  skos:topConceptOf bk:begrippenkader-disgeo;
+  skos:topConceptOf bk:begrippenkader-bg;
   skos:prefLabel "Object"@nl .
 
 :nederlandse_exclusieve_economische_zone a skos:Concept;
@@ -154,7 +154,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:source bron:rijkswet_instelling_exclusieve_economische_zone ;
   skos:definition "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn."@nl;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Nederlandse exclusieve economische zone"@nl .
 
 :nederlandse_aansluitende_zone a skos:Concept;
@@ -162,7 +162,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:source bron:rijkswet_instelling_aansluitende_zone ;
   skos:definition "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn"@nl;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Nederlandse aansluitende zone"@nl;
   skos:broader :maritieme_zone .
 
@@ -171,13 +171,13 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:source bron:mijnbouwwet_art_1 ;
   skos:definition "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee."@nl;
   skos:editorialNote "Dit begrip hoort mogelijk niet thuis in dit begrippenkader. Echter is gekozen om het voorlopig zo te representeren, zodat samenhang met het EMSO document gewaarborgd wordt."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Nederlands continentaal plat"@nl;
   skos:broader :maritieme_zone .
 
 :gemeente a skos:Concept;
   skos:broader :regionaal_openbaar_lichaam;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:definition "Een gemeente is het kleinste territoriaal openbaar lichaam met algemene bevoegdheden."@nl;
   skos:prefLabel "Gemeente"@nl;
   dct:source bron:tooi_ontologie_162 .
@@ -190,7 +190,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
     :registratieve_ruimte .
 
 :provincie a skos:Concept;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader :regionaal_openbaar_lichaam;
   skos:definition "Een provincie is een territoriaal openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk."@nl;
   skos:prefLabel "Provincie"@nl;
@@ -198,7 +198,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 
 :rijk a skos:Concept;
   skos:prefLabel "Rijk"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader :regionaal_openbaar_lichaam;
   skos:definition "De klasse Rijk is de (singleton-) klasse van onderdelen van de Nederlandse overheid die wettelijke taken hebben op landelijk niveau: de 'centrale overheid'"@nl;
   dct:source bron:tooi_ontologie_162 .
@@ -207,20 +207,20 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:definition "Een waterschap is een territoriaal openbaar lichaam dat uitsluitend bevoegd is met betrekking tot de waterhuishouding."@nl;
   skos:broader :regionaal_openbaar_lichaam;
   skos:prefLabel "Waterschap"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   dct:source bron:tooi_ontologie_162 .
 
 :bestuurlijk_gebied a skos:Concept;
   skos:definition "Een bestuurlijk gebied is een registratieve ruimte die op basis van wet- of regelgeving als eenheid geldt van bestuurlijke verantwoordelijkheid."@nl;
   skos:scopeNote "Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio's."@nl;
   skos:prefLabel "Bestuurlijk gebied"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader :registratieve_ruimte .
 
 :veiligheidsregiogebied a skos:Concept;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio's"@nl;
   skos:broader :bestuurlijk_gebied;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Veiligheidsregiogebied"@nl;
   dct:source bron:emso .
 
@@ -230,13 +230,13 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :object;
   skos:definition "Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@nl;
   skos:exactMatch <https://begrippen.geostandaarden.nl/nen3610/nl/page/registratieve_ruimte>;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Registratieve ruimte"@nl;
   skos:scopeNote "Het gaat vaak om gebieden waarin sprake is van een eenheid van politiek/bestuurlijke verantwoordelijkheid. Denk hierbij aan de begrenzing van provincies en gemeenten."@nl;
   dct:source bron:emso .
 
 :veiligheidsregio a skos:Concept;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader: :openbaar_lichaam_uit_gemeenschappelijke_regeling ;
   dct:created "2021-02-12"^^xsd:date;
   dct:source bron:wet_veiligheidsregios ;
@@ -248,14 +248,14 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2021-01-15"^^xsd:date;
   skos:broader :eigenschap;
   skos:definition "De organisatiecode."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Organisatiecode"@nl .
 
 :gemeentegebied a skos:Concept;
   dct:created "2020-12-01"^^xsd:date;
   dct:source bron:grondwet, bron:gemeentewet ;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 van de Grondwet en de Gemeentewet."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Gemeentegebied"@nl;
   skos:broader :bestuurlijk_gebied .
 
@@ -264,7 +264,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2020-12-01"^^xsd:date;
   dct:source bron:grondwet, bron:provinciewet ;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Provinciegebied"@nl;
   skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden."@nl .
 
@@ -273,7 +273,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   skos:broader :bestuurlijk_gebied;
   dct:created "2021-01-15"^^xsd:date;
   dct:source bron:unclos;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Landgebied"@nl;
   skos:narrowMatch <http://brk.basisregistraties.overheid.nl/id/concept/NederlandsGrondgebied> .
 
@@ -282,11 +282,11 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
   dct:created "2020-12-01"^^xsd:date;
   dct:source bron:grondwet, bron:waterschapswet ;
   skos:definition "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld op basis van artikel 133 van de Grondwet en de Waterschapswet."@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:prefLabel "Waterschapsgebied"@nl;
   skos:scopeNote "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag)."@nl .
 
-bk:begrippenkader-disgeo a skos:ConceptScheme;
+bk:begrippenkader-bg a skos:ConceptScheme;
   dct:format "SKOS"@nl;
   dct:language "Nederlands"@nl;
   skos:hasTopConcept :eigenschap, :levensfase, :object;
@@ -297,19 +297,19 @@ bk:begrippenkader-disgeo a skos:ConceptScheme;
 :maritieme_zone a skos:Concept;
   skos:definition "Een zeegebied, inclusief de zeebodem en de ondergrond daarvan, waarbinnen een kuststaat soevereiniteit, soevereine rechten of rechtsmacht uitoefent, zoals gedefinieerd in het Verdrag van de Verenigde Naties inzake het recht van de zee."@nl;
   skos:prefLabel "Maritieme zone"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader :bestuurlijk_gebied ;
   dct:source bron:unclos .
 
 :formele_naam a skos:Concept;
   skos:prefLabel "Formele naam"@nl;
-  skos:inScheme bk:begrippenkader-disgeo;
+  skos:inScheme bk:begrippenkader-bg;
   skos:broader :eigenschap;
   skos:definition "Naam van een openbaar lichaam zoals formeel benoemd door het bevoegd gezag."@nl .
 
 bron:emso a foaf:Document;
   dct:title "DiS Geo : Eisen aan model samenhangende objectenregistratie"@nl;
-  foaf:page <https://docs.geostandaarden.nl/disgeo/vv-al-emso-20210616/> .
+  foaf:page <https://docs.geostandaarden.nl/bg/vv-al-emso-20210616/> .
 
 bron:tooi_ontologie_162 a foaf:Document;
   dct:title "TOOI Ontologie versie 1.6.2"@nl;
