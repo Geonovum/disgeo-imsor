@@ -232,7 +232,7 @@ col:levensfasen_registratieve_ruimten a skos:Collection;
 
 :veiligheidsregio a skos:Concept;
   skos:inScheme bk:begrippenkader-bg;
-  skos:broader: :openbaar_lichaam_uit_gemeenschappelijke_regeling ;
+  skos:broader :openbaar_lichaam_uit_gemeenschappelijke_regeling ;
   dct:created "2021-02-12"^^xsd:date;
   dct:source bron:wet_veiligheidsregios ;
   skos:definition "Een veiligheidsregio is een openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid."@nl;
